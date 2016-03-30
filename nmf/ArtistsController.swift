@@ -10,11 +10,12 @@ import UIKit
 
 class ArtistsController: UIViewController{
     
+    @IBOutlet weak var centerConstraint: NSLayoutConstraint!
     @IBOutlet weak var ArtistBio: UILabel!
     @IBOutlet weak var ArtistName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        var backendless = Backendless.sharedInstance()
+        let backendless = Backendless.sharedInstance()
         let dataStore = backendless.data.of(Artists.ofClass())
         var error: Fault?
         let	foundContact = dataStore.findFirstFault(&error)
@@ -26,5 +27,11 @@ class ArtistsController: UIViewController{
         let foundArtist = dataStore.findFirst() as! Artists
         ArtistName.text = foundArtist.artistName
         ArtistBio.text = foundArtist.bio
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.85, initialSpringVelocity: 5, options: [.Autoreverse, .Repeat], animations: { 
+            self.centerConstraint.constant = 100.0
+            }, completion: nil)
     }
 }

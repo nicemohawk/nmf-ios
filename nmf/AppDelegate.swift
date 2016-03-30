@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let SECRET_KEY = "71BC7DA3-EFB8-26C2-FF59-599860222C00"
     let VERSION_NUM =  "v1"
     
-    var backendless = Backendless.sharedInstance()
+    let backendless = Backendless.sharedInstance()
 
     var window: UIWindow?
 
