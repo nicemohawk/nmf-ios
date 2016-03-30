@@ -10,12 +10,20 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    let APP_ID = "49259415-337F-9D60-FFEE-023C6FD21C00"
+    let SECRET_KEY = "71BC7DA3-EFB8-26C2-FF59-599860222C00"
+    let VERSION_NUM =  "v1"
+    
+    var backendless = Backendless.sharedInstance()
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        backendless.initApp(APP_ID, secret: SECRET_KEY, version: VERSION_NUM)
+        
         return true
     }
 
@@ -40,7 +48,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 
