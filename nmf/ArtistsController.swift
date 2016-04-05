@@ -10,6 +10,7 @@ import UIKit
 
 class ArtistsController: UIViewController{
     
+    @IBOutlet weak var ArtistImage: UIImageView!
     @IBOutlet weak var centerConstraint: NSLayoutConstraint!
     @IBOutlet weak var ArtistBio: UILabel!
     @IBOutlet weak var ArtistName: UILabel!
@@ -27,11 +28,9 @@ class ArtistsController: UIViewController{
         let foundArtist = dataStore.findFirst() as! Artists
         ArtistName.text = foundArtist.artistName
         ArtistBio.text = foundArtist.bio
+        let url = NSURL(string: foundArtist.picture!)
+        ArtistImage.image = UIImage(data: NSData(contentsOfURL: url!)!)
     }
     
-    override func viewDidAppear(animated: Bool) {
-        UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.85, initialSpringVelocity: 5, options: [.Autoreverse, .Repeat], animations: { 
-            self.centerConstraint.constant = 100.0
-            }, completion: nil)
-    }
+    
 }

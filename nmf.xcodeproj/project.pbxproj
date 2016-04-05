@@ -29,6 +29,7 @@
 		2C5B8C4D1C9BABBA00C6A893 /* libx264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5B8C421C9BABBA00C6A893 /* libx264.a */; };
 		2C5B8C4F1C9DDC4200C6A893 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B8C4E1C9DDC4200C6A893 /* Comment.swift */; };
 		A53D603A1CAC5B6900B97E49 /* Artists.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53D60391CAC5B6900B97E49 /* Artists.swift */; };
+		A5DE23E31CACA3E1007AF931 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DE23E21CACA3E1007AF931 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -239,6 +240,7 @@
 		2C5B8C421C9BABBA00C6A893 /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libx264.a; sourceTree = "<group>"; };
 		2C5B8C4E1C9DDC4200C6A893 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		A53D60391CAC5B6900B97E49 /* Artists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artists.swift; sourceTree = "<group>"; };
+		A5DE23E21CACA3E1007AF931 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +308,7 @@
 				2C5B8C4E1C9DDC4200C6A893 /* Comment.swift */,
 				2C4ADBB41C9F37FE00399C07 /* ArtistsController.swift */,
 				A53D60391CAC5B6900B97E49 /* Artists.swift */,
+				A5DE23E21CACA3E1007AF931 /* TableViewController.swift */,
 			);
 			path = nmf;
 			sourceTree = "<group>";
@@ -788,6 +791,7 @@
 				2C4ADBB51C9F37FE00399C07 /* ArtistsController.swift in Sources */,
 				2C5B8B4F1C9A13E900C6A893 /* AppDelegate.swift in Sources */,
 				A53D603A1CAC5B6900B97E49 /* Artists.swift in Sources */,
+				A5DE23E31CACA3E1007AF931 /* TableViewController.swift in Sources */,
 				2C5B8C4F1C9DDC4200C6A893 /* Comment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
