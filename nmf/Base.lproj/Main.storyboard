@@ -21,7 +21,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLo-qh-zRj">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rll-nR-EfE">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rll-nR-EfE">
                                         <rect key="frame" x="0.0" y="66" width="600" height="0.0"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehM-99-bG6">
@@ -41,6 +41,7 @@
                                     <constraint firstItem="tkz-EX-Oud" firstAttribute="top" secondItem="ehM-99-bG6" secondAttribute="bottom" constant="8" id="Fhw-mw-0tn"/>
                                     <constraint firstAttribute="trailing" secondItem="Rll-nR-EfE" secondAttribute="trailing" id="Jeg-ni-aHb"/>
                                     <constraint firstAttribute="bottom" secondItem="Rll-nR-EfE" secondAttribute="bottom" id="KpS-aK-qes"/>
+                                    <constraint firstItem="Rll-nR-EfE" firstAttribute="top" secondItem="tkz-EX-Oud" secondAttribute="bottom" constant="8" id="QPa-Aj-Z1n"/>
                                     <constraint firstItem="ehM-99-bG6" firstAttribute="top" secondItem="eLo-qh-zRj" secondAttribute="top" constant="8" id="SQF-T1-hTb"/>
                                     <constraint firstItem="ehM-99-bG6" firstAttribute="centerX" secondItem="eLo-qh-zRj" secondAttribute="centerX" id="Ylq-Sl-uYV"/>
                                     <constraint firstItem="Rll-nR-EfE" firstAttribute="centerX" secondItem="eLo-qh-zRj" secondAttribute="centerX" id="jsO-Ac-vX2"/>
@@ -61,9 +62,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Hgn-ub-Rpd"/>
                     <connections>
-                        <outlet property="ArtistBio" destination="tkz-EX-Oud" id="T56-jK-wLY"/>
-                        <outlet property="ArtistImage" destination="Rll-nR-EfE" id="AkI-0h-27j"/>
-                        <outlet property="ArtistName" destination="ehM-99-bG6" id="7Rq-cl-tqy"/>
+                        <outlet property="artistBio" destination="tkz-EX-Oud" id="9Hc-Mi-L5W"/>
+                        <outlet property="artistImage" destination="Rll-nR-EfE" id="ynB-jZ-Moj"/>
+                        <outlet property="artistName" destination="ehM-99-bG6" id="xhI-v3-6EF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvX-Wt-nws" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -86,13 +87,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MM8-KW-rmd">
-                                            <rect key="frame" x="336" y="14" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MM8-KW-rmd">
+                                            <rect key="frame" x="8" y="11" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="MM8-KW-rmd" firstAttribute="top" secondItem="P9U-Z5-NZ8" secondAttribute="topMargin" constant="3" id="BlZ-cJ-3Jw"/>
+                                        <constraint firstItem="MM8-KW-rmd" firstAttribute="leading" secondItem="P9U-Z5-NZ8" secondAttribute="leadingMargin" id="Tsn-wA-pIS"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="artist" destination="MM8-KW-rmd" id="Hdp-aM-1Bt"/>
