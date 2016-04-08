@@ -18,17 +18,10 @@ class ArtistsController: UIViewController{
         super.viewDidLoad()
         let backendless = Backendless.sharedInstance()
         let dataStore = backendless.data.of(Artists.ofClass())
-        var error: Fault?
-        let	foundContact = dataStore.findFirstFault(&error)
-        if error == nil {
-            print("Found: \(foundContact)")
-        } else {
-            print("Server reported error: \(error)")
-        }
         let foundArtist = dataStore.findFirst() as! Artists
+        let url = NSURL(string: foundArtist.picture!)
         ArtistName.text = foundArtist.artistName
         ArtistBio.text = foundArtist.bio
-        let url = NSURL(string: foundArtist.picture!)
         ArtistImage.image = UIImage(data: NSData(contentsOfURL: url!)!)
     }
     
