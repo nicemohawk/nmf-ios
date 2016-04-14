@@ -47,9 +47,17 @@ class TableViewController: UITableViewController {
         let backendless = Backendless.sharedInstance()
         let dataStore = backendless.data.of(Schedule.ofClass())
         let foundSchedule = dataStore.findFirst() as! Schedule
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MMM dd - hh:mma"
+        let finalStartTime = dateFormatter.stringFromDate(foundSchedule.starttime!)
+        let finalEndTime = dateFormatter.stringFromDate(foundSchedule.endtime!)
 
         // Configure the cell...
         scheduleCell.artist.text = foundSchedule.artist
+        scheduleCell.startTime.text = "Start Time: \(finalStartTime)"
+        scheduleCell.endTime.text = "End Time: \(finalEndTime)"
+        scheduleCell.stage.text = foundSchedule.stage
 
         return scheduleCell
     }
