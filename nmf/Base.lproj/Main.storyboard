@@ -18,12 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLo-qh-zRj">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLo-qh-zRj">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rll-nR-EfE">
-                                        <rect key="frame" x="0.0" y="66" width="600" height="0.0"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehM-99-bG6">
                                         <rect key="frame" x="255" y="8" width="91" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -36,11 +33,14 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rll-nR-EfE">
+                                        <rect key="frame" x="0.0" y="66" width="600" height="421"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Rll-nR-EfE" secondAttribute="bottom" id="7NF-yQ-sB8"/>
                                     <constraint firstItem="tkz-EX-Oud" firstAttribute="top" secondItem="ehM-99-bG6" secondAttribute="bottom" constant="8" id="Fhw-mw-0tn"/>
                                     <constraint firstAttribute="trailing" secondItem="Rll-nR-EfE" secondAttribute="trailing" id="Jeg-ni-aHb"/>
-                                    <constraint firstAttribute="bottom" secondItem="Rll-nR-EfE" secondAttribute="bottom" id="KpS-aK-qes"/>
                                     <constraint firstItem="Rll-nR-EfE" firstAttribute="top" secondItem="tkz-EX-Oud" secondAttribute="bottom" constant="8" id="QPa-Aj-Z1n"/>
                                     <constraint firstItem="ehM-99-bG6" firstAttribute="top" secondItem="eLo-qh-zRj" secondAttribute="top" constant="8" id="SQF-T1-hTb"/>
                                     <constraint firstItem="ehM-99-bG6" firstAttribute="centerX" secondItem="eLo-qh-zRj" secondAttribute="centerX" id="Ylq-Sl-uYV"/>
@@ -52,10 +52,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zWO-09-SX5" firstAttribute="top" secondItem="eLo-qh-zRj" secondAttribute="bottom" id="28Z-Ra-Kqn"/>
+                            <constraint firstItem="zWO-09-SX5" firstAttribute="top" secondItem="eLo-qh-zRj" secondAttribute="bottom" id="1nS-TP-wXq"/>
                             <constraint firstItem="eLo-qh-zRj" firstAttribute="leading" secondItem="Sye-RV-8De" secondAttribute="leadingMargin" constant="-20" id="HLL-Qp-Urp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eLo-qh-zRj" secondAttribute="trailing" constant="-20" id="TTU-JW-VDe"/>
-                            <constraint firstItem="zWO-09-SX5" firstAttribute="top" secondItem="eLo-qh-zRj" secondAttribute="bottom" id="YHb-It-u9F"/>
                             <constraint firstItem="eLo-qh-zRj" firstAttribute="centerX" secondItem="Sye-RV-8De" secondAttribute="centerX" id="bfd-Bd-fKX"/>
                             <constraint firstItem="eLo-qh-zRj" firstAttribute="top" secondItem="ZXj-NL-KIn" secondAttribute="bottom" id="ca2-4t-m8v"/>
                         </constraints>

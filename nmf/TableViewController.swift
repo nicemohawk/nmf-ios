@@ -9,6 +9,9 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    
+    //temp array of schedule objects for cells
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
