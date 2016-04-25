@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Artists Controller-->
+        <!--Artists View Controller-->
         <scene sceneID="pU9-Qe-6RA">
             <objects>
-                <viewController id="DoV-0X-Vdb" customClass="ArtistsController" customModule="nmf" sceneMemberID="viewController">
+                <viewController id="DoV-0X-Vdb" customClass="ArtistsViewController" customModule="nmf" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZXj-NL-KIn"/>
                         <viewControllerLayoutGuide type="bottom" id="zWO-09-SX5"/>
@@ -70,20 +70,20 @@
             </objects>
             <point key="canvasLocation" x="2085" y="-261"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Schedule Table View Controller-->
         <scene sceneID="hin-27-xzU">
             <objects>
-                <tableViewController id="Bs5-px-7hO" customClass="TableViewController" customModule="nmf" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Bs5-px-7hO" customClass="ScheduleTableViewController" customModule="nmf" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="97" sectionHeaderHeight="28" sectionFooterHeight="28" id="1ND-YZ-59X">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="table cell" rowHeight="97" id="1MG-SB-SYR" customClass="Cell" customModule="nmf" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="table cell" rowHeight="97" id="1MG-SB-SYR" customClass="ScheduleTableViewCell" customModule="nmf" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="97"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1MG-SB-SYR" id="P9U-Z5-NZ8">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="96"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="96.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MM8-KW-rmd">

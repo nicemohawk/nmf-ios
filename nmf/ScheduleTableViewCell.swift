@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Cell: UITableViewCell {
+class ScheduleTableViewCell: UITableViewCell {
     
     @IBOutlet weak var artist: UILabel!
     @IBOutlet weak var startTime: UILabel!

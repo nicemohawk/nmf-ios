@@ -8,11 +8,8 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class ScheduleTableViewController: UITableViewController {
     
-    //temp array of schedule objects for cells
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +18,12 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        let dataStore = DataStore.sharedInstance
+        
+        dataStore.updateScheduleItems() { _ in
+            self.tableView.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,7 +46,7 @@ class TableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("table cell", forIndexPath: indexPath)
-        guard let scheduleCell = cell as? Cell else {
+        guard let scheduleCell = cell as? ScheduleTableViewCell else {
             return cell
         }
         
