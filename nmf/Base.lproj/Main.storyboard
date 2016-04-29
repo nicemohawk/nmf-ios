@@ -89,28 +89,29 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MM8-KW-rmd">
                                             <rect key="frame" x="8" y="11" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StartTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QZ-vM-JYz">
                                             <rect key="frame" x="46" y="37" width="75" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EndTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6j5-b4-js7">
                                             <rect key="frame" x="46" y="66" width="68" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oU5-O3-veA">
                                             <rect key="frame" x="298" y="11" width="45" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.78823529410000004" green="0.31764705879999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="6j5-b4-js7" firstAttribute="leading" secondItem="P9U-Z5-NZ8" secondAttribute="leadingMargin" constant="38" id="1zP-oN-2Ql"/>
                                         <constraint firstItem="6j5-b4-js7" firstAttribute="top" secondItem="3QZ-vM-JYz" secondAttribute="bottom" constant="8" id="9aY-If-e3r"/>
@@ -163,6 +164,37 @@
             </objects>
             <point key="canvasLocation" x="646" y="-261"/>
         </scene>
+        <!--Info-->
+        <scene sceneID="7Jb-Ba-ySu">
+            <objects>
+                <viewController title="Info" id="BIc-9n-g6A" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1DZ-rO-X06"/>
+                        <viewControllerLayoutGuide type="bottom" id="IfD-E4-kVT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kRg-t5-bui">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Nelsonville Music Festival App!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBo-F6-r2O">
+                                <rect key="frame" x="120" y="20" width="360" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YBo-F6-r2O" firstAttribute="top" secondItem="1DZ-rO-X06" secondAttribute="bottom" id="QU9-Mh-roM"/>
+                            <constraint firstItem="YBo-F6-r2O" firstAttribute="centerX" secondItem="kRg-t5-bui" secondAttribute="centerX" id="aad-G1-wp6"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Info" id="acu-yv-jIP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pvi-Ha-Lvs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="646" y="464"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="aCI-3v-a09">
             <objects>
@@ -175,6 +207,7 @@
                     <connections>
                         <segue destination="YZF-I4-Eoh" kind="relationship" relationship="viewControllers" id="7f5-TK-vXy"/>
                         <segue destination="sbA-sI-UWW" kind="relationship" relationship="viewControllers" id="NDU-kF-n1G"/>
+                        <segue destination="BIc-9n-g6A" kind="relationship" relationship="viewControllers" id="7Pz-BA-PM7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R0I-Jy-7de" userLabel="First Responder" sceneMemberID="firstResponder"/>
