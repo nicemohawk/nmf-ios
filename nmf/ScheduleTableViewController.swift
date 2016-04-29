@@ -50,6 +50,7 @@ class ScheduleTableViewController: UITableViewController {
             return cell
         }
         
+        scheduleCell.layer.cornerRadius = 15
         
         if let foundSchedule = DataStore.sharedInstance.scheduleItems?.data[indexPath.row] as? Schedule {
             
@@ -64,7 +65,7 @@ class ScheduleTableViewController: UITableViewController {
             scheduleCell.endTime.text = "End Time: \(finalEndTime)"
             scheduleCell.stage.text = foundSchedule.stage
         }
-
+        
         return scheduleCell
     }
     
