@@ -1,5 +1,5 @@
 //
-//  TableViewController.swift
+//  ScheduleTableViewController.swift
 //  nmf
 //
 //  Created by Daniel Pagan on 4/5/16.

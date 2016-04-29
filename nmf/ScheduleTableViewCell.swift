@@ -1,5 +1,5 @@
 //
-//  Cell.swift
+//  ScheduleTableViewCell.swift
 //  nmf
 //
 //  Created by Daniel Pagan on 4/8/16.

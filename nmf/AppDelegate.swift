@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  nmf
 //
-//  Created by Julia Pagan on 3/16/16.
+//  Created by Daniel Pagan on 3/16/16.
 //  Copyright © 2016 Nelsonville Music Festival. All rights reserved.
 //
 
