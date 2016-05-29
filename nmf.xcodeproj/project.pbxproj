@@ -32,6 +32,10 @@
 		A53F95FD1CC678DA0041EECA /* ArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F95FC1CC678DA0041EECA /* ArtistsViewController.swift */; };
 		A5DEE7011CB553C100704688 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEE7001CB553C100704688 /* Schedule.swift */; };
 		A5E8382E1CB84D060077D92D /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E8382D1CB84D060077D92D /* ScheduleTableViewCell.swift */; };
+		B59B0DEC1CF8AD7200B38F5A /* UIColor+NMF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B0DEB1CF8AD7200B38F5A /* UIColor+NMF.swift */; };
+		B5A5340C1CF910BE005BAF8E /* StackWidthLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5340B1CF910BE005BAF8E /* StackWidthLabel.swift */; };
+		B5A5340E1CFAB39D005BAF8E /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5A5340D1CFAB39D005BAF8E /* Montserrat-Regular.otf */; };
+		B5A534101CFAB683005BAF8E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5340F1CFAB683005BAF8E /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2C5B8B4B1C9A13E900C6A893 /* nmf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nmf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C5B8B4B1C9A13E900C6A893 /* NMF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5B8B4E1C9A13E900C6A893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C5B8B551C9A13E900C6A893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C5B8B571C9A13E900C6A893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -245,6 +249,10 @@
 		A53F95FC1CC678DA0041EECA /* ArtistsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistsViewController.swift; sourceTree = "<group>"; };
 		A5DEE7001CB553C100704688 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		A5E8382D1CB84D060077D92D /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		B59B0DEB1CF8AD7200B38F5A /* UIColor+NMF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+NMF.swift"; sourceTree = "<group>"; };
+		B5A5340B1CF910BE005BAF8E /* StackWidthLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackWidthLabel.swift; sourceTree = "<group>"; };
+		B5A5340D1CFAB39D005BAF8E /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		B5A5340F1CFAB683005BAF8E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,7 +303,7 @@
 		2C5B8B4C1C9A13E900C6A893 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C5B8B4B1C9A13E900C6A893 /* nmf.app */,
+				2C5B8B4B1C9A13E900C6A893 /* NMF.app */,
 				2C5B8B611C9A13E900C6A893 /* nmfTests.xctest */,
 			);
 			name = Products;
@@ -304,17 +312,21 @@
 		2C5B8B4D1C9A13E900C6A893 /* nmf */ = {
 			isa = PBXGroup;
 			children = (
+				B59B0DEA1CF8AD4200B38F5A /* extensions */,
 				2C5B8B4E1C9A13E900C6A893 /* AppDelegate.swift */,
 				A53F95FC1CC678DA0041EECA /* ArtistsViewController.swift */,
 				A527604F1CB415B3003B62AD /* ScheduleTableViewController.swift */,
+				B5A5340F1CFAB683005BAF8E /* MapViewController.swift */,
 				A52B2FEC1CC18ABD00F05700 /* DataStore.swift */,
 				A5DEE7001CB553C100704688 /* Schedule.swift */,
 				A53D60391CAC5B6900B97E49 /* Artists.swift */,
 				A5E8382D1CB84D060077D92D /* ScheduleTableViewCell.swift */,
+				B5A5340B1CF910BE005BAF8E /* StackWidthLabel.swift */,
 				2C5B8B541C9A13E900C6A893 /* Main.storyboard */,
 				2C5B8B591C9A13E900C6A893 /* LaunchScreen.storyboard */,
 				2C5B8B571C9A13E900C6A893 /* Assets.xcassets */,
 				2C5B8B5C1C9A13E900C6A893 /* Info.plist */,
+				B5A5340D1CFAB39D005BAF8E /* Montserrat-Regular.otf */,
 			);
 			path = nmf;
 			sourceTree = "<group>";
@@ -693,12 +705,20 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
+		B59B0DEA1CF8AD4200B38F5A /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B59B0DEB1CF8AD7200B38F5A /* UIColor+NMF.swift */,
+			);
+			name = extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C5B8B4A1C9A13E900C6A893 /* nmf */ = {
+		2C5B8B4A1C9A13E900C6A893 /* NMF */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C5B8B6A1C9A13EA00C6A893 /* Build configuration list for PBXNativeTarget "nmf" */;
+			buildConfigurationList = 2C5B8B6A1C9A13EA00C6A893 /* Build configuration list for PBXNativeTarget "NMF" */;
 			buildPhases = (
 				2C5B8B471C9A13E900C6A893 /* Sources */,
 				2C5B8B481C9A13E900C6A893 /* Frameworks */,
@@ -708,9 +728,9 @@
 			);
 			dependencies = (
 			);
-			name = nmf;
+			name = NMF;
 			productName = nmf;
-			productReference = 2C5B8B4B1C9A13E900C6A893 /* nmf.app */;
+			productReference = 2C5B8B4B1C9A13E900C6A893 /* NMF.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2C5B8B601C9A13E900C6A893 /* nmfTests */ = {
@@ -743,6 +763,12 @@
 				TargetAttributes = {
 					2C5B8B4A1C9A13E900C6A893 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = GYV9U8338K;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					2C5B8B601C9A13E900C6A893 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -763,7 +789,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C5B8B4A1C9A13E900C6A893 /* nmf */,
+				2C5B8B4A1C9A13E900C6A893 /* NMF */,
 				2C5B8B601C9A13E900C6A893 /* nmfTests */,
 			);
 		};
@@ -777,6 +803,7 @@
 				2C5B8B5B1C9A13E900C6A893 /* LaunchScreen.storyboard in Resources */,
 				2C5B8B581C9A13E900C6A893 /* Assets.xcassets in Resources */,
 				2C5B8B561C9A13E900C6A893 /* Main.storyboard in Resources */,
+				B5A5340E1CFAB39D005BAF8E /* Montserrat-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -797,9 +824,12 @@
 				A52B2FED1CC18ABD00F05700 /* DataStore.swift in Sources */,
 				A5DEE7011CB553C100704688 /* Schedule.swift in Sources */,
 				A5E8382E1CB84D060077D92D /* ScheduleTableViewCell.swift in Sources */,
+				B5A534101CFAB683005BAF8E /* MapViewController.swift in Sources */,
 				A53F95FD1CC678DA0041EECA /* ArtistsViewController.swift in Sources */,
 				2C5B8B4F1C9A13E900C6A893 /* AppDelegate.swift in Sources */,
+				B59B0DEC1CF8AD7200B38F5A /* UIColor+NMF.swift in Sources */,
 				A53D603A1CAC5B6900B97E49 /* Artists.swift in Sources */,
+				B5A5340C1CF910BE005BAF8E /* StackWidthLabel.swift in Sources */,
 				A52760501CB415B3003B62AD /* ScheduleTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -817,7 +847,7 @@
 /* Begin PBXTargetDependency section */
 		2C5B8B631C9A13E900C6A893 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2C5B8B4A1C9A13E900C6A893 /* nmf */;
+			target = 2C5B8B4A1C9A13E900C6A893 /* NMF */;
 			targetProxy = 2C5B8B621C9A13E900C6A893 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -939,6 +969,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.nmf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/lib/backendless/include/Backendless-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -956,6 +987,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.nmf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/lib/backendless/include/Backendless-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -995,7 +1027,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C5B8B6A1C9A13EA00C6A893 /* Build configuration list for PBXNativeTarget "nmf" */ = {
+		2C5B8B6A1C9A13EA00C6A893 /* Build configuration list for PBXNativeTarget "NMF" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C5B8B6B1C9A13EA00C6A893 /* Debug */,

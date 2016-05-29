@@ -9,7 +9,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
     
     let APP_ID = "49259415-337F-9D60-FFEE-023C6FD21C00"
     let SECRET_KEY = "71BC7DA3-EFB8-26C2-FF59-599860222C00"
@@ -19,10 +19,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    lazy var locationManager: CLLocationManager? = {
+        let manager = CLLocationManager()
+        
+        manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        
+        return manager
+    }()
 
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         backendless.initApp(APP_ID, secret: SECRET_KEY, version: VERSION_NUM)
+        
+        // location manager
+        
+        let authorization = CLLocationManager.authorizationStatus()
+        
+        if authorization == .Denied || authorization == .Restricted {
+            print("Unabled to access location")
+        } else {
+            if let locationManager = locationManager {
+                if authorization == .NotDetermined {
+                    locationManager.requestWhenInUseAuthorization()
+                }
+                
+                if CLLocationManager.locationServicesEnabled() == true {
+                    locationManager.startUpdatingLocation()
+                }
+            }
+        }
         
         return true
     }
@@ -47,6 +74,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+    // MARK: - CLLocationManagerDelegate
+    
+    //	func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+    //	}
+    
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        if status == .AuthorizedWhenInUse {
+            manager.startUpdatingLocation()
+        }
+    }
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print(error.localizedDescription)
     }
 
 }

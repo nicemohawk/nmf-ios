@@ -49,20 +49,18 @@ class ScheduleTableViewController: UITableViewController {
         guard let scheduleCell = cell as? ScheduleTableViewCell else {
             return cell
         }
-        
-        scheduleCell.layer.cornerRadius = 15
-        
+                
         if let foundSchedule = DataStore.sharedInstance.scheduleItems?.data[indexPath.row] as? Schedule {
             
             let dateFormatter = NSDateFormatter()
-            dateFormatter.dateFormat = "MMM dd - hh:mma"
+            dateFormatter.dateFormat = "h:mma"
             let finalStartTime = dateFormatter.stringFromDate(foundSchedule.starttime!)
-            let finalEndTime = dateFormatter.stringFromDate(foundSchedule.endtime!)
+//            let finalEndTime = dateFormatter.stringFromDate(foundSchedule.endtime!)
             
             // Configure the cell...
             scheduleCell.artist.text = foundSchedule.artist
-            scheduleCell.startTime.text = "Start Time: \(finalStartTime)"
-            scheduleCell.endTime.text = "End Time: \(finalEndTime)"
+            scheduleCell.startTime.text = "\(finalStartTime)"
+//            scheduleCell.endTime.text = "End Time: \(finalEndTime)"
             scheduleCell.stage.text = foundSchedule.stage
         }
         
