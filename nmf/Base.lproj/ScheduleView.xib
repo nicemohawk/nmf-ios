@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArtistViewController" customModule="NMF" customModuleProvider="target">
+            <connections>
+                <outlet property="scheduleNIBView" destination="iN0-l3-epB" id="VDX-zq-pQx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ScheduleView" customModule="NMF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fp3-sX-d5d">
+                    <rect key="frame" x="48" y="12" width="50" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjw-oK-T3d">
+                    <rect key="frame" x="309" y="13" width="38" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.1215686277" green="0.1215686277" blue="0.1215686277" alpha="0.66000000000000003" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diq-fO-g8M">
+                    <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                    <color key="tintColor" red="0.12156862765550613" green="0.12156862765550613" blue="0.12156862765550613" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="glyphicons-49-star-empty"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rjw-oK-T3d" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fp3-sX-d5d" secondAttribute="trailing" constant="8" symbolic="YES" id="2vu-h5-R8m"/>
+                <constraint firstItem="fp3-sX-d5d" firstAttribute="leading" secondItem="diq-fO-g8M" secondAttribute="trailing" id="Do5-9w-dhO"/>
+                <constraint firstItem="diq-fO-g8M" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="RDA-2n-Rjj"/>
+                <constraint firstItem="rjw-oK-T3d" firstAttribute="baseline" secondItem="fp3-sX-d5d" secondAttribute="baseline" id="UK4-zz-Var"/>
+                <constraint firstItem="diq-fO-g8M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XAv-8E-xuz"/>
+                <constraint firstItem="rjw-oK-T3d" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="kOf-2q-iaq"/>
+                <constraint firstItem="fp3-sX-d5d" firstAttribute="centerY" secondItem="diq-fO-g8M" secondAttribute="centerY" id="kyE-L3-vZB"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="stage" destination="fp3-sX-d5d" id="wGm-t7-3E9"/>
+                <outlet property="starButton" destination="diq-fO-g8M" id="7yk-Xc-piw"/>
+                <outlet property="startTime" destination="rjw-oK-T3d" id="1oz-t6-STX"/>
+            </connections>
+            <point key="canvasLocation" x="264.5" y="238"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="glyphicons-49-star-empty" width="48" height="48"/>
+    </resources>
+</document>

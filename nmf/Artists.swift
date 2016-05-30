@@ -12,4 +12,9 @@ class Artists : NSObject{
     var artistName: String?
     var bio: String?
     var picture: String?
+    
+    var URL: String?
+    var YouTube: String?
+    
+    var starred: Bool = false
 }

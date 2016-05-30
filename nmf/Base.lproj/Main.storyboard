@@ -18,6 +18,11 @@
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -25,32 +30,33 @@
         <scene sceneID="hin-27-xzU">
             <objects>
                 <tableViewController id="Bs5-px-7hO" customClass="ScheduleTableViewController" customModule="NMF" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" id="1ND-YZ-59X">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" id="1ND-YZ-59X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.1215686277" green="0.1215686277" blue="0.1215686277" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="table cell" rowHeight="64" id="1MG-SB-SYR" customClass="ScheduleTableViewCell" customModule="NMF" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="64"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ScheduleCell" rowHeight="60" id="1MG-SB-SYR" customClass="ScheduleTableViewCell" customModule="NMF" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1MG-SB-SYR" id="P9U-Z5-NZ8">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MM8-KW-rmd">
-                                            <rect key="frame" x="50" y="23" width="54" height="24"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MM8-KW-rmd">
+                                            <rect key="frame" x="50" y="18" width="54" height="24"/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                             <color key="textColor" red="0.12156862765550613" green="0.12156862765550613" blue="0.12156862765550613" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="StartTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QZ-vM-JYz">
-                                            <rect key="frame" x="299.5" y="43" width="67.5" height="18"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StartTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QZ-vM-JYz">
+                                            <rect key="frame" x="299.5" y="33.5" width="67.5" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" red="0.12156862765550613" green="0.12156862765550613" blue="0.12156862765550613" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SB-ie-eZa">
-                                            <rect key="frame" x="0.0" y="11" width="48" height="48"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SB-ie-eZa">
+                                            <rect key="frame" x="0.0" y="6" width="48" height="48"/>
                                             <color key="tintColor" red="0.1215686277" green="0.1215686277" blue="0.1215686277" alpha="1" colorSpace="calibratedRGB"/>
                                             <state key="normal" image="glyphicons-49-star-empty"/>
                                             <state key="selected" image="glyphicons-50-star"/>
@@ -105,6 +111,7 @@
                                 <constraint firstItem="m4r-4r-K0e" firstAttribute="top" secondItem="oln-yK-Pcs" secondAttribute="top" id="zP6-Ne-q2C"/>
                             </constraints>
                         </view>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" image="glyphicons-50-star" id="VEq-Yp-kKm"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
@@ -112,10 +119,10 @@
             </objects>
             <point key="canvasLocation" x="1457.5" y="-261.5"/>
         </scene>
-        <!--Artists View Controller-->
+        <!--Artist View Controller-->
         <scene sceneID="d3B-BH-MgI">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ZEJ-OI-GpK" customClass="ArtistsViewController" customModule="NMF" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ZEJ-OI-GpK" customClass="ArtistViewController" customModule="NMF" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hTN-9r-1Qz"/>
                         <viewControllerLayoutGuide type="bottom" id="TA3-fU-VxO"/>
@@ -124,27 +131,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="767"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bai-eQ-ept">
-                                <rect key="frame" x="0.0" y="64" width="375" height="654"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bai-eQ-ept">
+                                <rect key="frame" x="0.0" y="64" width="375" height="659"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hFF-2A-qOl">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="654"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hFF-2A-qOl">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="980.5"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="vie-dt-Sfo">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="466"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="vie-dt-Sfo">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="471"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8Bz-Lh-FDc">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="239"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="254" translatesAutoresizingMaskIntoConstraints="NO" id="2iv-oH-hwf">
                                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                                                                <color key="backgroundColor" red="0.1215686277" green="0.1215686277" blue="0.1215686277" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="2iv-oH-hwf" secondAttribute="height" multiplier="1920:1080" id="I1z-VI-o1B"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;NAME&gt;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9Z-aI-w6w">
                                                                 <rect key="frame" x="0.0" y="215" width="375" height="24"/>
-                                                                <color key="backgroundColor" red="0.58881118880000005" green="1" blue="0.58881118880000005" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -157,14 +164,12 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BIO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mr8-cg-SYQ">
                                                                 <rect key="frame" x="8" y="8" width="359" height="20"/>
-                                                                <color key="backgroundColor" red="0.58881118880000005" green="1" blue="0.58881118880000005" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="&lt;Artist Bio&gt;" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fr0-1Y-cit" customClass="StackWidthLabel" customModule="NMF" customModuleProvider="target">
                                                                 <rect key="frame" x="8" y="28" width="359" height="20"/>
-                                                                <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                 <color key="textColor" white="0.22" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
@@ -172,73 +177,38 @@
                                                         </subviews>
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lGy-Fu-tjp">
-                                                        <rect key="frame" x="0.0" y="322" width="375" height="84"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" preservesSuperviewLayoutMargins="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lGy-Fu-tjp">
+                                                        <rect key="frame" x="0.0" y="322" width="375" height="86"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SCHEDULE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPH-ja-MvC">
                                                                 <rect key="frame" x="8" y="8" width="359" height="20"/>
-                                                                <color key="backgroundColor" red="0.58881118880000005" green="1" blue="0.58881118880000005" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MYz-h0-AEs">
-                                                                <rect key="frame" x="8" y="28" width="359" height="48"/>
-                                                                <subviews>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGb-hf-DvU">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="359" height="48"/>
-                                                                        <subviews>
-                                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="glyphicons-49-star-empty" translatesAutoresizingMaskIntoConstraints="NO" id="JhD-nB-BQg">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
-                                                                            </imageView>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFN-tY-gZv">
-                                                                                <rect key="frame" x="48" y="12" width="50" height="23"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                                <nil key="highlightedColor"/>
-                                                                            </label>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoD-eC-ej2">
-                                                                                <rect key="frame" x="313" y="13" width="38" height="21"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                                <color key="textColor" red="0.12156862765550613" green="0.12156862765550613" blue="0.12156862765550613" alpha="0.66000000000000003" colorSpace="calibratedRGB"/>
-                                                                                <nil key="highlightedColor"/>
-                                                                            </label>
-                                                                        </subviews>
-                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="48" id="B7L-US-UmH"/>
-                                                                            <constraint firstItem="LoD-eC-ej2" firstAttribute="centerY" secondItem="QGb-hf-DvU" secondAttribute="centerY" id="BYg-bf-LIe"/>
-                                                                            <constraint firstItem="LoD-eC-ej2" firstAttribute="trailing" secondItem="QGb-hf-DvU" secondAttribute="trailingMargin" id="RQm-0E-67Z"/>
-                                                                            <constraint firstItem="FFN-tY-gZv" firstAttribute="leading" secondItem="JhD-nB-BQg" secondAttribute="trailing" id="ZKw-La-drL"/>
-                                                                            <constraint firstItem="JhD-nB-BQg" firstAttribute="centerY" secondItem="QGb-hf-DvU" secondAttribute="centerY" id="b5M-Ky-qNf"/>
-                                                                            <constraint firstItem="JhD-nB-BQg" firstAttribute="leading" secondItem="QGb-hf-DvU" secondAttribute="leading" id="l1H-I5-bVk"/>
-                                                                            <constraint firstItem="FFN-tY-gZv" firstAttribute="centerY" secondItem="QGb-hf-DvU" secondAttribute="centerY" id="lgW-9f-YQd"/>
-                                                                        </constraints>
-                                                                    </view>
-                                                                </subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MYz-h0-AEs">
+                                                                <rect key="frame" x="8" y="28" width="359" height="50"/>
                                                             </stackView>
                                                         </subviews>
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="k51-8G-NwD">
-                                                        <rect key="frame" x="0.0" y="420" width="375" height="46"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" preservesSuperviewLayoutMargins="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="k51-8G-NwD">
+                                                        <rect key="frame" x="0.0" y="422" width="375" height="49"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaU-iz-eZU">
-                                                                <rect key="frame" x="8" y="8" width="56" height="30"/>
-                                                                <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaU-iz-eZU">
+                                                                <rect key="frame" x="8" y="8" width="181" height="33"/>
+                                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                                 <state key="normal" title="Website"/>
+                                                                <connections>
+                                                                    <action selector="websiteButtonTapped:" destination="ZEJ-OI-GpK" eventType="touchUpInside" id="7Gm-rj-OfQ"/>
+                                                                </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="das-hK-weX">
-                                                                <rect key="frame" x="153" y="8" width="67" height="30"/>
-                                                                <color key="backgroundColor" red="0.58881118880000005" green="1" blue="0.58881118880000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <state key="normal" title="View Map"/>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJZ-p4-VQ2">
-                                                                <rect key="frame" x="308" y="8" width="59" height="30"/>
-                                                                <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJZ-p4-VQ2">
+                                                                <rect key="frame" x="189" y="8" width="178" height="33"/>
+                                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                                 <state key="normal" title="YouTube"/>
                                                                 <connections>
-                                                                    <action selector="wikipediaButtonTapped:" destination="ZEJ-OI-GpK" eventType="touchUpInside" id="KAP-cR-VVN"/>
+                                                                    <action selector="youtubeButtonTapped:" destination="ZEJ-OI-GpK" eventType="touchUpInside" id="MJD-wV-okt"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -278,27 +248,18 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="WCE-a1-zQN">
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="9Dz-tb-ezy"/>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="action" id="9Dz-tb-ezy"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="767"/>
                     <connections>
                         <outlet property="artistBio" destination="Fr0-1Y-cit" id="e8x-Sk-8qS"/>
-                        <outlet property="artistImage" destination="2iv-oH-hwf" id="GB9-42-bCE"/>
+                        <outlet property="artistImageView" destination="2iv-oH-hwf" id="GB9-42-bCE"/>
                         <outlet property="artistName" destination="i9Z-aI-w6w" id="vwt-0A-s1r"/>
-                        <outlet property="submitRatingButton" destination="YaU-iz-eZU" id="Ohz-qf-g1L"/>
-                        <outlet property="whatToSeeLabel" destination="Fr0-1Y-cit" id="dCy-OC-zYZ"/>
-                        <outletCollection property="headingLabels" destination="i9Z-aI-w6w" collectionClass="NSMutableArray" id="57r-UI-eJN"/>
-                        <outletCollection property="backgroundColoredViews" destination="i9Z-aI-w6w" collectionClass="NSMutableArray" id="MfG-Rp-rZb"/>
-                        <outletCollection property="backgroundColoredViews" destination="Fr0-1Y-cit" collectionClass="NSMutableArray" id="TaA-Ue-oCP"/>
-                        <outletCollection property="backgroundColoredViews" destination="Mr8-cg-SYQ" collectionClass="NSMutableArray" id="3hN-Fs-q1l"/>
-                        <outletCollection property="headingLabels" destination="Mr8-cg-SYQ" collectionClass="NSMutableArray" id="e7Z-ea-Sde"/>
-                        <outletCollection property="backgroundColoredViews" destination="FJZ-p4-VQ2" collectionClass="NSMutableArray" id="NO3-nK-eF0"/>
-                        <outletCollection property="backgroundColoredViews" destination="YaU-iz-eZU" collectionClass="NSMutableArray" id="pzK-cX-r5Y"/>
-                        <outletCollection property="backgroundColoredViews" destination="das-hK-weX" collectionClass="NSMutableArray" id="L7F-JA-LQS"/>
-                        <outletCollection property="headingLabels" destination="FPH-ja-MvC" collectionClass="NSMutableArray" id="lXr-Wl-fGc"/>
-                        <outletCollection property="backgroundColoredViews" destination="FPH-ja-MvC" collectionClass="NSMutableArray" id="tj8-mF-4P5"/>
+                        <outlet property="scheduleStackView" destination="MYz-h0-AEs" id="FSQ-4B-Pzp"/>
+                        <outlet property="websiteButton" destination="YaU-iz-eZU" id="Pfj-QK-K2P"/>
+                        <outlet property="youTubeButton" destination="FJZ-p4-VQ2" id="QQU-wb-yIF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bY-uL-ulQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -333,26 +294,26 @@
         <!--Info-->
         <scene sceneID="7Jb-Ba-ySu">
             <objects>
-                <viewController title="Info" id="BIc-9n-g6A" sceneMemberID="viewController">
+                <viewController title="Info" id="BIc-9n-g6A" customClass="InfoViewController" customModule="NMF" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1DZ-rO-X06"/>
                         <viewControllerLayoutGuide type="bottom" id="IfD-E4-kVT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kRg-t5-bui">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2750"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0re-0T-JCs">
-                                <rect key="frame" x="0.0" y="64" width="375" height="1087"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0re-0T-JCs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="2750"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OMc-tT-lV7">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2364"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMc-tT-lV7">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="4421"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eSr-Sy-2HS">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="873"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="2601"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aOE-XO-PGa">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="666"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nelsonville Music Festival 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEp-nM-CdO">
                                                                 <rect key="frame" x="8" y="8" width="359" height="26"/>
@@ -366,11 +327,31 @@
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hFW-se-ceE">
+                                                                <rect key="frame" x="8" y="68" width="359" height="590"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="OUR STORY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oht-oy-c5j">
+                                                                        <rect key="frame" x="8" y="8" width="343" height="21"/>
+                                                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ezW-cO-Cg8">
+                                                                        <rect key="frame" x="8" y="29" width="343" height="554"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <mutableString key="text">Andrew Bird said of the Nelsonville Music Festival, “It’s the perfect size festival. Any bigger and you’d lose something.” The Nelsonville Music Festival continues to be an annual favorite for many music lovers, and one of the best festivals in the Midwest. Set in the beautiful, rolling hills of Southeast Ohio, NMF continues to gain fans who want a music festival with a more personal experience. Catch live music on multiple stages including a small no-fi cabin and a picturesque porch stage in addition to our main stage. Over four days, NMF offers multiple stages of music along with camping on site, kids activities, local art vendors, food, and a beer garden. The Nelsonville Music Festival takes sustainability seriously and is a zero waste event, diverting 94% of the waste created in 2015. Past performers have included Wilco, The Flaming Lips, Willie Nelson, Loretta Lynn, John Prine, The Avett Brothers, Merle Haggard, Dinosaur Jr., St. Vincent, Jason Isbell, Cat Power, Iron &amp; Wine, Andrew Bird, Neko Case, Yo La Tengo, George Jones, Gogol Bordello, and many more. The Nelsonville Music Festival is a production of Stuart’s Opera House, a historic, non-profit theater located in Nelsonville that features over 75 events a year including live music, theater, films, educational programming and more. You can find out more about Stuart’s by visiting stuartsoperahouse.org.</mutableString>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                                                    </textView>
+                                                                </subviews>
+                                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                            </stackView>
                                                         </subviews>
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ihK-3K-hH0">
-                                                        <rect key="frame" x="0.0" y="88" width="375" height="644"/>
+                                                        <rect key="frame" x="0.0" y="686" width="375" height="662"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GETTING HERE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M44-bh-8xP">
                                                                 <rect key="frame" x="8" y="8" width="359" height="21"/>
@@ -387,7 +368,7 @@
                                                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                                                             </textView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hyv-tn-bEB">
-                                                                <rect key="frame" x="8" y="117" width="359" height="519"/>
+                                                                <rect key="frame" x="8" y="117" width="359" height="537"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BIKE NMF" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWw-bU-7qk">
                                                                         <rect key="frame" x="8" y="8" width="343" height="21"/>
@@ -396,21 +377,21 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2WA-Cz-x7X">
-                                                                        <rect key="frame" x="8" y="29" width="343" height="231"/>
+                                                                        <rect key="frame" x="8" y="29" width="343" height="249"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                        <string key="text">NMF partners with Athens Bicycle to offer safe and easy bike parking at the NMF Bike Corral during the festival along with offering help with minor repairs and even bike rentals. The entrance to NMF is located right on the wonderful 21-mile Hockhocking Adena Bikeway which means it’s the perfect location for car-free access. Park your bike right across from the main gate and get it whenever you want for a ride! The bike corral has set hours and then locks up for the night offering safe, overnight parking.</string>
+                                                                        <mutableString key="text">NMF partners with Athens Bicycle to offer safe and easy bike parking at the NMF Bike Corral during the festival along with offering help with minor repairs and even bike rentals. The entrance to NMF is located right on the wonderful 21-mile Hockhocking Adena Bikeway which means it’s the perfect location for car-free access. Park your bike right across from the main gate and get it whenever you want for a ride! The bike corral has set hours and then locks up for the night offering safe, overnight parking. More Info available at nelsonvillefest.org/about-nmf/bike-nmf.</mutableString>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                                                                     </textView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GOBUS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ct-Cp-3h1">
-                                                                        <rect key="frame" x="8" y="260" width="343" height="21"/>
+                                                                        <rect key="frame" x="8" y="278" width="343" height="21"/>
                                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Yn7-FU-za7">
-                                                                        <rect key="frame" x="8" y="280" width="343" height="231"/>
+                                                                        <rect key="frame" x="8" y="298" width="343" height="231"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <mutableString key="text">GoBus is an Ohio intercity bus program designed to provide rural communities with transportation to urban centers. There is a bus stop for GoBus right in the Hocking College campus in the main parking lot used for Nelsonville Music Festival, right across from the campground. GoBus stops at Hocking College six times per day, 365 days per year connecting with Columbus, Athens, Parkersburg, Cincinnati, Cleveland, and more. To get more information including all the stops along the routes, visit ridegobus.com or call 1.888.954.6287.</mutableString>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -423,47 +404,103 @@
                                                         </subviews>
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hFW-se-ceE">
-                                                        <rect key="frame" x="0.0" y="751" width="375" height="56"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fYX-2D-z4O">
+                                                        <rect key="frame" x="0.0" y="1367" width="375" height="250"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BIO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oht-oy-c5j">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="KIDS + FAMILIES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkT-Yq-vVc">
                                                                 <rect key="frame" x="8" y="8" width="359" height="21"/>
-                                                                <color key="backgroundColor" red="0.58881118880000005" green="1" blue="0.58881118880000005" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="&lt;Artist Bio&gt;" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ld-4q-Nza" customClass="StackWidthLabel" customModule="NMF" customModuleProvider="target">
-                                                                <rect key="frame" x="8" y="29" width="359" height="20"/>
-                                                                <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                                <color key="textColor" white="0.22" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wLg-gO-6vt">
+                                                                <rect key="frame" x="8" y="29" width="359" height="213"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <string key="text">// FREE ADMISSION to the Nelsonville Music Festival for all children 12 and under
+
+// Discounted Weekend Passes available for Teens (ages 13-17)
+
+// No more than 4 children in the festival or any campsite per one supervising adult, UNDER 18.
+
+More info and activities for kids available at nelsonvillefest.org/kids.</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="c2F-X7-jZG">
+                                                        <rect key="frame" x="0.0" y="1637" width="375" height="501"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SAFETY + SECURITY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEk-FB-eT2">
+                                                                <rect key="frame" x="8" y="8" width="359" height="21"/>
+                                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kj0-1o-jFl">
+                                                                <rect key="frame" x="8" y="29" width="359" height="464"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <mutableString key="text">All jackets and bags will be inspected upon entry or reentry to the festival site. Purses, diaper bags and other small personal bags are allowed but will be inspected at all gate entrances.
+
+THE FOLLOWING ITEMS ARE NOT PERMITTED AT THE FESTIVAL SITE:
+
+// Cans, glass bottles, coolers or other similar containers
+// Alcoholic beverages of any kind. Beer is available on-site
+// Illegal drugs
+// Weapons and dangerous devices of any type
+// Fireworks
+
+Nelsonville Music Festival Staff reserves the right to make the final determination on prohibited items. In the event that prohibited items are revealed in the inspection, guests will be asked to dispose of the items or return them to their vehicles before re-entering the festival site.
+
+Thank you for your cooperation with these safety policies.</mutableString>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XKa-AP-oO6">
+                                                        <rect key="frame" x="0.0" y="2157" width="375" height="375"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SUSTAINABILITY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwn-0n-YgM">
+                                                                <rect key="frame" x="8" y="8" width="359" height="21"/>
+                                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Li-wA-tW4">
+                                                                <rect key="frame" x="8" y="29" width="359" height="339"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <mutableString key="text">For the year of 2016, the Nelsonville Music Festival will again work with Rural Action’s Zero Waste Program to provide waste diversion and materials management within the festival grounds. This is the 8th year of our continued partnership. Working hard over the years our system has been refined and improved in our effort to strive for ‘Zero Waste,’ after hitting a 96.5% diversion rate in 2014, we still managed to make a 94% diversion rate in 2015. Our team collected and sorted through all the materials generated within the festival grounds in order to separate both recyclable and compostable materials and prevent them from entering the landfill. This report contains the results of this year’s efforts, the process used to achieve these results, as well as opportunities and suggestions for future improvement and greater success.</mutableString>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                                            </textView>
                                                         </subviews>
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="fvE-gt-26N">
-                                                        <rect key="frame" x="0.0" y="827" width="375" height="46"/>
+                                                        <rect key="frame" x="0.0" y="2552" width="375" height="49"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boQ-8c-sJJ">
-                                                                <rect key="frame" x="8" y="8" width="59" height="30"/>
-                                                                <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                                                <state key="normal" title="YouTube"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usI-XM-hW4">
+                                                                <rect key="frame" x="8" y="8" width="112" height="33"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                                <state key="normal" title="Buy Tickets…"/>
                                                                 <connections>
-                                                                    <action selector="wikipediaButtonTapped:" destination="ZEJ-OI-GpK" eventType="touchUpInside" id="Bgv-qB-fnZ"/>
+                                                                    <action selector="buyTixAction:" destination="BIc-9n-g6A" eventType="touchUpInside" id="5QL-rE-s23"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZS-E3-kb7">
-                                                                <rect key="frame" x="156" y="8" width="67" height="30"/>
-                                                                <color key="backgroundColor" red="0.58881118880000005" green="1" blue="0.58881118880000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <state key="normal" title="View Map"/>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usI-XM-hW4">
-                                                                <rect key="frame" x="311" y="8" width="56" height="30"/>
-                                                                <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <state key="normal" title="Website"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boQ-8c-sJJ">
+                                                                <rect key="frame" x="178" y="8" width="189" height="33"/>
+                                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                                <state key="normal" title="More info on the web…"/>
+                                                                <connections>
+                                                                    <action selector="moreInfoAction:" destination="BIc-9n-g6A" eventType="touchUpInside" id="Oqr-qe-41q"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -492,20 +529,37 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="0re-0T-JCs" firstAttribute="top" secondItem="kRg-t5-bui" secondAttribute="top" id="Jsd-zw-eK1"/>
                             <constraint firstAttribute="trailing" secondItem="0re-0T-JCs" secondAttribute="trailing" id="P4J-V9-cfh"/>
                             <constraint firstItem="0re-0T-JCs" firstAttribute="leading" secondItem="kRg-t5-bui" secondAttribute="leading" id="a8D-Ac-2GJ"/>
                             <constraint firstAttribute="trailing" secondItem="OMc-tT-lV7" secondAttribute="trailing" id="f0T-eW-0ry"/>
-                            <constraint firstItem="IfD-E4-kVT" firstAttribute="top" secondItem="0re-0T-JCs" secondAttribute="bottom" id="gZr-mJ-pen"/>
-                            <constraint firstItem="0re-0T-JCs" firstAttribute="top" secondItem="1DZ-rO-X06" secondAttribute="bottom" id="y52-Jf-Ty4"/>
+                            <constraint firstAttribute="bottom" secondItem="0re-0T-JCs" secondAttribute="bottom" id="sw2-l2-7Vc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="JkD-r5-KGH"/>
+                    <navigationItem key="navigationItem" id="JkD-r5-KGH">
+                        <nil key="title"/>
+                        <view key="titleView" opaque="NO" contentMode="scaleToFill" id="LN2-v1-OXU">
+                            <rect key="frame" x="134" y="5.5" width="107" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inverse nmf logo" translatesAutoresizingMaskIntoConstraints="NO" id="9Yg-Dg-ZS4">
+                                    <rect key="frame" x="0.0" y="0.0" width="107" height="33"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="9Yg-Dg-ZS4" firstAttribute="top" secondItem="LN2-v1-OXU" secondAttribute="top" id="Oja-AW-Onr"/>
+                                <constraint firstItem="9Yg-Dg-ZS4" firstAttribute="leading" secondItem="LN2-v1-OXU" secondAttribute="leading" id="hf0-yN-kfj"/>
+                                <constraint firstAttribute="bottom" secondItem="9Yg-Dg-ZS4" secondAttribute="bottom" id="pFV-Km-DoY"/>
+                                <constraint firstAttribute="trailing" secondItem="9Yg-Dg-ZS4" secondAttribute="trailing" id="ym7-Yd-1fV"/>
+                            </constraints>
+                        </view>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="1200"/>
+                    <size key="freeformSize" width="375" height="2750"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pvi-Ha-Lvs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1457.5" y="779"/>
+            <point key="canvasLocation" x="1457.5" y="1542"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="aCI-3v-a09">
@@ -566,13 +620,22 @@
                         <leftBarButtonItems>
                             <barButtonItem image="ohio logo inverse" id="i3D-IM-bqE">
                                 <color key="tintColor" red="0.97647058959999999" green="0.96862745289999996" blue="0.79215687509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="nmfButtonAction:" destination="sbA-sI-UWW" id="4sd-SX-baA"/>
+                                </connections>
                             </barButtonItem>
                             <barButtonItem image="glyphicons-234-direction" id="6cW-um-zu1">
                                 <color key="tintColor" red="0.97647058959999999" green="0.96862745289999996" blue="0.79215687509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="locationButtonAction:" destination="sbA-sI-UWW" id="C6I-JV-ypp"/>
+                                </connections>
                             </barButtonItem>
                         </leftBarButtonItems>
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="PgP-fG-6oQ">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="action" id="PgP-fG-6oQ">
                             <color key="tintColor" red="0.97647058959999999" green="0.96862745289999996" blue="0.79215687509999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="actionButtonAction:" destination="sbA-sI-UWW" id="F0z-Z2-kLG"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -582,7 +645,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="40X-IC-e0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1457.5" y="-1157.5"/>
+            <point key="canvasLocation" x="1457.5" y="-1093.5"/>
         </scene>
         <!--Map-->
         <scene sceneID="Qhr-DC-p2H">
@@ -603,7 +666,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wdi-Oc-siE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="645.5" y="-1157.5"/>
+            <point key="canvasLocation" x="645.5" y="-1093.5"/>
         </scene>
         <!--Info-->
         <scene sceneID="B3b-Po-QvC">
@@ -624,7 +687,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lK0-re-61B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="645.5" y="779.5"/>
+            <point key="canvasLocation" x="645.5" y="587.5"/>
         </scene>
     </scenes>
     <resources>

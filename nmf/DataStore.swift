@@ -15,9 +15,8 @@ extension Fault : ErrorType {
 }
 
 class DataStore: NSObject {
-    var scheduleItems: BackendlessCollection?
-    var artistsItems: [Artists]?
-    
+    var scheduleItems = [Schedule]()
+    var artistItems = [Artists]()
     
     class var sharedInstance: DataStore {
         return dataStoreSingleton
@@ -28,27 +27,35 @@ class DataStore: NSObject {
         let dataStore = backendless.data.of(Schedule.ofClass())
         
         dataStore.find({ (scheduleItemsCollection) in
-            self.scheduleItems = scheduleItemsCollection
+            if let items = scheduleItemsCollection.data as? [Schedule] {
+                self.scheduleItems = items
+            } else {
+                self.scheduleItems = []
+            }
             
             completion(nil)
         }) { (fault) in
-            self.scheduleItems = nil
+            self.scheduleItems = []
             print(fault)
             
             completion(fault)
         }
     }
     
-    func updateArtistsItems(artistName: String, completion: (ErrorType?) -> Void) -> Void {
+    func updateArtistItems(completion: (ErrorType?) -> Void) -> Void {
         let backendless = Backendless.sharedInstance()
         let dataStore = backendless.data.of(Artists.ofClass())
         
         dataStore.find({ (artistsItemsCollection) in
-            self.artistsItems = artistsItemsCollection.data as? [Artists]
+            if let items = artistsItemsCollection.data as? [Artists] {
+                self.artistItems = items
+            } else {
+                self.artistItems = []
+            }
             
             completion(nil)
         }) { (fault) in
-            self.artistsItems = nil
+            self.artistItems = []
             print(fault)
             
             completion(fault)
@@ -67,7 +74,7 @@ class DataStore: NSObject {
             
             completion(foundArtist, nil)
         }) { (fault) in
-            self.artistsItems = nil
+            self.artistItems = []
             print(fault)
             
             completion(nil, fault)

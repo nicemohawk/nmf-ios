@@ -33,6 +33,9 @@
 		A5DEE7011CB553C100704688 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEE7001CB553C100704688 /* Schedule.swift */; };
 		A5E8382E1CB84D060077D92D /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E8382D1CB84D060077D92D /* ScheduleTableViewCell.swift */; };
 		B5026C961CFBB66B009F1877 /* mapdata in Resources */ = {isa = PBXBuildFile; fileRef = B5026C951CFBB66B009F1877 /* mapdata */; };
+		B5026C9A1CFC2A4D009F1877 /* ScheduleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5026C981CFC2A4C009F1877 /* ScheduleView.xib */; };
+		B5026C9D1CFC2CFC009F1877 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5026C9C1CFC2CFC009F1877 /* ScheduleView.swift */; };
+		B5026C9F1CFC48EA009F1877 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5026C9E1CFC48EA009F1877 /* InfoViewController.swift */; };
 		B59B0DEC1CF8AD7200B38F5A /* UIColor+NMF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B0DEB1CF8AD7200B38F5A /* UIColor+NMF.swift */; };
 		B5A5340C1CF910BE005BAF8E /* StackWidthLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5340B1CF910BE005BAF8E /* StackWidthLabel.swift */; };
 		B5A5340E1CFAB39D005BAF8E /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5A5340D1CFAB39D005BAF8E /* Montserrat-Regular.otf */; };
@@ -251,6 +254,9 @@
 		A5DEE7001CB553C100704688 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		A5E8382D1CB84D060077D92D /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		B5026C951CFBB66B009F1877 /* mapdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mapdata; sourceTree = "<group>"; };
+		B5026C991CFC2A4C009F1877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ScheduleView.xib; sourceTree = "<group>"; };
+		B5026C9C1CFC2CFC009F1877 /* ScheduleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		B5026C9E1CFC48EA009F1877 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		B59B0DEB1CF8AD7200B38F5A /* UIColor+NMF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+NMF.swift"; sourceTree = "<group>"; };
 		B5A5340B1CF910BE005BAF8E /* StackWidthLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackWidthLabel.swift; sourceTree = "<group>"; };
 		B5A5340D1CFAB39D005BAF8E /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
@@ -314,18 +320,17 @@
 		2C5B8B4D1C9A13E900C6A893 /* nmf */ = {
 			isa = PBXGroup;
 			children = (
-				B59B0DEA1CF8AD4200B38F5A /* extensions */,
 				2C5B8B4E1C9A13E900C6A893 /* AppDelegate.swift */,
 				A53F95FC1CC678DA0041EECA /* ArtistsViewController.swift */,
 				A527604F1CB415B3003B62AD /* ScheduleTableViewController.swift */,
 				B5A5340F1CFAB683005BAF8E /* MapViewController.swift */,
-				A52B2FEC1CC18ABD00F05700 /* DataStore.swift */,
-				A5DEE7001CB553C100704688 /* Schedule.swift */,
-				A53D60391CAC5B6900B97E49 /* Artists.swift */,
-				A5E8382D1CB84D060077D92D /* ScheduleTableViewCell.swift */,
-				B5A5340B1CF910BE005BAF8E /* StackWidthLabel.swift */,
+				B5026C9E1CFC48EA009F1877 /* InfoViewController.swift */,
+				B5026C9B1CFC2B7A009F1877 /* Views */,
+				B5026C971CFBDDE7009F1877 /* Data Model */,
+				B59B0DEA1CF8AD4200B38F5A /* Extensions */,
 				2C5B8B541C9A13E900C6A893 /* Main.storyboard */,
 				2C5B8B591C9A13E900C6A893 /* LaunchScreen.storyboard */,
+				B5026C981CFC2A4C009F1877 /* ScheduleView.xib */,
 				2C5B8B571C9A13E900C6A893 /* Assets.xcassets */,
 				2C5B8B5C1C9A13E900C6A893 /* Info.plist */,
 				B5A5340D1CFAB39D005BAF8E /* Montserrat-Regular.otf */,
@@ -708,12 +713,32 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
-		B59B0DEA1CF8AD4200B38F5A /* extensions */ = {
+		B5026C971CFBDDE7009F1877 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				A52B2FEC1CC18ABD00F05700 /* DataStore.swift */,
+				A5DEE7001CB553C100704688 /* Schedule.swift */,
+				A53D60391CAC5B6900B97E49 /* Artists.swift */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
+		B5026C9B1CFC2B7A009F1877 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5E8382D1CB84D060077D92D /* ScheduleTableViewCell.swift */,
+				B5026C9C1CFC2CFC009F1877 /* ScheduleView.swift */,
+				B5A5340B1CF910BE005BAF8E /* StackWidthLabel.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B59B0DEA1CF8AD4200B38F5A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				B59B0DEB1CF8AD7200B38F5A /* UIColor+NMF.swift */,
 			);
-			name = extensions;
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -806,6 +831,7 @@
 				2C5B8B5B1C9A13E900C6A893 /* LaunchScreen.storyboard in Resources */,
 				B5026C961CFBB66B009F1877 /* mapdata in Resources */,
 				2C5B8B581C9A13E900C6A893 /* Assets.xcassets in Resources */,
+				B5026C9A1CFC2A4D009F1877 /* ScheduleView.xib in Resources */,
 				2C5B8B561C9A13E900C6A893 /* Main.storyboard in Resources */,
 				B5A5340E1CFAB39D005BAF8E /* Montserrat-Regular.otf in Resources */,
 			);
@@ -834,6 +860,8 @@
 				B59B0DEC1CF8AD7200B38F5A /* UIColor+NMF.swift in Sources */,
 				A53D603A1CAC5B6900B97E49 /* Artists.swift in Sources */,
 				B5A5340C1CF910BE005BAF8E /* StackWidthLabel.swift in Sources */,
+				B5026C9D1CFC2CFC009F1877 /* ScheduleView.swift in Sources */,
+				B5026C9F1CFC48EA009F1877 /* InfoViewController.swift in Sources */,
 				A52760501CB415B3003B62AD /* ScheduleTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -871,6 +899,14 @@
 				2C5B8B5A1C9A13E900C6A893 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B5026C981CFC2A4C009F1877 /* ScheduleView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5026C991CFC2A4C009F1877 /* Base */,
+			);
+			name = ScheduleView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -970,7 +1006,7 @@
 					"$(PROJECT_DIR)/lib/**",
 				);
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.nmf;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicemohawk.nmf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/lib/backendless/include/Backendless-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -988,7 +1024,7 @@
 					"$(PROJECT_DIR)/lib/**",
 				);
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.nmf;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicemohawk.nmf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/lib/backendless/include/Backendless-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;

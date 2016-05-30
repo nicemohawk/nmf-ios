@@ -10,122 +10,115 @@ import UIKit
 import SafariServices
 
 
-class ArtistsViewController: UIViewController {
+class ArtistViewController: UIViewController {
+    var artist: Artists?
+    var scheduledTimes: [Schedule]?
     
     @IBOutlet weak var artistName: UILabel!
     @IBOutlet weak var artistBio: UILabel!
     
-    @IBOutlet weak var artistImage: UIImageView!
-    @IBOutlet weak var artistImageHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var artistImageView: UIImageView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let dataStore = DataStore.sharedInstance
-        
-        dataStore.getArtistByName("Randy Newman") { (artist, error) in
-            if let foundArtist = artist {
-                let url = NSURL(string: foundArtist.picture!)
-                self.artistName.text = foundArtist.artistName
-                self.artistBio.text = foundArtist.bio
-                self.artistImage.image = UIImage(data: NSData(contentsOfURL: url!)!)
-            }
-        }
-        
-        super.viewDidLoad()
-        
-        // Clear background colors from labels and buttons
-        for view in backgroundColoredViews {
-            view.backgroundColor = UIColor.clearColor()
-        }
-        
-        // Set the kerning to 1 to increase spacing between letters
-        headingLabels.forEach { $0.attributedText = NSAttributedString(string: $0.text!, attributes: [NSKernAttributeName: 1]) }
-    }
+    @IBOutlet weak var websiteButton: UIButton!
+    @IBOutlet weak var youTubeButton: UIButton!
     
-    
-    
-    /// old code
-    
-    
-    var vacationSpot: AnyObject!
-    
-    @IBOutlet var backgroundColoredViews: [UIView]!
-    @IBOutlet var headingLabels: [UILabel]!
-    
-    @IBOutlet weak var whyVisitLabel: UILabel!
-    @IBOutlet weak var whatToSeeLabel: UILabel!
-    @IBOutlet weak var weatherInfoLabel: UILabel!
-    @IBOutlet weak var userRatingLabel: UILabel!
-    @IBOutlet weak var weatherHideOrShowButton: UIButton!
-    @IBOutlet weak var submitRatingButton: UIButton!
-    
-    var shouldHideWeatherInfoSetting: Bool {
-        get {
-            return NSUserDefaults.standardUserDefaults().boolForKey("shouldHideWeatherInfo")
-        }
-        set {
-            NSUserDefaults.standardUserDefaults().setBool(newValue, forKey: "shouldHideWeatherInfo")
-        }
-    }
+    @IBOutlet weak var scheduleStackView: UIStackView!
+    @IBOutlet weak var scheduleNIBView: ScheduleView!
     
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
-//        
-//        // Clear background colors from labels and buttons
-//        for view in backgroundColoredViews {
-//            view.backgroundColor = UIColor.clearColor()
-//        }
-//        
-//        // Set the kerning to 1 to increase spacing between letters
-//        headingLabels.forEach { $0.attributedText = NSAttributedString(string: $0.text!, attributes: [NSKernAttributeName: 1]) }
-//        
-////        title = vacationSpot.name
-//        
-////        whyVisitLabel.text = vacationSpot.whyVisit
-////        whatToSeeLabel.text = vacationSpot.whatToSee
-////        weatherInfoLabel.text = vacationSpot.weatherInfo
-////        userRatingLabel.text = String(count: vacationSpot.userRating, repeatedValue: Character("★"))
-//        
-////        updateWeatherInfoViews(hideWeatherInfo: shouldHideWeatherInfoSetting, animated: false)
 //    }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-//        let currentUserRating = NSUserDefaults.standardUserDefaults().integerForKey("currentUserRating-\(vacationSpot.identifier)")
-        
-//        if currentUserRating > 0 {
-//            submitRatingButton.setTitle("Update Rating (\(currentUserRating))", forState: .Normal)
-//        } else {
-//            submitRatingButton.setTitle("Submit Rating", forState: .Normal)
-//        }
-    }
-    
-    @IBAction func weatherHideOrShowButtonTapped(sender: UIButton) {
-        let shouldHideWeatherInfo = sender.titleLabel!.text! == "Hide"
-        updateWeatherInfoViews(hideWeatherInfo: shouldHideWeatherInfo, animated: true)
-        shouldHideWeatherInfoSetting = shouldHideWeatherInfo
-    }
-    
-    func updateWeatherInfoViews(hideWeatherInfo shouldHideWeatherInfo: Bool, animated: Bool) {
-        let newButtonTitle = shouldHideWeatherInfo ? "Show" : "Hide"
-        weatherHideOrShowButton.setTitle(newButtonTitle, forState: .Normal)
-        
-        if animated {
-            UIView.animateWithDuration(0.3) {
-                self.weatherInfoLabel.hidden = shouldHideWeatherInfo
+        if let foundArtist = artist {
+            self.artistName.text = foundArtist.artistName
+            self.artistBio.text = foundArtist.bio
+            
+            if let pictureURLString = foundArtist.picture,
+                let imageURL = NSURL(string: pictureURLString) {
+                
+                self.artistImageView.downloadFromURL(imageURL: imageURL, contentMode: .ScaleAspectFit)
             }
-        } else {
-            weatherInfoLabel.hidden = shouldHideWeatherInfo
+
+            if let urlString = foundArtist.URL,
+                let _ = NSURL(string: urlString) {
+                websiteButton.enabled = true
+            } else {
+                websiteButton.enabled = false
+            }
+            
+            if let urlString = foundArtist.YouTube,
+                let _ = NSURL(string: urlString) {
+                youTubeButton.enabled = true
+            } else {
+                youTubeButton.enabled = false
+            }
+            
+            buildScheduleStack()
         }
     }
     
-    @IBAction func wikipediaButtonTapped(sender: UIButton) {
-        let safariVC = SFSafariViewController(URL: NSURL(string:"http://google.com")!)
-        safariVC.delegate = self
-        presentViewController(safariVC, animated: true, completion: nil)
+    func buildScheduleStack() {
+        let subviews = scheduleStackView.arrangedSubviews
+        
+        for view in subviews {
+            scheduleStackView.removeArrangedSubview(view)
+            view.removeFromSuperview()
+        }
+        
+        guard let times = scheduledTimes,
+            let filePath = NSBundle.mainBundle().pathForResource("ScheduleView", ofType: "nib"),
+            let nibData = NSData(contentsOfFile: filePath) else {
+            scheduleStackView.hidden = true
+            
+            return
+        }
+        
+        scheduleStackView.hidden = false
+        
+        for item in times {
+            UINib(data: nibData, bundle: nil).instantiateWithOwner(self, options: nil)
+            
+            setupScheduleView(scheduleNIBView, scheduledTime: item)
+            scheduleNIBView = nil
+        }
     }
+    
+    func setupScheduleView(scheduleView: ScheduleView, scheduledTime: Schedule) {
+        scheduleView.scheduleTime = scheduledTime
+        
+        scheduleView.startTime.text = scheduledTime.dateString()
+        scheduleView.stage.text = scheduledTime.stage
+        
+        // set up starring
+        
+        scheduleView.widthAnchor.constraintEqualToConstant(CGRectGetWidth(scheduleStackView.bounds)).active = true
+        scheduleView.heightAnchor.constraintEqualToConstant(48.0).active = true
+        
+        scheduleStackView.addArrangedSubview(scheduleView)
+        
+        self.view.setNeedsLayout()
+    }
+    
+    @IBAction func websiteButtonTapped(sender: UIButton) {
+        if let urlString = artist?.URL,
+            let websiteURL = NSURL(string: urlString) {
+            let safariVC = SFSafariViewController(URL: websiteURL)
+            safariVC.delegate = self
+            presentViewController(safariVC, animated: true, completion: nil)
+        }
+    }
+
+    @IBAction func youtubeButtonTapped(sender: UIButton) {
+        if let urlString = artist?.YouTube,
+            let youTubeURL = NSURL(string: urlString) where
+            UIApplication.sharedApplication().canOpenURL(youTubeURL) {
+            UIApplication.sharedApplication().openURL(youTubeURL)
+        }
+    }
+
     
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 //        switch segue.identifier! {
@@ -150,8 +143,28 @@ class ArtistsViewController: UIViewController {
 
 // MARK: - SFSafariViewControllerDelegate
 
-extension ArtistsViewController: SFSafariViewControllerDelegate {
+extension ArtistViewController: SFSafariViewControllerDelegate {
     func safariViewControllerDidFinish(controller: SFSafariViewController) {
         controller.dismissViewControllerAnimated(true, completion: nil)
+    }
+}
+
+extension UIImageView {
+    func downloadFromURL(imageURL url: NSURL, contentMode mode: UIViewContentMode) {
+        contentMode = mode
+
+        NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
+            guard let httpURLResponse = response as? NSHTTPURLResponse where httpURLResponse.statusCode == 200,
+                let mimeType = response?.MIMEType where mimeType.hasPrefix("image"),
+                let data = data where error == nil,
+                let image = UIImage(data: data) else {
+                    return
+            }
+            
+            dispatch_async(dispatch_get_main_queue()) { () -> Void in
+                self.image = image
+            }
+            
+        }).resume()
     }
 }
