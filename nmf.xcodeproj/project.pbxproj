@@ -257,6 +257,7 @@
 		B5026C991CFC2A4C009F1877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ScheduleView.xib; sourceTree = "<group>"; };
 		B5026C9C1CFC2CFC009F1877 /* ScheduleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		B5026C9E1CFC48EA009F1877 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		B588B0CC1CFC504C00C4C3CF /* update_build_number.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = update_build_number.sh; sourceTree = "<group>"; };
 		B59B0DEB1CF8AD7200B38F5A /* UIColor+NMF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+NMF.swift"; sourceTree = "<group>"; };
 		B5A5340B1CF910BE005BAF8E /* StackWidthLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackWidthLabel.swift; sourceTree = "<group>"; };
 		B5A5340D1CFAB39D005BAF8E /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
@@ -298,6 +299,7 @@
 		2C5B8B421C9A13E900C6A893 = {
 			isa = PBXGroup;
 			children = (
+				B588B0CC1CFC504C00C4C3CF /* update_build_number.sh */,
 				2C5B8B761C9BABBA00C6A893 /* lib */,
 				2C5B8B741C9BAB8400C6A893 /* libz.tbd */,
 				2C5B8B721C9BAB7B00C6A893 /* libsqlite3.tbd */,
@@ -751,6 +753,7 @@
 				2C5B8B471C9A13E900C6A893 /* Sources */,
 				2C5B8B481C9A13E900C6A893 /* Frameworks */,
 				2C5B8B491C9A13E900C6A893 /* Resources */,
+				B588B0CD1CFC508F00C4C3CF /* Update Build Number */,
 			);
 			buildRules = (
 			);
@@ -845,6 +848,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B588B0CD1CFC508F00C4C3CF /* Update Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/update_build_number.sh\" master\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C5B8B471C9A13E900C6A893 /* Sources */ = {
