@@ -32,6 +32,7 @@
 		A53F95FD1CC678DA0041EECA /* ArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F95FC1CC678DA0041EECA /* ArtistsViewController.swift */; };
 		A5DEE7011CB553C100704688 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEE7001CB553C100704688 /* Schedule.swift */; };
 		A5E8382E1CB84D060077D92D /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E8382D1CB84D060077D92D /* ScheduleTableViewCell.swift */; };
+		B5026C961CFBB66B009F1877 /* mapdata in Resources */ = {isa = PBXBuildFile; fileRef = B5026C951CFBB66B009F1877 /* mapdata */; };
 		B59B0DEC1CF8AD7200B38F5A /* UIColor+NMF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B0DEB1CF8AD7200B38F5A /* UIColor+NMF.swift */; };
 		B5A5340C1CF910BE005BAF8E /* StackWidthLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5340B1CF910BE005BAF8E /* StackWidthLabel.swift */; };
 		B5A5340E1CFAB39D005BAF8E /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5A5340D1CFAB39D005BAF8E /* Montserrat-Regular.otf */; };
@@ -249,6 +250,7 @@
 		A53F95FC1CC678DA0041EECA /* ArtistsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistsViewController.swift; sourceTree = "<group>"; };
 		A5DEE7001CB553C100704688 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		A5E8382D1CB84D060077D92D /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		B5026C951CFBB66B009F1877 /* mapdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mapdata; sourceTree = "<group>"; };
 		B59B0DEB1CF8AD7200B38F5A /* UIColor+NMF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+NMF.swift"; sourceTree = "<group>"; };
 		B5A5340B1CF910BE005BAF8E /* StackWidthLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackWidthLabel.swift; sourceTree = "<group>"; };
 		B5A5340D1CFAB39D005BAF8E /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 				2C5B8B571C9A13E900C6A893 /* Assets.xcassets */,
 				2C5B8B5C1C9A13E900C6A893 /* Info.plist */,
 				B5A5340D1CFAB39D005BAF8E /* Montserrat-Regular.otf */,
+				B5026C951CFBB66B009F1877 /* mapdata */,
 			);
 			path = nmf;
 			sourceTree = "<group>";
@@ -801,6 +804,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C5B8B5B1C9A13E900C6A893 /* LaunchScreen.storyboard in Resources */,
+				B5026C961CFBB66B009F1877 /* mapdata in Resources */,
 				2C5B8B581C9A13E900C6A893 /* Assets.xcassets in Resources */,
 				2C5B8B561C9A13E900C6A893 /* Main.storyboard in Resources */,
 				B5A5340E1CFAB39D005BAF8E /* Montserrat-Regular.otf in Resources */,

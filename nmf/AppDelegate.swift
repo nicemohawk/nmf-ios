@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
 
     var window: UIWindow?
 
-    lazy var locationManager: CLLocationManager? = {
+    lazy var locationManager: CLLocationManager = {
         let manager = CLLocationManager()
         
         manager.delegate = self
@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         if authorization == .Denied || authorization == .Restricted {
             print("Unabled to access location")
         } else {
-            if let locationManager = locationManager {
+//            if let locationManager = locationManager {
                 if authorization == .NotDetermined {
                     locationManager.requestWhenInUseAuthorization()
                 }
@@ -48,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
                 if CLLocationManager.locationServicesEnabled() == true {
                     locationManager.startUpdatingLocation()
                 }
-            }
+//            }
         }
         
         return true
