@@ -15,6 +15,4 @@ class Artists : NSObject{
     
     var URL: String?
     var YouTube: String?
-    
-    var starred: Bool = false
-}
+ }

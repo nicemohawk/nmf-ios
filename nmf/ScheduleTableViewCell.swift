@@ -12,8 +12,7 @@ class ScheduleTableViewCell: UITableViewCell {
     
     @IBOutlet weak var artist: UILabel!
     @IBOutlet weak var startTime: UILabel!
-    @IBOutlet weak var endTime: UILabel!
     @IBOutlet weak var stage: UILabel!
     
-
+    @IBOutlet weak var starButton: UIButton!
 }

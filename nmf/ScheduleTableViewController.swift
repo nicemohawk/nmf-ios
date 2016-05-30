@@ -11,25 +11,30 @@ import UIKit
 class ScheduleTableViewController: UITableViewController, UISearchControllerDelegate, UISearchResultsUpdating, UISearchBarDelegate {
     var searchController = UISearchController(searchResultsController: nil)
     
+    var scheduleItems = [[Schedule](),[Schedule](), [Schedule](), [Schedule]()]
     var filteredScheduleItems = [Schedule]()
-    var scheduleItems = [[Schedule]]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let dataStore = DataStore.sharedInstance
-        
-        dataStore.updateScheduleItems() { _ in
-            self.tableView.reloadData()
-            
-            self.sortItems()
+        if DataStore.sharedInstance.scheduleItems.count == 0 {
+            DataStore.sharedInstance.updateScheduleItems() { _ in
+                self.tableView.reloadData()
+                
+                self.sortScheduleItems(starredOnly: false)
+
+                self.scrollToNearestCell()
+            }
+        } else {
+            sortScheduleItems(starredOnly: false)
+
+            scrollToNearestCell()
         }
         
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
     
-//        searchController.searchBar.scopeButtonTitles = ["Starred", "All", "Today"]
         searchController.searchBar.tintColor = UIColor.lightCharcoal()
         searchController.searchBar.delegate = self
         
@@ -39,22 +44,81 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         self.definesPresentationContext = true
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func scrollToNearestCell() {
+        if searchController.active && searchController.searchBar.text != "" {
+            self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), atScrollPosition: UITableViewScrollPosition.Top, animated: true)
+            
+            return
+        }
+
+        var lastPath = NSIndexPath(forRow: 0, inSection: 0)
+        let oneHourAgo = NSDate(timeIntervalSinceNow: -(1*60*60))
+        
+        for (section, sectionArray) in scheduleItems.reverse().enumerate() {
+            for (row, scheduleItem) in sectionArray.reverse().enumerate() {
+                let indexPath = NSIndexPath(forRow: row, inSection: section)
+                
+                if let time = scheduleItem.starttime where time.earlierDate(oneHourAgo) == oneHourAgo {
+                    lastPath = indexPath
+                    continue
+                }
+                
+                self.tableView.scrollToRowAtIndexPath(lastPath, atScrollPosition: UITableViewScrollPosition.Top, animated: true)
+                
+                return
+            }
+        }
+        
+        self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), atScrollPosition: UITableViewScrollPosition.Top, animated: true)
+     }
+    
+    override func viewWillAppear(animated: Bool) {
+        for scheduleCell in tableView.visibleCells as! [ScheduleTableViewCell] {
+            guard let indexPath = tableView.indexPathForCell(scheduleCell) else {
+                return
+            }
+            
+            var scheduleItem: Schedule? = nil
+            
+            if searchController.active && searchController.searchBar.text != "" {
+                scheduleItem = filteredScheduleItems[indexPath.row]
+            } else if scheduleItems[indexPath.section].count > indexPath.row {
+                scheduleItem = scheduleItems[indexPath.section][indexPath.row]
+            }
+            
+            if let foundScheduleItem = scheduleItem {
+                scheduleCell.starButton.selected = foundScheduleItem.starred
+            }
+        }
+        
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        if tableView.numberOfRowsInSection(0) > 0 {
+            scrollToNearestCell()
+        }
+
+        super.viewDidAppear(animated)
     }
 
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        if searchController.active {
+        if searchController.active && searchController.searchBar.text != "" {
             return 1
-        } else {
-            return 4
         }
+        
+        return scheduleItems.count
     }
     
+    
+    
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if tableView.numberOfSections == 1 {
+            return "Results"
+        }
+        
         switch section {
         case 0:
             return "Thursday"
@@ -65,37 +129,42 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         case 3:
             return "Sunday"
         default:
-            return "Other"
+            return "Error"
         }
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        if searchController.active {
+        if searchController.active && searchController.searchBar.text != "" {
             return filteredScheduleItems.count
-        } else {
-            if scheduleItems.count > section {
-                return scheduleItems[section].count
-            }
         }
         
-        return 0
+        return scheduleItems[section].count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ScheduleCell", forIndexPath: indexPath)
+
         guard let scheduleCell = cell as? ScheduleTableViewCell else {
             return cell
         }
         
-        if scheduleItems.count > indexPath.section && scheduleItems[indexPath.section].count > indexPath.row {
-            let foundScheduleItem = scheduleItems[indexPath.section][indexPath.row]
+        var scheduleItem: Schedule? = nil
+        
+        if searchController.active && searchController.searchBar.text != "" {
+            scheduleItem = filteredScheduleItems[indexPath.row]
+        } else if scheduleItems[indexPath.section].count > indexPath.row {
+            scheduleItem = scheduleItems[indexPath.section][indexPath.row]
+        }
+        
+        if let foundScheduleItem = scheduleItem {
             let finalStartTime = foundScheduleItem.timeString()
             
             // Configure the cell...
             scheduleCell.artist.text = foundScheduleItem.artist
             scheduleCell.startTime.text = "\(finalStartTime)"
             scheduleCell.stage.text = foundScheduleItem.stage
+            
+            scheduleCell.starButton.selected = foundScheduleItem.starred
         }
         
         return scheduleCell
@@ -106,8 +175,6 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         cell.separatorInset = UIEdgeInsetsZero
         cell.preservesSuperviewLayoutMargins = false
         cell.layoutMargins = UIEdgeInsetsZero
-        
-//        super.tableView(tableView, willDisplayCell: cell, forRowAtIndexPath: indexPath)
     }
     
     // MARK: - Navigation
@@ -154,26 +221,70 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         }
     }
     
+    // MARK: - Actions
+    
+    var showingStarredOnly = false
+    
+    @IBAction func toggleStarredOnlyAction(sender: UIBarButtonItem) {
+        showingStarredOnly = !showingStarredOnly
+        
+        if showingStarredOnly {
+            sender.image = UIImage(named: "star")
+        } else {
+            sender.image = UIImage(named: "star-empty")
+        }
+        
+        sortScheduleItems(starredOnly: showingStarredOnly)
+    }
+    
+    @IBAction func starItemAction(sender: UIButton) {
+        guard let indexPath = tableView.indexPathForRowAtPoint(tableView.convertPoint(sender.center, fromView: sender.superview)) else {
+            return
+        }
+        
+        var scheduleItem: Schedule? = nil
+        
+        if searchController.active && searchController.searchBar.text != "" {
+            scheduleItem = filteredScheduleItems[indexPath.row]
+        } else if scheduleItems[indexPath.section].count > indexPath.row {
+            scheduleItem = scheduleItems[indexPath.section][indexPath.row]
+        }
+        
+        if let foundScheduleItem = scheduleItem {
+            sender.selected = !sender.selected
+            foundScheduleItem.starred = sender.selected
+        }
+    }
+    
+    
     // MARK: - Search & Sort
     
     func updateSearchResultsForSearchController(searchController: UISearchController) {
-        if let searchText = searchController.searchBar.text {
+        if let searchText = searchController.searchBar.text where searchText != "" {
             filteredScheduleItems = filterScheduleItemsWithText(searchText)
         } else {
             filteredScheduleItems = [Schedule]()
         }
+        
+        tableView.reloadData()
     }
     
     func filterScheduleItemsWithText(text: String) -> [Schedule] {
         return DataStore.sharedInstance.scheduleItems.filter({ (item: Schedule) -> Bool in
-            return item.artist?.containsString(text) ?? false
+            let containsString = (item.artist?.localizedStandardRangeOfString(text) != nil)
+            
+            return containsString
         })
     }
     
-    func sortItems() {
-        var thursdayShows: [Schedule] = [], fridayShows: [Schedule] = [], saturdayShows: [Schedule] = [], sundayShows: [Schedule] = []
+    func sortScheduleItems(starredOnly starredOnly: Bool) {
+        var thursdayShows = [Schedule](), fridayShows = [Schedule](), saturdayShows = [Schedule](), sundayShows = [Schedule]()
 
         for item in DataStore.sharedInstance.scheduleItems {
+            if starredOnly && item.starred == false {
+                continue
+            }
+            
             if let time = item.starttime {
                 switch NSCalendar.currentCalendar().components(.Weekday, fromDate: time).weekday {
                 case 5: // Thursday
@@ -190,10 +301,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
             }
         }
         
-        scheduleItems.append(thursdayShows)
-        scheduleItems.append(fridayShows)
-        scheduleItems.append(saturdayShows)
-        scheduleItems.append(sundayShows)
+        scheduleItems = [thursdayShows, fridayShows, saturdayShows, sundayShows]
         
         self.tableView.reloadData()
     }

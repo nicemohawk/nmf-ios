@@ -14,6 +14,8 @@ class Schedule: NSObject {
     var endtime: NSDate?
     var stage: String?
     
+    var starred: Bool = false
+    
     static let hourFormatter: NSDateFormatter = {
         let formatter = NSDateFormatter()
         formatter.dateFormat = "h:mma"
@@ -27,7 +29,6 @@ class Schedule: NSObject {
         
         return formatter
     }()
-
     
     func timeString() -> String {
         if let startDate = starttime {
@@ -44,12 +45,4 @@ class Schedule: NSObject {
         
         return ""
     }
-
-//    class func dateFormatter() -> NSDateFormatter {
-//        let formatter = NSDateFormatter()
-//        formatter.dateFormat = "h:mma"
-//        
-//        return formatter
-//    }
-    
 }

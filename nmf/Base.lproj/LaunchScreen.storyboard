@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle-icon-NMF-Ohio-logo-coral" translatesAutoresizingMaskIntoConstraints="NO" id="M5J-LT-g8G">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NMFOhio-logo-coral-large" translatesAutoresizingMaskIntoConstraints="NO" id="M5J-LT-g8G">
                                 <rect key="frame" x="167" y="167" width="266" height="266"/>
                             </imageView>
                         </subviews>
@@ -34,6 +34,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="circle-icon-NMF-Ohio-logo-coral" width="266" height="266"/>
+        <image name="NMFOhio-logo-coral-large" width="266" height="266"/>
     </resources>
 </document>

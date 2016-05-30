@@ -28,7 +28,7 @@ class DataStore: NSObject {
         
         dataStore.find({ (scheduleItemsCollection) in
             if let items = scheduleItemsCollection.data as? [Schedule] {
-                self.scheduleItems = items
+                self.scheduleItems = items.sort { $0.starttime?.compare($1.starttime ?? NSDate.distantFuture()) != .OrderedDescending }
             } else {
                 self.scheduleItems = []
             }

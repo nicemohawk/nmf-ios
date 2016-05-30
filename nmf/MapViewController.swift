@@ -9,7 +9,7 @@
 import UIKit
 
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
-
+    
     lazy var locationManager: CLLocationManager = {
         let manager = CLLocationManager()
         
@@ -18,12 +18,12 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
         return manager
     }()
-
+    
     let nmf = CLLocation(latitude: 39.441032, longitude: -82.218418)
     let tileOverlay = TileOverlay(URLTemplate: NSBundle.mainBundle().bundleURL.absoluteString + "mapdata/{z}/{x}/{y}.png")
- 
+    
     @IBOutlet var mapView: MKMapView!
-
+    
     
     override func viewDidLoad() {
         // 2.17 miles = 3500 meters
@@ -43,7 +43,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         if authorization == .Denied || authorization == .Restricted {
             print("Unabled to access location")
         } else {
-            //            if let locationManager = locationManager {
             if authorization == .NotDetermined {
                 locationManager.requestWhenInUseAuthorization()
             }
@@ -51,7 +50,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             if CLLocationManager.locationServicesEnabled() == true {
                 locationManager.startUpdatingLocation()
             }
-            //            }
         }
         super.viewWillAppear(animated)
     }
@@ -72,7 +70,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     @IBAction func actionButtonAction(sender: UIBarButtonItem) {
     }
-
+    
     // MARK: - MapKit delegate methods
     
     func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
@@ -93,7 +91,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         print(error.localizedDescription)
     }
-
 }
 
 class TileOverlay : MKTileOverlay {

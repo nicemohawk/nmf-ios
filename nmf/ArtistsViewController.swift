@@ -78,7 +78,7 @@ class ArtistViewController: UIViewController {
         
         scheduleStackView.hidden = false
         
-        for item in times {
+        for item in times.sort({ $0.starttime?.compare($1.starttime ?? NSDate.distantFuture()) != .OrderedDescending }) {
             UINib(data: nibData, bundle: nil).instantiateWithOwner(self, options: nil)
             
             setupScheduleView(scheduleNIBView, scheduledTime: item)
@@ -91,8 +91,7 @@ class ArtistViewController: UIViewController {
         
         scheduleView.startTime.text = scheduledTime.dateString()
         scheduleView.stage.text = scheduledTime.stage
-        
-        // set up starring
+        scheduleView.starButton.selected = scheduledTime.starred
         
         scheduleView.widthAnchor.constraintEqualToConstant(CGRectGetWidth(scheduleStackView.bounds)).active = true
         scheduleView.heightAnchor.constraintEqualToConstant(48.0).active = true
@@ -100,6 +99,23 @@ class ArtistViewController: UIViewController {
         scheduleStackView.addArrangedSubview(scheduleView)
         
         self.view.setNeedsLayout()
+    }
+    
+    @IBAction func starButtonAction(sender: UIButton) {
+        guard let index = scheduleStackView.subviews.indexOf({ sender.isDescendantOfView($0) }) else {
+            return
+        }
+        
+        var scheduleItem: Schedule? = nil
+        
+        if let scheduledTimes = scheduledTimes where scheduledTimes.count > index {
+            scheduleItem = scheduledTimes[index]
+        }
+        
+        if let foundScheduleItem = scheduleItem {
+            sender.selected = !sender.selected
+            foundScheduleItem.starred = sender.selected
+        }
     }
     
     @IBAction func websiteButtonTapped(sender: UIButton) {
