@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import TwitterKit
+import BBBadgeBarButtonItem
+
 
 class ScheduleTableViewController: UITableViewController, UISearchControllerDelegate, UISearchResultsUpdating, UISearchBarDelegate {
     var searchController = UISearchController(searchResultsController: nil)
@@ -43,6 +46,26 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         
         clearsSelectionOnViewWillAppear = false
         definesPresentationContext = true
+        
+        let button = UIButton(type: .Custom)
+        let image = UIImage(named: "bell")?.imageWithRenderingMode(.AlwaysTemplate)
+        button.setImage(image, forState: .Normal)
+        button.tintColor = UIColor.creamText()
+        button.sizeToFit()
+        
+        button.addTarget(self, action: #selector(ScheduleTableViewController.notificationsAction), forControlEvents: .TouchUpInside)
+        
+        let barButton = BBBadgeBarButtonItem(customUIButton: button)
+        barButton.badgeBGColor = UIColor.lightCharcoal()
+        barButton.badgeOriginX = 2
+        barButton.badgeOriginY = 0
+        
+        navigationItem.leftBarButtonItem = barButton
+
+        // testing
+//        if let button = navigationItem.leftBarButtonItem as? BBBadgeBarButtonItem {
+//            button.badgeValue = "?"
+//        }
         
     }
     
@@ -300,7 +323,41 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         }
     }
     
-    
+    @IBAction func notificationsAction(sender: AnyObject) {
+        // Create an API client and data source to fetch Tweets for the timeline
+        let client = TWTRAPIClient()
+        
+        //TODO: Replace with your collection id or a different data source
+        let searchQuery = "from:nelsonvillefest"
+        
+        let dataSource = TWTRSearchTimelineDataSource(searchQuery: searchQuery, APIClient: client)
+        
+        // Create the timeline view controller
+        let timelineViewControlller = TWTRTimelineViewController(dataSource: dataSource)
+        
+        // Create done button to dismiss the view controller
+        let button = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(dismissTimeline))
+        button.tintColor = UIColor.creamText()
+        
+        timelineViewControlller.navigationItem.leftBarButtonItem = button
+        
+        // Create a navigation controller to hold the
+        let navigationController = UINavigationController(rootViewController: timelineViewControlller)
+        navigationController.navigationBar.barTintColor = UIColor.coral()
+        
+        if let button = navigationItem.leftBarButtonItem as? BBBadgeBarButtonItem {
+            button.badgeValue = nil
+        }
+        
+        
+        showDetailViewController(navigationController, sender: self)
+    }
+
+    @objc func dismissTimeline() {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+
+
     // MARK: - Search & Sort
     
     func updateSearchResultsForSearchController(searchController: UISearchController) {

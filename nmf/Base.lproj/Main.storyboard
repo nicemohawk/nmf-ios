@@ -102,6 +102,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="J0r-KB-LRn">
                         <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" image="bell" style="plain" id="JXd-k9-g74" customClass="BBBadgeBarButtonItem">
+                            <connections>
+                                <action selector="notificationsAction:" destination="Bs5-px-7hO" id="OgZ-GX-lcL"/>
+                            </connections>
+                        </barButtonItem>
                         <view key="titleView" opaque="NO" contentMode="scaleToFill" id="oln-yK-Pcs">
                             <rect key="frame" x="134" y="5.5" width="107" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -347,7 +352,7 @@
                                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ezW-cO-Cg8">
                                                                         <rect key="frame" x="8" y="29" width="343" height="554"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                        <mutableString key="text">Andrew Bird said of the Nelsonville Music Festival, “It’s the perfect size festival. Any bigger and you’d lose something.” The Nelsonville Music Festival continues to be an annual favorite for many music lovers, and one of the best festivals in the Midwest. Set in the beautiful, rolling hills of Southeast Ohio, NMF continues to gain fans who want a music festival with a more personal experience. Catch live music on multiple stages including a small no-fi cabin and a picturesque porch stage in addition to our main stage. Over four days, NMF offers multiple stages of music along with camping on site, kids activities, local art vendors, food, and a beer garden. The Nelsonville Music Festival takes sustainability seriously and is a zero waste event, diverting 94% of the waste created in 2015. Past performers have included Wilco, The Flaming Lips, Willie Nelson, Loretta Lynn, John Prine, The Avett Brothers, Merle Haggard, Dinosaur Jr., St. Vincent, Jason Isbell, Cat Power, Iron &amp; Wine, Andrew Bird, Neko Case, Yo La Tengo, George Jones, Gogol Bordello, and many more. The Nelsonville Music Festival is a production of Stuart’s Opera House, a historic, non-profit theater located in Nelsonville that features over 75 events a year including live music, theater, films, educational programming and more. You can find out more about Stuart’s by visiting stuartsoperahouse.org.</mutableString>
+                                                                        <string key="text">Andrew Bird said of the Nelsonville Music Festival, “It’s the perfect size festival. Any bigger and you’d lose something.” The Nelsonville Music Festival continues to be an annual favorite for many music lovers, and one of the best festivals in the Midwest. Set in the beautiful, rolling hills of Southeast Ohio, NMF continues to gain fans who want a music festival with a more personal experience. Catch live music on multiple stages including a small no-fi cabin and a picturesque porch stage in addition to our main stage. Over four days, NMF offers multiple stages of music along with camping on site, kids activities, local art vendors, food, and a beer garden. The Nelsonville Music Festival takes sustainability seriously and is a zero waste event, diverting 94% of the waste created in 2015. Past performers have included Wilco, The Flaming Lips, Willie Nelson, Loretta Lynn, John Prine, The Avett Brothers, Merle Haggard, Dinosaur Jr., St. Vincent, Jason Isbell, Cat Power, Iron &amp; Wine, Andrew Bird, Neko Case, Yo La Tengo, George Jones, Gogol Bordello, and many more. The Nelsonville Music Festival is a production of Stuart’s Opera House, a historic, non-profit theater located in Nelsonville that features over 75 events a year including live music, theater, films, educational programming and more. You can find out more about Stuart’s by visiting stuartsoperahouse.org.</string>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
@@ -627,6 +632,7 @@ Thank you for your cooperation with these safety policies.</string>
                     <navigationItem key="navigationItem" id="5c4-H1-Os1">
                         <leftBarButtonItems>
                             <barButtonItem image="NMFOhio-logo-coral-barbutton" id="i3D-IM-bqE">
+                                <inset key="imageInsets" minX="4" minY="4" maxX="4" maxY="4"/>
                                 <color key="tintColor" red="0.97647058959999999" green="0.96862745289999996" blue="0.79215687509999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="nmfButtonAction:" destination="sbA-sI-UWW" id="4sd-SX-baA"/>
@@ -700,6 +706,7 @@ Thank you for your cooperation with these safety policies.</string>
     </scenes>
     <resources>
         <image name="NMFOhio-logo-coral-barbutton" width="40" height="40"/>
+        <image name="bell" width="48" height="48"/>
         <image name="direction" width="48" height="48"/>
         <image name="info-sign" width="48" height="48"/>
         <image name="inverse-nmf-logo" width="107" height="33"/>

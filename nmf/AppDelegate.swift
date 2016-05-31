@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import Fabric
+import TwitterKit
+import BBBadgeBarButtonItem
+
 #if CONFIGURATION_Debug
 import SimulatorStatusMagic
 #endif
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate {
     
     let APP_ID = "49259415-337F-9D60-FFEE-023C6FD21C00"
     let SECRET_KEY = "71BC7DA3-EFB8-26C2-FF59-599860222C00"
@@ -36,7 +40,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
             return
         }
         
+        // setup twitter kit
+//        Twitter.sharedInstance().startWithConsumerKey("lZp1JUAJq2OrtKJjdezedAAjN", consumerSecret: "7aiGzb98efev24uV1VW5pUYxSlDuMUEXxkK4Tx5DBZiLWfaeLE")
+        
+        Fabric.with([Twitter.self])
+        
+        // setup push notes
+        
+        PushNotificationManager.pushManager().delegate = self
+        PushNotificationManager.pushManager().showPushnotificationAlert = true
+        PushNotificationManager.pushManager().handlePushReceived(launchOptions)
+        PushNotificationManager.pushManager().sendAppOpen()
+        PushNotificationManager.pushManager().registerForPushNotifications()
+        
         #if CONFIGURATION_Debug
+            // for nice screen shots only
             SDStatusBarManager.sharedInstance().enableOverrides()
         #endif
         
@@ -80,6 +98,52 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         DataStore.sharedInstance.saveData()
+    }
+    
+    // MARK: - Push notifications
+    
+     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        PushNotificationManager.pushManager().handlePushRegistration(deviceToken)
+    }
+    
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        PushNotificationManager.pushManager().handlePushRegistrationFailure(error)
+    }
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        PushNotificationManager.pushManager().handlePushReceived(userInfo)
+        
+        guard let tabController = window?.rootViewController as? UITabBarController,
+            let navController = tabController.viewControllers?.flatMap({ $0 as? UINavigationController }).filter({ $0.viewControllers.first is ScheduleTableViewController}).first,
+            let scheduleController = navController.viewControllers.first as? ScheduleTableViewController else {
+                return
+        }
+
+        if let button = scheduleController.navigationItem.leftBarButtonItem as? BBBadgeBarButtonItem {
+            button.badgeValue = "!"
+        }
+    }
+    
+    func onPushAccepted(pushManager: PushNotificationManager!, withNotification pushNotification: [NSObject : AnyObject]!, onStart: Bool) {
+        print("Push notification accepted: \(pushNotification)");
+        
+        guard let tabController = window?.rootViewController as? UITabBarController,
+            let navController = tabController.viewControllers?.flatMap({ $0 as? UINavigationController }).filter({ $0.viewControllers.first is ScheduleTableViewController}).first,
+            let scheduleController = navController.viewControllers.first as? ScheduleTableViewController else {
+                return
+        }
+        
+        tabController.selectedViewController = navController
+        navController.popToRootViewControllerAnimated(true)
+        scheduleController.notificationsAction(self)
+        
+        
+        
+//        let activeViewContoller = navController.visibleViewController as? ScheduleTableViewController else {
+//                return
+//        }
+        
+//        let alertController = UIAlertController(title: "Heads Up!", message: pushNotification["body"], preferredStyle: <#T##UIAlertControllerStyle#>)
     }
 
 }
