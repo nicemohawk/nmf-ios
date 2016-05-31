@@ -47,6 +47,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
         
         // setup push notes
         
+        #if CONFIGURATION_Release
+            PushNotificationManager.initializeWithAppCode("BA4B0-6DAEE", appName: "NMF")
+        #endif
+        
+        #if CONFIGURATION_Debug
+            PushNotificationManager.initializeWithAppCode("2312C-C345D", appName: "NMF-dev")
+        #endif
+        
         PushNotificationManager.pushManager().delegate = self
         PushNotificationManager.pushManager().showPushnotificationAlert = true
         PushNotificationManager.pushManager().handlePushReceived(launchOptions)

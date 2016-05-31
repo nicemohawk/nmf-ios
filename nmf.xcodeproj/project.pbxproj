@@ -1219,6 +1219,7 @@
 					"$(PROJECT_DIR)/lib/**",
 				);
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DCONFIGURATION_Release";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicemohawk.nmf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "nmf/NMF-Bridging-Header.h";

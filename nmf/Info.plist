@@ -58,8 +58,6 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>For finding your location at the festival.</string>
-	<key>Pushwoosh_APPID</key>
-	<string>BA4B0-6DAEE</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Montserrat-Regular.otf</string>
