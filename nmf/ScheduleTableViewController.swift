@@ -41,10 +41,14 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         tableView.tableHeaderView = searchController.searchBar
         searchController.searchBar.sizeToFit()
         
-        self.definesPresentationContext = true
+        clearsSelectionOnViewWillAppear = false
+        definesPresentationContext = true
+        
     }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+ 
         for scheduleCell in tableView.visibleCells as! [ScheduleTableViewCell] {
             guard let indexPath = tableView.indexPathForCell(scheduleCell) else {
                 return
@@ -63,7 +67,9 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
             }
         }
         
-        super.viewWillAppear(animated)
+        if let indexPath = tableView.indexPathForSelectedRow {
+            tableView.deselectRowAtIndexPath(indexPath, animated: animated)
+        }
     }
     
     static var once: dispatch_once_t = 0
@@ -80,7 +86,9 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
     
     func scrollToNearestCell() {
         if searchController.active && searchController.searchBar.text != "" {
-            self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), atScrollPosition: UITableViewScrollPosition.Top, animated: true)
+            if filteredScheduleItems.count > 0 {
+                self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), atScrollPosition: UITableViewScrollPosition.Top, animated: true)
+            }
             
             return
         }
@@ -97,13 +105,17 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
                     continue
                 }
                 
-                self.tableView.scrollToRowAtIndexPath(lastPath, atScrollPosition: UITableViewScrollPosition.Top, animated: true)
+                if scheduleItems.count > lastPath.section && scheduleItems[lastPath.section].count > lastPath.row {
+                    self.tableView.scrollToRowAtIndexPath(lastPath, atScrollPosition: UITableViewScrollPosition.Top, animated: true)
+                }
                 
                 return
             }
         }
         
-        self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), atScrollPosition: UITableViewScrollPosition.Top, animated: true)
+        if scheduleItems.count > 0 && scheduleItems[0].count > 0 {
+            self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), atScrollPosition: UITableViewScrollPosition.Top, animated: true)
+        }
     }
     
     // MARK: - UITableViewDatasource

@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
 
     var window: UIWindow?
     
+    var lastActive = NSDate()
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         backendless.initApp(APP_ID, secret: SECRET_KEY, version: VERSION_NUM)
@@ -42,6 +44,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
         DataStore.sharedInstance.saveData()
+        
+        lastActive = NSDate()
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
@@ -50,6 +54,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
+        if lastActive.earlierDate(NSDate(timeIntervalSinceNow: -(5*60))) != lastActive {
+            // if app hasn't been used in 5 minutes, update it, otherwise return
+            return
+        }
+        
+        guard let tabController = window?.rootViewController as? UITabBarController,
+            let navController = tabController.selectedViewController as? UINavigationController,
+            let scheduleViewController = navController.visibleViewController as? ScheduleTableViewController else {
+                return
+        }
+        
+        scheduleViewController.scrollToNearestCell()
     }
 
     func applicationWillTerminate(application: UIApplication) {
