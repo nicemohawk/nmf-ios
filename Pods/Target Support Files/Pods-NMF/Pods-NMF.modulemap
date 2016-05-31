@@ -1,0 +1,6 @@
+framework module Pods_NMF {
+  umbrella header "Pods-NMF-umbrella.h"
+
+  export *
+  module * { export * }
+}
