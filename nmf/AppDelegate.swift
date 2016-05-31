@@ -41,12 +41,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
         }
         
         // setup twitter kit
-//        Twitter.sharedInstance().startWithConsumerKey("lZp1JUAJq2OrtKJjdezedAAjN", consumerSecret: "7aiGzb98efev24uV1VW5pUYxSlDuMUEXxkK4Tx5DBZiLWfaeLE")
-        
         Fabric.with([Twitter.self])
         
         // setup push notes
-        
         #if CONFIGURATION_Release
             PushNotificationManager.initializeWithAppCode("BA4B0-6DAEE", appName: "NMF")
         #endif
