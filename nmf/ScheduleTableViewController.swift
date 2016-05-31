@@ -17,24 +17,24 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         if DataStore.sharedInstance.scheduleItems.count == 0 {
             DataStore.sharedInstance.updateScheduleItems() { _ in
                 self.tableView.reloadData()
                 
                 self.sortScheduleItems(starredOnly: false)
-
+                
                 self.scrollToNearestCell()
             }
         } else {
             sortScheduleItems(starredOnly: false)
-
+            
             scrollToNearestCell()
         }
         
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
-    
+        
         searchController.searchBar.tintColor = UIColor.lightCharcoal()
         searchController.searchBar.delegate = self
         
@@ -43,34 +43,6 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         
         self.definesPresentationContext = true
     }
-
-    func scrollToNearestCell() {
-        if searchController.active && searchController.searchBar.text != "" {
-            self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), atScrollPosition: UITableViewScrollPosition.Top, animated: true)
-            
-            return
-        }
-
-        var lastPath = NSIndexPath(forRow: 0, inSection: 0)
-        let oneHourAgo = NSDate(timeIntervalSinceNow: -(1*60*60))
-        
-        for (section, sectionArray) in scheduleItems.reverse().enumerate() {
-            for (row, scheduleItem) in sectionArray.reverse().enumerate() {
-                let indexPath = NSIndexPath(forRow: row, inSection: section)
-                
-                if let time = scheduleItem.starttime where time.earlierDate(oneHourAgo) == oneHourAgo {
-                    lastPath = indexPath
-                    continue
-                }
-                
-                self.tableView.scrollToRowAtIndexPath(lastPath, atScrollPosition: UITableViewScrollPosition.Top, animated: true)
-                
-                return
-            }
-        }
-        
-        self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), atScrollPosition: UITableViewScrollPosition.Top, animated: true)
-     }
     
     override func viewWillAppear(animated: Bool) {
         for scheduleCell in tableView.visibleCells as! [ScheduleTableViewCell] {
@@ -94,16 +66,46 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         super.viewWillAppear(animated)
     }
     
+    
+    
     override func viewDidAppear(animated: Bool) {
         if tableView.numberOfRowsInSection(0) > 0 {
             scrollToNearestCell()
         }
-
+        
         super.viewDidAppear(animated)
     }
-
-    // MARK: - Table view data source
-
+    
+    func scrollToNearestCell() {
+        if searchController.active && searchController.searchBar.text != "" {
+            self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), atScrollPosition: UITableViewScrollPosition.Top, animated: true)
+            
+            return
+        }
+        
+        var lastPath = NSIndexPath(forRow: 0, inSection: 0)
+        let oneHourAgo = NSDate(timeIntervalSinceNow: -(1*60*60)) // NSDate(timeIntervalSinceNow: 4*24*60*60) // test by adding 4 days
+        
+        for (section, sectionArray) in scheduleItems.reverse().enumerate() {
+            for (row, scheduleItem) in sectionArray.reverse().enumerate() {
+                let indexPath = NSIndexPath(forRow: row, inSection: section)
+                
+                if let time = scheduleItem.starttime where time.earlierDate(oneHourAgo) == oneHourAgo {
+                    lastPath = indexPath
+                    continue
+                }
+                
+                self.tableView.scrollToRowAtIndexPath(lastPath, atScrollPosition: UITableViewScrollPosition.Top, animated: true)
+                
+                return
+            }
+        }
+        
+        self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), atScrollPosition: UITableViewScrollPosition.Top, animated: true)
+    }
+    
+    // MARK: - UITableViewDatasource
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         if searchController.active && searchController.searchBar.text != "" {
             return 1
@@ -132,7 +134,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
             return "Error"
         }
     }
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if searchController.active && searchController.searchBar.text != "" {
             return filteredScheduleItems.count
@@ -140,10 +142,10 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         
         return scheduleItems[section].count
     }
-
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ScheduleCell", forIndexPath: indexPath)
-
+        
         guard let scheduleCell = cell as? ScheduleTableViewCell else {
             return cell
         }
@@ -161,8 +163,20 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
             
             // Configure the cell...
             scheduleCell.artist.text = foundScheduleItem.artist
-            scheduleCell.startTime.text = "\(finalStartTime)"
             scheduleCell.stage.text = foundScheduleItem.stage
+            
+            let oneHourAgo = NSDate(timeIntervalSinceNow: (3*24-2)*60*60)//NSDate(timeIntervalSinceNow: -(1*60*60))
+            
+            if let showTime = foundScheduleItem.starttime where
+                showTime.earlierDate(NSDate(timeIntervalSinceNow:15*60)) == showTime && showTime.earlierDate(oneHourAgo) == oneHourAgo {
+                scheduleCell.startTime.text = "Now"
+                scheduleCell.startTime.font = UIFont.boldSystemFontOfSize(UIFont.labelFontSize())
+                scheduleCell.startTime.textColor = UIColor.coral()
+            } else {
+                scheduleCell.startTime.text = "\(finalStartTime)"
+                scheduleCell.startTime.font = UIFont.systemFontOfSize(UIFont.labelFontSize())
+                 scheduleCell.startTime.textColor = UIColor.lightCharcoal()
+            }
             
             scheduleCell.starButton.selected = foundScheduleItem.starred
         }
@@ -279,7 +293,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
     
     func sortScheduleItems(starredOnly starredOnly: Bool) {
         var thursdayShows = [Schedule](), fridayShows = [Schedule](), saturdayShows = [Schedule](), sundayShows = [Schedule]()
-
+        
         for item in DataStore.sharedInstance.scheduleItems {
             if starredOnly && item.starred == false {
                 continue
