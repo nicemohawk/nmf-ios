@@ -66,11 +66,13 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         super.viewWillAppear(animated)
     }
     
-    
+    static var once: dispatch_once_t = 0
     
     override func viewDidAppear(animated: Bool) {
-        if tableView.numberOfRowsInSection(0) > 0 {
-            scrollToNearestCell()
+        dispatch_once(&ScheduleTableViewController.once) {
+            if self.tableView.numberOfRowsInSection(0) > 0 {
+                self.scrollToNearestCell()
+            }
         }
         
         super.viewDidAppear(animated)

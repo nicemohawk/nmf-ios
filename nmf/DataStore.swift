@@ -15,11 +15,25 @@ extension Fault : ErrorType {
 }
 
 class DataStore: NSObject {
-    var scheduleItems = [Schedule]()
-    var artistItems = [Artists]()
+    static let archiveURL = NSFileManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
+    
+    lazy var scheduleItems: [Schedule] = {
+        return NSKeyedUnarchiver.unarchiveObjectWithFile(archiveURL.URLByAppendingPathComponent("schedule").absoluteString) as? [Schedule] ?? [Schedule]()
+    }()
+    
+    lazy var artistItems: [Artists] = {
+        return NSKeyedUnarchiver.unarchiveObjectWithFile(archiveURL.URLByAppendingPathComponent("artists").absoluteString) as? [Artists] ?? [Artists]()
+    }()
     
     class var sharedInstance: DataStore {
         return dataStoreSingleton
+    }
+    
+    
+    func saveData() {
+        NSKeyedArchiver.archiveRootObject(scheduleItems, toFile: DataStore.archiveURL.URLByAppendingPathComponent("schedule").absoluteString)
+        
+        NSKeyedArchiver.archiveRootObject(artistItems, toFile: DataStore.archiveURL.URLByAppendingPathComponent("artists").absoluteString)
     }
     
     func updateScheduleItems(completion: (ErrorType?) -> Void) -> Void {
@@ -28,18 +42,17 @@ class DataStore: NSObject {
         
         dataStore.find({ (scheduleItemsCollection) in
             if let items = scheduleItemsCollection.data as? [Schedule] {
-                self.scheduleItems = items.sort { $0.starttime?.compare($1.starttime ?? NSDate.distantFuture()) != .OrderedDescending }
-            } else {
-                self.scheduleItems = []
+                let sortedItems = items.sort { $0.starttime?.compare($1.starttime ?? NSDate.distantFuture()) != .OrderedDescending }
+                
+                self.mergeScheduleItems(sortedItems)
             }
             
             completion(nil)
-        }) { (fault) in
-            self.scheduleItems = []
+        }, error: { (fault) in
             print(fault)
             
             completion(fault)
-        }
+        })
     }
     
     func updateArtistItems(completion: (ErrorType?) -> Void) -> Void {
@@ -47,19 +60,16 @@ class DataStore: NSObject {
         let dataStore = backendless.data.of(Artists.ofClass())
         
         dataStore.find({ (artistsItemsCollection) in
-            if let items = artistsItemsCollection.data as? [Artists] {
-                self.artistItems = items
-            } else {
-                self.artistItems = []
+            if let artists = artistsItemsCollection.data as? [Artists] {
+                self.mergeArtists(artists)
             }
             
             completion(nil)
-        }) { (fault) in
-            self.artistItems = []
+        }, error: { (fault) in
             print(fault)
             
             completion(fault)
-        }
+        })
     }
     
     func getArtistByName(artistName: String, completion: (Artists?, ErrorType?) -> Void) -> Void {
@@ -78,6 +88,42 @@ class DataStore: NSObject {
             print(fault)
             
             completion(nil, fault)
+        }
+    }
+    
+    func mergeScheduleItems(newItems: [Schedule]) {
+        
+        for newItem in newItems {
+            var foundItem = false
+            
+            for item in scheduleItems where newItem.objectId == item.objectId {
+                item.update(newItem)
+                foundItem = true
+                
+                break
+            }
+            
+            if foundItem == false {
+                scheduleItems.append(newItem)
+            }
+        }
+        
+    }
+    
+    func mergeArtists(newArtists: [Artists]) {
+        for newArtist in newArtists  {
+            var foundItem = false
+
+            for artist in artistItems where newArtist.objectId == artist.objectId {
+                artist.update(newArtist)
+                foundItem = true
+                
+                break
+            }
+            
+            if foundItem == false {
+                artistItems.append(newArtist)
+            }
         }
     }
 }
