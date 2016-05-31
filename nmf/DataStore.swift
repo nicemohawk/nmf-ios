@@ -18,11 +18,11 @@ class DataStore: NSObject {
     static let archiveURL = NSFileManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
     
     lazy var scheduleItems: [Schedule] = {
-        return NSKeyedUnarchiver.unarchiveObjectWithFile(archiveURL.URLByAppendingPathComponent("schedule").absoluteString) as? [Schedule] ?? [Schedule]()
+        return NSKeyedUnarchiver.unarchiveObjectWithFile(archiveURL.URLByAppendingPathComponent("schedule").path!) as? [Schedule] ?? [Schedule]()
     }()
     
     lazy var artistItems: [Artists] = {
-        return NSKeyedUnarchiver.unarchiveObjectWithFile(archiveURL.URLByAppendingPathComponent("artists").absoluteString) as? [Artists] ?? [Artists]()
+        return NSKeyedUnarchiver.unarchiveObjectWithFile(archiveURL.URLByAppendingPathComponent("artists").path!) as? [Artists] ?? [Artists]()
     }()
     
     class var sharedInstance: DataStore {
@@ -31,9 +31,9 @@ class DataStore: NSObject {
     
     
     func saveData() {
-        NSKeyedArchiver.archiveRootObject(scheduleItems, toFile: DataStore.archiveURL.URLByAppendingPathComponent("schedule").absoluteString)
+        print( "saved schedule: \(NSKeyedArchiver.archiveRootObject(scheduleItems, toFile: DataStore.archiveURL.URLByAppendingPathComponent("schedule").path!))")
         
-        NSKeyedArchiver.archiveRootObject(artistItems, toFile: DataStore.archiveURL.URLByAppendingPathComponent("artists").absoluteString)
+        print("saved artists: \(NSKeyedArchiver.archiveRootObject(artistItems, toFile: DataStore.archiveURL.URLByAppendingPathComponent("artists").path!))")
     }
     
     func updateScheduleItems(completion: (ErrorType?) -> Void) -> Void {
