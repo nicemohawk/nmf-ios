@@ -43,25 +43,25 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MM8-KW-rmd">
-                                            <rect key="frame" x="50" y="18" width="54" height="24"/>
-                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MM8-KW-rmd">
+                                            <rect key="frame" x="48" y="18" width="51.5" height="23"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="19"/>
                                             <color key="textColor" red="0.12156862765550613" green="0.12156862765550613" blue="0.12156862765550613" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StartTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QZ-vM-JYz">
-                                            <rect key="frame" x="299.5" y="33.5" width="67.5" height="18"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="StartTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QZ-vM-JYz">
+                                            <rect key="frame" x="299" y="33" width="67.5" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" red="0.12156862765550613" green="0.12156862765550613" blue="0.12156862765550613" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oU5-O3-veA">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Stage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oU5-O3-veA">
                                             <rect key="frame" x="325" y="8" width="42" height="18"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                             <color key="textColor" red="0.12156862765550613" green="0.12156862765550613" blue="0.12156862765550613" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SB-ie-eZa">
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SB-ie-eZa">
                                             <rect key="frame" x="0.0" y="6" width="48" height="48"/>
                                             <color key="tintColor" red="0.1215686277" green="0.1215686277" blue="0.1215686277" alpha="1" colorSpace="calibratedRGB"/>
                                             <state key="normal" image="star-empty"/>
@@ -77,9 +77,11 @@
                                         <constraint firstItem="MM8-KW-rmd" firstAttribute="centerY" secondItem="4SB-ie-eZa" secondAttribute="centerY" constant="0.25" id="7Qn-Dd-Qlt"/>
                                         <constraint firstItem="oU5-O3-veA" firstAttribute="top" secondItem="P9U-Z5-NZ8" secondAttribute="topMargin" id="ClJ-D7-QCF"/>
                                         <constraint firstItem="4SB-ie-eZa" firstAttribute="centerY" secondItem="P9U-Z5-NZ8" secondAttribute="centerY" id="R7m-Ha-0Iz"/>
+                                        <constraint firstItem="3QZ-vM-JYz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MM8-KW-rmd" secondAttribute="trailing" constant="8" symbolic="YES" id="ZHJ-uU-Q84"/>
                                         <constraint firstItem="4SB-ie-eZa" firstAttribute="leading" secondItem="P9U-Z5-NZ8" secondAttribute="leading" id="kpr-ui-4CP"/>
-                                        <constraint firstItem="MM8-KW-rmd" firstAttribute="leading" secondItem="4SB-ie-eZa" secondAttribute="trailing" constant="2" id="qJu-CY-hlj"/>
+                                        <constraint firstItem="MM8-KW-rmd" firstAttribute="leading" secondItem="4SB-ie-eZa" secondAttribute="trailing" id="qJu-CY-hlj"/>
                                         <constraint firstItem="3QZ-vM-JYz" firstAttribute="trailing" secondItem="P9U-Z5-NZ8" secondAttribute="trailingMargin" id="rQ4-1V-UFm"/>
+                                        <constraint firstItem="oU5-O3-veA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MM8-KW-rmd" secondAttribute="trailing" constant="8" symbolic="YES" id="s15-gd-WPZ"/>
                                         <constraint firstItem="oU5-O3-veA" firstAttribute="trailing" secondItem="P9U-Z5-NZ8" secondAttribute="trailingMargin" id="y6p-ys-FH5"/>
                                     </constraints>
                                 </tableViewCellContentView>
