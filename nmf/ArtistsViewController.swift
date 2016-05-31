@@ -8,6 +8,7 @@
 
 import UIKit
 import SafariServices
+import Kingfisher
 
 
 class ArtistViewController: UIViewController {
@@ -25,10 +26,6 @@ class ArtistViewController: UIViewController {
     @IBOutlet weak var scheduleStackView: UIStackView!
     @IBOutlet weak var scheduleNIBView: ScheduleView!
     
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//    }
-    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -39,7 +36,7 @@ class ArtistViewController: UIViewController {
             if let pictureURLString = foundArtist.picture,
                 let imageURL = NSURL(string: pictureURLString) {
                 
-                self.artistImageView.downloadFromURL(imageURL: imageURL, contentMode: .ScaleAspectFit)
+                self.artistImageView.kf_setImageWithURL(imageURL)
             }
 
             if let urlString = foundArtist.URL,
@@ -162,25 +159,5 @@ class ArtistViewController: UIViewController {
 extension ArtistViewController: SFSafariViewControllerDelegate {
     func safariViewControllerDidFinish(controller: SFSafariViewController) {
         controller.dismissViewControllerAnimated(true, completion: nil)
-    }
-}
-
-extension UIImageView {
-    func downloadFromURL(imageURL url: NSURL, contentMode mode: UIViewContentMode) {
-        contentMode = mode
-
-        NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
-            guard let httpURLResponse = response as? NSHTTPURLResponse where httpURLResponse.statusCode == 200,
-                let mimeType = response?.MIMEType where mimeType.hasPrefix("image"),
-                let data = data where error == nil,
-                let image = UIImage(data: data) else {
-                    return
-            }
-            
-            dispatch_async(dispatch_get_main_queue()) { () -> Void in
-                self.image = image
-            }
-            
-        }).resume()
     }
 }
