@@ -128,8 +128,6 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         return scheduleItems.count
     }
     
-    
-    
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if tableView.numberOfSections == 1 {
             return "Results"
@@ -203,6 +201,24 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         cell.separatorInset = UIEdgeInsetsZero
         cell.preservesSuperviewLayoutMargins = false
         cell.layoutMargins = UIEdgeInsetsZero
+    }
+    
+    override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+        var scheduleItem: Schedule? = nil
+        
+        if searchController.active && searchController.searchBar.text != "" {
+            scheduleItem = filteredScheduleItems[indexPath.row]
+        } else if scheduleItems[indexPath.section].count > indexPath.row {
+            scheduleItem = scheduleItems[indexPath.section][indexPath.row]
+        }
+        
+        if let foundScheduleItem = scheduleItem {
+            guard let stage = foundScheduleItem.stage where stage != "" else {
+                return nil
+            }
+        }
+        
+        return indexPath
     }
     
     // MARK: - Navigation
