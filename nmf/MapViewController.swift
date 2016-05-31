@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Contacts
+
 
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
@@ -69,6 +71,21 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
     @IBAction func actionButtonAction(sender: UIBarButtonItem) {
+        let alertController = UIAlertController(title: "Need Directions to NMF?", message: nil, preferredStyle: .ActionSheet)
+        
+         alertController.addAction(UIAlertAction(title: "Open in Maps", style: .Default, handler: { (action) in
+            let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: self.nmf.coordinate, addressDictionary: [CNPostalAddressCityKey: "Nelsonville", CNPostalAddressStateKey: "Ohio"]))
+            
+            let launchOptions = [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving]
+            
+            mapItem.openInMapsWithLaunchOptions(launchOptions)
+        }))
+        
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: { (action) in
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        
+         presentViewController(alertController, animated: true, completion: nil)
     }
     
     // MARK: - MapKit delegate methods

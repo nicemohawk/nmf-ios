@@ -257,9 +257,7 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="WCE-a1-zQN">
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="action" id="9Dz-tb-ezy"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="WCE-a1-zQN"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="767"/>
@@ -641,7 +639,7 @@ Thank you for your cooperation with these safety policies.</string>
                                 </connections>
                             </barButtonItem>
                         </leftBarButtonItems>
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="action" id="PgP-fG-6oQ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="PgP-fG-6oQ">
                             <color key="tintColor" red="0.97647058959999999" green="0.96862745289999996" blue="0.79215687509999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="actionButtonAction:" destination="sbA-sI-UWW" id="F0z-Z2-kLG"/>
