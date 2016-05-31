@@ -6,6 +6,7 @@ use_frameworks!
 target 'NMF' do
 
 pod 'Kingfisher', '~> 2.4'
+pod 'SimulatorStatusMagic', :configurations => ['Debug']
 
 end
 

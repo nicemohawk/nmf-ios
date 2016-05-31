@@ -1,10 +1,13 @@
 PODS:
   - Kingfisher (2.4.1)
+  - SimulatorStatusMagic (1.8)
 
 DEPENDENCIES:
   - Kingfisher (~> 2.4)
+  - SimulatorStatusMagic
 
 SPEC CHECKSUMS:
   Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
+  SimulatorStatusMagic: 4dbf0faa0208e9ac0d56cea06eaa5f7a5f3d02fb
 
 COCOAPODS: 0.39.0

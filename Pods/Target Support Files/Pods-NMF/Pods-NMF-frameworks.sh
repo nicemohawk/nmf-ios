@@ -85,6 +85,7 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-NMF/Kingfisher.framework"
+  install_framework "Pods-NMF/SimulatorStatusMagic.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-NMF/Kingfisher.framework"

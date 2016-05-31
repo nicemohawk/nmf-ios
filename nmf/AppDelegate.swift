@@ -7,6 +7,10 @@
 //
 
 import UIKit
+#if CONFIGURATION_Debug
+import SimulatorStatusMagic
+#endif
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
@@ -31,6 +35,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         DataStore.sharedInstance.updateArtistItems { _ in
             return
         }
+        
+        #if CONFIGURATION_Debug
+            SDStatusBarManager.sharedInstance().enableOverrides()
+        #endif
         
         return true
     }

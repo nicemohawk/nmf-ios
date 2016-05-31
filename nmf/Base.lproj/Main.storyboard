@@ -30,7 +30,7 @@
         <scene sceneID="hin-27-xzU">
             <objects>
                 <tableViewController id="Bs5-px-7hO" customClass="ScheduleTableViewController" customModule="NMF" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="1ND-YZ-59X">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" id="1ND-YZ-59X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,12 +43,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MM8-KW-rmd">
-                                            <rect key="frame" x="48" y="18" width="51.5" height="23"/>
-                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="19"/>
-                                            <color key="textColor" red="0.12156862765550613" green="0.12156862765550613" blue="0.12156862765550613" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="StartTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QZ-vM-JYz">
                                             <rect key="frame" x="299" y="33" width="67.5" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -70,6 +64,12 @@
                                                 <action selector="starItemAction:" destination="Bs5-px-7hO" eventType="touchUpInside" id="dnx-Jo-hF2"/>
                                             </connections>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Artist" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MM8-KW-rmd">
+                                            <rect key="frame" x="48" y="18" width="51.5" height="23"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                            <color key="textColor" red="0.12156862765550613" green="0.12156862765550613" blue="0.12156862765550613" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" red="0.97647058963775635" green="0.9686274528503418" blue="0.7921568751335144" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
@@ -323,7 +323,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aOE-XO-PGa">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="666"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nelsonville Music Festival 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEp-nM-CdO">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nelsonville Music Festival 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEp-nM-CdO">
                                                                 <rect key="frame" x="8" y="8" width="359" height="26"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -347,7 +347,7 @@
                                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ezW-cO-Cg8">
                                                                         <rect key="frame" x="8" y="29" width="343" height="554"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                        <string key="text">Andrew Bird said of the Nelsonville Music Festival, “It’s the perfect size festival. Any bigger and you’d lose something.” The Nelsonville Music Festival continues to be an annual favorite for many music lovers, and one of the best festivals in the Midwest. Set in the beautiful, rolling hills of Southeast Ohio, NMF continues to gain fans who want a music festival with a more personal experience. Catch live music on multiple stages including a small no-fi cabin and a picturesque porch stage in addition to our main stage. Over four days, NMF offers multiple stages of music along with camping on site, kids activities, local art vendors, food, and a beer garden. The Nelsonville Music Festival takes sustainability seriously and is a zero waste event, diverting 94% of the waste created in 2015. Past performers have included Wilco, The Flaming Lips, Willie Nelson, Loretta Lynn, John Prine, The Avett Brothers, Merle Haggard, Dinosaur Jr., St. Vincent, Jason Isbell, Cat Power, Iron &amp; Wine, Andrew Bird, Neko Case, Yo La Tengo, George Jones, Gogol Bordello, and many more. The Nelsonville Music Festival is a production of Stuart’s Opera House, a historic, non-profit theater located in Nelsonville that features over 75 events a year including live music, theater, films, educational programming and more. You can find out more about Stuart’s by visiting stuartsoperahouse.org.</string>
+                                                                        <mutableString key="text">Andrew Bird said of the Nelsonville Music Festival, “It’s the perfect size festival. Any bigger and you’d lose something.” The Nelsonville Music Festival continues to be an annual favorite for many music lovers, and one of the best festivals in the Midwest. Set in the beautiful, rolling hills of Southeast Ohio, NMF continues to gain fans who want a music festival with a more personal experience. Catch live music on multiple stages including a small no-fi cabin and a picturesque porch stage in addition to our main stage. Over four days, NMF offers multiple stages of music along with camping on site, kids activities, local art vendors, food, and a beer garden. The Nelsonville Music Festival takes sustainability seriously and is a zero waste event, diverting 94% of the waste created in 2015. Past performers have included Wilco, The Flaming Lips, Willie Nelson, Loretta Lynn, John Prine, The Avett Brothers, Merle Haggard, Dinosaur Jr., St. Vincent, Jason Isbell, Cat Power, Iron &amp; Wine, Andrew Bird, Neko Case, Yo La Tengo, George Jones, Gogol Bordello, and many more. The Nelsonville Music Festival is a production of Stuart’s Opera House, a historic, non-profit theater located in Nelsonville that features over 75 events a year including live music, theater, films, educational programming and more. You can find out more about Stuart’s by visiting stuartsoperahouse.org.</mutableString>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
