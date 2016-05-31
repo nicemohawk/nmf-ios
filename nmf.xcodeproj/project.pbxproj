@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FDB154D50989198FAA536C6 /* Pods_nmfTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6D87816D1358BB702ECEE1 /* Pods_nmfTests.framework */; };
 		2C5B8B4F1C9A13E900C6A893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B8B4E1C9A13E900C6A893 /* AppDelegate.swift */; };
 		2C5B8B561C9A13E900C6A893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5B8B541C9A13E900C6A893 /* Main.storyboard */; };
 		2C5B8B581C9A13E900C6A893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5B8B571C9A13E900C6A893 /* Assets.xcassets */; };
@@ -32,15 +33,21 @@
 		A53F95FD1CC678DA0041EECA /* ArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F95FC1CC678DA0041EECA /* ArtistsViewController.swift */; };
 		A5DEE7011CB553C100704688 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEE7001CB553C100704688 /* Schedule.swift */; };
 		A5E8382E1CB84D060077D92D /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E8382D1CB84D060077D92D /* ScheduleTableViewCell.swift */; };
+		B1F8306A3FD046750ED481A7 /* Pods_NMF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86647621087015084AB050 /* Pods_NMF.framework */; };
 		B5026C961CFBB66B009F1877 /* mapdata in Resources */ = {isa = PBXBuildFile; fileRef = B5026C951CFBB66B009F1877 /* mapdata */; };
 		B5026C9A1CFC2A4D009F1877 /* ScheduleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5026C981CFC2A4C009F1877 /* ScheduleView.xib */; };
 		B5026C9D1CFC2CFC009F1877 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5026C9C1CFC2CFC009F1877 /* ScheduleView.swift */; };
 		B5026C9F1CFC48EA009F1877 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5026C9E1CFC48EA009F1877 /* InfoViewController.swift */; };
+		B588B0D21CFDDDB300C4C3CF /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B588B0D11CFDDDB300C4C3CF /* CoreAudio.framework */; };
+		B588B0D51CFDDEE400C4C3CF /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B588B0D31CFDDEE400C4C3CF /* CoreMedia.framework */; };
+		B588B0D61CFDDEE400C4C3CF /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B588B0D41CFDDEE400C4C3CF /* CoreVideo.framework */; };
+		B588B0D81CFDDEF200C4C3CF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B588B0D71CFDDEF200C4C3CF /* AVFoundation.framework */; };
+		B588B0DA1CFDDF0800C4C3CF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B588B0D91CFDDF0800C4C3CF /* AudioToolbox.framework */; };
+		B588B0DF1CFDF70400C4C3CF /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B588B0DE1CFDF70400C4C3CF /* libstdc++.tbd */; };
 		B59B0DEC1CF8AD7200B38F5A /* UIColor+NMF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B0DEB1CF8AD7200B38F5A /* UIColor+NMF.swift */; };
 		B5A5340C1CF910BE005BAF8E /* StackWidthLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5340B1CF910BE005BAF8E /* StackWidthLabel.swift */; };
 		B5A5340E1CFAB39D005BAF8E /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5A5340D1CFAB39D005BAF8E /* Montserrat-Regular.otf */; };
 		B5A534101CFAB683005BAF8E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5340F1CFAB683005BAF8E /* MapViewController.swift */; };
-		B74AB3BFAA52A5EE7CCD2CA5 /* Pods_NMF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED3699E59000B1BCC7DFA99 /* Pods_NMF.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +61,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01111B245A361CEF4CD002EA /* Pods-nmfTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nmfTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nmfTests/Pods-nmfTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0E86647621087015084AB050 /* Pods_NMF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C6D87816D1358BB702ECEE1 /* Pods_nmfTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nmfTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2328F20B0D47FF1A44CCEDF7 /* Pods-NMF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMF.release.xcconfig"; path = "Pods/Target Support Files/Pods-NMF/Pods-NMF.release.xcconfig"; sourceTree = "<group>"; };
 		2C5B8B4B1C9A13E900C6A893 /* NMF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5B8B4E1C9A13E900C6A893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C5B8B551C9A13E900C6A893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -248,8 +259,8 @@
 		2C5B8C3F1C9BABBA00C6A893 /* x264.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x264.h; sourceTree = "<group>"; };
 		2C5B8C401C9BABBA00C6A893 /* x264_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x264_config.h; sourceTree = "<group>"; };
 		2C5B8C421C9BABBA00C6A893 /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libx264.a; sourceTree = "<group>"; };
-		3ED3699E59000B1BCC7DFA99 /* Pods_NMF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2EEA4533C54DCA42B0B993B /* Pods-NMF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMF.release.xcconfig"; path = "Pods/Target Support Files/Pods-NMF/Pods-NMF.release.xcconfig"; sourceTree = "<group>"; };
+		2F32E065FB53AB9901456A50 /* Pods-NMF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NMF/Pods-NMF.debug.xcconfig"; sourceTree = "<group>"; };
+		61C825784B8FC199B4AAEDC9 /* Pods-nmfTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nmfTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nmfTests/Pods-nmfTests.release.xcconfig"; sourceTree = "<group>"; };
 		A527604F1CB415B3003B62AD /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
 		A52B2FEC1CC18ABD00F05700 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		A53D60391CAC5B6900B97E49 /* Artists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artists.swift; sourceTree = "<group>"; };
@@ -261,11 +272,17 @@
 		B5026C9C1CFC2CFC009F1877 /* ScheduleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		B5026C9E1CFC48EA009F1877 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		B588B0CC1CFC504C00C4C3CF /* update_build_number.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = update_build_number.sh; sourceTree = "<group>"; };
+		B588B0D11CFDDDB300C4C3CF /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		B588B0D31CFDDEE400C4C3CF /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B588B0D41CFDDEE400C4C3CF /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		B588B0D71CFDDEF200C4C3CF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B588B0D91CFDDF0800C4C3CF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B588B0DD1CFDF62800C4C3CF /* NMF-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NMF-Bridging-Header.h"; sourceTree = "<group>"; };
+		B588B0DE1CFDF70400C4C3CF /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		B59B0DEB1CF8AD7200B38F5A /* UIColor+NMF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+NMF.swift"; sourceTree = "<group>"; };
 		B5A5340B1CF910BE005BAF8E /* StackWidthLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackWidthLabel.swift; sourceTree = "<group>"; };
 		B5A5340D1CFAB39D005BAF8E /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		B5A5340F1CFAB683005BAF8E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		C7B07E09693622909F4C0AAD /* Pods-NMF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NMF/Pods-NMF.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +290,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B588B0DF1CFDF70400C4C3CF /* libstdc++.tbd in Frameworks */,
+				B588B0DA1CFDDF0800C4C3CF /* AudioToolbox.framework in Frameworks */,
+				B588B0D81CFDDEF200C4C3CF /* AVFoundation.framework in Frameworks */,
+				B588B0D51CFDDEE400C4C3CF /* CoreMedia.framework in Frameworks */,
+				B588B0D61CFDDEE400C4C3CF /* CoreVideo.framework in Frameworks */,
+				B588B0D21CFDDDB300C4C3CF /* CoreAudio.framework in Frameworks */,
 				2C5B8C491C9BABBA00C6A893 /* libavutil.a in Frameworks */,
 				2C5B8C471C9BABBA00C6A893 /* libavfilter.a in Frameworks */,
 				2C5B8C4A1C9BABBA00C6A893 /* libswscale.a in Frameworks */,
@@ -287,7 +310,7 @@
 				2C5B8C481C9BABBA00C6A893 /* libavformat.a in Frameworks */,
 				2C5B8C441C9BABBA00C6A893 /* CommLibiOS.a in Frameworks */,
 				2C5B8C451C9BABBA00C6A893 /* libavcodec.a in Frameworks */,
-				B74AB3BFAA52A5EE7CCD2CA5 /* Pods_NMF.framework in Frameworks */,
+				B1F8306A3FD046750ED481A7 /* Pods_NMF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +318,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FDB154D50989198FAA536C6 /* Pods_nmfTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,15 +329,11 @@
 			isa = PBXGroup;
 			children = (
 				B588B0CC1CFC504C00C4C3CF /* update_build_number.sh */,
-				2C5B8B761C9BABBA00C6A893 /* lib */,
-				2C5B8B741C9BAB8400C6A893 /* libz.tbd */,
-				2C5B8B721C9BAB7B00C6A893 /* libsqlite3.tbd */,
-				2C5B8B701C9BAB6C00C6A893 /* SystemConfiguration.framework */,
 				2C5B8B4D1C9A13E900C6A893 /* nmf */,
 				2C5B8B641C9A13E900C6A893 /* nmfTests */,
 				2C5B8B4C1C9A13E900C6A893 /* Products */,
-				4919E477E93DE7938C264AE0 /* Pods */,
 				ED7006EE1001D61CA95AA206 /* Frameworks */,
+				5B9146B5212E9D2012DE19CF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -342,6 +362,7 @@
 				B5026C981CFC2A4C009F1877 /* ScheduleView.xib */,
 				2C5B8B571C9A13E900C6A893 /* Assets.xcassets */,
 				2C5B8B5C1C9A13E900C6A893 /* Info.plist */,
+				B588B0DD1CFDF62800C4C3CF /* NMF-Bridging-Header.h */,
 				B5A5340D1CFAB39D005BAF8E /* Montserrat-Regular.otf */,
 				B5026C951CFBB66B009F1877 /* mapdata */,
 			);
@@ -722,11 +743,13 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
-		4919E477E93DE7938C264AE0 /* Pods */ = {
+		5B9146B5212E9D2012DE19CF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C7B07E09693622909F4C0AAD /* Pods-NMF.debug.xcconfig */,
-				A2EEA4533C54DCA42B0B993B /* Pods-NMF.release.xcconfig */,
+				2F32E065FB53AB9901456A50 /* Pods-NMF.debug.xcconfig */,
+				2328F20B0D47FF1A44CCEDF7 /* Pods-NMF.release.xcconfig */,
+				01111B245A361CEF4CD002EA /* Pods-nmfTests.debug.xcconfig */,
+				61C825784B8FC199B4AAEDC9 /* Pods-nmfTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -762,7 +785,18 @@
 		ED7006EE1001D61CA95AA206 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3ED3699E59000B1BCC7DFA99 /* Pods_NMF.framework */,
+				B588B0DE1CFDF70400C4C3CF /* libstdc++.tbd */,
+				2C5B8B761C9BABBA00C6A893 /* lib */,
+				2C5B8B741C9BAB8400C6A893 /* libz.tbd */,
+				2C5B8B721C9BAB7B00C6A893 /* libsqlite3.tbd */,
+				2C5B8B701C9BAB6C00C6A893 /* SystemConfiguration.framework */,
+				B588B0D91CFDDF0800C4C3CF /* AudioToolbox.framework */,
+				B588B0D71CFDDEF200C4C3CF /* AVFoundation.framework */,
+				B588B0D31CFDDEE400C4C3CF /* CoreMedia.framework */,
+				B588B0D41CFDDEE400C4C3CF /* CoreVideo.framework */,
+				B588B0D11CFDDDB300C4C3CF /* CoreAudio.framework */,
+				0E86647621087015084AB050 /* Pods_NMF.framework */,
+				1C6D87816D1358BB702ECEE1 /* Pods_nmfTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -774,13 +808,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C5B8B6A1C9A13EA00C6A893 /* Build configuration list for PBXNativeTarget "NMF" */;
 			buildPhases = (
-				6ED96E0738106CF41A7871CB /* Check Pods Manifest.lock */,
+				A54956588D0C922ABB095B7F /* 📦 Check Pods Manifest.lock */,
 				2C5B8B471C9A13E900C6A893 /* Sources */,
 				2C5B8B481C9A13E900C6A893 /* Frameworks */,
 				2C5B8B491C9A13E900C6A893 /* Resources */,
 				B588B0CD1CFC508F00C4C3CF /* Update Build Number */,
-				8515B35D0F0204F8A1046D4E /* Embed Pods Frameworks */,
-				958ED19994C0540F9AAEB413 /* Copy Pods Resources */,
+				B588B0D01CFDDCC100C4C3CF /* Fabric */,
+				1EA02A8D16B6F0377C729481 /* 📦 Embed Pods Frameworks */,
+				F296660672D6AAB3E697D652 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -795,9 +830,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C5B8B6D1C9A13EA00C6A893 /* Build configuration list for PBXNativeTarget "nmfTests" */;
 			buildPhases = (
+				DB26E25AA9944C2253F37952 /* 📦 Check Pods Manifest.lock */,
 				2C5B8B5D1C9A13E900C6A893 /* Sources */,
 				2C5B8B5E1C9A13E900C6A893 /* Frameworks */,
 				2C5B8B5F1C9A13E900C6A893 /* Resources */,
+				518CBEB74800B7BFC41BCAF2 /* 📦 Embed Pods Frameworks */,
+				BF6FB1D1D214DB952DA8EDA8 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -823,6 +861,9 @@
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = GYV9U8338K;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -877,29 +918,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6ED96E0738106CF41A7871CB /* Check Pods Manifest.lock */ = {
+		1EA02A8D16B6F0377C729481 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		8515B35D0F0204F8A1046D4E /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -907,19 +933,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NMF/Pods-NMF-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		958ED19994C0540F9AAEB413 /* Copy Pods Resources */ = {
+		518CBEB74800B7BFC41BCAF2 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NMF/Pods-NMF-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nmfTests/Pods-nmfTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A54956588D0C922ABB095B7F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B588B0CD1CFC508F00C4C3CF /* Update Build Number */ = {
@@ -935,6 +976,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/update_build_number.sh\" master\n";
+		};
+		B588B0D01CFDDCC100C4C3CF /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 280fcf8df6cca9651ad15f25aade9b92ff5928ef 9e9b66e2cdea110c3f1e47563b8cb8fac6fd12a0779d92f366db439d7285e4e5";
+		};
+		BF6FB1D1D214DB952DA8EDA8 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nmfTests/Pods-nmfTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB26E25AA9944C2253F37952 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F296660672D6AAB3E697D652 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NMF/Pods-NMF-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1023,7 +1123,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1089,7 +1189,7 @@
 		};
 		2C5B8B6B1C9A13EA00C6A893 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7B07E09693622909F4C0AAD /* Pods-NMF.debug.xcconfig */;
+			baseConfigurationReference = 2F32E065FB53AB9901456A50 /* Pods-NMF.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = nmf/Info.plist;
@@ -1102,14 +1202,14 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DCONFIGURATION_Debug";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicemohawk.nmf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/lib/backendless/include/Backendless-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "nmf/NMF-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		2C5B8B6C1C9A13EA00C6A893 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2EEA4533C54DCA42B0B993B /* Pods-NMF.release.xcconfig */;
+			baseConfigurationReference = 2328F20B0D47FF1A44CCEDF7 /* Pods-NMF.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = nmf/Info.plist;
@@ -1121,13 +1221,14 @@
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicemohawk.nmf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/lib/backendless/include/Backendless-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "nmf/NMF-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		2C5B8B6E1C9A13EA00C6A893 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01111B245A361CEF4CD002EA /* Pods-nmfTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = nmfTests/Info.plist;
@@ -1140,6 +1241,7 @@
 		};
 		2C5B8B6F1C9A13EA00C6A893 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61C825784B8FC199B4AAEDC9 /* Pods-nmfTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = nmfTests/Info.plist;
