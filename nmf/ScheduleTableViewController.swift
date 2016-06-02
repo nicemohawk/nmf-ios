@@ -117,10 +117,10 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         }
         
         var lastPath = NSIndexPath(forRow: 0, inSection: 0)
-        let oneHourAgo = NSDate(timeIntervalSinceNow: -(1*60*60)) // NSDate(timeIntervalSinceNow: 4*24*60*60) // test by adding 4 days
+        let oneHourAgo = NSDate(timeIntervalSinceNow: -(1*60*60)) // NSDate(timeIntervalSinceNow: (2*24-6)*60*60) // test by adding 4 days
         
-        for (section, sectionArray) in scheduleItems.reverse().enumerate() {
-            for (row, scheduleItem) in sectionArray.reverse().enumerate() {
+        for (section, sectionArray) in scheduleItems.enumerate().reverse() {
+            for (row, scheduleItem) in sectionArray.enumerate().reverse() {
                 let indexPath = NSIndexPath(forRow: row, inSection: section)
                 
                 if let time = scheduleItem.starttime where time.earlierDate(oneHourAgo) == oneHourAgo {
@@ -200,10 +200,11 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
             scheduleCell.artist.text = foundScheduleItem.artist
             scheduleCell.stage.text = foundScheduleItem.stage
             
-            let oneHourAgo = NSDate(timeIntervalSinceNow: (3*24-2)*60*60)//NSDate(timeIntervalSinceNow: -(1*60*60))
+            let oneHourAgo = NSDate(timeIntervalSinceNow: -(1*60*60))
+            let fifteenMinutesFromNow = NSDate(timeIntervalSinceNow:15*60)
             
             if let showTime = foundScheduleItem.starttime where
-                showTime.earlierDate(NSDate(timeIntervalSinceNow:15*60)) == showTime && showTime.earlierDate(oneHourAgo) == oneHourAgo {
+                showTime.earlierDate(fifteenMinutesFromNow) == showTime && showTime.earlierDate(oneHourAgo) == oneHourAgo {
                 scheduleCell.startTime.text = "Now"
                 scheduleCell.startTime.font = UIFont.boldSystemFontOfSize(UIFont.labelFontSize())
                 scheduleCell.startTime.textColor = UIColor.coral()
@@ -236,7 +237,13 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         }
         
         if let foundScheduleItem = scheduleItem {
-            guard let stage = foundScheduleItem.stage where stage != "" else {
+            guard let stage = foundScheduleItem.stage where
+                stage != "" else {
+                return nil
+            }
+
+            guard let artistName = scheduleItem?.artist where
+                DataStore.sharedInstance.artistItems.filter({$0.artistName == artistName}).count > 0 else {
                 return nil
             }
         }
