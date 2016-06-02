@@ -29,7 +29,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     override func viewDidLoad() {
         // 2.17 miles = 3500 meters
-        let region = MKCoordinateRegionMakeWithDistance(nmf.coordinate, 300.0, 300.0)
+        let region = MKCoordinateRegionMakeWithDistance(nmf.coordinate, 275.0, 275.0)
         
         mapView.setRegion(region, animated: true)
         
