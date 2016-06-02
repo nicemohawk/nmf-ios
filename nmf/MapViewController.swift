@@ -56,7 +56,36 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         super.viewWillAppear(animated)
     }
     
+    static var once: dispatch_once_t = 0
+    
+    override func viewDidAppear(animated: Bool) {        
+        dispatch_once(&MapViewController.once) {
+            self.toggleLegendAction(self)
+        }
+    }
+    
     // MARK: - Actions
+    
+    @IBOutlet weak var lengendTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var legendImageView: UIImageView!
+    
+    @IBAction func toggleLegendAction(sender: AnyObject) {
+        var height = -(legendImageView.bounds.height)
+        var delay = 0.0
+        
+        if sender is MapViewController {
+            delay = 0.33
+        } else if lengendTopConstraint.constant < 0 {
+            height = self.mapView.frame.height + height
+        }
+        
+        self.lengendTopConstraint.constant = height
+
+        UIView.animateWithDuration(0.4, delay: delay, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.25, options: [], animations: {
+            self.view.layoutIfNeeded()
+        }, completion: nil)
+    }
+    
     
     @IBAction func locationButtonAction(sender: UIBarButtonItem) {
         if let userLocation = locationManager.location {
@@ -87,6 +116,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
          presentViewController(alertController, animated: true, completion: nil)
     }
+    
+    
     
     // MARK: - MapKit delegate methods
     

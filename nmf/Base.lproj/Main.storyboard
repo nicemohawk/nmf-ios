@@ -616,17 +616,32 @@ Thank you for your cooperation with these safety policies.</string>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZY5-nP-wDm">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <gestureRecognizers/>
                                 <connections>
                                     <outlet property="delegate" destination="sbA-sI-UWW" id="F5B-FO-FgV"/>
+                                    <outletCollection property="gestureRecognizers" destination="ZA6-vM-AkC" appends="YES" id="qPv-jO-P1p"/>
                                 </connections>
                             </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Map-Legend" translatesAutoresizingMaskIntoConstraints="NO" id="d6v-Zf-GLH">
+                                <rect key="frame" x="0.0" y="411" width="375" height="207"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="d6v-Zf-GLH" secondAttribute="height" multiplier="437:241" id="eqi-Af-X2u"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ay2-Cg-jF6" appends="YES" id="VSC-4o-TbP"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ZY5-nP-wDm" firstAttribute="top" secondItem="LBF-cz-qL8" secondAttribute="bottom" id="0Cm-RP-ayc"/>
                             <constraint firstItem="ZY5-nP-wDm" firstAttribute="leading" secondItem="vJm-xu-xFR" secondAttribute="leading" id="4Lz-38-sYw"/>
+                            <constraint firstItem="d6v-Zf-GLH" firstAttribute="top" secondItem="LBF-cz-qL8" secondAttribute="bottom" id="LsB-of-K8s"/>
                             <constraint firstAttribute="trailing" secondItem="ZY5-nP-wDm" secondAttribute="trailing" id="Xi2-y9-nnE"/>
                             <constraint firstItem="7RC-QM-heY" firstAttribute="top" secondItem="ZY5-nP-wDm" secondAttribute="bottom" id="aVA-Rs-xUe"/>
+                            <constraint firstItem="d6v-Zf-GLH" firstAttribute="leading" secondItem="vJm-xu-xFR" secondAttribute="leading" id="c6D-7E-VeQ"/>
+                            <constraint firstAttribute="trailing" secondItem="d6v-Zf-GLH" secondAttribute="trailing" id="u4h-3n-5Qu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5c4-H1-Os1">
@@ -645,19 +660,39 @@ Thank you for your cooperation with these safety policies.</string>
                                 </connections>
                             </barButtonItem>
                         </leftBarButtonItems>
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="PgP-fG-6oQ">
-                            <color key="tintColor" red="0.97647058959999999" green="0.96862745289999996" blue="0.79215687509999999" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="actionButtonAction:" destination="sbA-sI-UWW" id="F0z-Z2-kLG"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="action" id="PgP-fG-6oQ">
+                                <color key="tintColor" red="0.97647058959999999" green="0.96862745289999996" blue="0.79215687509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="actionButtonAction:" destination="sbA-sI-UWW" id="F0z-Z2-kLG"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="map-marker" id="aZb-wN-GKX">
+                                <color key="tintColor" red="0.97647058959999999" green="0.96862745289999996" blue="0.79215687509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="toggleLegendAction:" destination="sbA-sI-UWW" id="0ZS-6D-VRl"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="legendImageView" destination="d6v-Zf-GLH" id="l7C-wo-q53"/>
+                        <outlet property="lengendTopConstraint" destination="LsB-of-K8s" id="TmR-fZ-clg"/>
                         <outlet property="mapView" destination="ZY5-nP-wDm" id="Q1Y-TB-4qh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="40X-IC-e0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ZA6-vM-AkC">
+                    <connections>
+                        <action selector="toggleLegendAction:" destination="sbA-sI-UWW" id="AFJ-Vv-WzL"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ay2-Cg-jF6">
+                    <connections>
+                        <action selector="toggleLegendAction:" destination="sbA-sI-UWW" id="azT-Ac-xmk"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1457.5" y="-1093.5"/>
         </scene>
@@ -705,12 +740,14 @@ Thank you for your cooperation with these safety policies.</string>
         </scene>
     </scenes>
     <resources>
+        <image name="Map-Legend" width="437" height="241"/>
         <image name="NMFOhio-logo-coral-barbutton" width="40" height="40"/>
         <image name="bell" width="48" height="48"/>
         <image name="direction" width="48" height="48"/>
         <image name="info-sign" width="48" height="48"/>
         <image name="inverse-nmf-logo" width="107" height="33"/>
         <image name="map" width="48" height="48"/>
+        <image name="map-marker" width="48" height="48"/>
         <image name="star" width="48" height="48"/>
         <image name="star-empty" width="48" height="48"/>
     </resources>
