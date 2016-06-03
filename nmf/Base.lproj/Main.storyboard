@@ -102,7 +102,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="J0r-KB-LRn">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" image="bell" style="plain" id="JXd-k9-g74" customClass="BBBadgeBarButtonItem">
+                        <barButtonItem key="leftBarButtonItem" image="bell" id="JXd-k9-g74" customClass="BBBadgeBarButtonItem">
                             <connections>
                                 <action selector="notificationsAction:" destination="Bs5-px-7hO" id="OgZ-GX-lcL"/>
                             </connections>

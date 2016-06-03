@@ -69,6 +69,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+
+        lastActive = NSDate()
     }
 
     func applicationDidEnterBackground(application: UIApplication) {
@@ -86,8 +88,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
         
-        if lastActive.earlierDate(NSDate(timeIntervalSinceNow: -(5*60))) != lastActive {
-            // if app hasn't been used in 5 minutes, update it, otherwise return
+        if lastActive.earlierDate(NSDate(timeIntervalSinceNow: -(10*60))) != lastActive {
+            // if app hasn't been used in 10 minutes, update it, otherwise return
             return
         }
         
@@ -96,8 +98,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
             let scheduleViewController = navController.visibleViewController as? ScheduleTableViewController else {
                 return
         }
-        
-        scheduleViewController.scrollToNearestCell()
+
+        DataStore.sharedInstance.updateScheduleItems() { error in
+            if error == nil {
+                scheduleViewController.sortScheduleItems(starredOnly: scheduleViewController.showingStarredOnly)
+                
+                scheduleViewController.tableView.reloadData()
+            }
+            
+            scheduleViewController.scrollToNearestCell()
+        }
     }
 
     func applicationWillTerminate(application: UIApplication) {

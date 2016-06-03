@@ -42,9 +42,7 @@ class DataStore: NSObject {
         
         dataStore.find({ (scheduleItemsCollection) in
             if let items = scheduleItemsCollection.data as? [Schedule] {
-                let sortedItems = items.sort { $0.starttime?.compare($1.starttime ?? NSDate.distantFuture()) != .OrderedDescending }
-                
-                self.mergeScheduleItems(sortedItems)
+                self.mergeScheduleItems(items)
             }
             
             completion(nil)

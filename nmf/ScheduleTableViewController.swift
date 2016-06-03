@@ -409,6 +409,13 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
             }
         }
         
+        let timeSort: (Schedule, Schedule) -> Bool = { $0.starttime?.compare($1.starttime ?? NSDate.distantFuture()) != .OrderedDescending }
+        
+        thursdayShows.sortInPlace(timeSort)
+        fridayShows.sortInPlace(timeSort)
+        saturdayShows.sortInPlace(timeSort)
+        sundayShows.sortInPlace(timeSort)
+        
         scheduleItems = [thursdayShows, fridayShows, saturdayShows, sundayShows]
         
         self.tableView.reloadData()
