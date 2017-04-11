@@ -12,6 +12,11 @@ import Contacts
 
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
+// FIXME?
+    private static var __once: () = {
+            self.toggleLegendAction(self)
+        }()
+    
     lazy var locationManager: CLLocationManager = {
         let manager = CLLocationManager()
         
@@ -22,7 +27,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }()
     
     let nmf = CLLocation(latitude: 39.441032, longitude: -82.218418)
-    let tileOverlay = TileOverlay(URLTemplate: NSBundle.mainBundle().bundleURL.absoluteString + "mapdata/{z}/{x}/{y}.png")
+    let tileOverlay = TileOverlay(urlTemplate: Bundle.main.bundleURL.absoluteString + "mapdata/{z}/{x}/{y}.png")
     
     @IBOutlet var mapView: MKMapView!
     
@@ -34,18 +39,18 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         mapView.setRegion(region, animated: true)
         
         tileOverlay.canReplaceMapContent = false
-        mapView.insertOverlay(tileOverlay, atIndex: 0, level: .AboveRoads)
+        mapView.insert(tileOverlay, at: 0, level: .aboveRoads)
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         // location manager
         
         let authorization = CLLocationManager.authorizationStatus()
         
-        if authorization == .Denied || authorization == .Restricted {
+        if authorization == .denied || authorization == .restricted {
             print("Unabled to access location")
         } else {
-            if authorization == .NotDetermined {
+            if authorization == .notDetermined {
                 locationManager.requestWhenInUseAuthorization()
             }
             
@@ -56,12 +61,11 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         super.viewWillAppear(animated)
     }
     
-    static var once: dispatch_once_t = 0
+    //FIXME?
+    static var once: Int = 0
     
-    override func viewDidAppear(animated: Bool) {        
-        dispatch_once(&MapViewController.once) {
-            self.toggleLegendAction(self)
-        }
+    override func viewDidAppear(_ animated: Bool) {        
+        _ = MapViewController.__once
     }
     
     // MARK: - Actions
@@ -69,7 +73,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     @IBOutlet weak var lengendTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var legendImageView: UIImageView!
     
-    @IBAction func toggleLegendAction(sender: AnyObject) {
+    @IBAction func toggleLegendAction(_ sender: AnyObject) {
         var height = -(legendImageView.bounds.height)
         var delay = 0.0
         
@@ -81,47 +85,47 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
         self.lengendTopConstraint.constant = height
 
-        UIView.animateWithDuration(0.4, delay: delay, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.25, options: [], animations: {
+        UIView.animate(withDuration: 0.4, delay: delay, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.25, options: [], animations: {
             self.view.layoutIfNeeded()
         }, completion: nil)
     }
     
     
-    @IBAction func locationButtonAction(sender: UIBarButtonItem) {
+    @IBAction func locationButtonAction(_ sender: UIBarButtonItem) {
         if let userLocation = locationManager.location {
-            mapView.setCenterCoordinate(userLocation.coordinate, animated: true)
+            mapView.setCenter(userLocation.coordinate, animated: true)
         }
     }
     
-    @IBAction func nmfButtonAction(sender: AnyObject) {
+    @IBAction func nmfButtonAction(_ sender: AnyObject) {
         let region = MKCoordinateRegionMakeWithDistance(nmf.coordinate, 300.0, 300.0)
         
         mapView.setRegion(region, animated: true)
     }
     
-    @IBAction func actionButtonAction(sender: UIBarButtonItem) {
-        let alertController = UIAlertController(title: "Need Directions to NMF?", message: nil, preferredStyle: .ActionSheet)
+    @IBAction func actionButtonAction(_ sender: UIBarButtonItem) {
+        let alertController = UIAlertController(title: "Need Directions to NMF?", message: nil, preferredStyle: .actionSheet)
         
-         alertController.addAction(UIAlertAction(title: "Open in Maps", style: .Default, handler: { (action) in
+         alertController.addAction(UIAlertAction(title: "Open in Maps", style: .default, handler: { (action) in
             let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: self.nmf.coordinate, addressDictionary: [CNPostalAddressCityKey: "Nelsonville", CNPostalAddressStateKey: "Ohio"]))
             
             let launchOptions = [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving]
             
-            mapItem.openInMapsWithLaunchOptions(launchOptions)
+            mapItem.openInMaps(launchOptions: launchOptions)
         }))
         
-        alertController.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: { (action) in
-            self.dismissViewControllerAnimated(true, completion: nil)
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action) in
+            self.dismiss(animated: true, completion: nil)
         }))
         
-         presentViewController(alertController, animated: true, completion: nil)
+         present(alertController, animated: true, completion: nil)
     }
     
     
     
     // MARK: - MapKit delegate methods
     
-    func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         return MKTileOverlayRenderer(tileOverlay: self.tileOverlay)
     }
     
@@ -130,19 +134,20 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     //	func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
     //	}
     
-    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-        if status == .AuthorizedWhenInUse {
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
             manager.startUpdatingLocation()
         }
     }
     
-    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error.localizedDescription)
     }
 }
 
 class TileOverlay : MKTileOverlay {
-    override func loadTileAtPath(path: MKTileOverlayPath, result: (NSData?, NSError?) -> Void) {
-        super.loadTileAtPath(path, result: result)
+    // FIXME?
+    override func loadTile(at path: MKTileOverlayPath, result: @escaping (Data?, Error?) -> Void) {
+        super.loadTile(at: path, result: result)
     }
 }

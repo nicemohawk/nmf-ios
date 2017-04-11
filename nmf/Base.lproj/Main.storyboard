@@ -149,7 +149,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bai-eQ-ept">
                                 <rect key="frame" x="0.0" y="64" width="375" height="659"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hFF-2A-qOl">
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hFF-2A-qOl">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="980.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="vie-dt-Sfo">
@@ -210,7 +210,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" preservesSuperviewLayoutMargins="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="k51-8G-NwD">
                                                         <rect key="frame" x="0.0" y="422" width="375" height="49"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaU-iz-eZU">
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaU-iz-eZU">
                                                                 <rect key="frame" x="8" y="8" width="181" height="33"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                                 <state key="normal" title="Website"/>
@@ -218,7 +218,7 @@
                                                                     <action selector="websiteButtonTapped:" destination="ZEJ-OI-GpK" eventType="touchUpInside" id="7Gm-rj-OfQ"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJZ-p4-VQ2">
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJZ-p4-VQ2">
                                                                 <rect key="frame" x="189" y="8" width="178" height="33"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                                 <state key="normal" title="YouTube"/>
@@ -319,7 +319,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0re-0T-JCs">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="2750"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMc-tT-lV7">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OMc-tT-lV7">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="4421"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eSr-Sy-2HS">

@@ -24,28 +24,28 @@ class Artists : NSObject, NSCoding {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        objectId = aDecoder.decodeObjectForKey("oid") as? String
+        objectId = aDecoder.decodeObject(forKey: "oid") as? String
         
-        artistName = aDecoder.decodeObjectForKey("artist") as? String
-        bio = aDecoder.decodeObjectForKey("bio") as? String
-        picture = aDecoder.decodeObjectForKey("picture") as? String
+        artistName = aDecoder.decodeObject(forKey: "artist") as? String
+        bio = aDecoder.decodeObject(forKey: "bio") as? String
+        picture = aDecoder.decodeObject(forKey: "picture") as? String
         
-        URL = aDecoder.decodeObjectForKey("url") as? String
-        YouTube = aDecoder.decodeObjectForKey("youtube") as? String
+        URL = aDecoder.decodeObject(forKey: "url") as? String
+        YouTube = aDecoder.decodeObject(forKey: "youtube") as? String
     }
 
-    func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeObject(objectId, forKey: "oid")
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(objectId, forKey: "oid")
 
-        aCoder.encodeObject(artistName, forKey: "name")
-        aCoder.encodeObject(bio, forKey: "bio")
-        aCoder.encodeObject(picture, forKey: "picture")
+        aCoder.encode(artistName, forKey: "name")
+        aCoder.encode(bio, forKey: "bio")
+        aCoder.encode(picture, forKey: "picture")
         
-        aCoder.encodeObject(URL, forKey: "url")
-        aCoder.encodeObject(YouTube, forKey: "youtube")
+        aCoder.encode(URL, forKey: "url")
+        aCoder.encode(YouTube, forKey: "youtube")
     }
     
-    func update(otherItem: Artists) {
+    func update(_ otherItem: Artists) {
         guard objectId == otherItem.objectId else {
             return
         }

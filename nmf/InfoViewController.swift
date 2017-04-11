@@ -23,20 +23,20 @@ class InfoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func buyTixAction(sender: UIButton) {
-        openLink(NSURL(string: "http://nelsonvillefest.org/tickets/"))
+    @IBAction func buyTixAction(_ sender: UIButton) {
+        openLink(URL(string: "http://nelsonvillefest.org/tickets/"))
     }
 
-    @IBAction func moreInfoAction(sender: UIButton) {
-        openLink(NSURL(string: "http://nelsonvillefest.org/faq/"))
+    @IBAction func moreInfoAction(_ sender: UIButton) {
+        openLink(URL(string: "http://nelsonvillefest.org/faq/"))
     }
     
-    func openLink(linkURL: NSURL?) {
+    func openLink(_ linkURL: URL?) {
         if let url = linkURL {
-            let safariVC = SFSafariViewController(URL: url)
+            let safariVC = SFSafariViewController(url: url)
             safariVC.delegate = self
             
-            presentViewController(safariVC, animated: true, completion: nil)
+            present(safariVC, animated: true, completion: nil)
         }
     }
     
@@ -53,8 +53,8 @@ class InfoViewController: UIViewController {
 }
 
 extension InfoViewController: SFSafariViewControllerDelegate {
-    func safariViewControllerDidFinish(controller: SFSafariViewController) {
-        controller.dismissViewControllerAnimated(true, completion: nil)
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        controller.dismiss(animated: true, completion: nil)
     }
 }
 

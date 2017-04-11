@@ -12,8 +12,8 @@ class Schedule: NSObject, NSCoding {
     var objectId: String?
     
     var artist: String?
-    var starttime: NSDate?
-    var endtime: NSDate?
+    var starttime: Date?
+    var endtime: Date?
     var stage: String?
     
     var starred: Bool = false
@@ -23,28 +23,28 @@ class Schedule: NSObject, NSCoding {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        objectId = aDecoder.decodeObjectForKey("oid") as? String
+        objectId = aDecoder.decodeObject(forKey: "oid") as? String
         
-        artist = aDecoder.decodeObjectForKey("artist") as? String
-        starttime = aDecoder.decodeObjectForKey("start") as? NSDate
-        stage = aDecoder.decodeObjectForKey("stage") as? String
+        artist = aDecoder.decodeObject(forKey: "artist") as? String
+        starttime = aDecoder.decodeObject(forKey: "start") as? Date
+        stage = aDecoder.decodeObject(forKey: "stage") as? String
         
-        starred = aDecoder.decodeBoolForKey("starred")
+        starred = aDecoder.decodeBool(forKey: "starred")
     }
 
-    func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeObject(objectId, forKey: "oid")
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(objectId, forKey: "oid")
 
-        aCoder.encodeObject(artist, forKey: "artist")
-        aCoder.encodeObject(starttime, forKey: "start")
-        aCoder.encodeObject(stage, forKey: "stage")
+        aCoder.encode(artist, forKey: "artist")
+        aCoder.encode(starttime, forKey: "start")
+        aCoder.encode(stage, forKey: "stage")
         
-        aCoder.encodeBool(starred, forKey: "starred")
+        aCoder.encode(starred, forKey: "starred")
     }
     
     // MARK: - Custom methods
 
-    func update(otherItem: Schedule) {
+    func update(_ otherItem: Schedule) {
         guard objectId == otherItem.objectId else {
             return
         }
@@ -58,15 +58,15 @@ class Schedule: NSObject, NSCoding {
     
     //MARK: - date formatting
     
-    static let hourFormatter: NSDateFormatter = {
-        let formatter = NSDateFormatter()
+    static let hourFormatter: DateFormatter = {
+        let formatter = DateFormatter()
         formatter.dateFormat = "h:mma"
         
         return formatter
     }()
     
-    static let dateFormatter: NSDateFormatter = {
-        let formatter = NSDateFormatter()
+    static let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
         formatter.dateFormat = "EEEE h:mma"
         
         return formatter
@@ -74,7 +74,7 @@ class Schedule: NSObject, NSCoding {
     
     func timeString() -> String {
         if let startDate = starttime {
-            return Schedule.hourFormatter.stringFromDate(startDate)
+            return Schedule.hourFormatter.string(from: startDate)
         }
         
         return ""
@@ -82,7 +82,7 @@ class Schedule: NSObject, NSCoding {
     
     func dateString() -> String {
         if let startDate = starttime {
-            return Schedule.dateFormatter.stringFromDate(startDate)
+            return Schedule.dateFormatter.string(from: startDate)
         }
         
         return ""

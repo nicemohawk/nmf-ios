@@ -26,7 +26,7 @@ class ArtistViewController: UIViewController {
     @IBOutlet weak var scheduleStackView: UIStackView!
     @IBOutlet weak var scheduleNIBView: ScheduleView!
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         if let foundArtist = artist {
@@ -34,23 +34,23 @@ class ArtistViewController: UIViewController {
             self.artistBio.text = foundArtist.bio
             
             if let pictureURLString = foundArtist.picture,
-                let imageURL = NSURL(string: pictureURLString) {
+                let imageURL = URL(string: pictureURLString) {
                 
                 self.artistImageView.kf_setImageWithURL(imageURL)
             }
 
             if let urlString = foundArtist.URL,
-                let _ = NSURL(string: urlString) {
-                websiteButton.enabled = true
+                let _ = URL(string: urlString) {
+                websiteButton.isEnabled = true
             } else {
-                websiteButton.enabled = false
+                websiteButton.isEnabled = false
             }
             
             if let urlString = foundArtist.YouTube,
-                let _ = NSURL(string: urlString) {
-                youTubeButton.enabled = true
+                let _ = URL(string: urlString) {
+                youTubeButton.isEnabled = true
             } else {
-                youTubeButton.enabled = false
+                youTubeButton.isEnabled = false
             }
             
             buildScheduleStack()
@@ -66,40 +66,40 @@ class ArtistViewController: UIViewController {
         }
         
         guard let times = scheduledTimes,
-            let filePath = NSBundle.mainBundle().pathForResource("ScheduleView", ofType: "nib"),
-            let nibData = NSData(contentsOfFile: filePath) else {
-            scheduleStackView.hidden = true
+            let filePath = Bundle.main.path(forResource: "ScheduleView", ofType: "nib"),
+            let nibData = try? Data(contentsOf: URL(fileURLWithPath: filePath)) else {
+            scheduleStackView.isHidden = true
             
             return
         }
         
-        scheduleStackView.hidden = false
+        scheduleStackView.isHidden = false
         
-        for item in times.sort({ $0.starttime?.compare($1.starttime ?? NSDate.distantFuture()) != .OrderedDescending }) {
-            UINib(data: nibData, bundle: nil).instantiateWithOwner(self, options: nil)
+        for item in times.sorted(by: { $0.starttime?.compare($1.starttime ?? Date.distantFuture) != .orderedDescending }) {
+            UINib(data: nibData, bundle: nil).instantiate(withOwner: self, options: nil)
             
             setupScheduleView(scheduleNIBView, scheduledTime: item)
             scheduleNIBView = nil
         }
     }
     
-    func setupScheduleView(scheduleView: ScheduleView, scheduledTime: Schedule) {
+    func setupScheduleView(_ scheduleView: ScheduleView, scheduledTime: Schedule) {
         scheduleView.scheduleTime = scheduledTime
         
         scheduleView.startTime.text = scheduledTime.dateString()
         scheduleView.stage.text = scheduledTime.stage
-        scheduleView.starButton.selected = scheduledTime.starred
+        scheduleView.starButton.isSelected = scheduledTime.starred
         
-        scheduleView.widthAnchor.constraintEqualToConstant(CGRectGetWidth(scheduleStackView.bounds)).active = true
-        scheduleView.heightAnchor.constraintEqualToConstant(48.0).active = true
+        scheduleView.widthAnchor.constraint(equalToConstant: scheduleStackView.bounds.width).isActive = true
+        scheduleView.heightAnchor.constraint(equalToConstant: 48.0).isActive = true
         
         scheduleStackView.addArrangedSubview(scheduleView)
         
         self.view.setNeedsLayout()
     }
     
-    @IBAction func starButtonAction(sender: UIButton) {
-        guard let index = scheduleStackView.subviews.indexOf({ sender.isDescendantOfView($0) }) else {
+    @IBAction func starButtonAction(_ sender: UIButton) {
+        guard let index = scheduleStackView.subviews.index(where: { sender.isDescendant(of: $0) }) else {
             return
         }
         
@@ -110,25 +110,25 @@ class ArtistViewController: UIViewController {
         }
         
         if let foundScheduleItem = scheduleItem {
-            sender.selected = !sender.selected
-            foundScheduleItem.starred = sender.selected
+            sender.isSelected = !sender.isSelected
+            foundScheduleItem.starred = sender.isSelected
         }
     }
     
-    @IBAction func websiteButtonTapped(sender: UIButton) {
+    @IBAction func websiteButtonTapped(_ sender: UIButton) {
         if let urlString = artist?.URL,
-            let websiteURL = NSURL(string: urlString) {
-            let safariVC = SFSafariViewController(URL: websiteURL)
+            let websiteURL = URL(string: urlString) {
+            let safariVC = SFSafariViewController(url: websiteURL)
             safariVC.delegate = self
-            presentViewController(safariVC, animated: true, completion: nil)
+            present(safariVC, animated: true, completion: nil)
         }
     }
 
-    @IBAction func youtubeButtonTapped(sender: UIButton) {
+    @IBAction func youtubeButtonTapped(_ sender: UIButton) {
         if let urlString = artist?.YouTube,
-            let youTubeURL = NSURL(string: urlString) where
-            UIApplication.sharedApplication().canOpenURL(youTubeURL) {
-            UIApplication.sharedApplication().openURL(youTubeURL)
+            let youTubeURL = URL(string: urlString) where
+            UIApplication.shared.canOpenURL(youTubeURL) {
+            UIApplication.shared.openURL(youTubeURL)
         }
     }
 
@@ -157,7 +157,7 @@ class ArtistViewController: UIViewController {
 // MARK: - SFSafariViewControllerDelegate
 
 extension ArtistViewController: SFSafariViewControllerDelegate {
-    func safariViewControllerDidFinish(controller: SFSafariViewController) {
-        controller.dismissViewControllerAnimated(true, completion: nil)
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        controller.dismiss(animated: true, completion: nil)
     }
 }

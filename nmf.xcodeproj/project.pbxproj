@@ -860,6 +860,7 @@
 					2C5B8B4A1C9A13E900C6A893 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = GYV9U8338K;
+						LastSwiftMigration = 0830;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1205,6 +1206,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "c4724b86-4f95-4799-9a11-7728a076904a";
 				SWIFT_OBJC_BRIDGING_HEADER = "nmf/NMF-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1227,6 +1229,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f8c0c7c5-01e9-4106-9b99-adcccd55597a";
 				SWIFT_OBJC_BRIDGING_HEADER = "nmf/NMF-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -1240,7 +1243,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.nmfTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nmf.app/nmf";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NMF.app/NMF";
 			};
 			name = Debug;
 		};
@@ -1253,7 +1256,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.nmfTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nmf.app/nmf";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NMF.app/NMF";
 			};
 			name = Release;
 		};

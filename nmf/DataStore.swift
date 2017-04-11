@@ -10,19 +10,19 @@ import Foundation
 
 private let dataStoreSingleton = DataStore()
 
-extension Fault : ErrorType {
+extension Fault : ErrorProtocol {
     
 }
 
 class DataStore: NSObject {
-    static let archiveURL = NSFileManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
+    static let archiveURL = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
     
     lazy var scheduleItems: [Schedule] = {
-        return NSKeyedUnarchiver.unarchiveObjectWithFile(archiveURL.URLByAppendingPathComponent("schedule").path!) as? [Schedule] ?? [Schedule]()
+        return NSKeyedUnarchiver.unarchiveObject(withFile: archiveURL.appendingPathComponent("schedule").path!) as? [Schedule] ?? [Schedule]()
     }()
     
     lazy var artistItems: [Artists] = {
-        return NSKeyedUnarchiver.unarchiveObjectWithFile(archiveURL.URLByAppendingPathComponent("artists").path!) as? [Artists] ?? [Artists]()
+        return NSKeyedUnarchiver.unarchiveObject(withFile: archiveURL.appendingPathComponent("artists").path!) as? [Artists] ?? [Artists]()
     }()
     
     class var sharedInstance: DataStore {
@@ -31,12 +31,12 @@ class DataStore: NSObject {
     
     
     func saveData() {
-        print( "saved schedule: \(NSKeyedArchiver.archiveRootObject(scheduleItems, toFile: DataStore.archiveURL.URLByAppendingPathComponent("schedule").path!))")
+        print( "saved schedule: \(NSKeyedArchiver.archiveRootObject(scheduleItems, toFile: DataStore.archiveURL.appendingPathComponent("schedule").path!))")
         
-        print("saved artists: \(NSKeyedArchiver.archiveRootObject(artistItems, toFile: DataStore.archiveURL.URLByAppendingPathComponent("artists").path!))")
+        print("saved artists: \(NSKeyedArchiver.archiveRootObject(artistItems, toFile: DataStore.archiveURL.appendingPathComponent("artists").path!))")
     }
     
-    func updateScheduleItems(completion: (ErrorType?) -> Void) -> Void {
+    func updateScheduleItems(_ completion: (ErrorProtocol?) -> Void) -> Void {
         let backendless = Backendless.sharedInstance()
         let dataStore = backendless.data.of(Schedule.ofClass())
         
@@ -53,7 +53,7 @@ class DataStore: NSObject {
         })
     }
     
-    func updateArtistItems(completion: (ErrorType?) -> Void) -> Void {
+    func updateArtistItems(_ completion: (ErrorProtocol?) -> Void) -> Void {
         let backendless = Backendless.sharedInstance()
         let dataStore = backendless.data.of(Artists.ofClass())
         
@@ -70,7 +70,7 @@ class DataStore: NSObject {
         })
     }
     
-    func getArtistByName(artistName: String, completion: (Artists?, ErrorType?) -> Void) -> Void {
+    func getArtistByName(_ artistName: String, completion: (Artists?, ErrorProtocol?) -> Void) -> Void {
         let backendless = Backendless.sharedInstance()
         let dataStore = backendless.data.of(Artists.ofClass())
         
@@ -89,7 +89,7 @@ class DataStore: NSObject {
         }
     }
     
-    func mergeScheduleItems(newItems: [Schedule]) {
+    func mergeScheduleItems(_ newItems: [Schedule]) {
         
         for newItem in newItems {
             var foundItem = false
@@ -108,7 +108,7 @@ class DataStore: NSObject {
         
     }
     
-    func mergeArtists(newArtists: [Artists]) {
+    func mergeArtists(_ newArtists: [Artists]) {
         for newArtist in newArtists  {
             var foundItem = false
 
