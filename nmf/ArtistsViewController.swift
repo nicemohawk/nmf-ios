@@ -36,7 +36,7 @@ class ArtistViewController: UIViewController {
             if let pictureURLString = foundArtist.picture,
                 let imageURL = URL(string: pictureURLString) {
                 
-                self.artistImageView.kf_setImageWithURL(imageURL)
+                self.artistImageView.setImage(with:imageURL)
             }
 
             if let urlString = foundArtist.URL,
@@ -105,7 +105,7 @@ class ArtistViewController: UIViewController {
         
         var scheduleItem: Schedule? = nil
         
-        if let scheduledTimes = scheduledTimes where scheduledTimes.count > index {
+        if let scheduledTimes = scheduledTimes, scheduledTimes.count > index {
             scheduleItem = scheduledTimes[index]
         }
         
@@ -126,7 +126,7 @@ class ArtistViewController: UIViewController {
 
     @IBAction func youtubeButtonTapped(_ sender: UIButton) {
         if let urlString = artist?.YouTube,
-            let youTubeURL = URL(string: urlString) where
+            let youTubeURL = URL(string: urlString),
             UIApplication.shared.canOpenURL(youTubeURL) {
             UIApplication.shared.openURL(youTubeURL)
         }

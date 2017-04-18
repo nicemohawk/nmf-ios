@@ -240,12 +240,12 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         }
         
         if let foundScheduleItem = scheduleItem {
-            guard let stage = foundScheduleItem.stage where
+            guard let stage = foundScheduleItem.stage,
                 stage != "" else {
                 return nil
             }
 
-            guard let artistName = scheduleItem?.artist where
+            guard let artistName = scheduleItem?.artist,
                 DataStore.sharedInstance.artistItems.filter({$0.artistName == artistName}).count > 0 else {
                 return nil
             }
@@ -280,7 +280,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         
         if let artistName = artistName {
             scheduleItemsForArtist = DataStore.sharedInstance.scheduleItems.filter({ (item) -> Bool in
-                if let name = item.artist where name == artistName {
+                if let name = item.artist, name == artistName {
                     return true
                 }
                 

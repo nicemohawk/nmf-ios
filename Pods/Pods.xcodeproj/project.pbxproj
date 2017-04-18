@@ -7,223 +7,228 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		022C8AFCF927C6D30EC1418A965305FD /* SDStatusBarOverriderPre8_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 97522D346A5B97B6D6DCFCA12E245D96 /* SDStatusBarOverriderPre8_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F15BA7A0B746AB5112250062C147623 /* SDStatusBarOverriderPre8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 2508EE00891660AC8BABF0A0C5AC4501 /* SDStatusBarOverriderPre8_3.m */; };
-		250EE52205CC4829C487174BCB83092C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FA200FC4CA240EC765197E35667B46 /* Foundation.framework */; };
-		2F45629AD50AF3BCBE510201EFEBC1FD /* SDStatusBarOverriderPost8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = E931D6BB383864A1DE359633784C4030 /* SDStatusBarOverriderPost8_3.m */; };
-		303715A85DC6830404A91F56035CD25F /* SDStatusBarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CC5613D98F52CA8A1AEF716F22701314 /* SDStatusBarManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		310A90FDC7A4108847C8DB448296EC9B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F5A76E840CE5F4EE4C27E59F276B07 /* Image.swift */; };
-		32ABD43D364C9C8FCCE029D04D09209E /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D9BB92019175D18674340AD146D08 /* UIButton+Kingfisher.swift */; };
-		36AC9AF4818102C302F24D5233C9C42A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FA200FC4CA240EC765197E35667B46 /* Foundation.framework */; };
-		395CE8172FAABF4FFC114A636A542DAC /* BBBadgeBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 014F2C603154617AAE37283317356E31 /* BBBadgeBarButtonItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3D216D744E05F3D5295858ACDACE487B /* SDStatusBarOverrider.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EF621A4791019AD7E252B4CCF56A0DF /* SDStatusBarOverrider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E8FB8F421EF490807B09EFBA62FD286 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F0EFB1983F1649C8601C00F8ECDB37 /* ImageCache.swift */; };
-		3FB4A1460429FE7B4C0E397309BCBCDF /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAB04886164AF229394017916C2F142 /* Resource.swift */; };
-		432E087D0FB7BBBD518A79702D51B5A7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C03F7C98D7B07521A6471DBF15B3DC7 /* CFNetwork.framework */; };
-		4AA573C8752BF768F8660DF900EEBE81 /* SimulatorStatusMagic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3E08CD3DD24E44BABA4267D737AAC /* SimulatorStatusMagic-dummy.m */; };
-		4BE445A27E62407BDD151CE29C2C13D3 /* BBBadgeBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 23E3383B16E8DE1EF7CE449DE72BA3B6 /* BBBadgeBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F3851098FBEA1BBD01D918FC82F0F1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FA200FC4CA240EC765197E35667B46 /* Foundation.framework */; };
-		64838934323F6E2F0E4FAA8531DA62A8 /* Kingfisher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F60419B04E15242F40F9699598D77F2C /* Kingfisher-dummy.m */; };
-		66EE0BAE94B816A589AA504184651C24 /* Pods-nmfTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272488A7E720F5B6F7FC0582766B385F /* Pods-nmfTests-dummy.m */; };
-		700C861753C3EA58B0B431BF2C8AC44D /* Pods-NMF-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 580B26B8D7F745E6E34CCA7DBBE45C0B /* Pods-NMF-dummy.m */; };
-		72E1B5591824D32038BD38C0A1A0090C /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240D1DA63A77282C489D0DF0D51460E8 /* ImagePrefetcher.swift */; };
-		72E46ABE7108599EDECB53A461D6D681 /* BBBadgeBarButtonItem-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36C6D40657E1EEC7BA3BEE53AF262337 /* BBBadgeBarButtonItem-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		841AF3229990A74085C9EA1595715634 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FA200FC4CA240EC765197E35667B46 /* Foundation.framework */; };
-		8B24ECCCF1CD0B0AEE746EC3F915DD2A /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7FE2D5F964E963A9588C5F7A3F7B6 /* ImageView+Kingfisher.swift */; };
-		92B58E5A6CBE8D8BE77252C768AE4CCF /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE72D972ABFACA4CFD207CA2F3889DE3 /* KingfisherManager.swift */; };
-		92F549F793242F86DFCCB04D03899D57 /* BBBadgeBarButtonItem-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F00C0F264E1C4EAA99EFA71C6AAB5A7 /* BBBadgeBarButtonItem-dummy.m */; };
-		9567294B3163F26B82541F05433A355E /* Kingfisher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36FA3FA02D9B578AB7BFC2F0A35FF37C /* Kingfisher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C66E71E39965349D16D84946D52B074 /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A734D99E20D4203622F709E6B0FA5B /* ThreadHelper.swift */; };
-		A4EA08C26D9B667386F2FB76675201B3 /* Pods-nmfTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9878DD4BD3232916ED9B3122EC6C729F /* Pods-nmfTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE128A0CBF51B9E5C21C1903C60FD715 /* SimulatorStatusMagic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE448E7611AA93B2575782BCBF9B9A1 /* SimulatorStatusMagic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B269CF8D2FE78AB70482D446509BC26D /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81D4D4D282DAF683ED416E570AE19F1 /* KingfisherOptionsInfo.swift */; };
-		B60F81D95A845D43800345ADA200BFF9 /* Pods-NMF-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DEDF2077305F04C6D3D313CEA00A891F /* Pods-NMF-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB4A4A08D4D00771B53FA6EAF8EF9369 /* SDStatusBarOverriderPost9_0.h in Headers */ = {isa = PBXBuildFile; fileRef = 324A96BB22E48389F16932DDCA43519A /* SDStatusBarOverriderPost9_0.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BECAB54EB57549BFD169A2268B35E7F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF21C61B2B4EB2D6BDE580E8EA8D9D92 /* UIKit.framework */; };
-		C44E65C430495F4D6F39DD695A7B98E6 /* SDStatusBarOverriderPost9_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D4C1D3875726EB5EB62C6370B79CC05 /* SDStatusBarOverriderPost9_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CEC7C23226EA400A86338DC8BB6D8B42 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F24680D73988D0AFF857AF80E86D64 /* ImageTransition.swift */; };
-		D2DA661DAC321C3CD4E3FD7B82625926 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435052524B426135B93B4AFDB7617D6 /* String+MD5.swift */; };
-		DD469C7CFE2C8F35700A6D9623BFC9C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FA200FC4CA240EC765197E35667B46 /* Foundation.framework */; };
-		DF6DDBEFD651C58814C67687B3792A87 /* SDStatusBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFB82BDE63F1245B1A77718D16569F7 /* SDStatusBarManager.m */; };
-		E170CD6AABB3FD64A0E67869BC754CAE /* Kingfisher.h in Headers */ = {isa = PBXBuildFile; fileRef = 425B6BE3D866248B2F11D851BBEEF3FE /* Kingfisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA259F4B4FA8DD9C737961036305E4A6 /* SDStatusBarOverriderPost9_3.m in Sources */ = {isa = PBXBuildFile; fileRef = B63C1B0F2FE10474A98DAA2C3D62AEBA /* SDStatusBarOverriderPost9_3.m */; };
-		EBF96620CA96640415496F8DDE06E4D3 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41CC218111A40E3FB2CB56876ABE82 /* AnimatedImageView.swift */; };
-		F08B70F43B4645BFB2D216D6B32520DE /* SDStatusBarOverriderPost9_0.m in Sources */ = {isa = PBXBuildFile; fileRef = D60E9E4BD7016513064848A720CE4BC3 /* SDStatusBarOverriderPost9_0.m */; };
-		F4746999FFEE254C17718E4932C46C68 /* SDStatusBarOverriderPost8_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 42356A4F282AB782435CE4EC5F1E62AA /* SDStatusBarOverriderPost8_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFC369D4E11EBC6D0DF34C19561E0D70 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320FB2F96E573AB3B89676A8DE21765 /* ImageDownloader.swift */; };
+		04DECB38F674314C5A1446551E3A3683 /* SDStatusBarOverriderPost8_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E4F68B5C8C6A5220A1917AD61C7DBD /* SDStatusBarOverriderPost8_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E9CC28AC8E34FE8E1C87E933E04BC7A /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CE4AC4D8BF631E7DC182192A26FE8 /* ImageProcessor.swift */; };
+		123AF072A5590B9E8995E5DAEFD56F19 /* SDStatusBarOverriderPost9_0.h in Headers */ = {isa = PBXBuildFile; fileRef = 81069254409D10942093AB4827CB7BB3 /* SDStatusBarOverriderPost9_0.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16141DFC34A49D2ABE32095100322CF4 /* Pods-nmfTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272488A7E720F5B6F7FC0582766B385F /* Pods-nmfTests-dummy.m */; };
+		1708774D1D2E8CF64B047BE49065E2F9 /* SDStatusBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8552F53BD2E885F9EA65D6C68F2AF111 /* SDStatusBarManager.m */; };
+		179523942E7D1E3EB210EF05E2C7AE79 /* Kingfisher.h in Headers */ = {isa = PBXBuildFile; fileRef = 662D8727353BAC7C43A3607C97494369 /* Kingfisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1B848917E4B09DAFD17C58541D14D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDDF8D75AA654F65ACE2125C52AFAAD2 /* Foundation.framework */; };
+		246040F3D3F64E386059D8D212646373 /* SDStatusBarOverriderPost8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDF24609BE0CD1970960D263F660F76 /* SDStatusBarOverriderPost8_3.m */; };
+		2D41430007CE8464586F521838A882C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDDF8D75AA654F65ACE2125C52AFAAD2 /* Foundation.framework */; };
+		2E5E570FFC49EF98550401421A243C0F /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96A2DBD686DEB01375A05DF731DAA2 /* CacheSerializer.swift */; };
+		31E8C8FEB54DE313A36BA6BB9EC09AFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDDF8D75AA654F65ACE2125C52AFAAD2 /* Foundation.framework */; };
+		33395912F2FFA355C4C36B7EDEAA3DA7 /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD546CD9E91A6C20440E468C3B2E2DF8 /* ImageView+Kingfisher.swift */; };
+		33A14E817C0FA585D5DA3A55E453299D /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716991AD7B380F0212C43174A9E33945 /* Image.swift */; };
+		3414E1D9CB15149A296E16C45967B021 /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4908F632A99B8E4D2B204443B93E8 /* ImagePrefetcher.swift */; };
+		342AE33215135AD56B73580012DC22AB /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB1277EC44AF8FE63AC93340E160B2 /* AnimatedImageView.swift */; };
+		378B44CAA91C2106076668FDE72E1E02 /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F391578B5775232A3623697379460B0 /* KingfisherOptionsInfo.swift */; };
+		4089E39F76F86466B8DDD39A1C1ABB6B /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF147367A8AA528A6996471F3EBF11FD /* Filter.swift */; };
+		43205F1BEBD9003367E089935C8E9B29 /* Pods-nmfTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9878DD4BD3232916ED9B3122EC6C729F /* Pods-nmfTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		437BF8E7FB60B610261476EA9DE34FCF /* SDStatusBarOverrider.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DCD5A25068BEC604977FAB5805FE0D1 /* SDStatusBarOverrider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48C0D1A10795680064EA02C2E4FF2F44 /* SDStatusBarOverriderPost10_0.h in Headers */ = {isa = PBXBuildFile; fileRef = C71A6F24A4C718E7766B04FD4BF61638 /* SDStatusBarOverriderPost10_0.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52A280AB4852FDE92DF09B5E79D5C2AA /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750C834266206B7BAB173ED6D904F6D0 /* Indicator.swift */; };
+		5323E14BEF4BCD3A5A511912F45EEBB9 /* Pods-NMF-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 580B26B8D7F745E6E34CCA7DBBE45C0B /* Pods-NMF-dummy.m */; };
+		5D9428D5DB41410B830A7D463B40E9D7 /* Pods-NMF-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DEDF2077305F04C6D3D313CEA00A891F /* Pods-NMF-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66F53044FDA74E65FA524AB566A0F9A0 /* BBBadgeBarButtonItem-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D58448EBCF4B5FDFDB6F363A3327FCBA /* BBBadgeBarButtonItem-dummy.m */; };
+		6A375593407BC7937234B2B6A0811760 /* Kingfisher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF68064CA8CD5F1CB45EF07790F0BED /* Kingfisher-dummy.m */; };
+		6CD63E1564618B6213B98E0ABBC3127C /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02E28470AA68DFE1C142F75CB9E8FD9 /* ThreadHelper.swift */; };
+		6DA770087D354CDCD3889CDAE7C4C698 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A0676DF2C095BF69ED2A94C54F7834 /* Box.swift */; };
+		7636F846675C9F4ED96E00C6C19A4890 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CCA82767FC8EBD44FD302429357CC /* KingfisherManager.swift */; };
+		77E3A80EE5CA3A90D80F0F01CA22B14C /* BBBadgeBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = CEAF93F82A380EA4AF5004A5127B885E /* BBBadgeBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83B6628FF80B1B776327C5813A745A27 /* SDStatusBarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF0AAABD5AE9E960029AFC05D344A28 /* SDStatusBarManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86497776EC6B9D2EEE3F1BBF527E2F61 /* SDStatusBarOverriderPost9_0.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC5AD36E66D2EB80A40E7DF0D3FD793 /* SDStatusBarOverriderPost9_0.m */; };
+		86B7DA678C8705523C300947117C0706 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BDE801E9B2FA7F37087E1C13F5872A /* ImageTransition.swift */; };
+		8DA7E6883118CB3C8132B64D3D43AE0B /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EC0DEDB3B835233660D33A1F12F49A /* Resource.swift */; };
+		8DDF754F320ECFFE9ED365DC006CAF2E /* SDStatusBarOverriderPost9_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 41570451D6C83FDFA1ECB4FF1499ED5E /* SDStatusBarOverriderPost9_3.m */; };
+		8FB1A137E121AE25F10E2B0E30448933 /* BBBadgeBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F1FE2AC4917F0949010FEBDD863DA7 /* BBBadgeBarButtonItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		97EAEF668A45E35C4BAFA0844A0E410C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321DA4FBF5721A7FB806D2982ED127C8 /* UIKit.framework */; };
+		99A0AF6B9681C923736ABE5D1E3ADB3D /* SimulatorStatusMagic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8887727748EEAD19E01F07744A6815E7 /* SimulatorStatusMagic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F826F893E86EB86591B637A1CE4B13A /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D10DBF2D697F40DD8A89C99286941 /* String+MD5.swift */; };
+		A63056432BE6CA796C501F445BC62BB8 /* SimulatorStatusMagic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 816770E39E8DBFCCAA8B9675E22C98AD /* SimulatorStatusMagic-dummy.m */; };
+		A8F35D1EBAEF99D38F02A0B8CA5D8FBE /* Kingfisher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82775B93D7990076A293A897EAC5CA2C /* Kingfisher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE14847B914DD02B6C1C7F34A7081C8E /* SDStatusBarOverriderPre8_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 65355829B93DBC931DC3739E3610544B /* SDStatusBarOverriderPre8_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFBA4A5EBE2519265805AF7AFF0357E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDDF8D75AA654F65ACE2125C52AFAAD2 /* Foundation.framework */; };
+		C9CC5ED97D29C6C3DE22B78A9AA2AD91 /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF15A013C88F55422C86D86605B37CE /* Kingfisher.swift */; };
+		CD0E636D5CAB1FF1460D3C2D5F549B8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDDF8D75AA654F65ACE2125C52AFAAD2 /* Foundation.framework */; };
+		D10B0C06D5837BB1D8F3430CACB2EADE /* SDStatusBarOverriderPost10_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC96AF44839BF75F4E5CB428DDCA9CD /* SDStatusBarOverriderPost10_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC6080C64C269628C3F5107BE87055E2 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DA239C23A27F7F6B8F61CC163CFE28 /* ImageDownloader.swift */; };
+		E00D06017D01B2CB012D444C2056C30F /* BBBadgeBarButtonItem-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E9A261FD13C568264756BBF79535869 /* BBBadgeBarButtonItem-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7B7CBF960F6D0E89D44A39D5CF2B146 /* SDStatusBarOverriderPost10_0.m in Sources */ = {isa = PBXBuildFile; fileRef = B60DCA542961E8A53D8588F6EA56DA38 /* SDStatusBarOverriderPost10_0.m */; };
+		EA816A580C3858934ED6FE92040C26DD /* RequestModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D8580C623C35326D8C65547A4C1DCB /* RequestModifier.swift */; };
+		EE89512E8D36E67CDC525DB9D5BBF5A7 /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9AFE47E9F986AB370B22412B4AB855 /* UIButton+Kingfisher.swift */; };
+		EF9C5D20F22F3B1CE6E373C5839F7A98 /* SDStatusBarOverriderPost10_3.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3CF925C6AA0CC8C9CEE646C6277D30 /* SDStatusBarOverriderPost10_3.m */; };
+		F5C8C3F45F42FBDE5D87000C71178D20 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB22CD2AAE4F062A7CDA2E213C68442 /* CFNetwork.framework */; };
+		F6E53E166A45C10E1E373D45F6646B40 /* SDStatusBarOverriderPost9_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 1063804C57B931D6F815C52353F24C4E /* SDStatusBarOverriderPost9_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8E957950566622A3E4B61AACE8F0B4A /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6144DFFB6F9E37B364349F80E8BC23A6 /* ImageCache.swift */; };
+		FC68E57E5DDD3BE85355389F716E9FAD /* SDStatusBarOverriderPre8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF240C3E4AD125FE40A3564F0885F0E /* SDStatusBarOverriderPre8_3.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0D645C8DAEAAA23A71B244CB6B028752 /* PBXContainerItemProxy */ = {
+		431693CC73F17A00FF44B074D4D6FC84 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 573661C4B30713E66BB846A7FC222CC4;
+			remoteGlobalIDString = 8FC4C8019ED21E2E9530C5D187F9C853;
 			remoteInfo = SimulatorStatusMagic;
 		};
-		E165C89139CC1BFF51F35D16EB92575D /* PBXContainerItemProxy */ = {
+		5CD3CC0EBF1FB869A0852EA9F01872D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E96E13C4D3B5B5FC0651440734C2BF4D;
+			remoteGlobalIDString = C4944FEC314D1A66588651D006273ADE;
 			remoteInfo = Kingfisher;
 		};
-		F125B2107F515966D41BA4F46B30DC2A /* PBXContainerItemProxy */ = {
+		9575800C1DE4912AC3A2FAB730F449DC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 996C4CEDBD819845E4AE075097DBD57D;
+			remoteGlobalIDString = FF0CDCF65A1A776251C0F82587A23D26;
 			remoteInfo = BBBadgeBarButtonItem;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		014F2C603154617AAE37283317356E31 /* BBBadgeBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BBBadgeBarButtonItem.m; path = BBBadgeBarButtonItem/BBBadgeBarButtonItem.m; sourceTree = "<group>"; };
-		0435052524B426135B93B4AFDB7617D6 /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Sources/String+MD5.swift"; sourceTree = "<group>"; };
-		07ED06B8443E05D59BAE675159B8A778 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
-		0C03F7C98D7B07521A6471DBF15B3DC7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		0EAB04886164AF229394017916C2F142 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/Resource.swift; sourceTree = "<group>"; };
-		0EF3E08CD3DD24E44BABA4267D737AAC /* SimulatorStatusMagic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimulatorStatusMagic-dummy.m"; sourceTree = "<group>"; };
-		10A734D99E20D4203622F709E6B0FA5B /* ThreadHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadHelper.swift; path = Sources/ThreadHelper.swift; sourceTree = "<group>"; };
-		1F00C0F264E1C4EAA99EFA71C6AAB5A7 /* BBBadgeBarButtonItem-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BBBadgeBarButtonItem-dummy.m"; sourceTree = "<group>"; };
-		23E3383B16E8DE1EF7CE449DE72BA3B6 /* BBBadgeBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BBBadgeBarButtonItem.h; path = BBBadgeBarButtonItem/BBBadgeBarButtonItem.h; sourceTree = "<group>"; };
-		240D1DA63A77282C489D0DF0D51460E8 /* ImagePrefetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePrefetcher.swift; path = Sources/ImagePrefetcher.swift; sourceTree = "<group>"; };
-		2508EE00891660AC8BABF0A0C5AC4501 /* SDStatusBarOverriderPre8_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPre8_3.m; path = SDStatusBarManager/SDStatusBarOverriderPre8_3.m; sourceTree = "<group>"; };
+		026D10DBF2D697F40DD8A89C99286941 /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Sources/String+MD5.swift"; sourceTree = "<group>"; };
+		03E4F68B5C8C6A5220A1917AD61C7DBD /* SDStatusBarOverriderPost8_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost8_3.h; path = SDStatusBarManager/SDStatusBarOverriderPost8_3.h; sourceTree = "<group>"; };
+		05B7BB41D97FC9CD3C50422787548AC5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1063804C57B931D6F815C52353F24C4E /* SDStatusBarOverriderPost9_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost9_3.h; path = SDStatusBarManager/SDStatusBarOverriderPost9_3.h; sourceTree = "<group>"; };
+		18F6F327A506B619955D3165E6F41F17 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = iOS/TwitterCore.framework; sourceTree = "<group>"; };
+		1C9AFE47E9F986AB370B22412B4AB855 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		1DF68064CA8CD5F1CB45EF07790F0BED /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
+		2618A50C2488F4C7E8EDA2F647D61ADA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		272488A7E720F5B6F7FC0582766B385F /* Pods-nmfTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-nmfTests-dummy.m"; sourceTree = "<group>"; };
-		2D4C1D3875726EB5EB62C6370B79CC05 /* SDStatusBarOverriderPost9_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost9_3.h; path = SDStatusBarManager/SDStatusBarOverriderPost9_3.h; sourceTree = "<group>"; };
-		324A96BB22E48389F16932DDCA43519A /* SDStatusBarOverriderPost9_0.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost9_0.h; path = SDStatusBarManager/SDStatusBarOverriderPost9_0.h; sourceTree = "<group>"; };
-		36C6D40657E1EEC7BA3BEE53AF262337 /* BBBadgeBarButtonItem-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BBBadgeBarButtonItem-umbrella.h"; sourceTree = "<group>"; };
-		36FA3FA02D9B578AB7BFC2F0A35FF37C /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
+		28DA239C23A27F7F6B8F61CC163CFE28 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/ImageDownloader.swift; sourceTree = "<group>"; };
+		2DCD5A25068BEC604977FAB5805FE0D1 /* SDStatusBarOverrider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverrider.h; path = SDStatusBarManager/SDStatusBarOverrider.h; sourceTree = "<group>"; };
+		2FC96AF44839BF75F4E5CB428DDCA9CD /* SDStatusBarOverriderPost10_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost10_3.h; path = SDStatusBarManager/SDStatusBarOverriderPost10_3.h; sourceTree = "<group>"; };
+		321DA4FBF5721A7FB806D2982ED127C8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		33DDC8403CBB63F2290CC5369FC574D2 /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
+		35F1FE2AC4917F0949010FEBDD863DA7 /* BBBadgeBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BBBadgeBarButtonItem.m; path = BBBadgeBarButtonItem/BBBadgeBarButtonItem.m; sourceTree = "<group>"; };
 		37F326EB820385496B3E4936248FA66B /* Pods-nmfTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-nmfTests-resources.sh"; sourceTree = "<group>"; };
-		3CB7FE2D5F964E963A9588C5F7A3F7B6 /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
-		3D3F0B16EFA32303D6BB82A370C91D8A /* BBBadgeBarButtonItem-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BBBadgeBarButtonItem-prefix.pch"; sourceTree = "<group>"; };
-		40974158378F6F395A3D6AAF5A632898 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		42356A4F282AB782435CE4EC5F1E62AA /* SDStatusBarOverriderPost8_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost8_3.h; path = SDStatusBarManager/SDStatusBarOverriderPost8_3.h; sourceTree = "<group>"; };
-		425B6BE3D866248B2F11D851BBEEF3FE /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
-		4262B5927E78B43E48D88DC1FEB87C8F /* BBBadgeBarButtonItem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BBBadgeBarButtonItem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D7CCA82767FC8EBD44FD302429357CC /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/KingfisherManager.swift; sourceTree = "<group>"; };
+		3F96A2DBD686DEB01375A05DF731DAA2 /* CacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheSerializer.swift; path = Sources/CacheSerializer.swift; sourceTree = "<group>"; };
+		40974158378F6F395A3D6AAF5A632898 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41570451D6C83FDFA1ECB4FF1499ED5E /* SDStatusBarOverriderPost9_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost9_3.m; path = SDStatusBarManager/SDStatusBarOverriderPost9_3.m; sourceTree = "<group>"; };
+		4262B5927E78B43E48D88DC1FEB87C8F /* BBBadgeBarButtonItem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BBBadgeBarButtonItem.framework; path = BBBadgeBarButtonItem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E9A261FD13C568264756BBF79535869 /* BBBadgeBarButtonItem-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BBBadgeBarButtonItem-umbrella.h"; sourceTree = "<group>"; };
 		4EC852A48BEA5DAD51269AD48B0559CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EF621A4791019AD7E252B4CCF56A0DF /* SDStatusBarOverrider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverrider.h; path = SDStatusBarManager/SDStatusBarOverrider.h; sourceTree = "<group>"; };
+		4FF240C3E4AD125FE40A3564F0885F0E /* SDStatusBarOverriderPre8_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPre8_3.m; path = SDStatusBarManager/SDStatusBarOverriderPre8_3.m; sourceTree = "<group>"; };
 		50C738697352853A42D4E888D7A41AB0 /* Pods-NMF-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NMF-resources.sh"; sourceTree = "<group>"; };
-		57F24680D73988D0AFF857AF80E86D64 /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Sources/ImageTransition.swift; sourceTree = "<group>"; };
 		580B26B8D7F745E6E34CCA7DBBE45C0B /* Pods-NMF-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NMF-dummy.m"; sourceTree = "<group>"; };
 		58E3A842B32CC80B5A780A9FF435911A /* Pods-NMF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NMF.debug.xcconfig"; sourceTree = "<group>"; };
-		59A601DB3F3942C506E2D61381D437C7 /* Kingfisher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.xcconfig; sourceTree = "<group>"; };
+		5B67CB13DDA8B82E4E49D81C19758DD3 /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
+		5B911A1639ED3EB663A432A34F75D087 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = iOS/TwitterKit.framework; sourceTree = "<group>"; };
 		5C74B51094E6190DCB6EA95B066A01B8 /* Pods-NMF-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NMF-acknowledgements.plist"; sourceTree = "<group>"; };
-		60F0EFB1983F1649C8601C00F8ECDB37 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/ImageCache.swift; sourceTree = "<group>"; };
+		5CF15A013C88F55422C86D86605B37CE /* Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = Sources/Kingfisher.swift; sourceTree = "<group>"; };
+		60F0236E7E784F1EF22FE67A41FD73BC /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Kingfisher.modulemap; sourceTree = "<group>"; };
+		6144DFFB6F9E37B364349F80E8BC23A6 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/ImageCache.swift; sourceTree = "<group>"; };
 		63573CCCFCC64F46B7771B0F071B0B74 /* Pods-nmfTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-nmfTests-frameworks.sh"; sourceTree = "<group>"; };
 		641BE78DCD00D83BFE2D41B8AD92F646 /* Pods-nmfTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-nmfTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7304AE8A270145369E69D1AB06BD8CD1 /* SimulatorStatusMagic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimulatorStatusMagic-prefix.pch"; sourceTree = "<group>"; };
+		65355829B93DBC931DC3739E3610544B /* SDStatusBarOverriderPre8_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPre8_3.h; path = SDStatusBarManager/SDStatusBarOverriderPre8_3.h; sourceTree = "<group>"; };
+		662D8727353BAC7C43A3607C97494369 /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
+		6BB22CD2AAE4F062A7CDA2E213C68442 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		6D845C5C3C0822A1528DCE723C16B92D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		716991AD7B380F0212C43174A9E33945 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Image.swift; sourceTree = "<group>"; };
+		750C834266206B7BAB173ED6D904F6D0 /* Indicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Indicator.swift; path = Sources/Indicator.swift; sourceTree = "<group>"; };
+		76D8580C623C35326D8C65547A4C1DCB /* RequestModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModifier.swift; path = Sources/RequestModifier.swift; sourceTree = "<group>"; };
 		7745CF2E456FB6E14906AF55EFD0B665 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78FA200FC4CA240EC765197E35667B46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7A383228BF928E3F1B370A7D1C5514AE /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
-		7C4DDCACF0BDD1119C2CA766F6473268 /* Pods_NMF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C4DDCACF0BDD1119C2CA766F6473268 /* Pods_NMF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NMF.framework; path = "Pods-NMF.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CEC92F56DF769835C1C93FCFB0158B4 /* Pods-nmfTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-nmfTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8243140D5C5DBE65CF1E58AA32ADD16A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		85F3C1F660BA3EBED157715DFA1FA6F8 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = iOS/TwitterCore.framework; sourceTree = "<group>"; };
-		8CCBF4314C5C0673C1EF33A2DA8FDC18 /* Pods-NMF.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NMF.modulemap"; sourceTree = "<group>"; };
-		8FF44A350A3CFC9D6EAEB0D2686E94AE /* Pods-nmfTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-nmfTests.modulemap"; sourceTree = "<group>"; };
-		917D9BB92019175D18674340AD146D08 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95BAA7FA1E8B3BF802B959665F2A3801 /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
-		97522D346A5B97B6D6DCFCA12E245D96 /* SDStatusBarOverriderPre8_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPre8_3.h; path = SDStatusBarManager/SDStatusBarOverriderPre8_3.h; sourceTree = "<group>"; };
+		7E32F5F7B96703971D79F546CCBAB5A8 /* Kingfisher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.xcconfig; sourceTree = "<group>"; };
+		81069254409D10942093AB4827CB7BB3 /* SDStatusBarOverriderPost9_0.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost9_0.h; path = SDStatusBarManager/SDStatusBarOverriderPost9_0.h; sourceTree = "<group>"; };
+		816770E39E8DBFCCAA8B9675E22C98AD /* SimulatorStatusMagic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimulatorStatusMagic-dummy.m"; sourceTree = "<group>"; };
+		82775B93D7990076A293A897EAC5CA2C /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
+		84CB1277EC44AF8FE63AC93340E160B2 /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/AnimatedImageView.swift; sourceTree = "<group>"; };
+		8552F53BD2E885F9EA65D6C68F2AF111 /* SDStatusBarManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarManager.m; path = SDStatusBarManager/SDStatusBarManager.m; sourceTree = "<group>"; };
+		8887727748EEAD19E01F07744A6815E7 /* SimulatorStatusMagic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimulatorStatusMagic-umbrella.h"; sourceTree = "<group>"; };
+		8CCBF4314C5C0673C1EF33A2DA8FDC18 /* Pods-NMF.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NMF.modulemap"; sourceTree = "<group>"; };
+		8FF44A350A3CFC9D6EAEB0D2686E94AE /* Pods-nmfTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-nmfTests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9878DD4BD3232916ED9B3122EC6C729F /* Pods-nmfTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-nmfTests-umbrella.h"; sourceTree = "<group>"; };
-		996977C8538E87062050295EF356D8F1 /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Kingfisher.modulemap; sourceTree = "<group>"; };
-		A3671B8B5E446C86CC31F71DF9ACFBAF /* SimulatorStatusMagic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimulatorStatusMagic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3D3B727ECFC492AD63EF541E348FD7F /* BBBadgeBarButtonItem.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BBBadgeBarButtonItem.modulemap; sourceTree = "<group>"; };
+		9F391578B5775232A3623697379460B0 /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Sources/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
+		A0592223EA818DA45E2BFEBF81ED5CD5 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
+		A3671B8B5E446C86CC31F71DF9ACFBAF /* SimulatorStatusMagic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimulatorStatusMagic.framework; path = SimulatorStatusMagic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B5BA5B14EB77B5A29CAD450BD89CD4 /* Pods-NMF-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NMF-frameworks.sh"; sourceTree = "<group>"; };
-		AA23BF91053A942FFDEDA0F153A659FE /* SimulatorStatusMagic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SimulatorStatusMagic.modulemap; sourceTree = "<group>"; };
-		B3F5A76E840CE5F4EE4C27E59F276B07 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Image.swift; sourceTree = "<group>"; };
-		B63C1B0F2FE10474A98DAA2C3D62AEBA /* SDStatusBarOverriderPost9_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost9_3.m; path = SDStatusBarManager/SDStatusBarOverriderPost9_3.m; sourceTree = "<group>"; };
-		B6B94F0077AD719F9892585EA75B218B /* Pushwoosh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pushwoosh.framework; path = Framework/Pushwoosh.framework; sourceTree = "<group>"; };
-		BF3B101A6F1E212731199881279C5E6D /* Pods_nmfTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nmfTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB5CE4AC4D8BF631E7DC182192A26FE8 /* ImageProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = Sources/ImageProcessor.swift; sourceTree = "<group>"; };
+		AD546CD9E91A6C20440E468C3B2E2DF8 /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
+		AFF0AAABD5AE9E960029AFC05D344A28 /* SDStatusBarManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarManager.h; path = SDStatusBarManager/SDStatusBarManager.h; sourceTree = "<group>"; };
+		B5BDE801E9B2FA7F37087E1C13F5872A /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Sources/ImageTransition.swift; sourceTree = "<group>"; };
+		B60DCA542961E8A53D8588F6EA56DA38 /* SDStatusBarOverriderPost10_0.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost10_0.m; path = SDStatusBarManager/SDStatusBarOverriderPost10_0.m; sourceTree = "<group>"; };
+		B89F1D2B82115063DBB42DF15024FF5F /* BBBadgeBarButtonItem-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BBBadgeBarButtonItem-prefix.pch"; sourceTree = "<group>"; };
+		BB9833BD71B6A604161B284E4BD95F46 /* Pushwoosh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pushwoosh.framework; path = Framework/Pushwoosh.framework; sourceTree = "<group>"; };
+		BE9C383C2ABA4E1317C01CA341E84D28 /* SimulatorStatusMagic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SimulatorStatusMagic.modulemap; sourceTree = "<group>"; };
+		BF3B101A6F1E212731199881279C5E6D /* Pods_nmfTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_nmfTests.framework; path = "Pods-nmfTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F1C6AB83E8B1235118AEFBB2CEEAA5 /* Pods-NMF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NMF.release.xcconfig"; sourceTree = "<group>"; };
-		CC5613D98F52CA8A1AEF716F22701314 /* SDStatusBarManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarManager.h; path = SDStatusBarManager/SDStatusBarManager.h; sourceTree = "<group>"; };
-		CC9284DBEA761A28EF00952580BCD6A4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCFB82BDE63F1245B1A77718D16569F7 /* SDStatusBarManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarManager.m; path = SDStatusBarManager/SDStatusBarManager.m; sourceTree = "<group>"; };
-		CD41CC218111A40E3FB2CB56876ABE82 /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/AnimatedImageView.swift; sourceTree = "<group>"; };
-		CF21C61B2B4EB2D6BDE580E8EA8D9D92 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		CF5836A107C7AF8B866E143148EBF50D /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
-		D000AF9E980451300DD8855113DD78D0 /* BBBadgeBarButtonItem.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BBBadgeBarButtonItem.xcconfig; sourceTree = "<group>"; };
-		D12C6F0ED670DBD970EAF8D8F7254E53 /* SimulatorStatusMagic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimulatorStatusMagic.xcconfig; sourceTree = "<group>"; };
-		D60E9E4BD7016513064848A720CE4BC3 /* SDStatusBarOverriderPost9_0.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost9_0.m; path = SDStatusBarManager/SDStatusBarOverriderPost9_0.m; sourceTree = "<group>"; };
-		D81D4D4D282DAF683ED416E570AE19F1 /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Sources/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
+		C2B4908F632A99B8E4D2B204443B93E8 /* ImagePrefetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePrefetcher.swift; path = Sources/ImagePrefetcher.swift; sourceTree = "<group>"; };
+		C71A6F24A4C718E7766B04FD4BF61638 /* SDStatusBarOverriderPost10_0.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost10_0.h; path = SDStatusBarManager/SDStatusBarOverriderPost10_0.h; sourceTree = "<group>"; };
+		CEAF93F82A380EA4AF5004A5127B885E /* BBBadgeBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BBBadgeBarButtonItem.h; path = BBBadgeBarButtonItem/BBBadgeBarButtonItem.h; sourceTree = "<group>"; };
+		CF57E4D16D3A076495A95B9FCB835677 /* BBBadgeBarButtonItem.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BBBadgeBarButtonItem.modulemap; sourceTree = "<group>"; };
+		D02E28470AA68DFE1C142F75CB9E8FD9 /* ThreadHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadHelper.swift; path = Sources/ThreadHelper.swift; sourceTree = "<group>"; };
+		D197F55BD6548CC4F204F165EEC8CDB8 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		D3A0676DF2C095BF69ED2A94C54F7834 /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
+		D3EC0DEDB3B835233660D33A1F12F49A /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/Resource.swift; sourceTree = "<group>"; };
+		D58448EBCF4B5FDFDB6F363A3327FCBA /* BBBadgeBarButtonItem-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BBBadgeBarButtonItem-dummy.m"; sourceTree = "<group>"; };
 		D971AEDF357681786A824080CD6A697D /* Pods-nmfTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nmfTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC96F44049ED04228840C781E61C5B23 /* Pods-nmfTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nmfTests.release.xcconfig"; sourceTree = "<group>"; };
+		DD3CF925C6AA0CC8C9CEE646C6277D30 /* SDStatusBarOverriderPost10_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost10_3.m; path = SDStatusBarManager/SDStatusBarOverriderPost10_3.m; sourceTree = "<group>"; };
 		DEDF2077305F04C6D3D313CEA00A891F /* Pods-NMF-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NMF-umbrella.h"; sourceTree = "<group>"; };
-		E72D2C03B7A2B8DD1A6BAB8BE91B73B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E931D6BB383864A1DE359633784C4030 /* SDStatusBarOverriderPost8_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost8_3.m; path = SDStatusBarManager/SDStatusBarOverriderPost8_3.m; sourceTree = "<group>"; };
-		EE72D972ABFACA4CFD207CA2F3889DE3 /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/KingfisherManager.swift; sourceTree = "<group>"; };
-		EEE448E7611AA93B2575782BCBF9B9A1 /* SimulatorStatusMagic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimulatorStatusMagic-umbrella.h"; sourceTree = "<group>"; };
-		F320FB2F96E573AB3B89676A8DE21765 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/ImageDownloader.swift; sourceTree = "<group>"; };
-		F60419B04E15242F40F9699598D77F2C /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
+		DF147367A8AA528A6996471F3EBF11FD /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Filter.swift; sourceTree = "<group>"; };
+		DFDF24609BE0CD1970960D263F660F76 /* SDStatusBarOverriderPost8_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost8_3.m; path = SDStatusBarManager/SDStatusBarOverriderPost8_3.m; sourceTree = "<group>"; };
+		E34BD838E6A845C355555AAD0989A125 /* SimulatorStatusMagic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimulatorStatusMagic-prefix.pch"; sourceTree = "<group>"; };
+		E4CC2EC6C62399DD998F378269F53CF7 /* BBBadgeBarButtonItem.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BBBadgeBarButtonItem.xcconfig; sourceTree = "<group>"; };
+		E6DA8E17900AB3541A5A38E28C8AA821 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = iOS/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		EDDF8D75AA654F65ACE2125C52AFAAD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F03B9415152989256BB81CD4E734F053 /* SimulatorStatusMagic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimulatorStatusMagic.xcconfig; sourceTree = "<group>"; };
 		F9AC0A99ADECE5FA5BFBFDC6DA165657 /* Pods-NMF-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NMF-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FBC5AD36E66D2EB80A40E7DF0D3FD793 /* SDStatusBarOverriderPost9_0.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost9_0.m; path = SDStatusBarManager/SDStatusBarOverriderPost9_0.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		209177DBCE05706CB43CBC2F9EF4CB70 /* Frameworks */ = {
+		10A9025AABC00D8749F2FE3AF093C703 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD469C7CFE2C8F35700A6D9623BFC9C1 /* Foundation.framework in Frameworks */,
+				31E8C8FEB54DE313A36BA6BB9EC09AFB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B8A53D8EA6BE79BDC56F8247CCA058C /* Frameworks */ = {
+		6DFD02E99A22D17E81A84A6725959B2B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				250EE52205CC4829C487174BCB83092C /* Foundation.framework in Frameworks */,
+				AFBA4A5EBE2519265805AF7AFF0357E9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5320F96C1DF67E8FF4201F382CC05A4 /* Frameworks */ = {
+		A79087DCCA781C36565E43B26792268C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36AC9AF4818102C302F24D5233C9C42A /* Foundation.framework in Frameworks */,
+				1B1B848917E4B09DAFD17C58541D14D3 /* Foundation.framework in Frameworks */,
+				97EAEF668A45E35C4BAFA0844A0E410C /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4BFDDD05EB4F7D4562AB667A46197A2 /* Frameworks */ = {
+		AE12EDA6DCED9C50E840F8F71E26AB6A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F3851098FBEA1BBD01D918FC82F0F1F /* Foundation.framework in Frameworks */,
-				BECAB54EB57549BFD169A2268B35E7F9 /* UIKit.framework in Frameworks */,
+				CD0E636D5CAB1FF1460D3C2D5F549B8E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DCD988262B090AABB5FF164DEE2F88CF /* Frameworks */ = {
+		ED03E5917B811BACFE75189AE0C2A469 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				432E087D0FB7BBBD518A79702D51B5A7 /* CFNetwork.framework in Frameworks */,
-				841AF3229990A74085C9EA1595715634 /* Foundation.framework in Frameworks */,
+				F5C8C3F45F42FBDE5D87000C71178D20 /* CFNetwork.framework in Frameworks */,
+				2D41430007CE8464586F521838A882C2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03DDF449ABB77D614FFA74BA3AB49092 /* SimulatorStatusMagic */ = {
-			isa = PBXGroup;
-			children = (
-				CC5613D98F52CA8A1AEF716F22701314 /* SDStatusBarManager.h */,
-				CCFB82BDE63F1245B1A77718D16569F7 /* SDStatusBarManager.m */,
-				4EF621A4791019AD7E252B4CCF56A0DF /* SDStatusBarOverrider.h */,
-				42356A4F282AB782435CE4EC5F1E62AA /* SDStatusBarOverriderPost8_3.h */,
-				E931D6BB383864A1DE359633784C4030 /* SDStatusBarOverriderPost8_3.m */,
-				324A96BB22E48389F16932DDCA43519A /* SDStatusBarOverriderPost9_0.h */,
-				D60E9E4BD7016513064848A720CE4BC3 /* SDStatusBarOverriderPost9_0.m */,
-				2D4C1D3875726EB5EB62C6370B79CC05 /* SDStatusBarOverriderPost9_3.h */,
-				B63C1B0F2FE10474A98DAA2C3D62AEBA /* SDStatusBarOverriderPost9_3.m */,
-				97522D346A5B97B6D6DCFCA12E245D96 /* SDStatusBarOverriderPre8_3.h */,
-				2508EE00891660AC8BABF0A0C5AC4501 /* SDStatusBarOverriderPre8_3.m */,
-				C6243ECFF0294E1D7D887DC0487D1D7B /* Support Files */,
-			);
-			path = SimulatorStatusMagic;
-			sourceTree = "<group>";
-		};
 		07DFFA6B105C1EB0E27BEC7DE81FB2B2 /* Pods-NMF */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,32 +247,10 @@
 			path = "Target Support Files/Pods-NMF";
 			sourceTree = "<group>";
 		};
-		0B02E7617DBA9DBBD1FE28141965983E /* Kingfisher */ = {
-			isa = PBXGroup;
-			children = (
-				CD41CC218111A40E3FB2CB56876ABE82 /* AnimatedImageView.swift */,
-				B3F5A76E840CE5F4EE4C27E59F276B07 /* Image.swift */,
-				60F0EFB1983F1649C8601C00F8ECDB37 /* ImageCache.swift */,
-				F320FB2F96E573AB3B89676A8DE21765 /* ImageDownloader.swift */,
-				240D1DA63A77282C489D0DF0D51460E8 /* ImagePrefetcher.swift */,
-				57F24680D73988D0AFF857AF80E86D64 /* ImageTransition.swift */,
-				3CB7FE2D5F964E963A9588C5F7A3F7B6 /* ImageView+Kingfisher.swift */,
-				425B6BE3D866248B2F11D851BBEEF3FE /* Kingfisher.h */,
-				EE72D972ABFACA4CFD207CA2F3889DE3 /* KingfisherManager.swift */,
-				D81D4D4D282DAF683ED416E570AE19F1 /* KingfisherOptionsInfo.swift */,
-				0EAB04886164AF229394017916C2F142 /* Resource.swift */,
-				0435052524B426135B93B4AFDB7617D6 /* String+MD5.swift */,
-				10A734D99E20D4203622F709E6B0FA5B /* ThreadHelper.swift */,
-				917D9BB92019175D18674340AD146D08 /* UIButton+Kingfisher.swift */,
-				E4869199EACFAF0E6EE57C1F2A07C9DD /* Support Files */,
-			);
-			path = Kingfisher;
-			sourceTree = "<group>";
-		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B699C9E96CC58686FD4C9C489F2D6667 /* iOS */,
+				D3DC5782D19BF047DFAEB491A596E0F0 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -281,36 +264,57 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		1D4F69C90A780CD7C9FB2DE671510247 /* Frameworks */ = {
+		210DA4DAD73A8C2A96F4091EADB40113 /* TwitterCore */ = {
 			isa = PBXGroup;
 			children = (
-				CF5836A107C7AF8B866E143148EBF50D /* TwitterKit.framework */,
+				DF3DC8AF76C3B792C59B0DA7988C087B /* Frameworks */,
+			);
+			name = TwitterCore;
+			path = TwitterCore;
+			sourceTree = "<group>";
+		};
+		507D16FB6F9069AB1678AF7DB76475FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F609F7BA65247ABC3CD80BEBC026C47 /* BBBadgeBarButtonItem */,
+				8220737B1F2CC3DB3EDB9DEB997FB1E0 /* Fabric */,
+				908673C9466C2B6479120C5FAFDC8361 /* Kingfisher */,
+				EC111DC21AD9E93EBE49A8041876D6F1 /* Pushwoosh */,
+				E8EAAE7271029D1FE6C0D50ADC63B855 /* SimulatorStatusMagic */,
+				210DA4DAD73A8C2A96F4091EADB40113 /* TwitterCore */,
+				BA1EEAD6ED6A38970A0EE3046A20BFF1 /* TwitterKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5E65D685755FE826D4AF73A14BD5CF31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B911A1639ED3EB663A432A34F75D087 /* TwitterKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2A584ACF882DD9401FC4B1466FBAC949 /* Fabric */ = {
+		6D55AB7A574C6DAAA8164A9B86C1BA19 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				530406F4DCF8032F6E1EDE1C40C14FE0 /* Frameworks */,
-			);
-			path = Fabric;
-			sourceTree = "<group>";
-		};
-		3CD6C4129E7488B9A14031E238FB835C /* Pushwoosh */ = {
-			isa = PBXGroup;
-			children = (
-				EB55704AAC501A1F37DC61CEFD630AF0 /* Frameworks */,
-			);
-			path = Pushwoosh;
-			sourceTree = "<group>";
-		};
-		530406F4DCF8032F6E1EDE1C40C14FE0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				07ED06B8443E05D59BAE675159B8A778 /* Fabric.framework */,
+				D197F55BD6548CC4F204F165EEC8CDB8 /* Fabric.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F93576B11F1A8BAA016641217D405AE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				05B7BB41D97FC9CD3C50422787548AC5 /* Info.plist */,
+				60F0236E7E784F1EF22FE67A41FD73BC /* Kingfisher.modulemap */,
+				7E32F5F7B96703971D79F546CCBAB5A8 /* Kingfisher.xcconfig */,
+				1DF68064CA8CD5F1CB45EF07790F0BED /* Kingfisher-dummy.m */,
+				5B67CB13DDA8B82E4E49D81C19758DD3 /* Kingfisher-prefix.pch */,
+				82775B93D7990076A293A897EAC5CA2C /* Kingfisher-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Kingfisher";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -318,7 +322,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				EE5F15C6DF19CB5087EAA85DD0CFCF8B /* Pods */,
+				507D16FB6F9069AB1678AF7DB76475FB /* Pods */,
 				CCF04B5512B0E8F58A944AF98F9DF81C /* Products */,
 				175294733A00755E44A56168499E5D06 /* Targets Support Files */,
 			);
@@ -342,60 +346,66 @@
 			path = "Target Support Files/Pods-nmfTests";
 			sourceTree = "<group>";
 		};
-		87E68FCC524420E1EBE2BD862281F9B3 /* Frameworks */ = {
+		8220737B1F2CC3DB3EDB9DEB997FB1E0 /* Fabric */ = {
 			isa = PBXGroup;
 			children = (
-				85F3C1F660BA3EBED157715DFA1FA6F8 /* TwitterCore.framework */,
+				A0592223EA818DA45E2BFEBF81ED5CD5 /* FABAttributes.h */,
+				33DDC8403CBB63F2290CC5369FC574D2 /* Fabric.h */,
+				6D55AB7A574C6DAAA8164A9B86C1BA19 /* Frameworks */,
 			);
-			name = Frameworks;
+			name = Fabric;
+			path = Fabric;
 			sourceTree = "<group>";
 		};
-		A2A4759BF8F78BE60FF5E8D20CF56E1F /* Support Files */ = {
+		8F609F7BA65247ABC3CD80BEBC026C47 /* BBBadgeBarButtonItem */ = {
 			isa = PBXGroup;
 			children = (
-				A3D3B727ECFC492AD63EF541E348FD7F /* BBBadgeBarButtonItem.modulemap */,
-				D000AF9E980451300DD8855113DD78D0 /* BBBadgeBarButtonItem.xcconfig */,
-				1F00C0F264E1C4EAA99EFA71C6AAB5A7 /* BBBadgeBarButtonItem-dummy.m */,
-				3D3F0B16EFA32303D6BB82A370C91D8A /* BBBadgeBarButtonItem-prefix.pch */,
-				36C6D40657E1EEC7BA3BEE53AF262337 /* BBBadgeBarButtonItem-umbrella.h */,
-				E72D2C03B7A2B8DD1A6BAB8BE91B73B7 /* Info.plist */,
+				CEAF93F82A380EA4AF5004A5127B885E /* BBBadgeBarButtonItem.h */,
+				35F1FE2AC4917F0949010FEBDD863DA7 /* BBBadgeBarButtonItem.m */,
+				D52E785ED981ACCC5D243B2B41278AB9 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/BBBadgeBarButtonItem";
-			sourceTree = "<group>";
-		};
-		B699C9E96CC58686FD4C9C489F2D6667 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				0C03F7C98D7B07521A6471DBF15B3DC7 /* CFNetwork.framework */,
-				78FA200FC4CA240EC765197E35667B46 /* Foundation.framework */,
-				CF21C61B2B4EB2D6BDE580E8EA8D9D92 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		C2C53CD701C95288E7F41658D8AE945E /* BBBadgeBarButtonItem */ = {
-			isa = PBXGroup;
-			children = (
-				23E3383B16E8DE1EF7CE449DE72BA3B6 /* BBBadgeBarButtonItem.h */,
-				014F2C603154617AAE37283317356E31 /* BBBadgeBarButtonItem.m */,
-				A2A4759BF8F78BE60FF5E8D20CF56E1F /* Support Files */,
-			);
+			name = BBBadgeBarButtonItem;
 			path = BBBadgeBarButtonItem;
 			sourceTree = "<group>";
 		};
-		C6243ECFF0294E1D7D887DC0487D1D7B /* Support Files */ = {
+		908673C9466C2B6479120C5FAFDC8361 /* Kingfisher */ = {
 			isa = PBXGroup;
 			children = (
-				CC9284DBEA761A28EF00952580BCD6A4 /* Info.plist */,
-				AA23BF91053A942FFDEDA0F153A659FE /* SimulatorStatusMagic.modulemap */,
-				D12C6F0ED670DBD970EAF8D8F7254E53 /* SimulatorStatusMagic.xcconfig */,
-				0EF3E08CD3DD24E44BABA4267D737AAC /* SimulatorStatusMagic-dummy.m */,
-				7304AE8A270145369E69D1AB06BD8CD1 /* SimulatorStatusMagic-prefix.pch */,
-				EEE448E7611AA93B2575782BCBF9B9A1 /* SimulatorStatusMagic-umbrella.h */,
+				84CB1277EC44AF8FE63AC93340E160B2 /* AnimatedImageView.swift */,
+				D3A0676DF2C095BF69ED2A94C54F7834 /* Box.swift */,
+				3F96A2DBD686DEB01375A05DF731DAA2 /* CacheSerializer.swift */,
+				DF147367A8AA528A6996471F3EBF11FD /* Filter.swift */,
+				716991AD7B380F0212C43174A9E33945 /* Image.swift */,
+				6144DFFB6F9E37B364349F80E8BC23A6 /* ImageCache.swift */,
+				28DA239C23A27F7F6B8F61CC163CFE28 /* ImageDownloader.swift */,
+				C2B4908F632A99B8E4D2B204443B93E8 /* ImagePrefetcher.swift */,
+				AB5CE4AC4D8BF631E7DC182192A26FE8 /* ImageProcessor.swift */,
+				B5BDE801E9B2FA7F37087E1C13F5872A /* ImageTransition.swift */,
+				AD546CD9E91A6C20440E468C3B2E2DF8 /* ImageView+Kingfisher.swift */,
+				750C834266206B7BAB173ED6D904F6D0 /* Indicator.swift */,
+				662D8727353BAC7C43A3607C97494369 /* Kingfisher.h */,
+				5CF15A013C88F55422C86D86605B37CE /* Kingfisher.swift */,
+				3D7CCA82767FC8EBD44FD302429357CC /* KingfisherManager.swift */,
+				9F391578B5775232A3623697379460B0 /* KingfisherOptionsInfo.swift */,
+				76D8580C623C35326D8C65547A4C1DCB /* RequestModifier.swift */,
+				D3EC0DEDB3B835233660D33A1F12F49A /* Resource.swift */,
+				026D10DBF2D697F40DD8A89C99286941 /* String+MD5.swift */,
+				D02E28470AA68DFE1C142F75CB9E8FD9 /* ThreadHelper.swift */,
+				1C9AFE47E9F986AB370B22412B4AB855 /* UIButton+Kingfisher.swift */,
+				6F93576B11F1A8BAA016641217D405AE /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SimulatorStatusMagic";
+			name = Kingfisher;
+			path = Kingfisher;
+			sourceTree = "<group>";
+		};
+		BA1EEAD6ED6A38970A0EE3046A20BFF1 /* TwitterKit */ = {
+			isa = PBXGroup;
+			children = (
+				5E65D685755FE826D4AF73A14BD5CF31 /* Frameworks */,
+				F3AC371D5D78F8989CE393A9EBC72561 /* Resources */,
+			);
+			name = TwitterKit;
+			path = TwitterKit;
 			sourceTree = "<group>";
 		};
 		CCF04B5512B0E8F58A944AF98F9DF81C /* Products */ = {
@@ -410,128 +420,164 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DC87B9504940BC1409E2B79E898403FA /* Resources */ = {
+		D3DC5782D19BF047DFAEB491A596E0F0 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7A383228BF928E3F1B370A7D1C5514AE /* TwitterKitResources.bundle */,
+				6BB22CD2AAE4F062A7CDA2E213C68442 /* CFNetwork.framework */,
+				EDDF8D75AA654F65ACE2125C52AFAAD2 /* Foundation.framework */,
+				321DA4FBF5721A7FB806D2982ED127C8 /* UIKit.framework */,
 			);
-			name = Resources;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		E4869199EACFAF0E6EE57C1F2A07C9DD /* Support Files */ = {
+		D52E785ED981ACCC5D243B2B41278AB9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8243140D5C5DBE65CF1E58AA32ADD16A /* Info.plist */,
-				996977C8538E87062050295EF356D8F1 /* Kingfisher.modulemap */,
-				59A601DB3F3942C506E2D61381D437C7 /* Kingfisher.xcconfig */,
-				F60419B04E15242F40F9699598D77F2C /* Kingfisher-dummy.m */,
-				95BAA7FA1E8B3BF802B959665F2A3801 /* Kingfisher-prefix.pch */,
-				36FA3FA02D9B578AB7BFC2F0A35FF37C /* Kingfisher-umbrella.h */,
+				CF57E4D16D3A076495A95B9FCB835677 /* BBBadgeBarButtonItem.modulemap */,
+				E4CC2EC6C62399DD998F378269F53CF7 /* BBBadgeBarButtonItem.xcconfig */,
+				D58448EBCF4B5FDFDB6F363A3327FCBA /* BBBadgeBarButtonItem-dummy.m */,
+				B89F1D2B82115063DBB42DF15024FF5F /* BBBadgeBarButtonItem-prefix.pch */,
+				4E9A261FD13C568264756BBF79535869 /* BBBadgeBarButtonItem-umbrella.h */,
+				6D845C5C3C0822A1528DCE723C16B92D /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Kingfisher";
+			path = "../Target Support Files/BBBadgeBarButtonItem";
 			sourceTree = "<group>";
 		};
-		EB55704AAC501A1F37DC61CEFD630AF0 /* Frameworks */ = {
+		D564498E8BF738D483FEFE822E828D5A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B6B94F0077AD719F9892585EA75B218B /* Pushwoosh.framework */,
+				2618A50C2488F4C7E8EDA2F647D61ADA /* Info.plist */,
+				BE9C383C2ABA4E1317C01CA341E84D28 /* SimulatorStatusMagic.modulemap */,
+				F03B9415152989256BB81CD4E734F053 /* SimulatorStatusMagic.xcconfig */,
+				816770E39E8DBFCCAA8B9675E22C98AD /* SimulatorStatusMagic-dummy.m */,
+				E34BD838E6A845C355555AAD0989A125 /* SimulatorStatusMagic-prefix.pch */,
+				8887727748EEAD19E01F07744A6815E7 /* SimulatorStatusMagic-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SimulatorStatusMagic";
+			sourceTree = "<group>";
+		};
+		DF3DC8AF76C3B792C59B0DA7988C087B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18F6F327A506B619955D3165E6F41F17 /* TwitterCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EE5F15C6DF19CB5087EAA85DD0CFCF8B /* Pods */ = {
+		E8EAAE7271029D1FE6C0D50ADC63B855 /* SimulatorStatusMagic */ = {
 			isa = PBXGroup;
 			children = (
-				C2C53CD701C95288E7F41658D8AE945E /* BBBadgeBarButtonItem */,
-				2A584ACF882DD9401FC4B1466FBAC949 /* Fabric */,
-				0B02E7617DBA9DBBD1FE28141965983E /* Kingfisher */,
-				3CD6C4129E7488B9A14031E238FB835C /* Pushwoosh */,
-				03DDF449ABB77D614FFA74BA3AB49092 /* SimulatorStatusMagic */,
-				F67DE5B2E374884829324683FB6EFC97 /* TwitterCore */,
-				F3FC22DD0729CDA7C6EF0867A2EE10C3 /* TwitterKit */,
+				AFF0AAABD5AE9E960029AFC05D344A28 /* SDStatusBarManager.h */,
+				8552F53BD2E885F9EA65D6C68F2AF111 /* SDStatusBarManager.m */,
+				2DCD5A25068BEC604977FAB5805FE0D1 /* SDStatusBarOverrider.h */,
+				C71A6F24A4C718E7766B04FD4BF61638 /* SDStatusBarOverriderPost10_0.h */,
+				B60DCA542961E8A53D8588F6EA56DA38 /* SDStatusBarOverriderPost10_0.m */,
+				2FC96AF44839BF75F4E5CB428DDCA9CD /* SDStatusBarOverriderPost10_3.h */,
+				DD3CF925C6AA0CC8C9CEE646C6277D30 /* SDStatusBarOverriderPost10_3.m */,
+				03E4F68B5C8C6A5220A1917AD61C7DBD /* SDStatusBarOverriderPost8_3.h */,
+				DFDF24609BE0CD1970960D263F660F76 /* SDStatusBarOverriderPost8_3.m */,
+				81069254409D10942093AB4827CB7BB3 /* SDStatusBarOverriderPost9_0.h */,
+				FBC5AD36E66D2EB80A40E7DF0D3FD793 /* SDStatusBarOverriderPost9_0.m */,
+				1063804C57B931D6F815C52353F24C4E /* SDStatusBarOverriderPost9_3.h */,
+				41570451D6C83FDFA1ECB4FF1499ED5E /* SDStatusBarOverriderPost9_3.m */,
+				65355829B93DBC931DC3739E3610544B /* SDStatusBarOverriderPre8_3.h */,
+				4FF240C3E4AD125FE40A3564F0885F0E /* SDStatusBarOverriderPre8_3.m */,
+				D564498E8BF738D483FEFE822E828D5A /* Support Files */,
 			);
-			name = Pods;
+			name = SimulatorStatusMagic;
+			path = SimulatorStatusMagic;
 			sourceTree = "<group>";
 		};
-		F3FC22DD0729CDA7C6EF0867A2EE10C3 /* TwitterKit */ = {
+		EC111DC21AD9E93EBE49A8041876D6F1 /* Pushwoosh */ = {
 			isa = PBXGroup;
 			children = (
-				1D4F69C90A780CD7C9FB2DE671510247 /* Frameworks */,
-				DC87B9504940BC1409E2B79E898403FA /* Resources */,
+				F46C0A1C5B7611A123DE237673A859B2 /* Frameworks */,
 			);
-			path = TwitterKit;
+			name = Pushwoosh;
+			path = Pushwoosh;
 			sourceTree = "<group>";
 		};
-		F67DE5B2E374884829324683FB6EFC97 /* TwitterCore */ = {
+		F3AC371D5D78F8989CE393A9EBC72561 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				87E68FCC524420E1EBE2BD862281F9B3 /* Frameworks */,
+				E6DA8E17900AB3541A5A38E28C8AA821 /* TwitterKitResources.bundle */,
 			);
-			path = TwitterCore;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F46C0A1C5B7611A123DE237673A859B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB9833BD71B6A604161B284E4BD95F46 /* Pushwoosh.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		095BC7618F80B08EE3737C078B0E389D /* Headers */ = {
+		0F94B6BFE5A6242FBBB0BE3D27F7CEE9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B60F81D95A845D43800345ADA200BFF9 /* Pods-NMF-umbrella.h in Headers */,
+				A8F35D1EBAEF99D38F02A0B8CA5D8FBE /* Kingfisher-umbrella.h in Headers */,
+				179523942E7D1E3EB210EF05E2C7AE79 /* Kingfisher.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		91E7C5A31EFAF0A540135460070745B3 /* Headers */ = {
+		134177AAD07D65DC988DB94A1D14B3C0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				303715A85DC6830404A91F56035CD25F /* SDStatusBarManager.h in Headers */,
-				3D216D744E05F3D5295858ACDACE487B /* SDStatusBarOverrider.h in Headers */,
-				F4746999FFEE254C17718E4932C46C68 /* SDStatusBarOverriderPost8_3.h in Headers */,
-				BB4A4A08D4D00771B53FA6EAF8EF9369 /* SDStatusBarOverriderPost9_0.h in Headers */,
-				C44E65C430495F4D6F39DD695A7B98E6 /* SDStatusBarOverriderPost9_3.h in Headers */,
-				022C8AFCF927C6D30EC1418A965305FD /* SDStatusBarOverriderPre8_3.h in Headers */,
-				AE128A0CBF51B9E5C21C1903C60FD715 /* SimulatorStatusMagic-umbrella.h in Headers */,
+				5D9428D5DB41410B830A7D463B40E9D7 /* Pods-NMF-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B74BD7FD85B495928BD92FF891D02CBC /* Headers */ = {
+		7902A6ABEFFAC28D6735544FF4D6F430 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72E46ABE7108599EDECB53A461D6D681 /* BBBadgeBarButtonItem-umbrella.h in Headers */,
-				4BE445A27E62407BDD151CE29C2C13D3 /* BBBadgeBarButtonItem.h in Headers */,
+				43205F1BEBD9003367E089935C8E9B29 /* Pods-nmfTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3AF5D3E2D171C4813A7FEA1F05656D7 /* Headers */ = {
+		B32145D3A98DCA7E37B376451DC4B17A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4EA08C26D9B667386F2FB76675201B3 /* Pods-nmfTests-umbrella.h in Headers */,
+				83B6628FF80B1B776327C5813A745A27 /* SDStatusBarManager.h in Headers */,
+				437BF8E7FB60B610261476EA9DE34FCF /* SDStatusBarOverrider.h in Headers */,
+				48C0D1A10795680064EA02C2E4FF2F44 /* SDStatusBarOverriderPost10_0.h in Headers */,
+				D10B0C06D5837BB1D8F3430CACB2EADE /* SDStatusBarOverriderPost10_3.h in Headers */,
+				04DECB38F674314C5A1446551E3A3683 /* SDStatusBarOverriderPost8_3.h in Headers */,
+				123AF072A5590B9E8995E5DAEFD56F19 /* SDStatusBarOverriderPost9_0.h in Headers */,
+				F6E53E166A45C10E1E373D45F6646B40 /* SDStatusBarOverriderPost9_3.h in Headers */,
+				AE14847B914DD02B6C1C7F34A7081C8E /* SDStatusBarOverriderPre8_3.h in Headers */,
+				99A0AF6B9681C923736ABE5D1E3ADB3D /* SimulatorStatusMagic-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD3D0463A360A7C8E32FEFE0013043B3 /* Headers */ = {
+		D26EE251AB1B11C43F9BE356232AE183 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9567294B3163F26B82541F05433A355E /* Kingfisher-umbrella.h in Headers */,
-				E170CD6AABB3FD64A0E67869BC754CAE /* Kingfisher.h in Headers */,
+				E00D06017D01B2CB012D444C2056C30F /* BBBadgeBarButtonItem-umbrella.h in Headers */,
+				77E3A80EE5CA3A90D80F0F01CA22B14C /* BBBadgeBarButtonItem.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		573661C4B30713E66BB846A7FC222CC4 /* SimulatorStatusMagic */ = {
+		8FC4C8019ED21E2E9530C5D187F9C853 /* SimulatorStatusMagic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F02AE4DEDB497E2528A0F8C177197118 /* Build configuration list for PBXNativeTarget "SimulatorStatusMagic" */;
+			buildConfigurationList = B542ED5AE34BC920E8EAA9035A831A76 /* Build configuration list for PBXNativeTarget "SimulatorStatusMagic" */;
 			buildPhases = (
-				285ABCFA7A0CFBC83730B8523459D0B4 /* Sources */,
-				D4BFDDD05EB4F7D4562AB667A46197A2 /* Frameworks */,
-				91E7C5A31EFAF0A540135460070745B3 /* Headers */,
+				1814A1740BABC951E04F43A4B0080474 /* Sources */,
+				A79087DCCA781C36565E43B26792268C /* Frameworks */,
+				B32145D3A98DCA7E37B376451DC4B17A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -542,50 +588,33 @@
 			productReference = A3671B8B5E446C86CC31F71DF9ACFBAF /* SimulatorStatusMagic.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		83CA4ED552E82DEE0E07F51663EF0DD7 /* Pods-NMF */ = {
+		9DA9373735CFE49D7FFE28720948457F /* Pods-NMF */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC2AA5FAAFF2DC622446C8D0416BEA50 /* Build configuration list for PBXNativeTarget "Pods-NMF" */;
+			buildConfigurationList = F088BC8D0DD9A99F50F2942C982A696F /* Build configuration list for PBXNativeTarget "Pods-NMF" */;
 			buildPhases = (
-				872EBB9C4C12CAC4646D9E005329B8D8 /* Sources */,
-				209177DBCE05706CB43CBC2F9EF4CB70 /* Frameworks */,
-				095BC7618F80B08EE3737C078B0E389D /* Headers */,
+				6CB1F5B10DAD1F8701B7E8AB01C660F2 /* Sources */,
+				10A9025AABC00D8749F2FE3AF093C703 /* Frameworks */,
+				134177AAD07D65DC988DB94A1D14B3C0 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B447F17CDBB745727057226CA986FF52 /* PBXTargetDependency */,
-				BCA77F152EB7593B965A1B3A4E74A32E /* PBXTargetDependency */,
-				0FFE73B781E409EAD81B2F30F5092D2A /* PBXTargetDependency */,
+				85FB2F404134B23857247C1223BE5B4B /* PBXTargetDependency */,
+				737EA2B94263F5186B4C562C4FB291B5 /* PBXTargetDependency */,
+				4000DCDF9ED83E1DBF43E0DB9753FA31 /* PBXTargetDependency */,
 			);
 			name = "Pods-NMF";
 			productName = "Pods-NMF";
 			productReference = 7C4DDCACF0BDD1119C2CA766F6473268 /* Pods_NMF.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		996C4CEDBD819845E4AE075097DBD57D /* BBBadgeBarButtonItem */ = {
+		C4944FEC314D1A66588651D006273ADE /* Kingfisher */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04CAFFC08E91024686C6CC9761726F44 /* Build configuration list for PBXNativeTarget "BBBadgeBarButtonItem" */;
+			buildConfigurationList = 76E7EFBCEA1340954A03AA68051C2306 /* Build configuration list for PBXNativeTarget "Kingfisher" */;
 			buildPhases = (
-				ADC65DFEF8EC45D0E91016941444893A /* Sources */,
-				B5320F96C1DF67E8FF4201F382CC05A4 /* Frameworks */,
-				B74BD7FD85B495928BD92FF891D02CBC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BBBadgeBarButtonItem;
-			productName = BBBadgeBarButtonItem;
-			productReference = 4262B5927E78B43E48D88DC1FEB87C8F /* BBBadgeBarButtonItem.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E96E13C4D3B5B5FC0651440734C2BF4D /* Kingfisher */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DE100A75D77110F0B5F48388F5128232 /* Build configuration list for PBXNativeTarget "Kingfisher" */;
-			buildPhases = (
-				BFE7FAAEF1C8254C9227FD5C624328C7 /* Sources */,
-				DCD988262B090AABB5FF164DEE2F88CF /* Frameworks */,
-				FD3D0463A360A7C8E32FEFE0013043B3 /* Headers */,
+				EAC7EA95310C5E1E724C632852F7D186 /* Sources */,
+				ED03E5917B811BACFE75189AE0C2A469 /* Frameworks */,
+				0F94B6BFE5A6242FBBB0BE3D27F7CEE9 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -596,13 +625,13 @@
 			productReference = 40974158378F6F395A3D6AAF5A632898 /* Kingfisher.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F2699BC0B39E0082CAB0B0BCD997A30D /* Pods-nmfTests */ = {
+		F5804108FB91A02F2815EC68695F5580 /* Pods-nmfTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ECA75C064AA0752332933EB146C2DF22 /* Build configuration list for PBXNativeTarget "Pods-nmfTests" */;
+			buildConfigurationList = 47A829351AC92961545B58C0369A30E1 /* Build configuration list for PBXNativeTarget "Pods-nmfTests" */;
 			buildPhases = (
-				B1D5E6EACE0D249BB69CACF080D84F82 /* Sources */,
-				2B8A53D8EA6BE79BDC56F8247CCA058C /* Frameworks */,
-				C3AF5D3E2D171C4813A7FEA1F05656D7 /* Headers */,
+				6AFF5975DDCFF89D3A258376736CF1D7 /* Sources */,
+				AE12EDA6DCED9C50E840F8F71E26AB6A /* Frameworks */,
+				7902A6ABEFFAC28D6735544FF4D6F430 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -613,13 +642,30 @@
 			productReference = BF3B101A6F1E212731199881279C5E6D /* Pods_nmfTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		FF0CDCF65A1A776251C0F82587A23D26 /* BBBadgeBarButtonItem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 985C9876B87B21D4C1F1058ED6930A9D /* Build configuration list for PBXNativeTarget "BBBadgeBarButtonItem" */;
+			buildPhases = (
+				DD21447685ED1FC371D6B599CBBDB4F1 /* Sources */,
+				6DFD02E99A22D17E81A84A6725959B2B /* Frameworks */,
+				D26EE251AB1B11C43F9BE356232AE183 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BBBadgeBarButtonItem;
+			productName = BBBadgeBarButtonItem;
+			productReference = 4262B5927E78B43E48D88DC1FEB87C8F /* BBBadgeBarButtonItem.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -634,104 +680,288 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				996C4CEDBD819845E4AE075097DBD57D /* BBBadgeBarButtonItem */,
-				E96E13C4D3B5B5FC0651440734C2BF4D /* Kingfisher */,
-				83CA4ED552E82DEE0E07F51663EF0DD7 /* Pods-NMF */,
-				F2699BC0B39E0082CAB0B0BCD997A30D /* Pods-nmfTests */,
-				573661C4B30713E66BB846A7FC222CC4 /* SimulatorStatusMagic */,
+				FF0CDCF65A1A776251C0F82587A23D26 /* BBBadgeBarButtonItem */,
+				C4944FEC314D1A66588651D006273ADE /* Kingfisher */,
+				9DA9373735CFE49D7FFE28720948457F /* Pods-NMF */,
+				F5804108FB91A02F2815EC68695F5580 /* Pods-nmfTests */,
+				8FC4C8019ED21E2E9530C5D187F9C853 /* SimulatorStatusMagic */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		285ABCFA7A0CFBC83730B8523459D0B4 /* Sources */ = {
+		1814A1740BABC951E04F43A4B0080474 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF6DDBEFD651C58814C67687B3792A87 /* SDStatusBarManager.m in Sources */,
-				2F45629AD50AF3BCBE510201EFEBC1FD /* SDStatusBarOverriderPost8_3.m in Sources */,
-				F08B70F43B4645BFB2D216D6B32520DE /* SDStatusBarOverriderPost9_0.m in Sources */,
-				EA259F4B4FA8DD9C737961036305E4A6 /* SDStatusBarOverriderPost9_3.m in Sources */,
-				1F15BA7A0B746AB5112250062C147623 /* SDStatusBarOverriderPre8_3.m in Sources */,
-				4AA573C8752BF768F8660DF900EEBE81 /* SimulatorStatusMagic-dummy.m in Sources */,
+				1708774D1D2E8CF64B047BE49065E2F9 /* SDStatusBarManager.m in Sources */,
+				E7B7CBF960F6D0E89D44A39D5CF2B146 /* SDStatusBarOverriderPost10_0.m in Sources */,
+				EF9C5D20F22F3B1CE6E373C5839F7A98 /* SDStatusBarOverriderPost10_3.m in Sources */,
+				246040F3D3F64E386059D8D212646373 /* SDStatusBarOverriderPost8_3.m in Sources */,
+				86497776EC6B9D2EEE3F1BBF527E2F61 /* SDStatusBarOverriderPost9_0.m in Sources */,
+				8DDF754F320ECFFE9ED365DC006CAF2E /* SDStatusBarOverriderPost9_3.m in Sources */,
+				FC68E57E5DDD3BE85355389F716E9FAD /* SDStatusBarOverriderPre8_3.m in Sources */,
+				A63056432BE6CA796C501F445BC62BB8 /* SimulatorStatusMagic-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		872EBB9C4C12CAC4646D9E005329B8D8 /* Sources */ = {
+		6AFF5975DDCFF89D3A258376736CF1D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				700C861753C3EA58B0B431BF2C8AC44D /* Pods-NMF-dummy.m in Sources */,
+				16141DFC34A49D2ABE32095100322CF4 /* Pods-nmfTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADC65DFEF8EC45D0E91016941444893A /* Sources */ = {
+		6CB1F5B10DAD1F8701B7E8AB01C660F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92F549F793242F86DFCCB04D03899D57 /* BBBadgeBarButtonItem-dummy.m in Sources */,
-				395CE8172FAABF4FFC114A636A542DAC /* BBBadgeBarButtonItem.m in Sources */,
+				5323E14BEF4BCD3A5A511912F45EEBB9 /* Pods-NMF-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1D5E6EACE0D249BB69CACF080D84F82 /* Sources */ = {
+		DD21447685ED1FC371D6B599CBBDB4F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66EE0BAE94B816A589AA504184651C24 /* Pods-nmfTests-dummy.m in Sources */,
+				66F53044FDA74E65FA524AB566A0F9A0 /* BBBadgeBarButtonItem-dummy.m in Sources */,
+				8FB1A137E121AE25F10E2B0E30448933 /* BBBadgeBarButtonItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFE7FAAEF1C8254C9227FD5C624328C7 /* Sources */ = {
+		EAC7EA95310C5E1E724C632852F7D186 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBF96620CA96640415496F8DDE06E4D3 /* AnimatedImageView.swift in Sources */,
-				310A90FDC7A4108847C8DB448296EC9B /* Image.swift in Sources */,
-				3E8FB8F421EF490807B09EFBA62FD286 /* ImageCache.swift in Sources */,
-				FFC369D4E11EBC6D0DF34C19561E0D70 /* ImageDownloader.swift in Sources */,
-				72E1B5591824D32038BD38C0A1A0090C /* ImagePrefetcher.swift in Sources */,
-				CEC7C23226EA400A86338DC8BB6D8B42 /* ImageTransition.swift in Sources */,
-				8B24ECCCF1CD0B0AEE746EC3F915DD2A /* ImageView+Kingfisher.swift in Sources */,
-				64838934323F6E2F0E4FAA8531DA62A8 /* Kingfisher-dummy.m in Sources */,
-				92B58E5A6CBE8D8BE77252C768AE4CCF /* KingfisherManager.swift in Sources */,
-				B269CF8D2FE78AB70482D446509BC26D /* KingfisherOptionsInfo.swift in Sources */,
-				3FB4A1460429FE7B4C0E397309BCBCDF /* Resource.swift in Sources */,
-				D2DA661DAC321C3CD4E3FD7B82625926 /* String+MD5.swift in Sources */,
-				9C66E71E39965349D16D84946D52B074 /* ThreadHelper.swift in Sources */,
-				32ABD43D364C9C8FCCE029D04D09209E /* UIButton+Kingfisher.swift in Sources */,
+				342AE33215135AD56B73580012DC22AB /* AnimatedImageView.swift in Sources */,
+				6DA770087D354CDCD3889CDAE7C4C698 /* Box.swift in Sources */,
+				2E5E570FFC49EF98550401421A243C0F /* CacheSerializer.swift in Sources */,
+				4089E39F76F86466B8DDD39A1C1ABB6B /* Filter.swift in Sources */,
+				33A14E817C0FA585D5DA3A55E453299D /* Image.swift in Sources */,
+				F8E957950566622A3E4B61AACE8F0B4A /* ImageCache.swift in Sources */,
+				DC6080C64C269628C3F5107BE87055E2 /* ImageDownloader.swift in Sources */,
+				3414E1D9CB15149A296E16C45967B021 /* ImagePrefetcher.swift in Sources */,
+				0E9CC28AC8E34FE8E1C87E933E04BC7A /* ImageProcessor.swift in Sources */,
+				86B7DA678C8705523C300947117C0706 /* ImageTransition.swift in Sources */,
+				33395912F2FFA355C4C36B7EDEAA3DA7 /* ImageView+Kingfisher.swift in Sources */,
+				52A280AB4852FDE92DF09B5E79D5C2AA /* Indicator.swift in Sources */,
+				6A375593407BC7937234B2B6A0811760 /* Kingfisher-dummy.m in Sources */,
+				C9CC5ED97D29C6C3DE22B78A9AA2AD91 /* Kingfisher.swift in Sources */,
+				7636F846675C9F4ED96E00C6C19A4890 /* KingfisherManager.swift in Sources */,
+				378B44CAA91C2106076668FDE72E1E02 /* KingfisherOptionsInfo.swift in Sources */,
+				EA816A580C3858934ED6FE92040C26DD /* RequestModifier.swift in Sources */,
+				8DA7E6883118CB3C8132B64D3D43AE0B /* Resource.swift in Sources */,
+				9F826F893E86EB86591B637A1CE4B13A /* String+MD5.swift in Sources */,
+				6CD63E1564618B6213B98E0ABBC3127C /* ThreadHelper.swift in Sources */,
+				EE89512E8D36E67CDC525DB9D5BBF5A7 /* UIButton+Kingfisher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0FFE73B781E409EAD81B2F30F5092D2A /* PBXTargetDependency */ = {
+		4000DCDF9ED83E1DBF43E0DB9753FA31 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SimulatorStatusMagic;
-			target = 573661C4B30713E66BB846A7FC222CC4 /* SimulatorStatusMagic */;
-			targetProxy = 0D645C8DAEAAA23A71B244CB6B028752 /* PBXContainerItemProxy */;
+			target = 8FC4C8019ED21E2E9530C5D187F9C853 /* SimulatorStatusMagic */;
+			targetProxy = 431693CC73F17A00FF44B074D4D6FC84 /* PBXContainerItemProxy */;
 		};
-		B447F17CDBB745727057226CA986FF52 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BBBadgeBarButtonItem;
-			target = 996C4CEDBD819845E4AE075097DBD57D /* BBBadgeBarButtonItem */;
-			targetProxy = F125B2107F515966D41BA4F46B30DC2A /* PBXContainerItemProxy */;
-		};
-		BCA77F152EB7593B965A1B3A4E74A32E /* PBXTargetDependency */ = {
+		737EA2B94263F5186B4C562C4FB291B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Kingfisher;
-			target = E96E13C4D3B5B5FC0651440734C2BF4D /* Kingfisher */;
-			targetProxy = E165C89139CC1BFF51F35D16EB92575D /* PBXContainerItemProxy */;
+			target = C4944FEC314D1A66588651D006273ADE /* Kingfisher */;
+			targetProxy = 5CD3CC0EBF1FB869A0852EA9F01872D3 /* PBXContainerItemProxy */;
+		};
+		85FB2F404134B23857247C1223BE5B4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BBBadgeBarButtonItem;
+			target = FF0CDCF65A1A776251C0F82587A23D26 /* BBBadgeBarButtonItem */;
+			targetProxy = 9575800C1DE4912AC3A2FAB730F449DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		034014829C1E4434983CF3A690C12017 /* Debug */ = {
+		20B5F4B4605A7E04AEE71183A359E092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E32F5F7B96703971D79F546CCBAB5A8 /* Kingfisher.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Kingfisher/Kingfisher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kingfisher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Kingfisher/Kingfisher.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Kingfisher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		267555FF638F110FD12D3E30243DBA74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC96F44049ED04228840C781E61C5B23 /* Pods-nmfTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-nmfTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-nmfTests/Pods-nmfTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_nmfTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		280BD812BE9995C725FF8EFFCC0EDCAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1F1C6AB83E8B1235118AEFBB2CEEAA5 /* Pods-NMF.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NMF/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NMF/Pods-NMF.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NMF;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		35D48F6322365159A0CAED4258B49D3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4CC2EC6C62399DD998F378269F53CF7 /* BBBadgeBarButtonItem.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BBBadgeBarButtonItem/BBBadgeBarButtonItem-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BBBadgeBarButtonItem/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BBBadgeBarButtonItem/BBBadgeBarButtonItem.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BBBadgeBarButtonItem;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3901A75F1343C7C234FF52658733828C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F03B9415152989256BB81CD4E734F053 /* SimulatorStatusMagic.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimulatorStatusMagic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SimulatorStatusMagic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		643C76AA582046977B7877822ED7A258 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -739,12 +969,16 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -762,20 +996,60 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		1226D76A0240F7791421524A1BD814AF /* Release */ = {
+		64F3A4713413E3050CF0622F525EEC49 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D12C6F0ED670DBD970EAF8D8F7254E53 /* SimulatorStatusMagic.xcconfig */;
+			baseConfigurationReference = D971AEDF357681786A824080CD6A697D /* Pods-nmfTests.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-nmfTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-nmfTests/Pods-nmfTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_nmfTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9A6F6BA270A454C736C14A5967BF0B91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F03B9415152989256BB81CD4E734F053 /* SimulatorStatusMagic.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -788,21 +1062,25 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = SimulatorStatusMagic;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		294BDF1C43327E9F352EEE5F65016F5C /* Debug */ = {
+		A794525992F2457D34942D108D9E942A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59A601DB3F3942C506E2D61381D437C7 /* Kingfisher.xcconfig */;
+			baseConfigurationReference = 7E32F5F7B96703971D79F546CCBAB5A8 /* Kingfisher.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -821,18 +1099,23 @@
 				PRODUCT_NAME = Kingfisher;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		4C8F9064ED4DDB45E70F0E997482AC3F /* Release */ = {
+		AFF35C6B4344CBD78316F4CC79AB7B17 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D000AF9E980451300DD8855113DD78D0 /* BBBadgeBarButtonItem.xcconfig */;
+			baseConfigurationReference = E4CC2EC6C62399DD998F378269F53CF7 /* BBBadgeBarButtonItem.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -851,175 +1134,19 @@
 				PRODUCT_NAME = BBBadgeBarButtonItem;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		729D73AE33FEE2D6D8DA2178038BC730 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D971AEDF357681786A824080CD6A697D /* Pods-nmfTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-nmfTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-nmfTests/Pods-nmfTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_nmfTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8CAEBA8AAC3E2804864DFBE6C1D6ACE1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59A601DB3F3942C506E2D61381D437C7 /* Kingfisher.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Kingfisher/Kingfisher-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Kingfisher/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Kingfisher/Kingfisher.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Kingfisher;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AB277A084C2984BC68EEE0BA723DA3B0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58E3A842B32CC80B5A780A9FF435911A /* Pods-NMF.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NMF/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NMF/Pods-NMF.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NMF;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AF6F5EED007A0DC6ED3732479355D77F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D000AF9E980451300DD8855113DD78D0 /* BBBadgeBarButtonItem.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BBBadgeBarButtonItem/BBBadgeBarButtonItem-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BBBadgeBarButtonItem/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BBBadgeBarButtonItem/BBBadgeBarButtonItem.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = BBBadgeBarButtonItem;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B9C68715E1CB255EA78203E6F52ECFB0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC96F44049ED04228840C781E61C5B23 /* Pods-nmfTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-nmfTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-nmfTests/Pods-nmfTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_nmfTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
+		C03B8870130C98D1B02B59D003687524 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1027,12 +1154,16 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1046,51 +1177,22 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		DE3259B897937F4F3FF100D4E69AE62D /* Release */ = {
+		DACC12558EEC869538C0BFFBC2C60BC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1F1C6AB83E8B1235118AEFBB2CEEAA5 /* Pods-NMF.release.xcconfig */;
+			baseConfigurationReference = 58E3A842B32CC80B5A780A9FF435911A /* Pods-NMF.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NMF/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NMF/Pods-NMF.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NMF;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E511762919DE87DC11B58160FC3203B5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D12C6F0ED670DBD970EAF8D8F7254E53 /* SimulatorStatusMagic.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -1099,16 +1201,23 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SimulatorStatusMagic/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-NMF/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SimulatorStatusMagic/SimulatorStatusMagic.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NMF/Pods-NMF.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SimulatorStatusMagic;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NMF;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1118,56 +1227,56 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		04CAFFC08E91024686C6CC9761726F44 /* Build configuration list for PBXNativeTarget "BBBadgeBarButtonItem" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AF6F5EED007A0DC6ED3732479355D77F /* Debug */,
-				4C8F9064ED4DDB45E70F0E997482AC3F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				034014829C1E4434983CF3A690C12017 /* Debug */,
-				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
+				643C76AA582046977B7877822ED7A258 /* Debug */,
+				C03B8870130C98D1B02B59D003687524 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC2AA5FAAFF2DC622446C8D0416BEA50 /* Build configuration list for PBXNativeTarget "Pods-NMF" */ = {
+		47A829351AC92961545B58C0369A30E1 /* Build configuration list for PBXNativeTarget "Pods-nmfTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB277A084C2984BC68EEE0BA723DA3B0 /* Debug */,
-				DE3259B897937F4F3FF100D4E69AE62D /* Release */,
+				64F3A4713413E3050CF0622F525EEC49 /* Debug */,
+				267555FF638F110FD12D3E30243DBA74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE100A75D77110F0B5F48388F5128232 /* Build configuration list for PBXNativeTarget "Kingfisher" */ = {
+		76E7EFBCEA1340954A03AA68051C2306 /* Build configuration list for PBXNativeTarget "Kingfisher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				294BDF1C43327E9F352EEE5F65016F5C /* Debug */,
-				8CAEBA8AAC3E2804864DFBE6C1D6ACE1 /* Release */,
+				A794525992F2457D34942D108D9E942A /* Debug */,
+				20B5F4B4605A7E04AEE71183A359E092 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ECA75C064AA0752332933EB146C2DF22 /* Build configuration list for PBXNativeTarget "Pods-nmfTests" */ = {
+		985C9876B87B21D4C1F1058ED6930A9D /* Build configuration list for PBXNativeTarget "BBBadgeBarButtonItem" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				729D73AE33FEE2D6D8DA2178038BC730 /* Debug */,
-				B9C68715E1CB255EA78203E6F52ECFB0 /* Release */,
+				35D48F6322365159A0CAED4258B49D3B /* Debug */,
+				AFF35C6B4344CBD78316F4CC79AB7B17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F02AE4DEDB497E2528A0F8C177197118 /* Build configuration list for PBXNativeTarget "SimulatorStatusMagic" */ = {
+		B542ED5AE34BC920E8EAA9035A831A76 /* Build configuration list for PBXNativeTarget "SimulatorStatusMagic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E511762919DE87DC11B58160FC3203B5 /* Debug */,
-				1226D76A0240F7791421524A1BD814AF /* Release */,
+				9A6F6BA270A454C736C14A5967BF0B91 /* Debug */,
+				3901A75F1343C7C234FF52658733828C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F088BC8D0DD9A99F50F2942C982A696F /* Build configuration list for PBXNativeTarget "Pods-NMF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DACC12558EEC869538C0BFFBC2C60BC1 /* Debug */,
+				280BD812BE9995C725FF8EFFCC0EDCAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
