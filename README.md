@@ -1,7 +1,8 @@
 # Nelsonville Music Festival iOS App
 
 To dos for 2017
--  Clean up map view
+- Move to EJSON
+- Clean up map view
   - Move current location button onto map
   - Add Google maps routing (action button)
   - Do we need to update map?
