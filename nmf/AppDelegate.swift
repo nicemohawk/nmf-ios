@@ -10,6 +10,7 @@ import UIKit
 import Fabric
 import TwitterKit
 import BBBadgeBarButtonItem
+import Pushwoosh
 
 #if CONFIGURATION_Debug
 import SimulatorStatusMagic
@@ -31,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        backendless.initApp(APP_ID, secret: SECRET_KEY, version: VERSION_NUM)
+        backendless?.initApp(APP_ID, secret: SECRET_KEY, version: VERSION_NUM)
         
         DataStore.sharedInstance.updateScheduleItems { _ in
             return
@@ -45,11 +46,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
         
         // setup push notes
         #if CONFIGURATION_Release
-            PushNotificationManager.initializeWithAppCode("BA4B0-6DAEE", appName: "NMF")
+            PushNotificationManager.initialize(withAppCode: "BA4B0-6DAEE", appName: "NMF")
         #endif
         
         #if CONFIGURATION_Debug
-            PushNotificationManager.initializeWithAppCode("2312C-C345D", appName: "NMF-dev")
+            PushNotificationManager.initialize(withAppCode: "2312C-C345D", appName: "NMF-dev")
         #endif
         
         PushNotificationManager.push().delegate = self

@@ -36,7 +36,7 @@ class ArtistViewController: UIViewController {
             if let pictureURLString = foundArtist.picture,
                 let imageURL = URL(string: pictureURLString) {
                 
-                self.artistImageView.setImage(with:imageURL)
+                self.artistImageView.kf.setImage(with: imageURL)
             }
 
             if let urlString = foundArtist.URL,

@@ -12,11 +12,6 @@ import Contacts
 
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
-// FIXME?
-    private static var __once: () = {
-            self.toggleLegendAction(self)
-        }()
-    
     lazy var locationManager: CLLocationManager = {
         let manager = CLLocationManager()
         
@@ -61,11 +56,13 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         super.viewWillAppear(animated)
     }
     
-    //FIXME?
-    static var once: Int = 0
+    private lazy var setupLegend: Void = {
+        self.toggleLegendAction(self)
+        // Do this once
+    }()
     
-    override func viewDidAppear(_ animated: Bool) {        
-        _ = MapViewController.__once
+    override func viewDidAppear(_ animated: Bool) {
+        _ = setupLegend
     }
     
     // MARK: - Actions

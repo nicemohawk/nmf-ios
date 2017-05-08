@@ -12,12 +12,7 @@ import BBBadgeBarButtonItem
 
 
 class ScheduleTableViewController: UITableViewController, UISearchControllerDelegate, UISearchResultsUpdating, UISearchBarDelegate {
-    // FIXME?
-    private static var __once: () = {
-            if ScheduleTableViewController.tableView.numberOfRows(inSection: 0) > 0 {
-                self.scrollToNearestCell()
-            }
-        }()
+
     var searchController = UISearchController(searchResultsController: nil)
     
     var scheduleItems = [[Schedule](),[Schedule](), [Schedule](), [Schedule]()]
@@ -61,7 +56,11 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         
         button.addTarget(self, action: #selector(ScheduleTableViewController.notificationsAction), for: .touchUpInside)
         
-        let barButton = BBBadgeBarButtonItem(customUIButton: button)
+        
+        guard let barButton = BBBadgeBarButtonItem(customUIButton: button) else {
+            return
+        }
+        
         barButton.badgeBGColor = UIColor.lightCharcoal()
         barButton.badgeOriginX = 2
         barButton.badgeOriginY = 0
@@ -104,8 +103,14 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
     // FIXME?
     static var once: Int = 0
     
+    private lazy var setupTableView: Void = {
+        if self.tableView.numberOfRows(inSection: 0) > 0 {
+            self.scrollToNearestCell()
+        }
+    }()
+    
     override func viewDidAppear(_ animated: Bool) {
-        _ = ScheduleTableViewController.__once
+        _ = setupTableView
         
         super.viewDidAppear(animated)
     }
@@ -396,8 +401,8 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
                 continue
             }
             
-            if let time = item.starttime {
-                switch (Calendar.current as NSCalendar).components(.weekday, from: time).weekday {
+            if let time = item.starttime, let weekday = (Calendar.current as NSCalendar).components(.weekday, from: time).weekday {
+                switch weekday {
                 case 5: // Thursday
                     thursdayShows.append(item)
                 case 6: // Friday

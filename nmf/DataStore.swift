@@ -36,7 +36,7 @@ class DataStore: NSObject {
         print("saved artists: \(NSKeyedArchiver.archiveRootObject(artistItems, toFile: DataStore.archiveURL.appendingPathComponent("artists").path))")
     }
     
-    func updateScheduleItems(_ completion: (Error?) -> Void) -> Void {
+    func updateScheduleItems(_ completion: @escaping (Error?) -> Void) -> Void {
         let backendless = Backendless.sharedInstance()
         let dataStore = backendless!.data.of(Schedule.ofClass())
         
@@ -47,43 +47,43 @@ class DataStore: NSObject {
             
             completion(nil)
         }, error: { (fault) in
-            print(fault)
+            print(fault ?? "Unable to print fault")
             
             completion(fault)
         })
     }
     
-    func updateArtistItems(_ completion: (Error?) -> Void) -> Void {
+    func updateArtistItems(_ completion:  @escaping (Error?) -> Void) -> Void {
         let backendless = Backendless.sharedInstance()
-        let dataStore = backendless.data.of(Artists.ofClass())
+        let dataStore = backendless?.data.of(Artists.ofClass())
         
-        dataStore.find({ (artistsItemsCollection) in
-            if let artists = artistsItemsCollection.data as? [Artists] {
+        dataStore?.find({ (artistsItemsCollection) in
+            if let artists = artistsItemsCollection?.data as? [Artists] {
                 self.mergeArtists(artists)
             }
             
             completion(nil)
         }, error: { (fault) in
-            print(fault)
+            print(fault ?? "Unable to print fault")
             
             completion(fault)
         })
     }
     
-    func getArtistByName(_ artistName: String, completion: (Artists?, Error?) -> Void) -> Void {
+    func getArtistByName(_ artistName: String, completion: @escaping (Artists?, Error?) -> Void) -> Void {
         let backendless = Backendless.sharedInstance()
-        let dataStore = backendless.data.of(Artists.ofClass())
+        let dataStore = backendless?.data.of(Artists.ofClass())
         
         let artistsQuery = BackendlessDataQuery()
         artistsQuery.whereClause = "ArtistName = '\(artistName)'"
         
-        dataStore.find(artistsQuery, response: { (artistsItemsCollection) in
-            let foundArtist = artistsItemsCollection.data.first as? Artists
+        dataStore?.find(artistsQuery, response: { (artistsItemsCollection) in
+            let foundArtist = artistsItemsCollection?.data.first as? Artists
             
             completion(foundArtist, nil)
         }) { (fault) in
             self.artistItems = []
-            print(fault)
+            print(fault ?? "Unable to print fault")
             
             completion(nil, fault)
         }
