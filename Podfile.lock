@@ -1,8 +1,8 @@
 PODS:
   - BBBadgeBarButtonItem (1.2)
   - Fabric (1.6.11)
-  - Kingfisher (3.6.2)
-  - Pushwoosh (5.1.5)
+  - Kingfisher (3.7.1)
+  - Pushwoosh (5.1.6)
   - SimulatorStatusMagic (1.9.4)
   - TwitterCore (2.8.0):
     - Fabric
@@ -21,12 +21,12 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   BBBadgeBarButtonItem: c2fbca0bff18e21b70defc9438a8a5048008e7ca
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
-  Kingfisher: 2c94e72c6830622c71d06adf4ea024c37d316830
-  Pushwoosh: c98a9ac508af669871f528b3cbaef6db8af7adae
+  Kingfisher: c09cece8e201b6abd7b6866ea26f73b2379208d2
+  Pushwoosh: 52a2237084d3c9c198638847bf5d7309510086ea
   SimulatorStatusMagic: db93f00d164d854cd5ed7b5c75f48fba3b698c20
   TwitterCore: e959987be23c767004d29eb7fab8d85d8585a2e5
   TwitterKit: 3b6044a7320340326a4098f3e37aa1dbaeb94942
 
-PODFILE CHECKSUM: e9d14effaaf37729ae299c3bc3c50ef13add3448
+PODFILE CHECKSUM: 986e95bd53ec75f8764566e5e819168721a0e1f8
 
 COCOAPODS: 1.2.1
