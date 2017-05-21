@@ -3,7 +3,7 @@
 //  nmf
 //
 //  Created by Daniel Pagan on 4/6/16.
-//  Copyright © 2016 Nelsonville Music Festival. All rights reserved.
+//  Copyright © 2017 Nelsonville Music Festival. All rights reserved.
 //
 
 import Foundation
@@ -74,7 +74,16 @@ class Schedule: NSObject, NSCoding {
     
     func timeString() -> String {
         if let startDate = starttime {
-            return Schedule.hourFormatter.string(from: startDate)
+            let components = Calendar.current.dateComponents([.hour,.minute], from: startDate)
+            
+            if let hour = components.hour, let minute = components.minute {
+                switch (hour, minute) {
+                case (11, 59):
+                    return "12:00 AM"
+                default:
+                    return Schedule.hourFormatter.string(from: startDate)
+                }
+            }
         }
         
         return ""

@@ -3,7 +3,7 @@
 //  nmf
 //
 //  Created by Daniel Pagan on 4/5/16.
-//  Copyright © 2016 Nelsonville Music Festival. All rights reserved.
+//  Copyright © 2017 Nelsonville Music Festival. All rights reserved.
 //
 
 import UIKit
@@ -131,7 +131,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
             for (row, scheduleItem) in sectionArray.enumerated().reversed() {
                 let indexPath = IndexPath(row: row, section: section)
                 
-                if let time = scheduleItem.starttime, (time as NSDate).earlierDate(oneHourAgo) == oneHourAgo {
+                if let time = scheduleItem.starttime, time > oneHourAgo {
                     lastPath = indexPath
                     continue
                 }
@@ -210,9 +210,9 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
             
             let oneHourAgo = Date(timeIntervalSinceNow: -(1*60*60))
             let fifteenMinutesFromNow = Date(timeIntervalSinceNow:15*60)
-            
+             
             if let showTime = foundScheduleItem.starttime,
-                (showTime as NSDate).earlierDate(fifteenMinutesFromNow) == showTime, (showTime as NSDate).earlierDate(oneHourAgo) == oneHourAgo {
+                showTime < fifteenMinutesFromNow, showTime > oneHourAgo {
                 scheduleCell.startTime.text = "Now"
                 scheduleCell.startTime.font = UIFont.boldSystemFont(ofSize: UIFont.labelFontSize)
                 scheduleCell.startTime.textColor = UIColor.coral()
@@ -401,7 +401,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
                 continue
             }
             
-            if let time = item.starttime, let weekday = (Calendar.current as NSCalendar).components(.weekday, from: time).weekday {
+            if let time = item.starttime, let weekday = Calendar.current.dateComponents([.weekday], from: time).weekday {
                 switch weekday {
                 case 5: // Thursday
                     thursdayShows.append(item)

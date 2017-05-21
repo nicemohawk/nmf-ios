@@ -3,7 +3,7 @@
 //  nmf
 //
 //  Created by Ben Lachman on 5/29/16.
-//  Copyright © 2016 Nelsonville Music Festival. All rights reserved.
+//  Copyright © 2017 Nelsonville Music Festival. All rights reserved.
 //
 
 import UIKit

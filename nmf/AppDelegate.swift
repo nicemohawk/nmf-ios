@@ -3,7 +3,7 @@
 //  nmf
 //
 //  Created by Daniel Pagan on 3/16/16.
-//  Copyright © 2016 Nelsonville Music Festival. All rights reserved.
+//  Copyright © 2017 Nelsonville Music Festival. All rights reserved.
 //
 
 import UIKit
@@ -11,6 +11,8 @@ import Fabric
 import TwitterKit
 import BBBadgeBarButtonItem
 import Pushwoosh
+import ReachabilitySwift
+import Kingfisher
 
 #if CONFIGURATION_Debug
 import SimulatorStatusMagic
@@ -30,14 +32,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
     
     var lastActive = Date()
     
+    let reachability = Reachability()!
+ 
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         backendless?.initApp(APP_ID, secret: SECRET_KEY, version: VERSION_NUM)
         
+        
+        // setup image cache
+        ImageCache.default.maxCachePeriodInSecond = 30 * 24 * 60 * 60
+
         DataStore.sharedInstance.updateScheduleItems { _ in
             return
         }
         DataStore.sharedInstance.updateArtistItems { _ in
+            if self.reachability.isReachableViaWiFi {
+                ImagePrefetcher.init(resources: DataStore.sharedInstance.artistItems, options: nil, progressBlock: nil, completionHandler: nil).start()
+            }
+            
             return
         }
         
@@ -91,7 +104,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
         
-        if (lastActive as NSDate).earlierDate(Date(timeIntervalSinceNow: -(10*60))) != lastActive {
+        if lastActive > Date(timeIntervalSinceNow: -(10*60)) {
             // if app hasn't been used in 10 minutes, update it, otherwise return
             return
         }

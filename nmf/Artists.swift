@@ -3,13 +3,14 @@
 //  nmf
 //
 //  Created by Daniel Pagan on 3/30/16.
-//  Copyright © 2016 Nelsonville Music Festival. All rights reserved.
+//  Copyright © 2017 Nelsonville Music Festival. All rights reserved.
 //
 
 import Foundation
+import Kingfisher
 
 
-class Artists : NSObject, NSCoding {
+class Artists : NSObject, NSCoding, Resource {
     var objectId: String?
     
     var artistName: String?
@@ -56,5 +57,19 @@ class Artists : NSObject, NSCoding {
 
         URL = otherItem.URL
         YouTube = otherItem.YouTube
+    }
+    
+    var downloadURL: URL {
+        get {
+            guard let pictureURLString = picture, let picturURL = Foundation.URL(string: pictureURLString) else {
+                return Foundation.URL(string: "https://api.backendless.com/49259415-337F-9D60-FFEE-023C6FD21C00/v1/files/artists/2017/empty.jpg")!
+            }
+            
+            return picturURL
+        }
+    }
+    
+    var cacheKey: String {
+        return downloadURL.absoluteString
     }
 }

@@ -3,7 +3,7 @@
 //  nmf
 //
 //  Created by Daniel Pagan on 4/15/16.
-//  Copyright © 2016 Nelsonville Music Festival. All rights reserved.
+//  Copyright © 2017 Nelsonville Music Festival. All rights reserved.
 //
 
 import Foundation
@@ -41,6 +41,8 @@ class DataStore: NSObject {
         let dataStore = backendless!.data.of(Schedule.ofClass())
         
         dataStore?.find({ (scheduleItemsCollection) in
+            self.removeOldItems()
+            
             if let items = scheduleItemsCollection?.data as? [Schedule] {
                 self.mergeScheduleItems(items)
             }
@@ -89,8 +91,21 @@ class DataStore: NSObject {
         }
     }
     
-    func mergeScheduleItems(_ newItems: [Schedule]) {
+    func removeOldItems() {
+        let currentYear = Calendar.current.component(.year, from: Date())
         
+        var itemsToRemove = [Schedule]()
+        
+        for item in scheduleItems {
+            if let date = item.starttime, Calendar.current.component(.year, from: date) < currentYear {
+                itemsToRemove.append(item)
+            }
+        }
+        
+        scheduleItems = scheduleItems.filter { itemsToRemove.contains($0) == false }
+    }
+    
+    func mergeScheduleItems(_ newItems: [Schedule]) {
         for newItem in newItems {
             var foundItem = false
             
@@ -105,8 +120,8 @@ class DataStore: NSObject {
                 scheduleItems.append(newItem)
             }
         }
-        
     }
+    
     
     func mergeArtists(_ newArtists: [Artists]) {
         for newArtist in newArtists  {
