@@ -10,6 +10,7 @@ pod 'TwitterKit'
 pod 'TwitterCore'
 
 pod 'Kingfisher', '~> 3.0'
+pod 'ReachabilitySwift', '~> 3'
 pod 'Pushwoosh'
 pod 'BBBadgeBarButtonItem'
 
