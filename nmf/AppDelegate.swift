@@ -20,8 +20,8 @@ import SimulatorStatusMagic
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate {
     
-    let APP_ID = "49259415-337F-9D60-FFEE-023C6FD21C00"
-    let SECRET_KEY = "71BC7DA3-EFB8-26C2-FF59-599860222C00"
+    let APP_ID = Secrets.secrets()["APP_ID"] as? String
+    let SECRET_KEY = Secrets.secrets()["SECRET_KEY"] as? String
     let VERSION_NUM =  "v1"
     
     let backendless = Backendless.sharedInstance()
@@ -42,15 +42,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
         }
         
         // setup twitter kit
+        Twitter.sharedInstance().start(withConsumerKey: Secrets.secrets()["TWITTERKIT_KEY"] as! String, consumerSecret: Secrets.secrets()["TWITTERKIT_SECRET"] as! String)
+        
         Fabric.with([Twitter.self])
         
         // setup push notes
         #if CONFIGURATION_Release
-            PushNotificationManager.initialize(withAppCode: "BA4B0-6DAEE", appName: "NMF")
+            PushNotificationManager.initialize(withAppCode: Secrets.secrets()["PW_APP_CODE"] as! String, appName: "NMF")
         #endif
         
         #if CONFIGURATION_Debug
-            PushNotificationManager.initialize(withAppCode: "2312C-C345D", appName: "NMF-dev")
+            PushNotificationManager.initialize(withAppCode: Secrets.secrets()["PW_DEV_APP_CODE"] as! String, appName: "NMF-dev")
         #endif
         
         PushNotificationManager.push().delegate = self

@@ -38,6 +38,7 @@
 		B5026C9A1CFC2A4D009F1877 /* ScheduleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5026C981CFC2A4C009F1877 /* ScheduleView.xib */; };
 		B5026C9D1CFC2CFC009F1877 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5026C9C1CFC2CFC009F1877 /* ScheduleView.swift */; };
 		B5026C9F1CFC48EA009F1877 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5026C9E1CFC48EA009F1877 /* InfoViewController.swift */; };
+		B5200C771EC1A1360034091F /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5200C761EC1A1360034091F /* Secrets.swift */; };
 		B588B0D21CFDDDB300C4C3CF /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B588B0D11CFDDDB300C4C3CF /* CoreAudio.framework */; };
 		B588B0D51CFDDEE400C4C3CF /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B588B0D31CFDDEE400C4C3CF /* CoreMedia.framework */; };
 		B588B0D61CFDDEE400C4C3CF /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B588B0D41CFDDEE400C4C3CF /* CoreVideo.framework */; };
@@ -271,6 +272,7 @@
 		B5026C991CFC2A4C009F1877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ScheduleView.xib; sourceTree = "<group>"; };
 		B5026C9C1CFC2CFC009F1877 /* ScheduleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		B5026C9E1CFC48EA009F1877 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		B5200C761EC1A1360034091F /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		B588B0CC1CFC504C00C4C3CF /* update_build_number.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = update_build_number.sh; sourceTree = "<group>"; };
 		B588B0D11CFDDDB300C4C3CF /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		B588B0D31CFDDEE400C4C3CF /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -365,6 +367,7 @@
 				B588B0DD1CFDF62800C4C3CF /* NMF-Bridging-Header.h */,
 				B5A5340D1CFAB39D005BAF8E /* Montserrat-Regular.otf */,
 				B5026C951CFBB66B009F1877 /* mapdata */,
+				B5200C761EC1A1360034091F /* Secrets.swift */,
 			);
 			path = nmf;
 			sourceTree = "<group>";
@@ -816,6 +819,7 @@
 				B588B0D01CFDDCC100C4C3CF /* Fabric */,
 				1EA02A8D16B6F0377C729481 /* [CP] Embed Pods Frameworks */,
 				F296660672D6AAB3E697D652 /* [CP] Copy Pods Resources */,
+				B5200C741EC1886D0034091F /* Copy Secrets */,
 			);
 			buildRules = (
 			);
@@ -966,6 +970,20 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		B5200C741EC1886D0034091F /* Copy Secrets */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Secrets";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "GEMPATH=`gem env GEM_PATH`\n\nfor path in ${GEMPATH//:/ }; do\n    export PATH=$PATH:$path\"/bin\"\ndone\n\necho $PATH\n\n\"${SRCROOT}/decrypt.rb\"\n";
+		};
 		B588B0CD1CFC508F00C4C3CF /* Update Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1056,6 +1074,7 @@
 				A53D603A1CAC5B6900B97E49 /* Artists.swift in Sources */,
 				B5A5340C1CF910BE005BAF8E /* StackWidthLabel.swift in Sources */,
 				B5026C9D1CFC2CFC009F1877 /* ScheduleView.swift in Sources */,
+				B5200C771EC1A1360034091F /* Secrets.swift in Sources */,
 				B5026C9F1CFC48EA009F1877 /* InfoViewController.swift in Sources */,
 				A52760501CB415B3003B62AD /* ScheduleTableViewController.swift in Sources */,
 			);
