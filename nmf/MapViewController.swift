@@ -25,6 +25,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     let tileOverlay = TileOverlay(urlTemplate: Bundle.main.bundleURL.absoluteString + "mapdata/{z}/{x}/{y}.png")
     
     @IBOutlet var mapView: MKMapView!
+    @IBOutlet weak var currentLocationButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -53,6 +54,12 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                 locationManager.startUpdatingLocation()
             }
         }
+        
+        currentLocationButton.layer.borderColor = UIColor.tanBackground().cgColor
+        currentLocationButton.layer.borderWidth = 1
+        currentLocationButton.layer.cornerRadius = 12
+        
+        
         super.viewWillAppear(animated)
     }
     
@@ -87,8 +94,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         }, completion: nil)
     }
     
-    
-    @IBAction func locationButtonAction(_ sender: UIBarButtonItem) {
+    @IBAction func locationButtonAction(_ sender: UIButton) {
         if let userLocation = locationManager.location {
             mapView.setCenter(userLocation.coordinate, animated: true)
         }
