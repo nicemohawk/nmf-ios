@@ -78,12 +78,14 @@ class Schedule: NSObject, NSCoding {
             
             if let hour = components.hour, let minute = components.minute {
                 switch (hour, minute) {
-                case (11, 59):
-                    return "12:00 AM"
+                case (23, 59):
+                    return "12:00AM"
                 default:
                     return Schedule.hourFormatter.string(from: startDate)
                 }
             }
+            
+            return Schedule.hourFormatter.string(from: startDate)
         }
         
         return ""
