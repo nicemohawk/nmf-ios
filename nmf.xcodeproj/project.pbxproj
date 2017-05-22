@@ -273,6 +273,7 @@
 		B5026C9C1CFC2CFC009F1877 /* ScheduleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		B5026C9E1CFC48EA009F1877 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = InfoViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B5200C761EC1A1360034091F /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		B5642B7F1ED2869C00F649AF /* NMF.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = NMF.entitlements; path = NMF/NMF.entitlements; sourceTree = "<group>"; };
 		B588B0CC1CFC504C00C4C3CF /* update_build_number.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = update_build_number.sh; sourceTree = "<group>"; };
 		B588B0D11CFDDDB300C4C3CF /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		B588B0D31CFDDEE400C4C3CF /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -330,6 +331,7 @@
 		2C5B8B421C9A13E900C6A893 = {
 			isa = PBXGroup;
 			children = (
+				B5642B7F1ED2869C00F649AF /* NMF.entitlements */,
 				B588B0CC1CFC504C00C4C3CF /* update_build_number.sh */,
 				2C5B8B4D1C9A13E900C6A893 /* nmf */,
 				2C5B8B641C9A13E900C6A893 /* nmfTests */,
@@ -1221,6 +1223,7 @@
 			baseConfigurationReference = 2F32E065FB53AB9901456A50 /* Pods-NMF.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NMF/NMF.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = GYV9U8338K;
@@ -1247,6 +1250,7 @@
 			baseConfigurationReference = 2328F20B0D47FF1A44CCEDF7 /* Pods-NMF.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NMF/NMF.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = GYV9U8338K;
