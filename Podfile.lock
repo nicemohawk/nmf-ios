@@ -1,4 +1,5 @@
 PODS:
+  - Backendless (3.0.46)
   - BBBadgeBarButtonItem (1.2)
   - Fabric (1.6.11)
   - Kingfisher (3.7.1)
@@ -11,6 +12,7 @@ PODS:
     - TwitterCore (>= 2.8)
 
 DEPENDENCIES:
+  - Backendless (~> 3.0)
   - BBBadgeBarButtonItem
   - Fabric
   - Kingfisher (~> 3.0)
@@ -21,6 +23,7 @@ DEPENDENCIES:
   - TwitterKit
 
 SPEC CHECKSUMS:
+  Backendless: 0045a3190b8eefff3d3d25d75e206906bcc585d8
   BBBadgeBarButtonItem: c2fbca0bff18e21b70defc9438a8a5048008e7ca
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   Kingfisher: c09cece8e201b6abd7b6866ea26f73b2379208d2
@@ -30,6 +33,6 @@ SPEC CHECKSUMS:
   TwitterCore: e959987be23c767004d29eb7fab8d85d8585a2e5
   TwitterKit: 3b6044a7320340326a4098f3e37aa1dbaeb94942
 
-PODFILE CHECKSUM: f20e84780dc73bb6b3759b518d5829625f843445
+PODFILE CHECKSUM: fc63bf2eac07287916f838f6b3f061630ceb5c88
 
 COCOAPODS: 1.2.1

@@ -8,65 +8,65 @@
 
 /* Begin PBXBuildFile section */
 		0CE9884CF06D222F95249E0446B0C291 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265DDDF4A5C807E517E64492A03D942D /* Foundation.framework */; };
-		0D96A39C6EC82C1467080FCD11E3F4D5 /* SDStatusBarOverriderPost10_0.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DC59A3DA5E61265BFEF544E3AFF26F1 /* SDStatusBarOverriderPost10_0.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E9CC28AC8E34FE8E1C87E933E04BC7A /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FA5CC95C4A4C75006F86FE3A7DF7BA /* ImageProcessor.swift */; };
+		0D96A39C6EC82C1467080FCD11E3F4D5 /* SDStatusBarOverriderPost10_0.h in Headers */ = {isa = PBXBuildFile; fileRef = EADFBE607C83F48EEDB2082E0E37D54B /* SDStatusBarOverriderPost10_0.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E9CC28AC8E34FE8E1C87E933E04BC7A /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746CDC9D2147E8EAB9FC47984E2BDA6C /* ImageProcessor.swift */; };
 		16141DFC34A49D2ABE32095100322CF4 /* Pods-nmfTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272488A7E720F5B6F7FC0582766B385F /* Pods-nmfTests-dummy.m */; };
-		179523942E7D1E3EB210EF05E2C7AE79 /* Kingfisher.h in Headers */ = {isa = PBXBuildFile; fileRef = 1386DAD1C60FAA9309E0432644F6C4E4 /* Kingfisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		179523942E7D1E3EB210EF05E2C7AE79 /* Kingfisher.h in Headers */ = {isa = PBXBuildFile; fileRef = FEB84EB64F0CB772C00C6EFA673EC884 /* Kingfisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B92C67A0C5858AAE0BF6D5D8FDFB551 /* Pods-NMF-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 580B26B8D7F745E6E34CCA7DBBE45C0B /* Pods-NMF-dummy.m */; };
 		2D41430007CE8464586F521838A882C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265DDDF4A5C807E517E64492A03D942D /* Foundation.framework */; };
-		2E5E570FFC49EF98550401421A243C0F /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F842372FE5C2D542815DF72807436BAD /* CacheSerializer.swift */; };
-		2FBB804FDE905AB190CCDF9348ADD9B3 /* SDStatusBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CED835F07D59DFD4916B0174ABBFF7FE /* SDStatusBarManager.m */; };
-		33395912F2FFA355C4C36B7EDEAA3DA7 /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC488AEC80DB899D6FD421D52AACD4 /* ImageView+Kingfisher.swift */; };
-		33A14E817C0FA585D5DA3A55E453299D /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8ED64D8A4CC46A00A398A06BC64CAB /* Image.swift */; };
-		3414E1D9CB15149A296E16C45967B021 /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B23BCBC8B9A8F31130C8F28A36B9B /* ImagePrefetcher.swift */; };
-		342AE33215135AD56B73580012DC22AB /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E575399FD1E215BB0ED730DAE9129B /* AnimatedImageView.swift */; };
-		378B44CAA91C2106076668FDE72E1E02 /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E63BCDEFA8F0BAFD692D507A41E712B /* KingfisherOptionsInfo.swift */; };
-		38639C251B23A1F05185047B87A4B20F /* SDStatusBarOverriderPre8_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 034B37C08C6871790A85E192CD2005B1 /* SDStatusBarOverriderPre8_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E5E570FFC49EF98550401421A243C0F /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E38C351E7C51888B7279777F0B05B93 /* CacheSerializer.swift */; };
+		2FBB804FDE905AB190CCDF9348ADD9B3 /* SDStatusBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 64708C7C8ECF8A59804197FA4A378F76 /* SDStatusBarManager.m */; };
+		33395912F2FFA355C4C36B7EDEAA3DA7 /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD759A6BA30EFD1E1F4A733504BF5A /* ImageView+Kingfisher.swift */; };
+		33A14E817C0FA585D5DA3A55E453299D /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323E2960FAB6194AA71DA63BC6EB28C6 /* Image.swift */; };
+		3414E1D9CB15149A296E16C45967B021 /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2347A371D8C7F93B35D43DEFA907253C /* ImagePrefetcher.swift */; };
+		342AE33215135AD56B73580012DC22AB /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A33A9577227E51A6D8616B1FC66F01 /* AnimatedImageView.swift */; };
+		378B44CAA91C2106076668FDE72E1E02 /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D291BEC736E94619E9660A77FD06CFEA /* KingfisherOptionsInfo.swift */; };
+		38639C251B23A1F05185047B87A4B20F /* SDStatusBarOverriderPre8_3.h in Headers */ = {isa = PBXBuildFile; fileRef = EDBAB314D1201B6DC3BA922AFBC46D66 /* SDStatusBarOverriderPre8_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3EE1FD3FDFBDC1407EFA34FEE333908C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B53BB9900AAD4C476419FF001C7FB5 /* UIKit.framework */; };
-		3F2915932D7213492EF5601C99DA0F33 /* SimulatorStatusMagic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88302E8C559E29E4274BE9837DA251A8 /* SimulatorStatusMagic-dummy.m */; };
-		4089E39F76F86466B8DDD39A1C1ABB6B /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63AF475C1724478711A5B64B702F95C /* Filter.swift */; };
+		3F2915932D7213492EF5601C99DA0F33 /* SimulatorStatusMagic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B7470F2D44852E9475ECEC0F88811 /* SimulatorStatusMagic-dummy.m */; };
+		4089E39F76F86466B8DDD39A1C1ABB6B /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B43D7F1BCABEE8328378340A53B3736 /* Filter.swift */; };
 		43205F1BEBD9003367E089935C8E9B29 /* Pods-nmfTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9878DD4BD3232916ED9B3122EC6C729F /* Pods-nmfTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A016CC95B46BAF2D9A82BA124E81CD2 /* Pods-NMF-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DEDF2077305F04C6D3D313CEA00A891F /* Pods-NMF-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52A280AB4852FDE92DF09B5E79D5C2AA /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ED0E12A516615D2D593791845339B4 /* Indicator.swift */; };
-		66F53044FDA74E65FA524AB566A0F9A0 /* BBBadgeBarButtonItem-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F171F3916C7ACB1CCCCD60D31F8637 /* BBBadgeBarButtonItem-dummy.m */; };
-		67F112559BBFA7B8AB4336C5C0714B23 /* SimulatorStatusMagic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B7C4A7FB00AA532700953F29A8FA34 /* SimulatorStatusMagic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A375593407BC7937234B2B6A0811760 /* Kingfisher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7347E1962A356BA8D21FC19A59F11F53 /* Kingfisher-dummy.m */; };
-		6BC3B4141991682686D29EA2EA9F6475 /* SDStatusBarOverriderPre8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 052F4C27D8F72E4E2AE877AE47CB14C5 /* SDStatusBarOverriderPre8_3.m */; };
-		6CD63E1564618B6213B98E0ABBC3127C /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543CE118290BC1BB9A923C6058FF6E71 /* ThreadHelper.swift */; };
-		6DA770087D354CDCD3889CDAE7C4C698 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5AE84BAD3872EDED6E37E9AA7A8353 /* Box.swift */; };
-		7636F846675C9F4ED96E00C6C19A4890 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C62D8E935C87401CC51D51BB4F8AA7 /* KingfisherManager.swift */; };
-		77E3A80EE5CA3A90D80F0F01CA22B14C /* BBBadgeBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FE273FF0E8CB77E4C3A3686FC99892D /* BBBadgeBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79D3F00601F9EDC26FF5C6E8F1B738E9 /* SDStatusBarOverriderPost10_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 776EB30353F69C450CD20241A8B33670 /* SDStatusBarOverriderPost10_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52A280AB4852FDE92DF09B5E79D5C2AA /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E08052C2763A5630D6D0F89FA4720AD /* Indicator.swift */; };
+		66F53044FDA74E65FA524AB566A0F9A0 /* BBBadgeBarButtonItem-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 658FAD5B92EBE75774573A53D9FC3D77 /* BBBadgeBarButtonItem-dummy.m */; };
+		67F112559BBFA7B8AB4336C5C0714B23 /* SimulatorStatusMagic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2025DB57C707159D3135F47CF319254 /* SimulatorStatusMagic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A375593407BC7937234B2B6A0811760 /* Kingfisher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF904412B9F953A9A8F24D40F34D95CC /* Kingfisher-dummy.m */; };
+		6BC3B4141991682686D29EA2EA9F6475 /* SDStatusBarOverriderPre8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B5EDA978B00062FBBF51E91F213FF9 /* SDStatusBarOverriderPre8_3.m */; };
+		6CD63E1564618B6213B98E0ABBC3127C /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F302E2D893AE9F5DABDE34490B320CA /* ThreadHelper.swift */; };
+		6DA770087D354CDCD3889CDAE7C4C698 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A510279A89F5CFC9A17BA200DE2C0C /* Box.swift */; };
+		7636F846675C9F4ED96E00C6C19A4890 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA3332C054FB17E3EFA2D8322CF0E96 /* KingfisherManager.swift */; };
+		77E3A80EE5CA3A90D80F0F01CA22B14C /* BBBadgeBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 37F5FEFAE7A2632C2A94A4CC048E2F58 /* BBBadgeBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79D3F00601F9EDC26FF5C6E8F1B738E9 /* SDStatusBarOverriderPost10_3.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8A854E244B5D8872B9AF389D574A69 /* SDStatusBarOverriderPost10_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A65F940AD8736113ECFC85F963BB9C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265DDDF4A5C807E517E64492A03D942D /* Foundation.framework */; };
-		86B7DA678C8705523C300947117C0706 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30AC99475B6ADDFF6DDD2B8BA664068 /* ImageTransition.swift */; };
-		8DA7E6883118CB3C8132B64D3D43AE0B /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9929D1F599AEB38AECC034A14F757511 /* Resource.swift */; };
-		8FB1A137E121AE25F10E2B0E30448933 /* BBBadgeBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A5696FED9FD3508F94214AA13DA84E /* BBBadgeBarButtonItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		9F826F893E86EB86591B637A1CE4B13A /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B6EB4928FD0687EBB2E76DA695341E /* String+MD5.swift */; };
-		A24475DF9CD65C34A5AA31BD26A2993F /* SDStatusBarOverriderPost9_3.h in Headers */ = {isa = PBXBuildFile; fileRef = AE0FBFD5F939C6CF8332729F1F1B611A /* SDStatusBarOverriderPost9_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86B7DA678C8705523C300947117C0706 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B79E0AEE91ECA5E0B1408F1B089C0 /* ImageTransition.swift */; };
+		8DA7E6883118CB3C8132B64D3D43AE0B /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F14C625BC94768442B85437A127F52 /* Resource.swift */; };
+		8FB1A137E121AE25F10E2B0E30448933 /* BBBadgeBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0591D40CB8DEAF09637A0972DAF4140C /* BBBadgeBarButtonItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9F826F893E86EB86591B637A1CE4B13A /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBB9C38EDC56EFF0DCA99F782450B02 /* String+MD5.swift */; };
+		A24475DF9CD65C34A5AA31BD26A2993F /* SDStatusBarOverriderPost9_3.h in Headers */ = {isa = PBXBuildFile; fileRef = A948C84F499FF88FF5D629474F4DE070 /* SDStatusBarOverriderPost9_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2926EE6547CA38CC3099D57A394C427 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7712B80B3B5BECE1BC4115B192E23ED6 /* SystemConfiguration.framework */; };
-		A499A736164CDEB9754F3028E3B92ED4 /* SDStatusBarOverrider.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DCCFC49A8940B4A46D459B879E6197E /* SDStatusBarOverrider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8F35D1EBAEF99D38F02A0B8CA5D8FBE /* Kingfisher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B23F8B2D96E4122CB1511FC57F1E6A /* Kingfisher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A499A736164CDEB9754F3028E3B92ED4 /* SDStatusBarOverrider.h in Headers */ = {isa = PBXBuildFile; fileRef = 5926E4DCEDA5C38D4B588D8622D94938 /* SDStatusBarOverrider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8F35D1EBAEF99D38F02A0B8CA5D8FBE /* Kingfisher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08E6177679BE978A9ACF096B28FF5E3E /* Kingfisher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AFBA4A5EBE2519265805AF7AFF0357E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265DDDF4A5C807E517E64492A03D942D /* Foundation.framework */; };
-		B3502AF428BF511C808892B75EB0F5EC /* ReachabilitySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83DB5C1D9B74CD445653B6A466DD38D6 /* ReachabilitySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9CAC55347B2D7B7373972DC7C7B2B16 /* SDStatusBarOverriderPost8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFAF4D3E9D88E83C8E735097D8BDBD /* SDStatusBarOverriderPost8_3.m */; };
-		BC5E0537BFA1527AB859C60157E54F04 /* SDStatusBarOverriderPost10_0.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA3F12B6995B89C5433669026DE6BAB /* SDStatusBarOverriderPost10_0.m */; };
-		BFA2ED2FA8A8309FD2E65B4D60B57792 /* SDStatusBarOverriderPost9_3.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB75FE1BD4CC2A29A2CFD430BC18971 /* SDStatusBarOverriderPost9_3.m */; };
+		B3502AF428BF511C808892B75EB0F5EC /* ReachabilitySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF442FD2F9C4E1CAB0C2C4055308CEE9 /* ReachabilitySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9CAC55347B2D7B7373972DC7C7B2B16 /* SDStatusBarOverriderPost8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C65B31CEAEF7785EC3F5C853AD1659 /* SDStatusBarOverriderPost8_3.m */; };
+		BC5E0537BFA1527AB859C60157E54F04 /* SDStatusBarOverriderPost10_0.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F238A1C710EC81B9C5319C78318DB9 /* SDStatusBarOverriderPost10_0.m */; };
+		BFA2ED2FA8A8309FD2E65B4D60B57792 /* SDStatusBarOverriderPost9_3.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F75D9C3805A34D2459D1033BEDF7DB /* SDStatusBarOverriderPost9_3.m */; };
 		C5BC33E9DE3B210A1BC04E6A791DD105 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265DDDF4A5C807E517E64492A03D942D /* Foundation.framework */; };
-		C645B4FAC4046308FCA518DF72AD1115 /* SDStatusBarOverriderPost9_0.m in Sources */ = {isa = PBXBuildFile; fileRef = BF183FA3F5EF6475A26950AB6BD428AA /* SDStatusBarOverriderPost9_0.m */; };
-		C9CC5ED97D29C6C3DE22B78A9AA2AD91 /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296D2C9CC19D10612276FDF9178453B6 /* Kingfisher.swift */; };
-		C9D904E2B4409FF0C5EEB61932E89837 /* SDStatusBarOverriderPost8_3.h in Headers */ = {isa = PBXBuildFile; fileRef = 780E851D9EC1A6CE431781EF1C663DED /* SDStatusBarOverriderPost8_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C645B4FAC4046308FCA518DF72AD1115 /* SDStatusBarOverriderPost9_0.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCDE58669EA9F152F7ACDC9583033F4 /* SDStatusBarOverriderPost9_0.m */; };
+		C9CC5ED97D29C6C3DE22B78A9AA2AD91 /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D30AAF917E410D5653D31503AC8234E /* Kingfisher.swift */; };
+		C9D904E2B4409FF0C5EEB61932E89837 /* SDStatusBarOverriderPost8_3.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA388F7E0BE6367EE23F79EBE8D16A3 /* SDStatusBarOverriderPost8_3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD0E636D5CAB1FF1460D3C2D5F549B8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265DDDF4A5C807E517E64492A03D942D /* Foundation.framework */; };
-		DC6080C64C269628C3F5107BE87055E2 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE7BA87DFED1B71632FB800CC273414 /* ImageDownloader.swift */; };
-		E00D06017D01B2CB012D444C2056C30F /* BBBadgeBarButtonItem-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26F2F94188BFA7CAC95F53F0F5A58D54 /* BBBadgeBarButtonItem-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E61BF979246B8EC6BEA0CB115FCD32B0 /* SDStatusBarOverriderPost10_3.m in Sources */ = {isa = PBXBuildFile; fileRef = B74C0CEA3882C2539F2566ECF08354AB /* SDStatusBarOverriderPost10_3.m */; };
-		EA816A580C3858934ED6FE92040C26DD /* RequestModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAB1A595E80EDA35D92C5A6F044FFAA /* RequestModifier.swift */; };
-		EC7EFD6C6C971318E524BB6005076F78 /* SDStatusBarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 961AED9438B1131333530BC9E18CA2BE /* SDStatusBarManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED72467DC677A0DA7647C2DE6E405610 /* ReachabilitySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FD2A66D25D84B6DD1DF10C6E9BB3A5 /* ReachabilitySwift-dummy.m */; };
-		ED781FAE96D621ABF35BE46F07961F9B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30F31B36F9A68501F9A4CF0C2808BCA /* Reachability.swift */; };
-		EE89512E8D36E67CDC525DB9D5BBF5A7 /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F49084D588E28527C2AFC8553486F39 /* UIButton+Kingfisher.swift */; };
-		F32DE535AFA9015E861AF2FCF87CFD74 /* SDStatusBarOverriderPost9_0.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F4464C61985ED5C8D4679A823ED1526 /* SDStatusBarOverriderPost9_0.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC6080C64C269628C3F5107BE87055E2 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96DB0E2495ABDB84B54678E58BFA383 /* ImageDownloader.swift */; };
+		E00D06017D01B2CB012D444C2056C30F /* BBBadgeBarButtonItem-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F7849EFB3FA7269D5836FD1DF408CFD /* BBBadgeBarButtonItem-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E61BF979246B8EC6BEA0CB115FCD32B0 /* SDStatusBarOverriderPost10_3.m in Sources */ = {isa = PBXBuildFile; fileRef = FA711432AA55EDEB1937E4A90D02C083 /* SDStatusBarOverriderPost10_3.m */; };
+		EA816A580C3858934ED6FE92040C26DD /* RequestModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8FC98C649DAD1AD39329A5A56C5C4 /* RequestModifier.swift */; };
+		EC7EFD6C6C971318E524BB6005076F78 /* SDStatusBarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B0486C9015279A2DB80078D19D0E7E /* SDStatusBarManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED72467DC677A0DA7647C2DE6E405610 /* ReachabilitySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9808A5EE3109C683D4A13F95A681D0 /* ReachabilitySwift-dummy.m */; };
+		ED781FAE96D621ABF35BE46F07961F9B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A28B0DAC982907F3F762F1D793BDF7 /* Reachability.swift */; };
+		EE89512E8D36E67CDC525DB9D5BBF5A7 /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA4B462D4A88A91C0348794D5FB6C13 /* UIButton+Kingfisher.swift */; };
+		F32DE535AFA9015E861AF2FCF87CFD74 /* SDStatusBarOverriderPost9_0.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FC8244E5B0B15742CA84CDE3AD27EC7 /* SDStatusBarOverriderPost9_0.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5C8C3F45F42FBDE5D87000C71178D20 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93399CF65BA043CFC8B74CB2C6DCF9D5 /* CFNetwork.framework */; };
-		F8E957950566622A3E4B61AACE8F0B4A /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD601723ABDE92C2A12AD83D56C43E /* ImageCache.swift */; };
+		F8E957950566622A3E4B61AACE8F0B4A /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1523EC5E96FE24296E802F6B6C27D260 /* ImageCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,107 +101,337 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00F1CD4200B6414EC51287C8239238FB /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = iOS/TwitterKit.framework; sourceTree = "<group>"; };
-		034B37C08C6871790A85E192CD2005B1 /* SDStatusBarOverriderPre8_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPre8_3.h; path = SDStatusBarManager/SDStatusBarOverriderPre8_3.h; sourceTree = "<group>"; };
-		051F3DBE272A7BBFC2649F127A4C8DD4 /* Pushwoosh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pushwoosh.framework; path = Framework/Pushwoosh.framework; sourceTree = "<group>"; };
-		052F4C27D8F72E4E2AE877AE47CB14C5 /* SDStatusBarOverriderPre8_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPre8_3.m; path = SDStatusBarManager/SDStatusBarOverriderPre8_3.m; sourceTree = "<group>"; };
-		0DDFAF4D3E9D88E83C8E735097D8BDBD /* SDStatusBarOverriderPost8_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost8_3.m; path = SDStatusBarManager/SDStatusBarOverriderPost8_3.m; sourceTree = "<group>"; };
-		1249EF79A76CA84BC5825B857212BA9B /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
-		1386DAD1C60FAA9309E0432644F6C4E4 /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
-		1A5889E3D8C2CD69A3AB091A69042325 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BAB1A595E80EDA35D92C5A6F044FFAA /* RequestModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModifier.swift; path = Sources/RequestModifier.swift; sourceTree = "<group>"; };
+		0002EB5D31525BBA6548945F52AB83F1 /* AMFMessageWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMFMessageWriter.h; path = SDK/ios/CommLibiOS/include/AMFMessageWriter.h; sourceTree = "<group>"; };
+		0142B13379D998F01D2604E06512B714 /* ReaderReferenceCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderReferenceCache.h; path = SDK/ios/CommLibiOS/include/ReaderReferenceCache.h; sourceTree = "<group>"; };
+		019F9057E3B634B6E365C9DC0DA1F755 /* ClassCastException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ClassCastException.h; path = SDK/ios/backendless/include/ClassCastException.h; sourceTree = "<group>"; };
+		02C80CDA30E3BD525316274ADE384DFF /* MessageStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MessageStatus.h; path = SDK/ios/backendless/include/MessageStatus.h; sourceTree = "<group>"; };
+		0424AD0666323749E33A3E9F9EBDE8EE /* AnonymousObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnonymousObject.h; path = SDK/ios/CommLibiOS/include/AnonymousObject.h; sourceTree = "<group>"; };
+		05360FEAD40E5D185EC17D2295FBD9E1 /* LocationTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LocationTracker.h; path = SDK/ios/backendless/include/LocationTracker.h; sourceTree = "<group>"; };
+		0591D40CB8DEAF09637A0972DAF4140C /* BBBadgeBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BBBadgeBarButtonItem.m; path = BBBadgeBarButtonItem/BBBadgeBarButtonItem.m; sourceTree = "<group>"; };
+		067F5C3F97AC931E587D7AAD8F70211F /* ArrayType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ArrayType.h; path = SDK/ios/CommLibiOS/include/ArrayType.h; sourceTree = "<group>"; };
+		06903576F6BFF4AADD6287F78271D30C /* ICacheableAdaptingType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ICacheableAdaptingType.h; path = SDK/ios/CommLibiOS/include/ICacheableAdaptingType.h; sourceTree = "<group>"; };
+		07101E6C86FA126769FA068B1203BB6C /* AMFSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMFSerializer.h; path = SDK/ios/CommLibiOS/include/AMFSerializer.h; sourceTree = "<group>"; };
+		08E6177679BE978A9ACF096B28FF5E3E /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
+		0956877AA5CE691325D38109F6DCAE8B /* Call.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Call.h; path = SDK/ios/CommLibiOS/include/Call.h; sourceTree = "<group>"; };
+		0A70C39339DF01626CB08E5622C2071B /* Backendless.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Backendless.h; path = SDK/ios/backendless/include/Backendless.h; sourceTree = "<group>"; };
+		0A7C6BF4F77EA46BD5903AA22FFF7611 /* ISharedObjectEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISharedObjectEvent.h; path = SDK/ios/CommLibiOS/include/ISharedObjectEvent.h; sourceTree = "<group>"; };
+		0AB5B4C4BABB84690D1E07096B43F4FE /* ClientCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ClientCallback.h; path = SDK/ios/backendless/include/ClientCallback.h; sourceTree = "<group>"; };
+		0AF84B859C3962F4B32D47CDB2D3C5F5 /* LogBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LogBuffer.h; path = SDK/ios/backendless/include/LogBuffer.h; sourceTree = "<group>"; };
+		0BCE8826D984A2539ACF1B4D974040DE /* BoundPropertyBagReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BoundPropertyBagReader.h; path = SDK/ios/CommLibiOS/include/BoundPropertyBagReader.h; sourceTree = "<group>"; };
+		0DC7A0AAA2028965B1D9AD033B6074AA /* SharedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SharedObject.h; path = SDK/ios/CommLibiOS/include/SharedObject.h; sourceTree = "<group>"; };
+		0E11904FE5E27DD13812FEB3F68740D8 /* ParseContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ParseContext.h; path = SDK/ios/CommLibiOS/include/ParseContext.h; sourceTree = "<group>"; };
+		0E38C351E7C51888B7279777F0B05B93 /* CacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheSerializer.swift; path = Sources/CacheSerializer.swift; sourceTree = "<group>"; };
+		0E6FD8D47A93649904B3D9A9275008E4 /* BackendlessCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessCache.h; path = SDK/ios/backendless/include/BackendlessCache.h; sourceTree = "<group>"; };
+		0F6666470C5BC3C6EEC17FF1ABE36455 /* BackendlessCacheProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessCacheProtocol.h; path = SDK/ios/backendless/include/BackendlessCacheProtocol.h; sourceTree = "<group>"; };
+		0F80024179471ACF863D24C495E291A5 /* ICacheService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ICacheService.h; path = SDK/ios/backendless/include/ICacheService.h; sourceTree = "<group>"; };
+		1112E013FF8C0FAC5D91BA076C36F93A /* Request.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Request.h; path = SDK/ios/CommLibiOS/include/Request.h; sourceTree = "<group>"; };
+		11A88EDECC0E398EA34A48BE42210736 /* BackendlessFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessFile.h; path = SDK/ios/backendless/include/BackendlessFile.h; sourceTree = "<group>"; };
+		122725D0F838BC72ACF2AF94F89A7DE9 /* SimulatorStatusMagic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimulatorStatusMagic-prefix.pch"; sourceTree = "<group>"; };
+		12D5AEFD88425F8B3F89B825DF8CF09F /* IEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IEvent.h; path = SDK/ios/CommLibiOS/include/IEvent.h; sourceTree = "<group>"; };
+		12DC8B74D9ADA638C2D0826AECCBBF79 /* UndefinedTypeReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UndefinedTypeReader.h; path = SDK/ios/CommLibiOS/include/UndefinedTypeReader.h; sourceTree = "<group>"; };
+		134004CA59BC877352EB35C706D4E5D9 /* IAttributeStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IAttributeStore.h; path = SDK/ios/CommLibiOS/include/IAttributeStore.h; sourceTree = "<group>"; };
+		144840AB60A22F22CFBC1CE56CC16A0B /* GeoMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoMath.h; path = SDK/ios/backendless/include/GeoMath.h; sourceTree = "<group>"; };
+		1523EC5E96FE24296E802F6B6C27D260 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/ImageCache.swift; sourceTree = "<group>"; };
+		180D59FF6235362D9636D1E65531E6E1 /* V3Reader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V3Reader.h; path = SDK/ios/CommLibiOS/include/V3Reader.h; sourceTree = "<group>"; };
+		18E4C039115B1286FB3250A6A15A859E /* BackendlessSimpleQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessSimpleQuery.h; path = SDK/ios/backendless/include/BackendlessSimpleQuery.h; sourceTree = "<group>"; };
+		19302B8AC5651EEEF19B234B29B74E7B /* IEventListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IEventListener.h; path = SDK/ios/CommLibiOS/include/IEventListener.h; sourceTree = "<group>"; };
+		193E3285669516913CC7BEC4F15B67E7 /* MessageWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MessageWriter.h; path = SDK/ios/CommLibiOS/include/MessageWriter.h; sourceTree = "<group>"; };
+		194C550756FF414740DD39602F15AD53 /* ReferenceCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReferenceCache.h; path = SDK/ios/CommLibiOS/include/ReferenceCache.h; sourceTree = "<group>"; };
+		1A0067EA7D0C30A3B4A211ED47B7A21D /* AudioData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioData.h; path = SDK/ios/CommLibiOS/include/AudioData.h; sourceTree = "<group>"; };
+		1BAA3D98A393C647ED63DE21BCB7EA9D /* IProtocolFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IProtocolFormatter.h; path = SDK/ios/CommLibiOS/include/IProtocolFormatter.h; sourceTree = "<group>"; };
+		1C0563ADFD4B3780695CB907A2A60E90 /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Kingfisher.modulemap; sourceTree = "<group>"; };
+		1C671D0563D6673C76FDC9C26D98ECBD /* IServiceCall.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IServiceCall.h; path = SDK/ios/CommLibiOS/include/IServiceCall.h; sourceTree = "<group>"; };
+		1CC16997C43BE195F3A2FA14D7BB42FC /* IStreamPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IStreamPacket.h; path = SDK/ios/CommLibiOS/include/IStreamPacket.h; sourceTree = "<group>"; };
+		1D638F37567DAA69DB3D1FBB2B5CB6EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F684F1197049B9C9BED0DAD6E5D6654 /* WebORBSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebORBSerializer.h; path = SDK/ios/CommLibiOS/include/WebORBSerializer.h; sourceTree = "<group>"; };
+		1F7849EFB3FA7269D5836FD1DF408CFD /* BBBadgeBarButtonItem-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BBBadgeBarButtonItem-umbrella.h"; sourceTree = "<group>"; };
 		1FA4677F81B55875BF2AAD13324987A8 /* ReachabilitySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReachabilitySwift.framework; path = ReachabilitySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		202D5555FD288CB088245F063F24EDE5 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = iOS/TwitterCore.framework; sourceTree = "<group>"; };
+		213227879A8F0FB433E505743286CA27 /* BackendlessCacheData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessCacheData.h; path = SDK/ios/backendless/include/BackendlessCacheData.h; sourceTree = "<group>"; };
+		21FC55C096F35054D5EE88F175EE21FF /* BeaconTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BeaconTracker.h; path = SDK/ios/backendless/include/BeaconTracker.h; sourceTree = "<group>"; };
+		2347A371D8C7F93B35D43DEFA907253C /* ImagePrefetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePrefetcher.swift; path = Sources/ImagePrefetcher.swift; sourceTree = "<group>"; };
+		24621CCBD3CE1B0F0A82C87634604487 /* GeoService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoService.h; path = SDK/ios/backendless/include/GeoService.h; sourceTree = "<group>"; };
+		24FA6A7BEA1AD761901BCE4A239EFC6B /* Logger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Logger.h; path = SDK/ios/backendless/include/Logger.h; sourceTree = "<group>"; };
 		265DDDF4A5C807E517E64492A03D942D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		26AE94D4724F04F9BCA0FFFCC2AA9FF8 /* BBBadgeBarButtonItem.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BBBadgeBarButtonItem.xcconfig; sourceTree = "<group>"; };
-		26F2F94188BFA7CAC95F53F0F5A58D54 /* BBBadgeBarButtonItem-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BBBadgeBarButtonItem-umbrella.h"; sourceTree = "<group>"; };
+		26CD05055FA115823ADAB14012334E17 /* RTMProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTMProtocol.h; path = SDK/ios/CommLibiOS/include/RTMProtocol.h; sourceTree = "<group>"; };
 		272488A7E720F5B6F7FC0582766B385F /* Pods-nmfTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-nmfTests-dummy.m"; sourceTree = "<group>"; };
-		296D2C9CC19D10612276FDF9178453B6 /* Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = Sources/Kingfisher.swift; sourceTree = "<group>"; };
-		29A5696FED9FD3508F94214AA13DA84E /* BBBadgeBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BBBadgeBarButtonItem.m; path = BBBadgeBarButtonItem/BBBadgeBarButtonItem.m; sourceTree = "<group>"; };
+		28FBAB6D4CD3F1A86F8DB66A8139ECAE /* IAudioStreamCodec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IAudioStreamCodec.h; path = SDK/ios/CommLibiOS/include/IAudioStreamCodec.h; sourceTree = "<group>"; };
+		298D4E958ACB40925648CBEFB60F970C /* FilePermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FilePermission.h; path = SDK/ios/backendless/include/FilePermission.h; sourceTree = "<group>"; };
+		2A40CB0E398B00ED19599FC494F64F9C /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
+		2B677BD2F4F54817FE96803E509C10D6 /* LicenseManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LicenseManager.h; path = SDK/ios/CommLibiOS/include/LicenseManager.h; sourceTree = "<group>"; };
+		2BCDE58669EA9F152F7ACDC9583033F4 /* SDStatusBarOverriderPost9_0.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost9_0.m; path = SDStatusBarManager/SDStatusBarOverriderPost9_0.m; sourceTree = "<group>"; };
+		2C8A7C056DB616AD6AF98BBD39854D1B /* NamedObjectReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NamedObjectReader.h; path = SDK/ios/CommLibiOS/include/NamedObjectReader.h; sourceTree = "<group>"; };
+		2D11CB57CCE722BBDA0415C9129600CF /* V3ArrayReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V3ArrayReader.h; path = SDK/ios/CommLibiOS/include/V3ArrayReader.h; sourceTree = "<group>"; };
+		2D30AAF917E410D5653D31503AC8234E /* Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = Sources/Kingfisher.swift; sourceTree = "<group>"; };
+		2DD8B215180EA7C033CB39A08C90F195 /* IClientSharedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IClientSharedObject.h; path = SDK/ios/CommLibiOS/include/IClientSharedObject.h; sourceTree = "<group>"; };
+		2E19A0ED83DE42751BFDFEC278C17D5A /* IVideoStreamCodec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IVideoStreamCodec.h; path = SDK/ios/CommLibiOS/include/IVideoStreamCodec.h; sourceTree = "<group>"; };
+		2EA4B462D4A88A91C0348794D5FB6C13 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		2F63EA6CEF74E5267B12D83400691AB2 /* AtomicCounters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AtomicCounters.h; path = SDK/ios/backendless/include/AtomicCounters.h; sourceTree = "<group>"; };
+		31492F10E1BAC273EFBE9C8BC58512E0 /* BodyParts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BodyParts.h; path = SDK/ios/backendless/include/BodyParts.h; sourceTree = "<group>"; };
+		316164A460983DD2C8C92E998611105D /* EventType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EventType.h; path = SDK/ios/CommLibiOS/include/EventType.h; sourceTree = "<group>"; };
+		316E96ECCBDA70CD20D17DEE3D813143 /* V3StringReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V3StringReader.h; path = SDK/ios/CommLibiOS/include/V3StringReader.h; sourceTree = "<group>"; };
+		3196D9EE241CE8D27D5358987AFE4028 /* BeaconsInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BeaconsInfo.h; path = SDK/ios/backendless/include/BeaconsInfo.h; sourceTree = "<group>"; };
+		323E2960FAB6194AA71DA63BC6EB28C6 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Image.swift; sourceTree = "<group>"; };
+		3268C07B2AED551DDD0E5012E5171F35 /* ICastingAttributeStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ICastingAttributeStore.h; path = SDK/ios/CommLibiOS/include/ICastingAttributeStore.h; sourceTree = "<group>"; };
+		3286C6ACC689997D5E8C37651EE9218E /* BodyHolderWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BodyHolderWriter.h; path = SDK/ios/CommLibiOS/include/BodyHolderWriter.h; sourceTree = "<group>"; };
+		3341DFF7458F06BAE0576B1F95B13783 /* IPresenceListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IPresenceListener.h; path = SDK/ios/backendless/include/IPresenceListener.h; sourceTree = "<group>"; };
+		34A28B0DAC982907F3F762F1D793BDF7 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Reachability/Reachability.swift; sourceTree = "<group>"; };
+		360F5DFD8E31EE49585969601BB3CA7F /* Packet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Packet.h; path = SDK/ios/CommLibiOS/include/Packet.h; sourceTree = "<group>"; };
+		36E8DB981966E8BB5DA1394042E6A663 /* Presence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Presence.h; path = SDK/ios/backendless/include/Presence.h; sourceTree = "<group>"; };
 		37F326EB820385496B3E4936248FA66B /* Pods-nmfTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-nmfTests-resources.sh"; sourceTree = "<group>"; };
-		3990D9C403C7E4201EFACA3471BA9E9B /* SimulatorStatusMagic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SimulatorStatusMagic.modulemap; sourceTree = "<group>"; };
-		39FA5CC95C4A4C75006F86FE3A7DF7BA /* ImageProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = Sources/ImageProcessor.swift; sourceTree = "<group>"; };
-		3FE273FF0E8CB77E4C3A3686FC99892D /* BBBadgeBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BBBadgeBarButtonItem.h; path = BBBadgeBarButtonItem/BBBadgeBarButtonItem.h; sourceTree = "<group>"; };
+		37F5FEFAE7A2632C2A94A4CC048E2F58 /* BBBadgeBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BBBadgeBarButtonItem.h; path = BBBadgeBarButtonItem/BBBadgeBarButtonItem.h; sourceTree = "<group>"; };
+		38778BC599178BE9135B4241A84B18FC /* NotifyEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotifyEvent.h; path = SDK/ios/CommLibiOS/include/NotifyEvent.h; sourceTree = "<group>"; };
+		3A1992B6507CA1AF3B6386071C3C1F8C /* NullReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NullReader.h; path = SDK/ios/CommLibiOS/include/NullReader.h; sourceTree = "<group>"; };
+		3B51FA33EDEF6CAFE06F8AC9991DF51C /* WeborbClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WeborbClient.h; path = SDK/ios/CommLibiOS/include/WeborbClient.h; sourceTree = "<group>"; };
+		3F41F6084C01E99BB3236667FECE9F59 /* BooleanType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BooleanType.h; path = SDK/ios/CommLibiOS/include/BooleanType.h; sourceTree = "<group>"; };
+		4040CDA0F2FD89403670B8CE79814804 /* MessagingService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MessagingService.h; path = SDK/ios/backendless/include/MessagingService.h; sourceTree = "<group>"; };
+		408BC5C017F6BEE3D24EB377ADA053F1 /* NullWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NullWriter.h; path = SDK/ios/CommLibiOS/include/NullWriter.h; sourceTree = "<group>"; };
+		4132AAE8B5416E9C42169D1729CEDBA0 /* AnonymousObjectReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnonymousObjectReader.h; path = SDK/ios/CommLibiOS/include/AnonymousObjectReader.h; sourceTree = "<group>"; };
+		41C8FC98C649DAD1AD39329A5A56C5C4 /* RequestModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModifier.swift; path = Sources/RequestModifier.swift; sourceTree = "<group>"; };
+		41F797B1C6B0A5B7F8B5F548B6B89A99 /* BaseEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseEvent.h; path = SDK/ios/CommLibiOS/include/BaseEvent.h; sourceTree = "<group>"; };
+		420A5E13CDF3A1B97797305E9AA02034 /* MetaData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MetaData.h; path = SDK/ios/CommLibiOS/include/MetaData.h; sourceTree = "<group>"; };
 		423997BED99288FB3F2549EF5850C28D /* Pods_nmfTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_nmfTests.framework; path = "Pods-nmfTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		44C62D8E935C87401CC51D51BB4F8AA7 /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/KingfisherManager.swift; sourceTree = "<group>"; };
+		449C2A34A97714892D5CC659FC4D0DFA /* Subscription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Subscription.h; path = SDK/ios/CommLibiOS/include/Subscription.h; sourceTree = "<group>"; };
+		4571B27477018BE8062560DFFA0996F9 /* IRTMPEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IRTMPEvent.h; path = SDK/ios/CommLibiOS/include/IRTMPEvent.h; sourceTree = "<group>"; };
+		4605B07545FC89F08295A5C4F6F07246 /* KeychainDataStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KeychainDataStore.h; path = SDK/ios/backendless/include/KeychainDataStore.h; sourceTree = "<group>"; };
+		461E477FB3BCAA3C54E77AFFE0D1D618 /* BeaconMonitoring.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BeaconMonitoring.h; path = SDK/ios/backendless/include/BeaconMonitoring.h; sourceTree = "<group>"; };
+		46F3945BC9FBC8A0090C7E0295F481A5 /* AbstractQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractQuery.h; path = SDK/ios/backendless/include/AbstractQuery.h; sourceTree = "<group>"; };
+		479039A7BCA2B842E5AC2D42B73A519C /* Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Header.h; path = SDK/ios/CommLibiOS/include/Header.h; sourceTree = "<group>"; };
+		485503EE8AC5EF1231654BF4CD306049 /* MHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MHeader.h; path = SDK/ios/CommLibiOS/include/MHeader.h; sourceTree = "<group>"; };
+		48A510279A89F5CFC9A17BA200DE2C0C /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
+		49FCBBD46EBCBC2F288C1E07A304608A /* AmfV3Formatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AmfV3Formatter.h; path = SDK/ios/CommLibiOS/include/AmfV3Formatter.h; sourceTree = "<group>"; };
+		4B43D7F1BCABEE8328378340A53B3736 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Filter.swift; sourceTree = "<group>"; };
+		4B83A5D62F69C610CC72FC1669456B4C /* ObjectFactories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectFactories.h; path = SDK/ios/CommLibiOS/include/ObjectFactories.h; sourceTree = "<group>"; };
+		4B89423CAE63646348ADCDCC7B25C537 /* V3Message.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V3Message.h; path = SDK/ios/CommLibiOS/include/V3Message.h; sourceTree = "<group>"; };
+		4B9F395F7F6AAB7D0488BFCD24210FE8 /* NumberObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NumberObject.h; path = SDK/ios/CommLibiOS/include/NumberObject.h; sourceTree = "<group>"; };
+		4CA3F0002423277A4CA740FB1F034703 /* SharedObjectEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SharedObjectEvent.h; path = SDK/ios/CommLibiOS/include/SharedObjectEvent.h; sourceTree = "<group>"; };
+		4CACC407A93F76C17A80FD0DF627EFB0 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		4E14AE37BE2DA08051D26183275E3D46 /* IServiceObjectFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IServiceObjectFactory.h; path = SDK/ios/CommLibiOS/include/IServiceObjectFactory.h; sourceTree = "<group>"; };
+		4E7FAF7175C1031C11393CA8BDBB6D0D /* IPersistenceStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IPersistenceStore.h; path = SDK/ios/CommLibiOS/include/IPersistenceStore.h; sourceTree = "<group>"; };
+		4EACDA072FE8C2B41E9277C3D7974DCF /* ORBConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORBConstants.h; path = SDK/ios/CommLibiOS/include/ORBConstants.h; sourceTree = "<group>"; };
+		4EB5F4ED38848034E3F2FD769B883570 /* PropertyBagWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PropertyBagWriter.h; path = SDK/ios/CommLibiOS/include/PropertyBagWriter.h; sourceTree = "<group>"; };
 		4EC852A48BEA5DAD51269AD48B0559CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FEFC3AD99B094ABA67AFEFE7BBDEE51 /* IObjectSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IObjectSerializer.h; path = SDK/ios/CommLibiOS/include/IObjectSerializer.h; sourceTree = "<group>"; };
 		50C738697352853A42D4E888D7A41AB0 /* Pods-NMF-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NMF-resources.sh"; sourceTree = "<group>"; };
-		541730B1FAE630EEF5761672FF9314B4 /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
-		543CE118290BC1BB9A923C6058FF6E71 /* ThreadHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadHelper.swift; path = Sources/ThreadHelper.swift; sourceTree = "<group>"; };
-		54E575399FD1E215BB0ED730DAE9129B /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/AnimatedImageView.swift; sourceTree = "<group>"; };
+		50DFE2FA57FDD5A407E14892F26CE631 /* NamedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NamedObject.h; path = SDK/ios/CommLibiOS/include/NamedObject.h; sourceTree = "<group>"; };
+		5103D529457C4E83F0F3B410698E9862 /* BackendlessDataQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessDataQuery.h; path = SDK/ios/backendless/include/BackendlessDataQuery.h; sourceTree = "<group>"; };
+		515FC4E55DD86B1E15B1A6C4D8FAB771 /* CacheFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CacheFactory.h; path = SDK/ios/backendless/include/CacheFactory.h; sourceTree = "<group>"; };
+		51B91A5E63B2F0B6D31CDAA7C4EF4F8C /* BECollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BECollectionView.h; path = SDK/ios/backendless/include/BECollectionView.h; sourceTree = "<group>"; };
+		52810951C655EA1E078D7DC86C97C8D6 /* BinaryCodec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BinaryCodec.h; path = SDK/ios/CommLibiOS/include/BinaryCodec.h; sourceTree = "<group>"; };
+		52A723D4D05E4DBFF32D243E18936EDA /* StringReferenceWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StringReferenceWriter.h; path = SDK/ios/CommLibiOS/include/StringReferenceWriter.h; sourceTree = "<group>"; };
+		5351A6E9E20CD5C35AF493E2C70BB900 /* AMFBodyWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMFBodyWriter.h; path = SDK/ios/CommLibiOS/include/AMFBodyWriter.h; sourceTree = "<group>"; };
+		544E48151835CB7B3C34A219D7D72F8A /* ClientSharedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ClientSharedObject.h; path = SDK/ios/CommLibiOS/include/ClientSharedObject.h; sourceTree = "<group>"; };
+		57BAB6187B59DF6657C95BD28823D091 /* BackendlessCacheKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessCacheKey.h; path = SDK/ios/backendless/include/BackendlessCacheKey.h; sourceTree = "<group>"; };
 		580B26B8D7F745E6E34CCA7DBBE45C0B /* Pods-NMF-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NMF-dummy.m"; sourceTree = "<group>"; };
 		58E3A842B32CC80B5A780A9FF435911A /* Pods-NMF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NMF.debug.xcconfig"; sourceTree = "<group>"; };
+		5926E4DCEDA5C38D4B588D8622D94938 /* SDStatusBarOverrider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverrider.h; path = SDStatusBarManager/SDStatusBarOverrider.h; sourceTree = "<group>"; };
+		59BEC3665E25D19C53B0A26B532BA751 /* BackendlessCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessCollection.h; path = SDK/ios/backendless/include/BackendlessCollection.h; sourceTree = "<group>"; };
+		59F2373EC8CDB54F25260149DF437C0C /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
+		5AB8BB39A98E1756DA76EB6112B94066 /* AsyncMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AsyncMessage.h; path = SDK/ios/CommLibiOS/include/AsyncMessage.h; sourceTree = "<group>"; };
+		5B75AD8756A740AD06B921C9102DFD6A /* GeoCluster.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoCluster.h; path = SDK/ios/backendless/include/GeoCluster.h; sourceTree = "<group>"; };
+		5B9EE1094C0DFFAD40D99A3D8766B337 /* Engine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Engine.h; path = SDK/ios/CommLibiOS/include/Engine.h; sourceTree = "<group>"; };
+		5BB1338DDAD78793C2F30FA7303B1BF9 /* StringWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StringWriter.h; path = SDK/ios/CommLibiOS/include/StringWriter.h; sourceTree = "<group>"; };
+		5C71303CD2ACF2EF95C193830BBFE17F /* IRTMProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IRTMProtocol.h; path = SDK/ios/CommLibiOS/include/IRTMProtocol.h; sourceTree = "<group>"; };
 		5C74B51094E6190DCB6EA95B066A01B8 /* Pods-NMF-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NMF-acknowledgements.plist"; sourceTree = "<group>"; };
-		61ED0E12A516615D2D593791845339B4 /* Indicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Indicator.swift; path = Sources/Indicator.swift; sourceTree = "<group>"; };
+		5CCF82D7FE27AB254AD97AEE86005FC7 /* IPendingServiceCall.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IPendingServiceCall.h; path = SDK/ios/CommLibiOS/include/IPendingServiceCall.h; sourceTree = "<group>"; };
+		5F0F82ED23EF801BA5835FEF9F0C75AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60398488450019E149C9C4D2BE912DED /* SimulatorStatusMagic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SimulatorStatusMagic.modulemap; sourceTree = "<group>"; };
+		60F6E7E2A195723D4E8FA00496629A11 /* BEReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEReachability.h; path = SDK/ios/backendless/include/BEReachability.h; sourceTree = "<group>"; };
+		61FC9A054144E42889124A25FAA36D8A /* StringType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StringType.h; path = SDK/ios/CommLibiOS/include/StringType.h; sourceTree = "<group>"; };
 		63573CCCFCC64F46B7771B0F071B0B74 /* Pods-nmfTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-nmfTests-frameworks.sh"; sourceTree = "<group>"; };
+		63D2B467F55A6D4E3F8A6D202CD9793F /* BodyHolderFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BodyHolderFactory.h; path = SDK/ios/CommLibiOS/include/BodyHolderFactory.h; sourceTree = "<group>"; };
+		6405AC546753D57A2BE567EAB7D9A025 /* DateReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateReader.h; path = SDK/ios/CommLibiOS/include/DateReader.h; sourceTree = "<group>"; };
 		641BE78DCD00D83BFE2D41B8AD92F646 /* Pods-nmfTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-nmfTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		68F1086059613290C29C130B298FFE87 /* BBBadgeBarButtonItem-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BBBadgeBarButtonItem-prefix.pch"; sourceTree = "<group>"; };
-		6DC59A3DA5E61265BFEF544E3AFF26F1 /* SDStatusBarOverriderPost10_0.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost10_0.h; path = SDStatusBarManager/SDStatusBarOverriderPost10_0.h; sourceTree = "<group>"; };
-		6E5DC4D6D4A48E7CEBD59E841041C023 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
-		6E63BCDEFA8F0BAFD692D507A41E712B /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Sources/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
-		6F49084D588E28527C2AFC8553486F39 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
-		715694A283AAA68D37858B615BB5C420 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = iOS/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
-		72EE4D7433509F86AB4700A553861A90 /* ReachabilitySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ReachabilitySwift.modulemap; sourceTree = "<group>"; };
-		7347E1962A356BA8D21FC19A59F11F53 /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
+		6442D8C83A5D480FCE32006FCD325F43 /* ErrMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ErrMessage.h; path = SDK/ios/CommLibiOS/include/ErrMessage.h; sourceTree = "<group>"; };
+		64708C7C8ECF8A59804197FA4A378F76 /* SDStatusBarManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarManager.m; path = SDStatusBarManager/SDStatusBarManager.m; sourceTree = "<group>"; };
+		6520E7124242AE1BE4600519096DEDEB /* Types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Types.h; path = SDK/ios/CommLibiOS/include/Types.h; sourceTree = "<group>"; };
+		654AB44D60000103790D490946EC2BAB /* ObjectReferenceWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectReferenceWriter.h; path = SDK/ios/CommLibiOS/include/ObjectReferenceWriter.h; sourceTree = "<group>"; };
+		658FAD5B92EBE75774573A53D9FC3D77 /* BBBadgeBarButtonItem-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BBBadgeBarButtonItem-dummy.m"; sourceTree = "<group>"; };
+		6B14BE6581BB85FACF8AA24633E1025A /* UndefinedType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UndefinedType.h; path = SDK/ios/CommLibiOS/include/UndefinedType.h; sourceTree = "<group>"; };
+		6B442BDC356BB4169959C3D1984E4B91 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D3B79E0AEE91ECA5E0B1408F1B089C0 /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Sources/ImageTransition.swift; sourceTree = "<group>"; };
+		6F302E2D893AE9F5DABDE34490B320CA /* ThreadHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadHelper.swift; path = Sources/ThreadHelper.swift; sourceTree = "<group>"; };
+		6FD7B760D232F277C0F7549265753078 /* Events.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Events.h; path = SDK/ios/backendless/include/Events.h; sourceTree = "<group>"; };
+		70C014E07B349F8AB424B97583C1F850 /* HttpEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HttpEngine.h; path = SDK/ios/CommLibiOS/include/HttpEngine.h; sourceTree = "<group>"; };
+		717EBD84F458E94C13B58665B0A1FFB3 /* ReachabilitySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.xcconfig; sourceTree = "<group>"; };
+		739C0E2EB1F31509116025CC8114E732 /* BEMapView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMapView.h; path = SDK/ios/backendless/include/BEMapView.h; sourceTree = "<group>"; };
+		7402DC1EF9F4D05C217F96BF9EDD816E /* IDataStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IDataStore.h; path = SDK/ios/backendless/include/IDataStore.h; sourceTree = "<group>"; };
+		7432D84CFE146982844BE41A7C5FC084 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = iOS/TwitterKit.framework; sourceTree = "<group>"; };
+		745E2C2B1B4CC57FAFD376F2BA57A15F /* BinaryStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BinaryStream.h; path = SDK/ios/CommLibiOS/include/BinaryStream.h; sourceTree = "<group>"; };
+		746CDC9D2147E8EAB9FC47984E2BDA6C /* ImageProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = Sources/ImageProcessor.swift; sourceTree = "<group>"; };
+		75F903B2AC777B6C0E5BD86168B14D28 /* UTFStringReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UTFStringReader.h; path = SDK/ios/CommLibiOS/include/UTFStringReader.h; sourceTree = "<group>"; };
+		76E9237DA5A9FA6C0F1380F3117EE83A /* PendingCall.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PendingCall.h; path = SDK/ios/CommLibiOS/include/PendingCall.h; sourceTree = "<group>"; };
 		7712B80B3B5BECE1BC4115B192E23ED6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		7745CF2E456FB6E14906AF55EFD0B665 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		776EB30353F69C450CD20241A8B33670 /* SDStatusBarOverriderPost10_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost10_3.h; path = SDStatusBarManager/SDStatusBarOverriderPost10_3.h; sourceTree = "<group>"; };
-		77B9E5D7D9E01B0D00A2E941FB0E2A92 /* Kingfisher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.xcconfig; sourceTree = "<group>"; };
-		780E851D9EC1A6CE431781EF1C663DED /* SDStatusBarOverriderPost8_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost8_3.h; path = SDStatusBarManager/SDStatusBarOverriderPost8_3.h; sourceTree = "<group>"; };
-		7CBB2C98BE9E30DC337F0F057CDD71FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		799B1FB1BB1A147648425E83338EBF67 /* CacheService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CacheService.h; path = SDK/ios/backendless/include/CacheService.h; sourceTree = "<group>"; };
+		79F77872FEA0BFDF6CD166A754857C80 /* CrowdNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CrowdNode.h; path = SDK/ios/CommLibiOS/include/CrowdNode.h; sourceTree = "<group>"; };
+		7A6AE45AFA7CF8658155EC4C7383150F /* AttributeStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AttributeStore.h; path = SDK/ios/CommLibiOS/include/AttributeStore.h; sourceTree = "<group>"; };
+		7B6BF292ECD0B869355D85E24FC03A95 /* IPersistable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IPersistable.h; path = SDK/ios/CommLibiOS/include/IPersistable.h; sourceTree = "<group>"; };
+		7BBF93E16164D08D1206852A09A227DA /* NotAReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotAReader.h; path = SDK/ios/CommLibiOS/include/NotAReader.h; sourceTree = "<group>"; };
+		7C4735D28B7A2C3C7FBF1B34E09C0F6E /* BackendlessBeacon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessBeacon.h; path = SDK/ios/backendless/include/BackendlessBeacon.h; sourceTree = "<group>"; };
 		7CEC92F56DF769835C1C93FCFB0158B4 /* Pods-nmfTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-nmfTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		83DB5C1D9B74CD445653B6A466DD38D6 /* ReachabilitySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-umbrella.h"; sourceTree = "<group>"; };
-		845B126296C953438D1C0D414E803ECF /* BBBadgeBarButtonItem.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BBBadgeBarButtonItem.modulemap; sourceTree = "<group>"; };
-		88302E8C559E29E4274BE9837DA251A8 /* SimulatorStatusMagic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimulatorStatusMagic-dummy.m"; sourceTree = "<group>"; };
+		7D24B80A5B85CB1DEE4E4A1E735AEAF3 /* DateWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateWriter.h; path = SDK/ios/CommLibiOS/include/DateWriter.h; sourceTree = "<group>"; };
+		7E8F73D9700C4DCE2E770F94DF4AF0D3 /* IEventDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IEventDispatcher.h; path = SDK/ios/CommLibiOS/include/IEventDispatcher.h; sourceTree = "<group>"; };
+		7FC8244E5B0B15742CA84CDE3AD27EC7 /* SDStatusBarOverriderPost9_0.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost9_0.h; path = SDStatusBarManager/SDStatusBarOverriderPost9_0.h; sourceTree = "<group>"; };
+		802F36B5AF2548093685AF34C13BF67C /* Body.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Body.h; path = SDK/ios/CommLibiOS/include/Body.h; sourceTree = "<group>"; };
+		81090CA6D76D0BDA27E3A22E531D9AD3 /* IAdaptingType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IAdaptingType.h; path = SDK/ios/CommLibiOS/include/IAdaptingType.h; sourceTree = "<group>"; };
+		84B500F53274CF52F8ABB8636FB94BDE /* AckMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AckMessage.h; path = SDK/ios/CommLibiOS/include/AckMessage.h; sourceTree = "<group>"; };
+		867B7470F2D44852E9475ECEC0F88811 /* SimulatorStatusMagic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimulatorStatusMagic-dummy.m"; sourceTree = "<group>"; };
+		872D203B7E1A67415F86F97A677C3941 /* Kingfisher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.xcconfig; sourceTree = "<group>"; };
+		8A4DA0434E1BF4DB924A28849EDA3767 /* AMFHeaderWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMFHeaderWriter.h; path = SDK/ios/CommLibiOS/include/AMFHeaderWriter.h; sourceTree = "<group>"; };
+		8AAC18DEAEF8D047979860911570179F /* LongUTFStringReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LongUTFStringReader.h; path = SDK/ios/CommLibiOS/include/LongUTFStringReader.h; sourceTree = "<group>"; };
+		8B7E1CE958E0C132E352122F0AF921D6 /* ObjectSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectSerializer.h; path = SDK/ios/CommLibiOS/include/ObjectSerializer.h; sourceTree = "<group>"; };
+		8CBA0745C16ABAB9054D6F1813DACB69 /* SubscriptionOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SubscriptionOptions.h; path = SDK/ios/backendless/include/SubscriptionOptions.h; sourceTree = "<group>"; };
 		8CCBF4314C5C0673C1EF33A2DA8FDC18 /* Pods-NMF.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NMF.modulemap"; sourceTree = "<group>"; };
-		8CD2B7EE0D7BF73B0E9EE24DDB35A13A /* SimulatorStatusMagic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimulatorStatusMagic-prefix.pch"; sourceTree = "<group>"; };
-		8D5AE84BAD3872EDED6E37E9AA7A8353 /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
-		8D9154DE300B76EFE86D4372344BF7AB /* SimulatorStatusMagic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimulatorStatusMagic.xcconfig; sourceTree = "<group>"; };
+		8D16048D87C8A87ABFEDB4A379115A36 /* ConcreteObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ConcreteObject.h; path = SDK/ios/CommLibiOS/include/ConcreteObject.h; sourceTree = "<group>"; };
+		8DDD759A6BA30EFD1E1F4A733504BF5A /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
+		8DDE19DAD6CE36380CD87F6A75CE601A /* BBBadgeBarButtonItem.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BBBadgeBarButtonItem.xcconfig; sourceTree = "<group>"; };
+		8E08052C2763A5630D6D0F89FA4720AD /* Indicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Indicator.swift; path = Sources/Indicator.swift; sourceTree = "<group>"; };
+		8F7D9E7D0AABC456EB9006B15BBFA5C4 /* NumberReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NumberReader.h; path = SDK/ios/CommLibiOS/include/NumberReader.h; sourceTree = "<group>"; };
+		8FB236F97703C79F75CF41F83421095B /* Pushwoosh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pushwoosh.framework; path = Framework/Pushwoosh.framework; sourceTree = "<group>"; };
+		8FD33CAB87DD490F5088F6E9A48CB85E /* ProtectedBackendlessGeoQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ProtectedBackendlessGeoQuery.h; path = SDK/ios/backendless/include/ProtectedBackendlessGeoQuery.h; sourceTree = "<group>"; };
 		8FF44A350A3CFC9D6EAEB0D2686E94AE /* Pods-nmfTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-nmfTests.modulemap"; sourceTree = "<group>"; };
-		919231B971351D1FE12C8CA0C01E1D33 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = iOS/TwitterCore.framework; sourceTree = "<group>"; };
+		90C65B31CEAEF7785EC3F5C853AD1659 /* SDStatusBarOverriderPost8_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost8_3.m; path = SDStatusBarManager/SDStatusBarOverriderPost8_3.m; sourceTree = "<group>"; };
+		91CC988ABD9E8F7F3083B6B7FB6347B3 /* V3VectorReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V3VectorReader.h; path = SDK/ios/CommLibiOS/include/V3VectorReader.h; sourceTree = "<group>"; };
+		9206B260A9284171B2B8A887E6350D4D /* ServerCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ServerCallback.h; path = SDK/ios/backendless/include/ServerCallback.h; sourceTree = "<group>"; };
+		92442C02A6E902B9AFC3C90917561B7A /* FileService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FileService.h; path = SDK/ios/backendless/include/FileService.h; sourceTree = "<group>"; };
+		92B0486C9015279A2DB80078D19D0E7E /* SDStatusBarManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarManager.h; path = SDStatusBarManager/SDStatusBarManager.h; sourceTree = "<group>"; };
 		93399CF65BA043CFC8B74CB2C6DCF9D5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93CD601723ABDE92C2A12AD83D56C43E /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/ImageCache.swift; sourceTree = "<group>"; };
-		961AED9438B1131333530BC9E18CA2BE /* SDStatusBarManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarManager.h; path = SDStatusBarManager/SDStatusBarManager.h; sourceTree = "<group>"; };
+		95A33A9577227E51A6D8616B1FC66F01 /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/AnimatedImageView.swift; sourceTree = "<group>"; };
+		95A9AB60F68574192208A3402620ACF0 /* V3DateReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V3DateReader.h; path = SDK/ios/CommLibiOS/include/V3DateReader.h; sourceTree = "<group>"; };
+		98640527F564C6C6966D8211A2B132DB /* AbstractProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractProperty.h; path = SDK/ios/backendless/include/AbstractProperty.h; sourceTree = "<group>"; };
 		9878DD4BD3232916ED9B3122EC6C729F /* Pods-nmfTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-nmfTests-umbrella.h"; sourceTree = "<group>"; };
-		98F171F3916C7ACB1CCCCD60D31F8637 /* BBBadgeBarButtonItem-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BBBadgeBarButtonItem-dummy.m"; sourceTree = "<group>"; };
-		9929D1F599AEB38AECC034A14F757511 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/Resource.swift; sourceTree = "<group>"; };
-		9DCCFC49A8940B4A46D459B879E6197E /* SDStatusBarOverrider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverrider.h; path = SDStatusBarManager/SDStatusBarOverrider.h; sourceTree = "<group>"; };
-		9DE2A559F215A6FA06C3531C2BE42FC3 /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Kingfisher.modulemap; sourceTree = "<group>"; };
-		9F4464C61985ED5C8D4679A823ED1526 /* SDStatusBarOverriderPost9_0.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost9_0.h; path = SDStatusBarManager/SDStatusBarOverriderPost9_0.h; sourceTree = "<group>"; };
+		99F238A1C710EC81B9C5319C78318DB9 /* SDStatusBarOverriderPost10_0.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost10_0.m; path = SDStatusBarManager/SDStatusBarOverriderPost10_0.m; sourceTree = "<group>"; };
+		9A0D9F364F8D590930C743FE04BB36B2 /* ObjectProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectProperty.h; path = SDK/ios/backendless/include/ObjectProperty.h; sourceTree = "<group>"; };
+		9CA8F913539EF7C83D3ACC55BF93C4CB /* DEBUG.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DEBUG.h; path = SDK/ios/CommLibiOS/include/DEBUG.h; sourceTree = "<group>"; };
+		9E137439177314539A05626415016C35 /* V3ByteArrayReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V3ByteArrayReader.h; path = SDK/ios/CommLibiOS/include/V3ByteArrayReader.h; sourceTree = "<group>"; };
+		9F4AF055EBB1F45FBAB155A5AB2BD369 /* MapDrivenDataStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MapDrivenDataStore.h; path = SDK/ios/backendless/include/MapDrivenDataStore.h; sourceTree = "<group>"; };
+		A187345124E5F4C8FD2A41CBE846C570 /* Aggregate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Aggregate.h; path = SDK/ios/CommLibiOS/include/Aggregate.h; sourceTree = "<group>"; };
+		A1B2DE04B3AB1CEA3668ADB20FCC87F8 /* ByteArrayType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ByteArrayType.h; path = SDK/ios/CommLibiOS/include/ByteArrayType.h; sourceTree = "<group>"; };
+		A1E11973F35C713B401EB57FD065C138 /* BackendlessCachePolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessCachePolicy.h; path = SDK/ios/backendless/include/BackendlessCachePolicy.h; sourceTree = "<group>"; };
+		A2DA9AD7545C5CA4FB62FE8705526587 /* PointerReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PointerReader.h; path = SDK/ios/CommLibiOS/include/PointerReader.h; sourceTree = "<group>"; };
+		A39D08AA13A552BD8B0C98D2AAB3724F /* VideoData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VideoData.h; path = SDK/ios/CommLibiOS/include/VideoData.h; sourceTree = "<group>"; };
+		A4B5EDA978B00062FBBF51E91F213FF9 /* SDStatusBarOverriderPre8_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPre8_3.m; path = SDStatusBarManager/SDStatusBarOverriderPre8_3.m; sourceTree = "<group>"; };
 		A5B5BA5B14EB77B5A29CAD450BD89CD4 /* Pods-NMF-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NMF-frameworks.sh"; sourceTree = "<group>"; };
-		A7B6EB4928FD0687EBB2E76DA695341E /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Sources/String+MD5.swift"; sourceTree = "<group>"; };
-		AC8ED64D8A4CC46A00A398A06BC64CAB /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Image.swift; sourceTree = "<group>"; };
-		AE0FBFD5F939C6CF8332729F1F1B611A /* SDStatusBarOverriderPost9_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost9_3.h; path = SDStatusBarManager/SDStatusBarOverriderPost9_3.h; sourceTree = "<group>"; };
+		A5D98A17310B587CADC54CF57CDF04D3 /* AbstractReferenceableTypeWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractReferenceableTypeWriter.h; path = SDK/ios/CommLibiOS/include/AbstractReferenceableTypeWriter.h; sourceTree = "<group>"; };
+		A64AB38E9C0BEC93961FD4889598DDAC /* BackendlessEntity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessEntity.h; path = SDK/ios/backendless/include/BackendlessEntity.h; sourceTree = "<group>"; };
+		A698ED6AF07F6AA4F5E58CEC419BBAA1 /* Invoke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Invoke.h; path = SDK/ios/CommLibiOS/include/Invoke.h; sourceTree = "<group>"; };
+		A6D6B7CCBE72B2CEE6CCBE1EF441F6BC /* RTMPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTMPClient.h; path = SDK/ios/CommLibiOS/include/RTMPClient.h; sourceTree = "<group>"; };
+		A7C5DBEFDEEC02278EBF07FE1DE0FFD1 /* IClientSharedObjectDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IClientSharedObjectDelegate.h; path = SDK/ios/CommLibiOS/include/IClientSharedObjectDelegate.h; sourceTree = "<group>"; };
+		A8DDFD1A968D1BC58A7CE27C07CFA30B /* ArrayWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ArrayWriter.h; path = SDK/ios/CommLibiOS/include/ArrayWriter.h; sourceTree = "<group>"; };
+		A948C84F499FF88FF5D629474F4DE070 /* SDStatusBarOverriderPost9_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost9_3.h; path = SDStatusBarManager/SDStatusBarOverriderPost9_3.h; sourceTree = "<group>"; };
+		AC09D35C20F76AA719F22BB2916613B2 /* ClassDefinition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ClassDefinition.h; path = SDK/ios/CommLibiOS/include/ClassDefinition.h; sourceTree = "<group>"; };
+		ACA5BFD95E7925A178EF4712E56BB099 /* ArrayReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ArrayReader.h; path = SDK/ios/CommLibiOS/include/ArrayReader.h; sourceTree = "<group>"; };
+		ACB5A56B7FBBA9F42831282352FE3BF2 /* BBBadgeBarButtonItem-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BBBadgeBarButtonItem-prefix.pch"; sourceTree = "<group>"; };
+		AD818336ABD5297E029FF71A39C0DA4F /* BEFileInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEFileInfo.h; path = SDK/ios/backendless/include/BEFileInfo.h; sourceTree = "<group>"; };
 		AE93804FC3895F355C53E0B9446D5E2F /* Pods_NMF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NMF.framework; path = "Pods-NMF.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B30AC99475B6ADDFF6DDD2B8BA664068 /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Sources/ImageTransition.swift; sourceTree = "<group>"; };
-		B74C0CEA3882C2539F2566ECF08354AB /* SDStatusBarOverriderPost10_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost10_3.m; path = SDStatusBarManager/SDStatusBarOverriderPost10_3.m; sourceTree = "<group>"; };
-		B7FD2A66D25D84B6DD1DF10C6E9BB3A5 /* ReachabilitySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReachabilitySwift-dummy.m"; sourceTree = "<group>"; };
-		BCE7BA87DFED1B71632FB800CC273414 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/ImageDownloader.swift; sourceTree = "<group>"; };
-		BEA3F12B6995B89C5433669026DE6BAB /* SDStatusBarOverriderPost10_0.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost10_0.m; path = SDStatusBarManager/SDStatusBarOverriderPost10_0.m; sourceTree = "<group>"; };
-		BF183FA3F5EF6475A26950AB6BD428AA /* SDStatusBarOverriderPost9_0.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost9_0.m; path = SDStatusBarManager/SDStatusBarOverriderPost9_0.m; sourceTree = "<group>"; };
+		AF3FBD43169DD211265144844FB16CE4 /* Responder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Responder.h; path = SDK/ios/CommLibiOS/include/Responder.h; sourceTree = "<group>"; };
+		AF442FD2F9C4E1CAB0C2C4055308CEE9 /* ReachabilitySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-umbrella.h"; sourceTree = "<group>"; };
+		AF8A854E244B5D8872B9AF389D574A69 /* SDStatusBarOverriderPost10_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost10_3.h; path = SDStatusBarManager/SDStatusBarOverriderPost10_3.h; sourceTree = "<group>"; };
+		B075D282DD3CEA6A446EE18D48445307 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = iOS/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		B0B34B8306DB11E3202ED4CA11A26BF9 /* GeoFenceMonitoring.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoFenceMonitoring.h; path = SDK/ios/backendless/include/GeoFenceMonitoring.h; sourceTree = "<group>"; };
+		B1AA60EEBCB44F973222D1B671B1BDD8 /* FlashorbBinaryWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlashorbBinaryWriter.h; path = SDK/ios/CommLibiOS/include/FlashorbBinaryWriter.h; sourceTree = "<group>"; };
+		B28146709F8ABA2D331136D8DE67881A /* Datatypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Datatypes.h; path = SDK/ios/CommLibiOS/include/Datatypes.h; sourceTree = "<group>"; };
+		B2F75D9C3805A34D2459D1033BEDF7DB /* SDStatusBarOverriderPost9_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost9_3.m; path = SDStatusBarManager/SDStatusBarOverriderPost9_3.m; sourceTree = "<group>"; };
+		B3DC008D2591A9722B459CFF73C65BF0 /* SharedObjectEventType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SharedObjectEventType.h; path = SDK/ios/CommLibiOS/include/SharedObjectEventType.h; sourceTree = "<group>"; };
+		B52B0CC0E4D48D5319DBD6D8E399AF86 /* BaseRTMPProtocolDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseRTMPProtocolDecoder.h; path = SDK/ios/CommLibiOS/include/BaseRTMPProtocolDecoder.h; sourceTree = "<group>"; };
+		B7C758AF93306A70E230A70C0CB08ABE /* RequestParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RequestParser.h; path = SDK/ios/CommLibiOS/include/RequestParser.h; sourceTree = "<group>"; };
+		B7F20AA4E07ECB1B4A51357449C8481B /* BESubscription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BESubscription.h; path = SDK/ios/backendless/include/BESubscription.h; sourceTree = "<group>"; };
+		B80DA543CEDDBBC73AE77743ED7F08E5 /* Backendless-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Backendless-Bridging-Header.h"; path = "SDK/ios/backendless/include/Backendless-Bridging-Header.h"; sourceTree = "<group>"; };
+		B887E51E47CD585BD6C8744E56B8C58A /* ISharedObjectListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISharedObjectListener.h; path = SDK/ios/CommLibiOS/include/ISharedObjectListener.h; sourceTree = "<group>"; };
+		B8A327394BB2C861EA33092BF45755D8 /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
+		BBBAD62DECF221F4D2301F800DAB72F2 /* ReqMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReqMessage.h; path = SDK/ios/CommLibiOS/include/ReqMessage.h; sourceTree = "<group>"; };
+		BD50E6ABE402AD33BCF687C5866F4E75 /* SimulatorStatusMagic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimulatorStatusMagic.xcconfig; sourceTree = "<group>"; };
+		BD5DB11F0D50F057BA2FB226C0942FB8 /* BooleanWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BooleanWriter.h; path = SDK/ios/CommLibiOS/include/BooleanWriter.h; sourceTree = "<group>"; };
+		BDA3332C054FB17E3EFA2D8322CF0E96 /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/KingfisherManager.swift; sourceTree = "<group>"; };
+		BFBB9C38EDC56EFF0DCA99F782450B02 /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Sources/String+MD5.swift"; sourceTree = "<group>"; };
+		C044F244B8134EAB7A76683E35633D41 /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
+		C10E167DB929234D75A5F71A1E443C81 /* V3ObjectSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V3ObjectSerializer.h; path = SDK/ios/CommLibiOS/include/V3ObjectSerializer.h; sourceTree = "<group>"; };
 		C19580C98E8309A0AC746A8E9D8EA43B /* SimulatorStatusMagic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimulatorStatusMagic.framework; path = SimulatorStatusMagic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F1C6AB83E8B1235118AEFBB2CEEAA5 /* Pods-NMF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NMF.release.xcconfig"; sourceTree = "<group>"; };
+		C291A357C509922D787F9EFEB02D4F2C /* DataStoreFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DataStoreFactory.h; path = SDK/ios/backendless/include/DataStoreFactory.h; sourceTree = "<group>"; };
+		C3EF7C0CD65D090012FF321F64357BA5 /* ISDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISDatabase.h; path = SDK/ios/backendless/include/ISDatabase.h; sourceTree = "<group>"; };
+		C429FDC70BFB10B5C13D90CA22174D7F /* AuthorizationException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AuthorizationException.h; path = SDK/ios/backendless/include/AuthorizationException.h; sourceTree = "<group>"; };
+		C5BB9216084504C9165212CE78E16261 /* ReaderUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderUtils.h; path = SDK/ios/CommLibiOS/include/ReaderUtils.h; sourceTree = "<group>"; };
+		C61789C7906D1697E6B942D2B3AC7271 /* CommandMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CommandMessage.h; path = SDK/ios/CommLibiOS/include/CommandMessage.h; sourceTree = "<group>"; };
+		C7036F78F0E5FD33586EB825533AC253 /* ICallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ICallback.h; path = SDK/ios/backendless/include/ICallback.h; sourceTree = "<group>"; };
 		C7B53BB9900AAD4C476419FF001C7FB5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C84F9A16912193C001C8E081D6B95C0B /* IAtomicCounters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IAtomicCounters.h; path = SDK/ios/backendless/include/IAtomicCounters.h; sourceTree = "<group>"; };
+		C92FCD4186309ABDDD1A5B14B07737FA /* BackendlessUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessUser.h; path = SDK/ios/backendless/include/BackendlessUser.h; sourceTree = "<group>"; };
+		C96DB0E2495ABDB84B54678E58BFA383 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/ImageDownloader.swift; sourceTree = "<group>"; };
 		C9E58E30155D50915B8848453D9C20EB /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CED835F07D59DFD4916B0174ABBFF7FE /* SDStatusBarManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarManager.m; path = SDStatusBarManager/SDStatusBarManager.m; sourceTree = "<group>"; };
+		CAC50E35768708179F51FBDEF6EF80F5 /* ObjectWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectWriter.h; path = SDK/ios/CommLibiOS/include/ObjectWriter.h; sourceTree = "<group>"; };
+		CB3FCDE8E48A255E3B2771BEA3923C47 /* BBBadgeBarButtonItem.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BBBadgeBarButtonItem.modulemap; sourceTree = "<group>"; };
+		CC7D6A8483F97CCD4DFB89B566FA9796 /* UICKeyChainStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UICKeyChainStore.h; path = SDK/ios/backendless/include/UICKeyChainStore.h; sourceTree = "<group>"; };
+		CDA91C2784A9E39688B18EE8B3D1EC3D /* AtomicCountersFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AtomicCountersFactory.h; path = SDK/ios/backendless/include/AtomicCountersFactory.h; sourceTree = "<group>"; };
+		CE60CCD80205AADA8874143D55481DE7 /* IStreamDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IStreamDispatcher.h; path = SDK/ios/CommLibiOS/include/IStreamDispatcher.h; sourceTree = "<group>"; };
+		CE7456C197155B7B6AD1BAEF9B613403 /* ITypeWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ITypeWriter.h; path = SDK/ios/CommLibiOS/include/ITypeWriter.h; sourceTree = "<group>"; };
+		CF904412B9F953A9A8F24D40F34D95CC /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
+		CFB2BDEA39F14EFD31936D4DE862DCD0 /* UserService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UserService.h; path = SDK/ios/backendless/include/UserService.h; sourceTree = "<group>"; };
+		D04CE2B39AAA30F72F20023F170F65B1 /* BaseRTMPProtocolEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseRTMPProtocolEncoder.h; path = SDK/ios/CommLibiOS/include/BaseRTMPProtocolEncoder.h; sourceTree = "<group>"; };
+		D0D9EDFA6EAF039C54AE2C56C0249376 /* GeoPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoPoint.h; path = SDK/ios/backendless/include/GeoPoint.h; sourceTree = "<group>"; };
+		D200FCD9B7F9F7BC58DAC083947B4AC0 /* ISharedObjectMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISharedObjectMessage.h; path = SDK/ios/CommLibiOS/include/ISharedObjectMessage.h; sourceTree = "<group>"; };
+		D21595D2E7B126546EEB8B7F838238A4 /* MultiDimArrayWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MultiDimArrayWriter.h; path = SDK/ios/CommLibiOS/include/MultiDimArrayWriter.h; sourceTree = "<group>"; };
+		D291BEC736E94619E9660A77FD06CFEA /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Sources/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
+		D2F14C625BC94768442B85437A127F52 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/Resource.swift; sourceTree = "<group>"; };
+		D344AF1093111ADFAE1DE506D0082C0B /* Logging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Logging.h; path = SDK/ios/backendless/include/Logging.h; sourceTree = "<group>"; };
+		D6BE94A3DBE4B7771D589F6195EDE6DA /* Ping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Ping.h; path = SDK/ios/CommLibiOS/include/Ping.h; sourceTree = "<group>"; };
+		D7D6574CD5BC1803FAED44D4BA9C6BB3 /* IPendingServiceCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IPendingServiceCallback.h; path = SDK/ios/CommLibiOS/include/IPendingServiceCallback.h; sourceTree = "<group>"; };
+		D7FAB4B71EC48BFEDC0152533EF75AC7 /* Message.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Message.h; path = SDK/ios/backendless/include/Message.h; sourceTree = "<group>"; };
+		D945A7A4AD50F714B5ECD895E5C23D5E /* FlashorbBinaryReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlashorbBinaryReader.h; path = SDK/ios/CommLibiOS/include/FlashorbBinaryReader.h; sourceTree = "<group>"; };
 		D971AEDF357681786A824080CD6A697D /* Pods-nmfTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nmfTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA30AC9FA9CCE2AE45D9A574783C9DBA /* DeviceRegistration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DeviceRegistration.h; path = SDK/ios/backendless/include/DeviceRegistration.h; sourceTree = "<group>"; };
+		DB9808A5EE3109C683D4A13F95A681D0 /* ReachabilitySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReachabilitySwift-dummy.m"; sourceTree = "<group>"; };
+		DBC29F00F48F931457CAFFECFFFDA53B /* BackendlessGeoQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessGeoQuery.h; path = SDK/ios/backendless/include/BackendlessGeoQuery.h; sourceTree = "<group>"; };
 		DC96F44049ED04228840C781E61C5B23 /* Pods-nmfTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nmfTests.release.xcconfig"; sourceTree = "<group>"; };
+		DE374D44B8C5A3DF75A1D040AB5876F4 /* ReachabilitySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ReachabilitySwift.modulemap; sourceTree = "<group>"; };
+		DE3758EA11F771583B9154BC586E1C3A /* GeoCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoCategory.h; path = SDK/ios/backendless/include/GeoCategory.h; sourceTree = "<group>"; };
+		DE4E9081DB222C0B47AFAD0B77801815 /* RTMPConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTMPConstants.h; path = SDK/ios/CommLibiOS/include/RTMPConstants.h; sourceTree = "<group>"; };
 		DEDF2077305F04C6D3D313CEA00A891F /* Pods-NMF-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NMF-umbrella.h"; sourceTree = "<group>"; };
-		E38DDA55D52B2F4173FB78D89C671CAF /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
-		E63AF475C1724478711A5B64B702F95C /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Filter.swift; sourceTree = "<group>"; };
-		E65326ABCEA7C49CC972E018495E6398 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E6B7C4A7FB00AA532700953F29A8FA34 /* SimulatorStatusMagic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimulatorStatusMagic-umbrella.h"; sourceTree = "<group>"; };
-		E9B23F8B2D96E4122CB1511FC57F1E6A /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
-		EBB75FE1BD4CC2A29A2CFD430BC18971 /* SDStatusBarOverriderPost9_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost9_3.m; path = SDStatusBarManager/SDStatusBarOverriderPost9_3.m; sourceTree = "<group>"; };
-		EEBC488AEC80DB899D6FD421D52AACD4 /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
-		EFA62ECFE414FEFC5BCCA34A0BCBD3E0 /* ReachabilitySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.xcconfig; sourceTree = "<group>"; };
-		F30F31B36F9A68501F9A4CF0C2808BCA /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Reachability/Reachability.swift; sourceTree = "<group>"; };
+		DFB77BCEC555E06EBE16E2B5B2C8130E /* RtmpEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RtmpEngine.h; path = SDK/ios/CommLibiOS/include/RtmpEngine.h; sourceTree = "<group>"; };
+		E2025DB57C707159D3135F47CF319254 /* SimulatorStatusMagic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimulatorStatusMagic-umbrella.h"; sourceTree = "<group>"; };
+		E275E41F8382F5A9D554CDC3A4B22A3F /* OfflineModeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OfflineModeManager.h; path = SDK/ios/backendless/include/OfflineModeManager.h; sourceTree = "<group>"; };
+		E3C8ACE6C0F8CDD0D520B17AE73513FA /* BEAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEAnnotation.h; path = SDK/ios/backendless/include/BEAnnotation.h; sourceTree = "<group>"; };
+		E42048236486C34194B24CD042BF633E /* BodyHolder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BodyHolder.h; path = SDK/ios/CommLibiOS/include/BodyHolder.h; sourceTree = "<group>"; };
+		E42DC8F59D596CECFECC3CC2CEC7A258 /* BooleanReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BooleanReader.h; path = SDK/ios/CommLibiOS/include/BooleanReader.h; sourceTree = "<group>"; };
+		E4EBB42AFBC5B7787EA8AD4420988B97 /* ArrayReferenceWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ArrayReferenceWriter.h; path = SDK/ios/CommLibiOS/include/ArrayReferenceWriter.h; sourceTree = "<group>"; };
+		E6F3E985DE7E587B36384DA0D4C78FF3 /* HashMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HashMap.h; path = SDK/ios/backendless/include/HashMap.h; sourceTree = "<group>"; };
+		E80766C94624A7823CEB69454337FBE2 /* ISerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISerializer.h; path = SDK/ios/CommLibiOS/include/ISerializer.h; sourceTree = "<group>"; };
+		E8D738AD0D03C742D170772BC78E93D7 /* BETableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BETableView.h; path = SDK/ios/backendless/include/BETableView.h; sourceTree = "<group>"; };
+		E93DC5CA14ACF7022206C10A322735D4 /* FlexMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlexMessage.h; path = SDK/ios/CommLibiOS/include/FlexMessage.h; sourceTree = "<group>"; };
+		E95588C5B3AA1C7615FA5A75D21CF61C /* V3ObjectReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V3ObjectReader.h; path = SDK/ios/CommLibiOS/include/V3ObjectReader.h; sourceTree = "<group>"; };
+		E99E8C1E29E3688F0105D80929ED1A36 /* GeoFence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoFence.h; path = SDK/ios/backendless/include/GeoFence.h; sourceTree = "<group>"; };
+		EAA388F7E0BE6367EE23F79EBE8D16A3 /* SDStatusBarOverriderPost8_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost8_3.h; path = SDStatusBarManager/SDStatusBarOverriderPost8_3.h; sourceTree = "<group>"; };
+		EAB9B29FC1AA892B6FD1B9E5C8150100 /* NullType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NullType.h; path = SDK/ios/CommLibiOS/include/NullType.h; sourceTree = "<group>"; };
+		EADFBE607C83F48EEDB2082E0E37D54B /* SDStatusBarOverriderPost10_0.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPost10_0.h; path = SDStatusBarManager/SDStatusBarOverriderPost10_0.h; sourceTree = "<group>"; };
+		ED478D09013DD9EB9B756DB2D9088D90 /* V3ReferenceCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = V3ReferenceCache.h; path = SDK/ios/CommLibiOS/include/V3ReferenceCache.h; sourceTree = "<group>"; };
+		EDBAB314D1201B6DC3BA922AFBC46D66 /* SDStatusBarOverriderPre8_3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDStatusBarOverriderPre8_3.h; path = SDStatusBarManager/SDStatusBarOverriderPre8_3.h; sourceTree = "<group>"; };
+		EE87E7D92DABA65FCA4E7A3E5F6E7A54 /* BoundPropertyBagWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BoundPropertyBagWriter.h; path = SDK/ios/CommLibiOS/include/BoundPropertyBagWriter.h; sourceTree = "<group>"; };
+		EF00496DC5CEF309EC8828809D56C651 /* PublishOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PublishOptions.h; path = SDK/ios/backendless/include/PublishOptions.h; sourceTree = "<group>"; };
+		EF9DFE1A3B6FB87B1DC0319533232CD0 /* SharedObjectMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SharedObjectMessage.h; path = SDK/ios/CommLibiOS/include/SharedObjectMessage.h; sourceTree = "<group>"; };
+		F08BE9B3FD35B6A806F8EB73E14D126E /* PersistenceService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PersistenceService.h; path = SDK/ios/backendless/include/PersistenceService.h; sourceTree = "<group>"; };
+		F0E8069DD547B64C23D45D8FABBD8191 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F365A522DB10566F640703794D0A6750 /* IDeserializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IDeserializer.h; path = SDK/ios/CommLibiOS/include/IDeserializer.h; sourceTree = "<group>"; };
 		F4FE65AB39F3F359C02835027BE5ACE5 /* BBBadgeBarButtonItem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BBBadgeBarButtonItem.framework; path = BBBadgeBarButtonItem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F56B23BCBC8B9A8F31130C8F28A36B9B /* ImagePrefetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePrefetcher.swift; path = Sources/ImagePrefetcher.swift; sourceTree = "<group>"; };
-		F842372FE5C2D542815DF72807436BAD /* CacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheSerializer.swift; path = Sources/CacheSerializer.swift; sourceTree = "<group>"; };
+		F54C1EC7D5BFA78442773583DF321943 /* Invoker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Invoker.h; path = SDK/ios/backendless/include/Invoker.h; sourceTree = "<group>"; };
+		F563E5CE874317126D4F80E7E33C0661 /* DataPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DataPermission.h; path = SDK/ios/backendless/include/DataPermission.h; sourceTree = "<group>"; };
+		F5AA29BCD1406FE35E9BC5DEF4454EA4 /* IntegerReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IntegerReader.h; path = SDK/ios/CommLibiOS/include/IntegerReader.h; sourceTree = "<group>"; };
+		F61D44440F80D12CA729108BE6730260 /* DateType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateType.h; path = SDK/ios/CommLibiOS/include/DateType.h; sourceTree = "<group>"; };
+		F68825817EDDBBD92CE9CE84794C7F07 /* AbstractUnreferenceableTypeWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractUnreferenceableTypeWriter.h; path = SDK/ios/CommLibiOS/include/AbstractUnreferenceableTypeWriter.h; sourceTree = "<group>"; };
+		F6ABDC532C514D6CEC0C50E0B220C7F2 /* IArgumentObjectFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IArgumentObjectFactory.h; path = SDK/ios/CommLibiOS/include/IArgumentObjectFactory.h; sourceTree = "<group>"; };
+		F6D816944CBEF77FEFB85C6E8A49EB0C /* AmfFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AmfFormatter.h; path = SDK/ios/CommLibiOS/include/AmfFormatter.h; sourceTree = "<group>"; };
+		F79D948BEE9391512FBBB373D14399A7 /* NumberWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NumberWriter.h; path = SDK/ios/CommLibiOS/include/NumberWriter.h; sourceTree = "<group>"; };
+		F86F01D26C174ADD3E273BAA1B270F10 /* UserProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UserProperty.h; path = SDK/ios/backendless/include/UserProperty.h; sourceTree = "<group>"; };
+		F8720F35953EDEC1A53695845F6FA589 /* MemoryTicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MemoryTicker.h; path = SDK/ios/CommLibiOS/include/MemoryTicker.h; sourceTree = "<group>"; };
 		F9AC0A99ADECE5FA5BFBFDC6DA165657 /* Pods-NMF-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NMF-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FA766FA07062CF157509795EC96DC070 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
-		FE74A7F6C249A9B4D215C2CCB97C78FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9B860D95D74D8E1F77E777F3CA77D25 /* DeliveryOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DeliveryOptions.h; path = SDK/ios/backendless/include/DeliveryOptions.h; sourceTree = "<group>"; };
+		FA711432AA55EDEB1937E4A90D02C083 /* SDStatusBarOverriderPost10_3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDStatusBarOverriderPost10_3.m; path = SDStatusBarManager/SDStatusBarOverriderPost10_3.m; sourceTree = "<group>"; };
+		FAC5A8B3471BEB1B6872417FA515E2AF /* WebORBDeserializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebORBDeserializer.h; path = SDK/ios/CommLibiOS/include/WebORBDeserializer.h; sourceTree = "<group>"; };
+		FAEBC23F8A224F466E7DED6C8CC3E9D7 /* QueryOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueryOptions.h; path = SDK/ios/backendless/include/QueryOptions.h; sourceTree = "<group>"; };
+		FD2129CD72A00C93EAD892243D4A1002 /* ITypeReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ITypeReader.h; path = SDK/ios/CommLibiOS/include/ITypeReader.h; sourceTree = "<group>"; };
+		FE11122631D376A62975D2B1C431E80B /* CustomService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CustomService.h; path = SDK/ios/backendless/include/CustomService.h; sourceTree = "<group>"; };
+		FEB84EB64F0CB772C00C6EFA673EC884 /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,12 +489,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05BDA81EFE2082A7BB4086DC47855FDA /* Frameworks */ = {
+		0793909B0D9639BBCE5E25641C3E6DAE /* Kingfisher */ = {
 			isa = PBXGroup;
 			children = (
-				919231B971351D1FE12C8CA0C01E1D33 /* TwitterCore.framework */,
+				95A33A9577227E51A6D8616B1FC66F01 /* AnimatedImageView.swift */,
+				48A510279A89F5CFC9A17BA200DE2C0C /* Box.swift */,
+				0E38C351E7C51888B7279777F0B05B93 /* CacheSerializer.swift */,
+				4B43D7F1BCABEE8328378340A53B3736 /* Filter.swift */,
+				323E2960FAB6194AA71DA63BC6EB28C6 /* Image.swift */,
+				1523EC5E96FE24296E802F6B6C27D260 /* ImageCache.swift */,
+				C96DB0E2495ABDB84B54678E58BFA383 /* ImageDownloader.swift */,
+				2347A371D8C7F93B35D43DEFA907253C /* ImagePrefetcher.swift */,
+				746CDC9D2147E8EAB9FC47984E2BDA6C /* ImageProcessor.swift */,
+				6D3B79E0AEE91ECA5E0B1408F1B089C0 /* ImageTransition.swift */,
+				8DDD759A6BA30EFD1E1F4A733504BF5A /* ImageView+Kingfisher.swift */,
+				8E08052C2763A5630D6D0F89FA4720AD /* Indicator.swift */,
+				FEB84EB64F0CB772C00C6EFA673EC884 /* Kingfisher.h */,
+				2D30AAF917E410D5653D31503AC8234E /* Kingfisher.swift */,
+				BDA3332C054FB17E3EFA2D8322CF0E96 /* KingfisherManager.swift */,
+				D291BEC736E94619E9660A77FD06CFEA /* KingfisherOptionsInfo.swift */,
+				41C8FC98C649DAD1AD39329A5A56C5C4 /* RequestModifier.swift */,
+				D2F14C625BC94768442B85437A127F52 /* Resource.swift */,
+				BFBB9C38EDC56EFF0DCA99F782450B02 /* String+MD5.swift */,
+				6F302E2D893AE9F5DABDE34490B320CA /* ThreadHelper.swift */,
+				2EA4B462D4A88A91C0348794D5FB6C13 /* UIButton+Kingfisher.swift */,
+				438180BD29CB2F6A8E65C45375CAB185 /* Support Files */,
 			);
-			name = Frameworks;
+			name = Kingfisher;
+			path = Kingfisher;
 			sourceTree = "<group>";
 		};
 		07DFFA6B105C1EB0E27BEC7DE81FB2B2 /* Pods-NMF */ = {
@@ -285,34 +537,20 @@
 			path = "Target Support Files/Pods-NMF";
 			sourceTree = "<group>";
 		};
-		07F327B09B113306D96013EE20AB0A1D /* Kingfisher */ = {
+		0A7037625FBEC6812E9F3FE5343D4E12 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				54E575399FD1E215BB0ED730DAE9129B /* AnimatedImageView.swift */,
-				8D5AE84BAD3872EDED6E37E9AA7A8353 /* Box.swift */,
-				F842372FE5C2D542815DF72807436BAD /* CacheSerializer.swift */,
-				E63AF475C1724478711A5B64B702F95C /* Filter.swift */,
-				AC8ED64D8A4CC46A00A398A06BC64CAB /* Image.swift */,
-				93CD601723ABDE92C2A12AD83D56C43E /* ImageCache.swift */,
-				BCE7BA87DFED1B71632FB800CC273414 /* ImageDownloader.swift */,
-				F56B23BCBC8B9A8F31130C8F28A36B9B /* ImagePrefetcher.swift */,
-				39FA5CC95C4A4C75006F86FE3A7DF7BA /* ImageProcessor.swift */,
-				B30AC99475B6ADDFF6DDD2B8BA664068 /* ImageTransition.swift */,
-				EEBC488AEC80DB899D6FD421D52AACD4 /* ImageView+Kingfisher.swift */,
-				61ED0E12A516615D2D593791845339B4 /* Indicator.swift */,
-				1386DAD1C60FAA9309E0432644F6C4E4 /* Kingfisher.h */,
-				296D2C9CC19D10612276FDF9178453B6 /* Kingfisher.swift */,
-				44C62D8E935C87401CC51D51BB4F8AA7 /* KingfisherManager.swift */,
-				6E63BCDEFA8F0BAFD692D507A41E712B /* KingfisherOptionsInfo.swift */,
-				1BAB1A595E80EDA35D92C5A6F044FFAA /* RequestModifier.swift */,
-				9929D1F599AEB38AECC034A14F757511 /* Resource.swift */,
-				A7B6EB4928FD0687EBB2E76DA695341E /* String+MD5.swift */,
-				543CE118290BC1BB9A923C6058FF6E71 /* ThreadHelper.swift */,
-				6F49084D588E28527C2AFC8553486F39 /* UIButton+Kingfisher.swift */,
-				9E429FA35BA9C75D69452C358E19915B /* Support Files */,
+				2056AB348AB0DECBE0286A16345CB5F0 /* Backendless */,
+				48477D1F3265671468FB498653710E0C /* BBBadgeBarButtonItem */,
+				E9CADCC4FE05DE2CC2921D1BC82387B4 /* Fabric */,
+				0793909B0D9639BBCE5E25641C3E6DAE /* Kingfisher */,
+				F1667F81D1C76F23AF382C7780F2359D /* Pushwoosh */,
+				7D08AE796BBF255269058543D536DCF0 /* ReachabilitySwift */,
+				A225DB5F74A556C87ED7E52F0B8DB6FD /* SimulatorStatusMagic */,
+				5527420108242DD278B00892DC2A09CA /* TwitterCore */,
+				B4829974C755079A69F055181D79C6A7 /* TwitterKit */,
 			);
-			name = Kingfisher;
-			path = Kingfisher;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
@@ -332,6 +570,272 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		2056AB348AB0DECBE0286A16345CB5F0 /* Backendless */ = {
+			isa = PBXGroup;
+			children = (
+				98640527F564C6C6966D8211A2B132DB /* AbstractProperty.h */,
+				46F3945BC9FBC8A0090C7E0295F481A5 /* AbstractQuery.h */,
+				A5D98A17310B587CADC54CF57CDF04D3 /* AbstractReferenceableTypeWriter.h */,
+				F68825817EDDBBD92CE9CE84794C7F07 /* AbstractUnreferenceableTypeWriter.h */,
+				84B500F53274CF52F8ABB8636FB94BDE /* AckMessage.h */,
+				A187345124E5F4C8FD2A41CBE846C570 /* Aggregate.h */,
+				5351A6E9E20CD5C35AF493E2C70BB900 /* AMFBodyWriter.h */,
+				F6D816944CBEF77FEFB85C6E8A49EB0C /* AmfFormatter.h */,
+				8A4DA0434E1BF4DB924A28849EDA3767 /* AMFHeaderWriter.h */,
+				0002EB5D31525BBA6548945F52AB83F1 /* AMFMessageWriter.h */,
+				07101E6C86FA126769FA068B1203BB6C /* AMFSerializer.h */,
+				49FCBBD46EBCBC2F288C1E07A304608A /* AmfV3Formatter.h */,
+				0424AD0666323749E33A3E9F9EBDE8EE /* AnonymousObject.h */,
+				4132AAE8B5416E9C42169D1729CEDBA0 /* AnonymousObjectReader.h */,
+				ACA5BFD95E7925A178EF4712E56BB099 /* ArrayReader.h */,
+				E4EBB42AFBC5B7787EA8AD4420988B97 /* ArrayReferenceWriter.h */,
+				067F5C3F97AC931E587D7AAD8F70211F /* ArrayType.h */,
+				A8DDFD1A968D1BC58A7CE27C07CFA30B /* ArrayWriter.h */,
+				5AB8BB39A98E1756DA76EB6112B94066 /* AsyncMessage.h */,
+				2F63EA6CEF74E5267B12D83400691AB2 /* AtomicCounters.h */,
+				CDA91C2784A9E39688B18EE8B3D1EC3D /* AtomicCountersFactory.h */,
+				7A6AE45AFA7CF8658155EC4C7383150F /* AttributeStore.h */,
+				1A0067EA7D0C30A3B4A211ED47B7A21D /* AudioData.h */,
+				C429FDC70BFB10B5C13D90CA22174D7F /* AuthorizationException.h */,
+				0A70C39339DF01626CB08E5622C2071B /* Backendless.h */,
+				B80DA543CEDDBBC73AE77743ED7F08E5 /* Backendless-Bridging-Header.h */,
+				7C4735D28B7A2C3C7FBF1B34E09C0F6E /* BackendlessBeacon.h */,
+				0E6FD8D47A93649904B3D9A9275008E4 /* BackendlessCache.h */,
+				213227879A8F0FB433E505743286CA27 /* BackendlessCacheData.h */,
+				57BAB6187B59DF6657C95BD28823D091 /* BackendlessCacheKey.h */,
+				A1E11973F35C713B401EB57FD065C138 /* BackendlessCachePolicy.h */,
+				0F6666470C5BC3C6EEC17FF1ABE36455 /* BackendlessCacheProtocol.h */,
+				59BEC3665E25D19C53B0A26B532BA751 /* BackendlessCollection.h */,
+				5103D529457C4E83F0F3B410698E9862 /* BackendlessDataQuery.h */,
+				A64AB38E9C0BEC93961FD4889598DDAC /* BackendlessEntity.h */,
+				11A88EDECC0E398EA34A48BE42210736 /* BackendlessFile.h */,
+				DBC29F00F48F931457CAFFECFFFDA53B /* BackendlessGeoQuery.h */,
+				18E4C039115B1286FB3250A6A15A859E /* BackendlessSimpleQuery.h */,
+				C92FCD4186309ABDDD1A5B14B07737FA /* BackendlessUser.h */,
+				41F797B1C6B0A5B7F8B5F548B6B89A99 /* BaseEvent.h */,
+				B52B0CC0E4D48D5319DBD6D8E399AF86 /* BaseRTMPProtocolDecoder.h */,
+				D04CE2B39AAA30F72F20023F170F65B1 /* BaseRTMPProtocolEncoder.h */,
+				461E477FB3BCAA3C54E77AFFE0D1D618 /* BeaconMonitoring.h */,
+				3196D9EE241CE8D27D5358987AFE4028 /* BeaconsInfo.h */,
+				21FC55C096F35054D5EE88F175EE21FF /* BeaconTracker.h */,
+				E3C8ACE6C0F8CDD0D520B17AE73513FA /* BEAnnotation.h */,
+				51B91A5E63B2F0B6D31CDAA7C4EF4F8C /* BECollectionView.h */,
+				AD818336ABD5297E029FF71A39C0DA4F /* BEFileInfo.h */,
+				739C0E2EB1F31509116025CC8114E732 /* BEMapView.h */,
+				60F6E7E2A195723D4E8FA00496629A11 /* BEReachability.h */,
+				B7F20AA4E07ECB1B4A51357449C8481B /* BESubscription.h */,
+				E8D738AD0D03C742D170772BC78E93D7 /* BETableView.h */,
+				52810951C655EA1E078D7DC86C97C8D6 /* BinaryCodec.h */,
+				745E2C2B1B4CC57FAFD376F2BA57A15F /* BinaryStream.h */,
+				802F36B5AF2548093685AF34C13BF67C /* Body.h */,
+				E42048236486C34194B24CD042BF633E /* BodyHolder.h */,
+				63D2B467F55A6D4E3F8A6D202CD9793F /* BodyHolderFactory.h */,
+				3286C6ACC689997D5E8C37651EE9218E /* BodyHolderWriter.h */,
+				31492F10E1BAC273EFBE9C8BC58512E0 /* BodyParts.h */,
+				E42DC8F59D596CECFECC3CC2CEC7A258 /* BooleanReader.h */,
+				3F41F6084C01E99BB3236667FECE9F59 /* BooleanType.h */,
+				BD5DB11F0D50F057BA2FB226C0942FB8 /* BooleanWriter.h */,
+				0BCE8826D984A2539ACF1B4D974040DE /* BoundPropertyBagReader.h */,
+				EE87E7D92DABA65FCA4E7A3E5F6E7A54 /* BoundPropertyBagWriter.h */,
+				A1B2DE04B3AB1CEA3668ADB20FCC87F8 /* ByteArrayType.h */,
+				515FC4E55DD86B1E15B1A6C4D8FAB771 /* CacheFactory.h */,
+				799B1FB1BB1A147648425E83338EBF67 /* CacheService.h */,
+				0956877AA5CE691325D38109F6DCAE8B /* Call.h */,
+				019F9057E3B634B6E365C9DC0DA1F755 /* ClassCastException.h */,
+				AC09D35C20F76AA719F22BB2916613B2 /* ClassDefinition.h */,
+				0AB5B4C4BABB84690D1E07096B43F4FE /* ClientCallback.h */,
+				544E48151835CB7B3C34A219D7D72F8A /* ClientSharedObject.h */,
+				C61789C7906D1697E6B942D2B3AC7271 /* CommandMessage.h */,
+				8D16048D87C8A87ABFEDB4A379115A36 /* ConcreteObject.h */,
+				79F77872FEA0BFDF6CD166A754857C80 /* CrowdNode.h */,
+				FE11122631D376A62975D2B1C431E80B /* CustomService.h */,
+				F563E5CE874317126D4F80E7E33C0661 /* DataPermission.h */,
+				C291A357C509922D787F9EFEB02D4F2C /* DataStoreFactory.h */,
+				B28146709F8ABA2D331136D8DE67881A /* Datatypes.h */,
+				6405AC546753D57A2BE567EAB7D9A025 /* DateReader.h */,
+				F61D44440F80D12CA729108BE6730260 /* DateType.h */,
+				7D24B80A5B85CB1DEE4E4A1E735AEAF3 /* DateWriter.h */,
+				9CA8F913539EF7C83D3ACC55BF93C4CB /* DEBUG.h */,
+				F9B860D95D74D8E1F77E777F3CA77D25 /* DeliveryOptions.h */,
+				DA30AC9FA9CCE2AE45D9A574783C9DBA /* DeviceRegistration.h */,
+				5B9EE1094C0DFFAD40D99A3D8766B337 /* Engine.h */,
+				6442D8C83A5D480FCE32006FCD325F43 /* ErrMessage.h */,
+				6FD7B760D232F277C0F7549265753078 /* Events.h */,
+				316164A460983DD2C8C92E998611105D /* EventType.h */,
+				298D4E958ACB40925648CBEFB60F970C /* FilePermission.h */,
+				92442C02A6E902B9AFC3C90917561B7A /* FileService.h */,
+				D945A7A4AD50F714B5ECD895E5C23D5E /* FlashorbBinaryReader.h */,
+				B1AA60EEBCB44F973222D1B671B1BDD8 /* FlashorbBinaryWriter.h */,
+				E93DC5CA14ACF7022206C10A322735D4 /* FlexMessage.h */,
+				DE3758EA11F771583B9154BC586E1C3A /* GeoCategory.h */,
+				5B75AD8756A740AD06B921C9102DFD6A /* GeoCluster.h */,
+				E99E8C1E29E3688F0105D80929ED1A36 /* GeoFence.h */,
+				B0B34B8306DB11E3202ED4CA11A26BF9 /* GeoFenceMonitoring.h */,
+				144840AB60A22F22CFBC1CE56CC16A0B /* GeoMath.h */,
+				D0D9EDFA6EAF039C54AE2C56C0249376 /* GeoPoint.h */,
+				24621CCBD3CE1B0F0A82C87634604487 /* GeoService.h */,
+				E6F3E985DE7E587B36384DA0D4C78FF3 /* HashMap.h */,
+				479039A7BCA2B842E5AC2D42B73A519C /* Header.h */,
+				70C014E07B349F8AB424B97583C1F850 /* HttpEngine.h */,
+				81090CA6D76D0BDA27E3A22E531D9AD3 /* IAdaptingType.h */,
+				F6ABDC532C514D6CEC0C50E0B220C7F2 /* IArgumentObjectFactory.h */,
+				C84F9A16912193C001C8E081D6B95C0B /* IAtomicCounters.h */,
+				134004CA59BC877352EB35C706D4E5D9 /* IAttributeStore.h */,
+				28FBAB6D4CD3F1A86F8DB66A8139ECAE /* IAudioStreamCodec.h */,
+				06903576F6BFF4AADD6287F78271D30C /* ICacheableAdaptingType.h */,
+				0F80024179471ACF863D24C495E291A5 /* ICacheService.h */,
+				C7036F78F0E5FD33586EB825533AC253 /* ICallback.h */,
+				3268C07B2AED551DDD0E5012E5171F35 /* ICastingAttributeStore.h */,
+				2DD8B215180EA7C033CB39A08C90F195 /* IClientSharedObject.h */,
+				A7C5DBEFDEEC02278EBF07FE1DE0FFD1 /* IClientSharedObjectDelegate.h */,
+				7402DC1EF9F4D05C217F96BF9EDD816E /* IDataStore.h */,
+				F365A522DB10566F640703794D0A6750 /* IDeserializer.h */,
+				12D5AEFD88425F8B3F89B825DF8CF09F /* IEvent.h */,
+				7E8F73D9700C4DCE2E770F94DF4AF0D3 /* IEventDispatcher.h */,
+				19302B8AC5651EEEF19B234B29B74E7B /* IEventListener.h */,
+				F5AA29BCD1406FE35E9BC5DEF4454EA4 /* IntegerReader.h */,
+				A698ED6AF07F6AA4F5E58CEC419BBAA1 /* Invoke.h */,
+				F54C1EC7D5BFA78442773583DF321943 /* Invoker.h */,
+				4FEFC3AD99B094ABA67AFEFE7BBDEE51 /* IObjectSerializer.h */,
+				5CCF82D7FE27AB254AD97AEE86005FC7 /* IPendingServiceCall.h */,
+				D7D6574CD5BC1803FAED44D4BA9C6BB3 /* IPendingServiceCallback.h */,
+				7B6BF292ECD0B869355D85E24FC03A95 /* IPersistable.h */,
+				4E7FAF7175C1031C11393CA8BDBB6D0D /* IPersistenceStore.h */,
+				3341DFF7458F06BAE0576B1F95B13783 /* IPresenceListener.h */,
+				1BAA3D98A393C647ED63DE21BCB7EA9D /* IProtocolFormatter.h */,
+				4571B27477018BE8062560DFFA0996F9 /* IRTMPEvent.h */,
+				5C71303CD2ACF2EF95C193830BBFE17F /* IRTMProtocol.h */,
+				C3EF7C0CD65D090012FF321F64357BA5 /* ISDatabase.h */,
+				E80766C94624A7823CEB69454337FBE2 /* ISerializer.h */,
+				1C671D0563D6673C76FDC9C26D98ECBD /* IServiceCall.h */,
+				4E14AE37BE2DA08051D26183275E3D46 /* IServiceObjectFactory.h */,
+				0A7C6BF4F77EA46BD5903AA22FFF7611 /* ISharedObjectEvent.h */,
+				B887E51E47CD585BD6C8744E56B8C58A /* ISharedObjectListener.h */,
+				D200FCD9B7F9F7BC58DAC083947B4AC0 /* ISharedObjectMessage.h */,
+				CE60CCD80205AADA8874143D55481DE7 /* IStreamDispatcher.h */,
+				1CC16997C43BE195F3A2FA14D7BB42FC /* IStreamPacket.h */,
+				FD2129CD72A00C93EAD892243D4A1002 /* ITypeReader.h */,
+				CE7456C197155B7B6AD1BAEF9B613403 /* ITypeWriter.h */,
+				2E19A0ED83DE42751BFDFEC278C17D5A /* IVideoStreamCodec.h */,
+				4605B07545FC89F08295A5C4F6F07246 /* KeychainDataStore.h */,
+				2B677BD2F4F54817FE96803E509C10D6 /* LicenseManager.h */,
+				05360FEAD40E5D185EC17D2295FBD9E1 /* LocationTracker.h */,
+				0AF84B859C3962F4B32D47CDB2D3C5F5 /* LogBuffer.h */,
+				24FA6A7BEA1AD761901BCE4A239EFC6B /* Logger.h */,
+				D344AF1093111ADFAE1DE506D0082C0B /* Logging.h */,
+				8AAC18DEAEF8D047979860911570179F /* LongUTFStringReader.h */,
+				9F4AF055EBB1F45FBAB155A5AB2BD369 /* MapDrivenDataStore.h */,
+				F8720F35953EDEC1A53695845F6FA589 /* MemoryTicker.h */,
+				D7FAB4B71EC48BFEDC0152533EF75AC7 /* Message.h */,
+				02C80CDA30E3BD525316274ADE384DFF /* MessageStatus.h */,
+				193E3285669516913CC7BEC4F15B67E7 /* MessageWriter.h */,
+				4040CDA0F2FD89403670B8CE79814804 /* MessagingService.h */,
+				420A5E13CDF3A1B97797305E9AA02034 /* MetaData.h */,
+				485503EE8AC5EF1231654BF4CD306049 /* MHeader.h */,
+				D21595D2E7B126546EEB8B7F838238A4 /* MultiDimArrayWriter.h */,
+				50DFE2FA57FDD5A407E14892F26CE631 /* NamedObject.h */,
+				2C8A7C056DB616AD6AF98BBD39854D1B /* NamedObjectReader.h */,
+				7BBF93E16164D08D1206852A09A227DA /* NotAReader.h */,
+				38778BC599178BE9135B4241A84B18FC /* NotifyEvent.h */,
+				3A1992B6507CA1AF3B6386071C3C1F8C /* NullReader.h */,
+				EAB9B29FC1AA892B6FD1B9E5C8150100 /* NullType.h */,
+				408BC5C017F6BEE3D24EB377ADA053F1 /* NullWriter.h */,
+				4B9F395F7F6AAB7D0488BFCD24210FE8 /* NumberObject.h */,
+				8F7D9E7D0AABC456EB9006B15BBFA5C4 /* NumberReader.h */,
+				F79D948BEE9391512FBBB373D14399A7 /* NumberWriter.h */,
+				4B83A5D62F69C610CC72FC1669456B4C /* ObjectFactories.h */,
+				9A0D9F364F8D590930C743FE04BB36B2 /* ObjectProperty.h */,
+				654AB44D60000103790D490946EC2BAB /* ObjectReferenceWriter.h */,
+				8B7E1CE958E0C132E352122F0AF921D6 /* ObjectSerializer.h */,
+				CAC50E35768708179F51FBDEF6EF80F5 /* ObjectWriter.h */,
+				E275E41F8382F5A9D554CDC3A4B22A3F /* OfflineModeManager.h */,
+				4EACDA072FE8C2B41E9277C3D7974DCF /* ORBConstants.h */,
+				360F5DFD8E31EE49585969601BB3CA7F /* Packet.h */,
+				0E11904FE5E27DD13812FEB3F68740D8 /* ParseContext.h */,
+				76E9237DA5A9FA6C0F1380F3117EE83A /* PendingCall.h */,
+				F08BE9B3FD35B6A806F8EB73E14D126E /* PersistenceService.h */,
+				D6BE94A3DBE4B7771D589F6195EDE6DA /* Ping.h */,
+				A2DA9AD7545C5CA4FB62FE8705526587 /* PointerReader.h */,
+				36E8DB981966E8BB5DA1394042E6A663 /* Presence.h */,
+				4EB5F4ED38848034E3F2FD769B883570 /* PropertyBagWriter.h */,
+				8FD33CAB87DD490F5088F6E9A48CB85E /* ProtectedBackendlessGeoQuery.h */,
+				EF00496DC5CEF309EC8828809D56C651 /* PublishOptions.h */,
+				FAEBC23F8A224F466E7DED6C8CC3E9D7 /* QueryOptions.h */,
+				0142B13379D998F01D2604E06512B714 /* ReaderReferenceCache.h */,
+				C5BB9216084504C9165212CE78E16261 /* ReaderUtils.h */,
+				194C550756FF414740DD39602F15AD53 /* ReferenceCache.h */,
+				BBBAD62DECF221F4D2301F800DAB72F2 /* ReqMessage.h */,
+				1112E013FF8C0FAC5D91BA076C36F93A /* Request.h */,
+				B7C758AF93306A70E230A70C0CB08ABE /* RequestParser.h */,
+				AF3FBD43169DD211265144844FB16CE4 /* Responder.h */,
+				A6D6B7CCBE72B2CEE6CCBE1EF441F6BC /* RTMPClient.h */,
+				DE4E9081DB222C0B47AFAD0B77801815 /* RTMPConstants.h */,
+				DFB77BCEC555E06EBE16E2B5B2C8130E /* RtmpEngine.h */,
+				26CD05055FA115823ADAB14012334E17 /* RTMProtocol.h */,
+				9206B260A9284171B2B8A887E6350D4D /* ServerCallback.h */,
+				0DC7A0AAA2028965B1D9AD033B6074AA /* SharedObject.h */,
+				4CA3F0002423277A4CA740FB1F034703 /* SharedObjectEvent.h */,
+				B3DC008D2591A9722B459CFF73C65BF0 /* SharedObjectEventType.h */,
+				EF9DFE1A3B6FB87B1DC0319533232CD0 /* SharedObjectMessage.h */,
+				52A723D4D05E4DBFF32D243E18936EDA /* StringReferenceWriter.h */,
+				61FC9A054144E42889124A25FAA36D8A /* StringType.h */,
+				5BB1338DDAD78793C2F30FA7303B1BF9 /* StringWriter.h */,
+				449C2A34A97714892D5CC659FC4D0DFA /* Subscription.h */,
+				8CBA0745C16ABAB9054D6F1813DACB69 /* SubscriptionOptions.h */,
+				6520E7124242AE1BE4600519096DEDEB /* Types.h */,
+				CC7D6A8483F97CCD4DFB89B566FA9796 /* UICKeyChainStore.h */,
+				6B14BE6581BB85FACF8AA24633E1025A /* UndefinedType.h */,
+				12DC8B74D9ADA638C2D0826AECCBBF79 /* UndefinedTypeReader.h */,
+				F86F01D26C174ADD3E273BAA1B270F10 /* UserProperty.h */,
+				CFB2BDEA39F14EFD31936D4DE862DCD0 /* UserService.h */,
+				75F903B2AC777B6C0E5BD86168B14D28 /* UTFStringReader.h */,
+				2D11CB57CCE722BBDA0415C9129600CF /* V3ArrayReader.h */,
+				9E137439177314539A05626415016C35 /* V3ByteArrayReader.h */,
+				95A9AB60F68574192208A3402620ACF0 /* V3DateReader.h */,
+				4B89423CAE63646348ADCDCC7B25C537 /* V3Message.h */,
+				E95588C5B3AA1C7615FA5A75D21CF61C /* V3ObjectReader.h */,
+				C10E167DB929234D75A5F71A1E443C81 /* V3ObjectSerializer.h */,
+				180D59FF6235362D9636D1E65531E6E1 /* V3Reader.h */,
+				ED478D09013DD9EB9B756DB2D9088D90 /* V3ReferenceCache.h */,
+				316E96ECCBDA70CD20D17DEE3D813143 /* V3StringReader.h */,
+				91CC988ABD9E8F7F3083B6B7FB6347B3 /* V3VectorReader.h */,
+				A39D08AA13A552BD8B0C98D2AAB3724F /* VideoData.h */,
+				3B51FA33EDEF6CAFE06F8AC9991DF51C /* WeborbClient.h */,
+				FAC5A8B3471BEB1B6872417FA515E2AF /* WebORBDeserializer.h */,
+				1F684F1197049B9C9BED0DAD6E5D6654 /* WebORBSerializer.h */,
+			);
+			name = Backendless;
+			path = Backendless;
+			sourceTree = "<group>";
+		};
+		43048AA87CBFA115169F2885EAFC97B9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB3FCDE8E48A255E3B2771BEA3923C47 /* BBBadgeBarButtonItem.modulemap */,
+				8DDE19DAD6CE36380CD87F6A75CE601A /* BBBadgeBarButtonItem.xcconfig */,
+				658FAD5B92EBE75774573A53D9FC3D77 /* BBBadgeBarButtonItem-dummy.m */,
+				ACB5A56B7FBBA9F42831282352FE3BF2 /* BBBadgeBarButtonItem-prefix.pch */,
+				1F7849EFB3FA7269D5836FD1DF408CFD /* BBBadgeBarButtonItem-umbrella.h */,
+				6B442BDC356BB4169959C3D1984E4B91 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BBBadgeBarButtonItem";
+			sourceTree = "<group>";
+		};
+		438180BD29CB2F6A8E65C45375CAB185 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D638F37567DAA69DB3D1FBB2B5CB6EB /* Info.plist */,
+				1C0563ADFD4B3780695CB907A2A60E90 /* Kingfisher.modulemap */,
+				872D203B7E1A67415F86F97A677C3941 /* Kingfisher.xcconfig */,
+				CF904412B9F953A9A8F24D40F34D95CC /* Kingfisher-dummy.m */,
+				2A40CB0E398B00ED19599FC494F64F9C /* Kingfisher-prefix.pch */,
+				08E6177679BE978A9ACF096B28FF5E3E /* Kingfisher-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Kingfisher";
+			sourceTree = "<group>";
+		};
 		4602731983768196D03649A86B173969 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,92 +849,64 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4A5F4B5823C28D4671FABFF92E755DC0 /* BBBadgeBarButtonItem */ = {
+		48477D1F3265671468FB498653710E0C /* BBBadgeBarButtonItem */ = {
 			isa = PBXGroup;
 			children = (
-				3FE273FF0E8CB77E4C3A3686FC99892D /* BBBadgeBarButtonItem.h */,
-				29A5696FED9FD3508F94214AA13DA84E /* BBBadgeBarButtonItem.m */,
-				CD743B7D18AAC5DD3433F32E22B0C428 /* Support Files */,
+				37F5FEFAE7A2632C2A94A4CC048E2F58 /* BBBadgeBarButtonItem.h */,
+				0591D40CB8DEAF09637A0972DAF4140C /* BBBadgeBarButtonItem.m */,
+				43048AA87CBFA115169F2885EAFC97B9 /* Support Files */,
 			);
 			name = BBBadgeBarButtonItem;
 			path = BBBadgeBarButtonItem;
 			sourceTree = "<group>";
 		};
-		4FD57FA91814FC65B581BBC2294268D2 /* Frameworks */ = {
+		52602B3F8B5F4777C259B2F8D99A3712 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA766FA07062CF157509795EC96DC070 /* Fabric.framework */,
+				7432D84CFE146982844BE41A7C5FC084 /* TwitterKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5304470DE874BEE3CAEB8E211C685404 /* Fabric */ = {
+		5527420108242DD278B00892DC2A09CA /* TwitterCore */ = {
 			isa = PBXGroup;
 			children = (
-				6E5DC4D6D4A48E7CEBD59E841041C023 /* FABAttributes.h */,
-				1249EF79A76CA84BC5825B857212BA9B /* Fabric.h */,
-				4FD57FA91814FC65B581BBC2294268D2 /* Frameworks */,
+				B9E11F1896B405F30E9C46155C9E9B05 /* Frameworks */,
 			);
-			name = Fabric;
-			path = Fabric;
+			name = TwitterCore;
+			path = TwitterCore;
 			sourceTree = "<group>";
 		};
-		582538130F6668221146F427AC377BB4 /* ReachabilitySwift */ = {
+		558223516DA2FE464826FE206CDC7761 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F30F31B36F9A68501F9A4CF0C2808BCA /* Reachability.swift */,
-				C320F712F692E5320021167127753D5F /* Support Files */,
+				8FB236F97703C79F75CF41F83421095B /* Pushwoosh.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C9A0CFF22B0D7C82B99B9BC285E5E34 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0E8069DD547B64C23D45D8FABBD8191 /* Info.plist */,
+				DE374D44B8C5A3DF75A1D040AB5876F4 /* ReachabilitySwift.modulemap */,
+				717EBD84F458E94C13B58665B0A1FFB3 /* ReachabilitySwift.xcconfig */,
+				DB9808A5EE3109C683D4A13F95A681D0 /* ReachabilitySwift-dummy.m */,
+				C044F244B8134EAB7A76683E35633D41 /* ReachabilitySwift-prefix.pch */,
+				AF442FD2F9C4E1CAB0C2C4055308CEE9 /* ReachabilitySwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ReachabilitySwift";
+			sourceTree = "<group>";
+		};
+		7D08AE796BBF255269058543D536DCF0 /* ReachabilitySwift */ = {
+			isa = PBXGroup;
+			children = (
+				34A28B0DAC982907F3F762F1D793BDF7 /* Reachability.swift */,
+				5C9A0CFF22B0D7C82B99B9BC285E5E34 /* Support Files */,
 			);
 			name = ReachabilitySwift;
 			path = ReachabilitySwift;
-			sourceTree = "<group>";
-		};
-		6670313716CC50BBE362210B4687A267 /* Pushwoosh */ = {
-			isa = PBXGroup;
-			children = (
-				FDF8733D55E26DAE71D841AC07B06A6E /* Frameworks */,
-			);
-			name = Pushwoosh;
-			path = Pushwoosh;
-			sourceTree = "<group>";
-		};
-		706514FC31E8B5C23FDF47F2CD1D7A38 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1A5889E3D8C2CD69A3AB091A69042325 /* Info.plist */,
-				3990D9C403C7E4201EFACA3471BA9E9B /* SimulatorStatusMagic.modulemap */,
-				8D9154DE300B76EFE86D4372344BF7AB /* SimulatorStatusMagic.xcconfig */,
-				88302E8C559E29E4274BE9837DA251A8 /* SimulatorStatusMagic-dummy.m */,
-				8CD2B7EE0D7BF73B0E9EE24DDB35A13A /* SimulatorStatusMagic-prefix.pch */,
-				E6B7C4A7FB00AA532700953F29A8FA34 /* SimulatorStatusMagic-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SimulatorStatusMagic";
-			sourceTree = "<group>";
-		};
-		745BE1B5FED382AB4AE0AD0797D24C34 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4A5F4B5823C28D4671FABFF92E755DC0 /* BBBadgeBarButtonItem */,
-				5304470DE874BEE3CAEB8E211C685404 /* Fabric */,
-				07F327B09B113306D96013EE20AB0A1D /* Kingfisher */,
-				6670313716CC50BBE362210B4687A267 /* Pushwoosh */,
-				582538130F6668221146F427AC377BB4 /* ReachabilitySwift */,
-				951CFB1ACF864E0BCA504F88E9DB9AAD /* SimulatorStatusMagic */,
-				E246EB9A9F000B7E83E2DFB3379BFE46 /* TwitterCore */,
-				794080209F644D1456735E5506E5FC46 /* TwitterKit */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		794080209F644D1456735E5506E5FC46 /* TwitterKit */ = {
-			isa = PBXGroup;
-			children = (
-				9075BA6DC467822F615EAD7A29B530E3 /* Frameworks */,
-				BE4B290C249D6F79D649FF593B366B1F /* Resources */,
-			);
-			name = TwitterKit;
-			path = TwitterKit;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -438,7 +914,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				745BE1B5FED382AB4AE0AD0797D24C34 /* Pods */,
+				0A7037625FBEC6812E9F3FE5343D4E12 /* Pods */,
 				4602731983768196D03649A86B173969 /* Products */,
 				175294733A00755E44A56168499E5D06 /* Targets Support Files */,
 			);
@@ -473,103 +949,96 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		9075BA6DC467822F615EAD7A29B530E3 /* Frameworks */ = {
+		8E3EA7C4B98EDE679FE660BC5CA51481 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				00F1CD4200B6414EC51287C8239238FB /* TwitterKit.framework */,
+				4CACC407A93F76C17A80FD0DF627EFB0 /* Fabric.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		951CFB1ACF864E0BCA504F88E9DB9AAD /* SimulatorStatusMagic */ = {
+		A225DB5F74A556C87ED7E52F0B8DB6FD /* SimulatorStatusMagic */ = {
 			isa = PBXGroup;
 			children = (
-				961AED9438B1131333530BC9E18CA2BE /* SDStatusBarManager.h */,
-				CED835F07D59DFD4916B0174ABBFF7FE /* SDStatusBarManager.m */,
-				9DCCFC49A8940B4A46D459B879E6197E /* SDStatusBarOverrider.h */,
-				6DC59A3DA5E61265BFEF544E3AFF26F1 /* SDStatusBarOverriderPost10_0.h */,
-				BEA3F12B6995B89C5433669026DE6BAB /* SDStatusBarOverriderPost10_0.m */,
-				776EB30353F69C450CD20241A8B33670 /* SDStatusBarOverriderPost10_3.h */,
-				B74C0CEA3882C2539F2566ECF08354AB /* SDStatusBarOverriderPost10_3.m */,
-				780E851D9EC1A6CE431781EF1C663DED /* SDStatusBarOverriderPost8_3.h */,
-				0DDFAF4D3E9D88E83C8E735097D8BDBD /* SDStatusBarOverriderPost8_3.m */,
-				9F4464C61985ED5C8D4679A823ED1526 /* SDStatusBarOverriderPost9_0.h */,
-				BF183FA3F5EF6475A26950AB6BD428AA /* SDStatusBarOverriderPost9_0.m */,
-				AE0FBFD5F939C6CF8332729F1F1B611A /* SDStatusBarOverriderPost9_3.h */,
-				EBB75FE1BD4CC2A29A2CFD430BC18971 /* SDStatusBarOverriderPost9_3.m */,
-				034B37C08C6871790A85E192CD2005B1 /* SDStatusBarOverriderPre8_3.h */,
-				052F4C27D8F72E4E2AE877AE47CB14C5 /* SDStatusBarOverriderPre8_3.m */,
-				706514FC31E8B5C23FDF47F2CD1D7A38 /* Support Files */,
+				92B0486C9015279A2DB80078D19D0E7E /* SDStatusBarManager.h */,
+				64708C7C8ECF8A59804197FA4A378F76 /* SDStatusBarManager.m */,
+				5926E4DCEDA5C38D4B588D8622D94938 /* SDStatusBarOverrider.h */,
+				EADFBE607C83F48EEDB2082E0E37D54B /* SDStatusBarOverriderPost10_0.h */,
+				99F238A1C710EC81B9C5319C78318DB9 /* SDStatusBarOverriderPost10_0.m */,
+				AF8A854E244B5D8872B9AF389D574A69 /* SDStatusBarOverriderPost10_3.h */,
+				FA711432AA55EDEB1937E4A90D02C083 /* SDStatusBarOverriderPost10_3.m */,
+				EAA388F7E0BE6367EE23F79EBE8D16A3 /* SDStatusBarOverriderPost8_3.h */,
+				90C65B31CEAEF7785EC3F5C853AD1659 /* SDStatusBarOverriderPost8_3.m */,
+				7FC8244E5B0B15742CA84CDE3AD27EC7 /* SDStatusBarOverriderPost9_0.h */,
+				2BCDE58669EA9F152F7ACDC9583033F4 /* SDStatusBarOverriderPost9_0.m */,
+				A948C84F499FF88FF5D629474F4DE070 /* SDStatusBarOverriderPost9_3.h */,
+				B2F75D9C3805A34D2459D1033BEDF7DB /* SDStatusBarOverriderPost9_3.m */,
+				EDBAB314D1201B6DC3BA922AFBC46D66 /* SDStatusBarOverriderPre8_3.h */,
+				A4B5EDA978B00062FBBF51E91F213FF9 /* SDStatusBarOverriderPre8_3.m */,
+				FEB8DA9D854ADEC95E32617AA3C2EA74 /* Support Files */,
 			);
 			name = SimulatorStatusMagic;
 			path = SimulatorStatusMagic;
 			sourceTree = "<group>";
 		};
-		9E429FA35BA9C75D69452C358E19915B /* Support Files */ = {
+		B4829974C755079A69F055181D79C6A7 /* TwitterKit */ = {
 			isa = PBXGroup;
 			children = (
-				7CBB2C98BE9E30DC337F0F057CDD71FF /* Info.plist */,
-				9DE2A559F215A6FA06C3531C2BE42FC3 /* Kingfisher.modulemap */,
-				77B9E5D7D9E01B0D00A2E941FB0E2A92 /* Kingfisher.xcconfig */,
-				7347E1962A356BA8D21FC19A59F11F53 /* Kingfisher-dummy.m */,
-				E38DDA55D52B2F4173FB78D89C671CAF /* Kingfisher-prefix.pch */,
-				E9B23F8B2D96E4122CB1511FC57F1E6A /* Kingfisher-umbrella.h */,
+				52602B3F8B5F4777C259B2F8D99A3712 /* Frameworks */,
+				BA74B577A141B4D784C929A979C70F16 /* Resources */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Kingfisher";
+			name = TwitterKit;
+			path = TwitterKit;
 			sourceTree = "<group>";
 		};
-		BE4B290C249D6F79D649FF593B366B1F /* Resources */ = {
+		B9E11F1896B405F30E9C46155C9E9B05 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				715694A283AAA68D37858B615BB5C420 /* TwitterKitResources.bundle */,
+				202D5555FD288CB088245F063F24EDE5 /* TwitterCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA74B577A141B4D784C929A979C70F16 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B075D282DD3CEA6A446EE18D48445307 /* TwitterKitResources.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		C320F712F692E5320021167127753D5F /* Support Files */ = {
+		E9CADCC4FE05DE2CC2921D1BC82387B4 /* Fabric */ = {
 			isa = PBXGroup;
 			children = (
-				FE74A7F6C249A9B4D215C2CCB97C78FF /* Info.plist */,
-				72EE4D7433509F86AB4700A553861A90 /* ReachabilitySwift.modulemap */,
-				EFA62ECFE414FEFC5BCCA34A0BCBD3E0 /* ReachabilitySwift.xcconfig */,
-				B7FD2A66D25D84B6DD1DF10C6E9BB3A5 /* ReachabilitySwift-dummy.m */,
-				541730B1FAE630EEF5761672FF9314B4 /* ReachabilitySwift-prefix.pch */,
-				83DB5C1D9B74CD445653B6A466DD38D6 /* ReachabilitySwift-umbrella.h */,
+				59F2373EC8CDB54F25260149DF437C0C /* FABAttributes.h */,
+				B8A327394BB2C861EA33092BF45755D8 /* Fabric.h */,
+				8E3EA7C4B98EDE679FE660BC5CA51481 /* Frameworks */,
+			);
+			name = Fabric;
+			path = Fabric;
+			sourceTree = "<group>";
+		};
+		F1667F81D1C76F23AF382C7780F2359D /* Pushwoosh */ = {
+			isa = PBXGroup;
+			children = (
+				558223516DA2FE464826FE206CDC7761 /* Frameworks */,
+			);
+			name = Pushwoosh;
+			path = Pushwoosh;
+			sourceTree = "<group>";
+		};
+		FEB8DA9D854ADEC95E32617AA3C2EA74 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F0F82ED23EF801BA5835FEF9F0C75AD /* Info.plist */,
+				60398488450019E149C9C4D2BE912DED /* SimulatorStatusMagic.modulemap */,
+				BD50E6ABE402AD33BCF687C5866F4E75 /* SimulatorStatusMagic.xcconfig */,
+				867B7470F2D44852E9475ECEC0F88811 /* SimulatorStatusMagic-dummy.m */,
+				122725D0F838BC72ACF2AF94F89A7DE9 /* SimulatorStatusMagic-prefix.pch */,
+				E2025DB57C707159D3135F47CF319254 /* SimulatorStatusMagic-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/ReachabilitySwift";
-			sourceTree = "<group>";
-		};
-		CD743B7D18AAC5DD3433F32E22B0C428 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				845B126296C953438D1C0D414E803ECF /* BBBadgeBarButtonItem.modulemap */,
-				26AE94D4724F04F9BCA0FFFCC2AA9FF8 /* BBBadgeBarButtonItem.xcconfig */,
-				98F171F3916C7ACB1CCCCD60D31F8637 /* BBBadgeBarButtonItem-dummy.m */,
-				68F1086059613290C29C130B298FFE87 /* BBBadgeBarButtonItem-prefix.pch */,
-				26F2F94188BFA7CAC95F53F0F5A58D54 /* BBBadgeBarButtonItem-umbrella.h */,
-				E65326ABCEA7C49CC972E018495E6398 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/BBBadgeBarButtonItem";
-			sourceTree = "<group>";
-		};
-		E246EB9A9F000B7E83E2DFB3379BFE46 /* TwitterCore */ = {
-			isa = PBXGroup;
-			children = (
-				05BDA81EFE2082A7BB4086DC47855FDA /* Frameworks */,
-			);
-			name = TwitterCore;
-			path = TwitterCore;
-			sourceTree = "<group>";
-		};
-		FDF8733D55E26DAE71D841AC07B06A6E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				051F3DBE272A7BBFC2649F127A4C8DD4 /* Pushwoosh.framework */,
-			);
-			name = Frameworks;
+			path = "../Target Support Files/SimulatorStatusMagic";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -921,7 +1390,7 @@
 		};
 		15F1FB466310C5332ED489E70AA8A86D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D9154DE300B76EFE86D4372344BF7AB /* SimulatorStatusMagic.xcconfig */;
+			baseConfigurationReference = BD50E6ABE402AD33BCF687C5866F4E75 /* SimulatorStatusMagic.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -954,7 +1423,7 @@
 		};
 		20B5F4B4605A7E04AEE71183A359E092 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77B9E5D7D9E01B0D00A2E941FB0E2A92 /* Kingfisher.xcconfig */;
+			baseConfigurationReference = 872D203B7E1A67415F86F97A677C3941 /* Kingfisher.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -988,7 +1457,7 @@
 		};
 		35D48F6322365159A0CAED4258B49D3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26AE94D4724F04F9BCA0FFFCC2AA9FF8 /* BBBadgeBarButtonItem.xcconfig */;
+			baseConfigurationReference = 8DDE19DAD6CE36380CD87F6A75CE601A /* BBBadgeBarButtonItem.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1021,7 +1490,7 @@
 		};
 		3A79DC76A3DC8514EF15F00E393EC8CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D9154DE300B76EFE86D4372344BF7AB /* SimulatorStatusMagic.xcconfig */;
+			baseConfigurationReference = BD50E6ABE402AD33BCF687C5866F4E75 /* SimulatorStatusMagic.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1098,7 +1567,7 @@
 		};
 		6B5AD1DD8D6DBFD6B230EB684A24C1B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFA62ECFE414FEFC5BCCA34A0BCBD3E0 /* ReachabilitySwift.xcconfig */;
+			baseConfigurationReference = 717EBD84F458E94C13B58665B0A1FFB3 /* ReachabilitySwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1208,7 +1677,7 @@
 		};
 		A794525992F2457D34942D108D9E942A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77B9E5D7D9E01B0D00A2E941FB0E2A92 /* Kingfisher.xcconfig */;
+			baseConfigurationReference = 872D203B7E1A67415F86F97A677C3941 /* Kingfisher.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1243,7 +1712,7 @@
 		};
 		AFF35C6B4344CBD78316F4CC79AB7B17 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26AE94D4724F04F9BCA0FFFCC2AA9FF8 /* BBBadgeBarButtonItem.xcconfig */;
+			baseConfigurationReference = 8DDE19DAD6CE36380CD87F6A75CE601A /* BBBadgeBarButtonItem.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1276,7 +1745,7 @@
 		};
 		B79D23562D665CB9354B6236C99EF4D7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFA62ECFE414FEFC5BCCA34A0BCBD3E0 /* ReachabilitySwift.xcconfig */;
+			baseConfigurationReference = 717EBD84F458E94C13B58665B0A1FFB3 /* ReachabilitySwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
