@@ -21,22 +21,31 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         return manager
     }()
     
-    let nmf = CLLocation(latitude: 39.441032, longitude: -82.218418)
+    let nmf = CLLocation(latitude: 39.441332, longitude: -82.218652)
     let tileOverlay = TileOverlay(urlTemplate: Bundle.main.bundleURL.absoluteString + "mapdata/{z}/{x}/{y}.png")
     
     @IBOutlet var mapView: MKMapView!
     @IBOutlet weak var currentLocationButton: UIButton!
+    @IBOutlet weak var singleTapLegendRecognizer: UITapGestureRecognizer!
     
     
     override func viewDidLoad() {
         // 2.17 miles = 3500 meters
-        let region = MKCoordinateRegionMakeWithDistance(nmf.coordinate, 275.0, 275.0)
+        let region = MKCoordinateRegionMakeWithDistance(nmf.coordinate, 310.0, 310.0)
         
         mapView.setRegion(region, animated: true)
         
         tileOverlay.canReplaceMapContent = false
         mapView.insert(tileOverlay, at: 0, level: .aboveRoads)
-    }
+        
+        
+        let doubleTap = UITapGestureRecognizer(target: self, action: nil)
+        doubleTap.numberOfTapsRequired = 2
+        doubleTap.numberOfTouchesRequired = 1
+        mapView.addGestureRecognizer(doubleTap)
+        
+        singleTapLegendRecognizer.require(toFail: doubleTap)
+    t}
     
     override func viewWillAppear(_ animated: Bool) {
         // location manager
@@ -101,7 +110,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
     @IBAction func nmfButtonAction(_ sender: AnyObject) {
-        let region = MKCoordinateRegionMakeWithDistance(nmf.coordinate, 300.0, 300.0)
+        let region = MKCoordinateRegionMakeWithDistance(nmf.coordinate, 310.0, 310.0)
         
         mapView.setRegion(region, animated: true)
     }
