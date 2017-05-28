@@ -125,6 +125,13 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             
             mapItem.openInMaps(launchOptions: launchOptions)
         }))
+
+        if (UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!)) {
+            alertController.addAction(UIAlertAction(title: "Open in Google Maps", style: .default, handler: { (action) in
+                UIApplication.shared.openURL(NSURL(string:
+                    "comgooglemaps://?saddr=&daddr=\(Float(self.nmf.coordinate.latitude)),\(Float(self.nmf.coordinate.longitude))&directionsmode=driving")! as URL)
+            }))
+        }
         
         alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action) in
             self.dismiss(animated: true, completion: nil)
@@ -132,7 +139,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
          present(alertController, animated: true, completion: nil)
     }
-    
     
     
     // MARK: - MapKit delegate methods
