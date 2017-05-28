@@ -77,7 +77,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
  
-        for scheduleCell in tableView.visibleCells as! [ScheduleTableViewCell] {
+        for scheduleCell in tableView.visibleCells.filter({ $0 is ScheduleTableViewCell }) as! [ScheduleTableViewCell] {
             guard let indexPath = tableView.indexPath(for: scheduleCell) else {
                 return
             }
@@ -160,7 +160,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if tableView.numberOfSections == 1 {
+        if searchController.isActive {
             return "Results"
         }
         
@@ -174,7 +174,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         case 3:
             return "Sunday"
         default:
-            return "Error"
+            return "Unknown Day"
         }
     }
     
@@ -182,17 +182,16 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         if searchController.isActive && searchController.searchBar.text != "" {
             return filteredScheduleItems.count
         }
-        
-        return scheduleItems[section].count
+
+        if scheduleItems[section].count > 0 {
+            return scheduleItems[section].count
+        }
+
+        return 1
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ScheduleCell", for: indexPath)
-        
-        guard let scheduleCell = cell as? ScheduleTableViewCell else {
-            return cell
-        }
-        
+
         var scheduleItem: Schedule? = nil
         
         if searchController.isActive && searchController.searchBar.text != "" {
@@ -202,6 +201,12 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         }
         
         if let foundScheduleItem = scheduleItem {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ScheduleCell", for: indexPath)
+
+            guard let scheduleCell = cell as? ScheduleTableViewCell else {
+                return cell
+            }
+
             let finalStartTime = foundScheduleItem.timeString()
             
             // Configure the cell...
@@ -223,9 +228,13 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
             }
             
             scheduleCell.starButton.isSelected = foundScheduleItem.starred
+
+            return scheduleCell
         }
-        
-        return scheduleCell
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NoStarsCells", for: indexPath)
+
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
@@ -335,6 +344,12 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         if let foundScheduleItem = scheduleItem {
             sender.isSelected = !sender.isSelected
             foundScheduleItem.starred = sender.isSelected
+
+            if sender.isSelected {
+                LocalNotificationController.shared.scheduleNotification(for: foundScheduleItem)
+            } else {
+                LocalNotificationController.shared.clearNotification(for: foundScheduleItem)
+            }
         }
     }
     
@@ -342,7 +357,6 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         // Create an API client and data source to fetch Tweets for the timeline
         let client = TWTRAPIClient()
         
-        //TODO: Replace with your collection id or a different data source
         let searchQuery = "from:nelsonvillefest"
         
         let dataSource = TWTRSearchTimelineDataSource(searchQuery: searchQuery, apiClient: client)
@@ -363,9 +377,12 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         if let button = navigationItem.leftBarButtonItem as? BBBadgeBarButtonItem {
             button.badgeValue = nil
         }
-        
-        
+
         showDetailViewController(navigationController, sender: self)
+    }
+
+    @IBAction func localShowNotifications(_ sender: UISwitch) {
+        LocalNotificationController.shared.notificationsEnabled = sender.isOn
     }
 
     @objc func dismissTimeline() {

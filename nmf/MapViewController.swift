@@ -45,7 +45,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         mapView.addGestureRecognizer(doubleTap)
         
         singleTapLegendRecognizer.require(toFail: doubleTap)
-    t}
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         // location manager

@@ -32,6 +32,7 @@
 		B588B0D81CFDDEF200C4C3CF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B588B0D71CFDDEF200C4C3CF /* AVFoundation.framework */; };
 		B588B0DA1CFDDF0800C4C3CF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B588B0D91CFDDF0800C4C3CF /* AudioToolbox.framework */; };
 		B588B0DF1CFDF70400C4C3CF /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B588B0DE1CFDF70400C4C3CF /* libstdc++.tbd */; };
+		B5937A8F1EDB70B300904988 /* LocalNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5937A8E1EDB70B300904988 /* LocalNotificationController.swift */; };
 		B59B0DEC1CF8AD7200B38F5A /* UIColor+NMF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B0DEB1CF8AD7200B38F5A /* UIColor+NMF.swift */; };
 		B5A5340C1CF910BE005BAF8E /* StackWidthLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5340B1CF910BE005BAF8E /* StackWidthLabel.swift */; };
 		B5A5340E1CFAB39D005BAF8E /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5A5340D1CFAB39D005BAF8E /* Montserrat-Regular.otf */; };
@@ -85,6 +86,7 @@
 		B588B0D91CFDDF0800C4C3CF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B588B0DD1CFDF62800C4C3CF /* NMF-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NMF-Bridging-Header.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		B588B0DE1CFDF70400C4C3CF /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		B5937A8E1EDB70B300904988 /* LocalNotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationController.swift; sourceTree = "<group>"; };
 		B59B0DEB1CF8AD7200B38F5A /* UIColor+NMF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+NMF.swift"; sourceTree = "<group>"; };
 		B5A5340B1CF910BE005BAF8E /* StackWidthLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackWidthLabel.swift; sourceTree = "<group>"; };
 		B5A5340D1CFAB39D005BAF8E /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				A527604F1CB415B3003B62AD /* ScheduleTableViewController.swift */,
 				B5A5340F1CFAB683005BAF8E /* MapViewController.swift */,
 				B5026C9E1CFC48EA009F1877 /* InfoViewController.swift */,
+				B5937A8E1EDB70B300904988 /* LocalNotificationController.swift */,
 				B5026C9B1CFC2B7A009F1877 /* Views */,
 				B5026C971CFBDDE7009F1877 /* Data Model */,
 				B59B0DEA1CF8AD4200B38F5A /* Extensions */,
@@ -488,6 +491,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5937A8F1EDB70B300904988 /* LocalNotificationController.swift in Sources */,
 				A52B2FED1CC18ABD00F05700 /* DataStore.swift in Sources */,
 				A5DEE7011CB553C100704688 /* Schedule.swift in Sources */,
 				A5E8382E1CB84D060077D92D /* ScheduleTableViewCell.swift in Sources */,
