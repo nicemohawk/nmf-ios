@@ -17,7 +17,9 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
     
     var scheduleItems = [[Schedule](),[Schedule](), [Schedule](), [Schedule]()]
     var filteredScheduleItems = [Schedule]()
-    
+
+
+    @IBOutlet weak var localNotificationsSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,12 +73,13 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
 //        if let button = navigationItem.leftBarButtonItem as? BBBadgeBarButtonItem {
 //            button.badgeValue = "?"
 //        }
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
- 
+
+        localNotificationsSwitch.isOn = LocalNotificationController.shared.notificationsEnabled
+
         for scheduleCell in tableView.visibleCells.filter({ $0 is ScheduleTableViewCell }) as! [ScheduleTableViewCell] {
             guard let indexPath = tableView.indexPath(for: scheduleCell) else {
                 return
@@ -98,6 +101,8 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         if let indexPath = tableView.indexPathForSelectedRow {
             tableView.deselectRow(at: indexPath, animated: animated)
         }
+
+        
     }
     
     // FIXME?
