@@ -77,11 +77,12 @@ class LocalNotificationController {
         if let fireDate = item.starttime, fireDate > Date(), let objectId = item.objectId {
             let notification = UILocalNotification()
             notification.fireDate = fireDate
+            notification.soundName = UILocalNotificationDefaultSoundName
 
             notification.userInfo = ["objectId": objectId]
 
             if let stage = item.stage {
-                notification.alertBody = "\(item.artist ?? "One of your starred artists") is starting soon on the \(stage)!"
+                notification.alertBody = "\(item.artist ?? "One of your starred artists") is starting soon at the \(stage)!"
             } else {
                 notification.alertBody = "\(item.artist ?? "One of your starred artists") is starting soon!"
             }

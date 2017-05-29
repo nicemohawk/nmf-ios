@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>NMF2</title>
+<title>nmf-map</title>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <style type="text/css">
 html { overflow: hidden; }
@@ -32,8 +32,8 @@ body { background: #f4f4f4;}
 <script type="text/javascript">
 var map;
 var mapBounds = new google.maps.LatLngBounds(
-    new google.maps.LatLng(39.437465, -82.228093),
-    new google.maps.LatLng(39.449105, -82.210879));
+    new google.maps.LatLng(39.437428, -82.228107),
+    new google.maps.LatLng(39.449157, -82.211032));
 var mapMinZoom = 14;
 var mapMaxZoom = 19;
 var maptiler = new google.maps.ImageMapType({
@@ -62,7 +62,7 @@ function init() {
     var opts = {
         tilt:0,
         streetViewControl: false,
-        center: new google.maps.LatLng(39.443285, -82.219486),
+        center: new google.maps.LatLng(39.443293, -82.219569),
         zoom: 14
     };
 	map = new google.maps.Map(document.getElementById("map"), opts);

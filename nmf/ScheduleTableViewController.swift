@@ -20,6 +20,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
 
 
     @IBOutlet weak var localNotificationsSwitch: UISwitch!
+    @IBOutlet weak var localNotificationsLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -130,7 +131,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         }
         
         var lastPath = IndexPath(row: 0, section: 0)
-        let oneHourAgo = Date(timeIntervalSinceNow: -(1*60*60)) // NSDate(timeIntervalSinceNow: (2*24-6)*60*60) // test by adding 4 days
+        let oneHourAgo = Date(timeIntervalSinceNow: -(1*60*60)) /*Date(timeIntervalSinceNow: (6*24-6)*60*60) */ // test by adding 4 days
         
         for (section, sectionArray) in scheduleItems.enumerated().reversed() {
             for (row, scheduleItem) in sectionArray.enumerated().reversed() {
@@ -233,6 +234,11 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
             }
             
             scheduleCell.starButton.isSelected = foundScheduleItem.starred
+
+            if foundScheduleItem.stage == nil {
+                scheduleCell.starButton.isHidden = true
+                scheduleCell.centerStartTime()
+            }
 
             return scheduleCell
         }

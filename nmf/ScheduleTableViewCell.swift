@@ -15,4 +15,25 @@ class ScheduleTableViewCell: UITableViewCell {
     @IBOutlet weak var stage: UILabel!
     
     @IBOutlet weak var starButton: UIButton!
+
+    @IBOutlet var startTimeBottomConstraint: NSLayoutConstraint!
+    @IBOutlet var startTimeVerticalCenterConstraint: NSLayoutConstraint!
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+
+        starButton.isHidden = false
+        stage.isHidden = false
+
+        startTimeBottomConstraint.priority = 999
+        startTimeVerticalCenterConstraint.priority = 1
+    }
+
+    func centerStartTime() {
+        startTimeBottomConstraint.priority = 1
+        startTimeVerticalCenterConstraint.priority = 999
+
+        startTime.superview?.setNeedsUpdateConstraints()
+    }
 }
+

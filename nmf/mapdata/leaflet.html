@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>NMF2</title>
+  <title>nmf-map</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="stylesheet" href="http://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
   <script src="http://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
@@ -9,8 +9,8 @@
       var layer;
     function init() {
         var bounds = new L.LatLngBounds(
-            new L.LatLng(39.437465, -82.228093),
-            new L.LatLng(39.449105, -82.210879));
+            new L.LatLng(39.437428, -82.228107),
+            new L.LatLng(39.449157, -82.211032));
         var map = L.map('map').fitBounds(bounds);
         L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
         var options = {
