@@ -330,7 +330,7 @@
                 <navigationController title="Schedule" automaticallyAdjustsScrollViewInsets="NO" id="YZF-I4-Eoh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Schedule" image="star-empty" selectedImage="star" id="4FE-uj-GwA"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="w5X-nF-pua">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w5X-nF-pua">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.97647058819999999" green="0.96862745100000003" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -764,7 +764,7 @@ Thank you for your cooperation in helping keep NMF safe.</mutableString>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aGB-n2-IoV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="map" id="d2q-58-0rS"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qLL-sU-WrV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qLL-sU-WrV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.84313726425170898" green="0.27058824896812439" blue="0.26274511218070984" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -784,7 +784,7 @@ Thank you for your cooperation in helping keep NMF safe.</mutableString>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cjc-ZM-mQf" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Info" image="info-sign" id="acu-yv-jIP"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Nk3-qB-46S">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nk3-qB-46S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.84313726430000002" green="0.270588249" blue="0.26274511220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
