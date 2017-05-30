@@ -38,6 +38,7 @@ class DataStore: NSObject {
     
     func updateScheduleItems(_ completion: @escaping (Error?) -> Void) -> Void {
         let backendless = Backendless.sharedInstance()
+
         let dataStore = backendless!.data.of(Schedule.ofClass())
         
         dataStore?.find({ (scheduleItemsCollection) in
@@ -46,6 +47,19 @@ class DataStore: NSObject {
             if let items = scheduleItemsCollection?.data as? [Schedule] {
                 self.mergeScheduleItems(items)
             }
+
+            //FIXME: hack that only gets up to 200 schedule items
+            scheduleItemsCollection?.nextPageAsync({ (page2) in
+                if let items = page2?.getCurrentPage() as? [Schedule] {
+                    self.mergeScheduleItems(items)
+                }
+
+                completion(nil)
+            }, error: { (fault) in
+                print(fault ?? "Unable to print fault")
+
+                completion(fault)
+            })
             
             completion(nil)
         }, error: { (fault) in
