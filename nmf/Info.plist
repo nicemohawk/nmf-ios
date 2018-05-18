@@ -20,11 +20,6 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>Fabric</key>
-	<dict>
-		<key>APIKey</key>
-		<string>280fcf8df6cca9651ad15f25aade9b92ff5928ef</string>
-	</dict>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>youtube</string>

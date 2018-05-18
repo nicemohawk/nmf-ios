@@ -53,7 +53,7 @@ class LocalNotificationController {
         UIApplication.shared.cancelAllLocalNotifications()
     }
 
-    func scheduleNotification(for item: Schedule) {
+    func scheduleNotification(for item: ScheduleItem) {
         guard notificationsEnabled else { return }
 
         if let notification = localNotification(for: item) {
@@ -61,7 +61,7 @@ class LocalNotificationController {
         }
     }
 
-    func clearNotification(for item: Schedule) {
+    func clearNotification(for item: ScheduleItem) {
         guard let scheduledNotifications = UIApplication.shared.scheduledLocalNotifications else { return }
 
         for notification in scheduledNotifications {
@@ -71,10 +71,10 @@ class LocalNotificationController {
         }
     }
 
-    func localNotification(for item:Schedule) -> UILocalNotification? {
+    func localNotification(for item:ScheduleItem) -> UILocalNotification? {
         guard item.starred else { print("\(item) is not starred! Not creating notification."); return nil }
 
-        if let fireDate = item.starttime, fireDate > Date(), let objectId = item.objectId {
+        if let fireDate = item.startTime, fireDate > Date(), let objectId = item.objectId {
             let notification = UILocalNotification()
             notification.fireDate = fireDate
             notification.soundName = UILocalNotificationDefaultSoundName
@@ -82,9 +82,9 @@ class LocalNotificationController {
             notification.userInfo = ["objectId": objectId]
 
             if let stage = item.stage {
-                notification.alertBody = "\(item.artist ?? "One of your starred artists") is starting soon at the \(stage)!"
+                notification.alertBody = "\(item.artistName ?? "One of your starred artists") is starting soon at the \(stage)!"
             } else {
-                notification.alertBody = "\(item.artist ?? "One of your starred artists") is starting soon!"
+                notification.alertBody = "\(item.artistName ?? "One of your starred artists") is starting soon!"
             }
 
             return notification

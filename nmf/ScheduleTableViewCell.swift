@@ -25,13 +25,13 @@ class ScheduleTableViewCell: UITableViewCell {
         starButton.isHidden = false
         stage.isHidden = false
 
-        startTimeBottomConstraint.priority = 999
-        startTimeVerticalCenterConstraint.priority = 1
+        startTimeBottomConstraint.priority = UILayoutPriority(rawValue: 999)
+        startTimeVerticalCenterConstraint.priority = UILayoutPriority(rawValue: 1)
     }
 
     func centerStartTime() {
-        startTimeBottomConstraint.priority = 1
-        startTimeVerticalCenterConstraint.priority = 999
+        startTimeBottomConstraint.priority = UILayoutPriority(rawValue: 1)
+        startTimeVerticalCenterConstraint.priority = UILayoutPriority(rawValue: 999)
 
         startTime.superview?.setNeedsUpdateConstraints()
     }

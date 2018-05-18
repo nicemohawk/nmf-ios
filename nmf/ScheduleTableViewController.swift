@@ -15,8 +15,8 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
 
     var searchController = UISearchController(searchResultsController: nil)
     
-    var scheduleItems = [[Schedule](),[Schedule](), [Schedule](), [Schedule]()]
-    var filteredScheduleItems = [Schedule]()
+    var scheduleItems = [[ScheduleItem](),[ScheduleItem](), [ScheduleItem](), [ScheduleItem]()]
+    var filteredScheduleItems = [ScheduleItem]()
 
 
     @IBOutlet weak var localNotificationsSwitch: UISwitch!
@@ -86,7 +86,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
                 return
             }
             
-            var scheduleItem: Schedule? = nil
+            var scheduleItem: ScheduleItem? = nil
             
             if searchController.isActive && searchController.searchBar.text != "" {
                 scheduleItem = filteredScheduleItems[indexPath.row]
@@ -137,7 +137,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
             for (row, scheduleItem) in sectionArray.enumerated().reversed() {
                 let indexPath = IndexPath(row: row, section: section)
                 
-                if let time = scheduleItem.starttime, time > oneHourAgo {
+                if let time = scheduleItem.startTime, time > oneHourAgo {
                     lastPath = indexPath
                     continue
                 }
@@ -198,7 +198,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        var scheduleItem: Schedule? = nil
+        var scheduleItem: ScheduleItem? = nil
         
         if searchController.isActive && searchController.searchBar.text != "" {
             scheduleItem = filteredScheduleItems[indexPath.row]
@@ -216,13 +216,13 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
             let finalStartTime = foundScheduleItem.timeString()
             
             // Configure the cell...
-            scheduleCell.artist.text = foundScheduleItem.artist
+            scheduleCell.artist.text = foundScheduleItem.artistName
             scheduleCell.stage.text = foundScheduleItem.stage
             
             let oneHourAgo = Date(timeIntervalSinceNow: -(1*60*60))
             let fifteenMinutesFromNow = Date(timeIntervalSinceNow:15*60)
              
-            if let showTime = foundScheduleItem.starttime,
+            if let showTime = foundScheduleItem.startTime,
                 showTime < fifteenMinutesFromNow, showTime > oneHourAgo {
                 scheduleCell.startTime.text = "Now"
                 scheduleCell.startTime.font = UIFont.boldSystemFont(ofSize: UIFont.labelFontSize)
@@ -256,7 +256,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
     }
     
     override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-        var scheduleItem: Schedule? = nil
+        var scheduleItem: ScheduleItem? = nil
         
         if searchController.isActive && searchController.searchBar.text != "" {
             scheduleItem = filteredScheduleItems[indexPath.row]
@@ -270,7 +270,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
                 return nil
             }
 
-            guard let artistName = scheduleItem?.artist,
+            guard let artistName = scheduleItem?.artistName,
                 DataStore.sharedInstance.artistItems.filter({$0.artistName == artistName}).count > 0 else {
                 return nil
             }
@@ -292,20 +292,20 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         }
         
         var artistName: String? = nil
-        var scheduleItemsForArtist = [Schedule]()
+        var scheduleItemsForArtist = [ScheduleItem]()
         
         if searchController.isActive {
-            artistName = filteredScheduleItems[indexPath.row].artist
+            artistName = filteredScheduleItems[indexPath.row].artistName
             
         } else {
             if scheduleItems.count > indexPath.section && scheduleItems[indexPath.section].count > indexPath.row {
-                artistName = scheduleItems[indexPath.section][indexPath.row].artist
+                artistName = scheduleItems[indexPath.section][indexPath.row].artistName
             }
         }
         
         if let artistName = artistName {
             scheduleItemsForArtist = DataStore.sharedInstance.scheduleItems.filter({ (item) -> Bool in
-                if let name = item.artist, name == artistName {
+                if let name = item.artistName, name == artistName {
                     return true
                 }
                 
@@ -344,7 +344,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
             return
         }
         
-        var scheduleItem: Schedule? = nil
+        var scheduleItem: ScheduleItem? = nil
         
         if searchController.isActive && searchController.searchBar.text != "" {
             scheduleItem = filteredScheduleItems[indexPath.row]
@@ -407,29 +407,29 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         if let searchText = searchController.searchBar.text, searchText != "" {
             filteredScheduleItems = filterScheduleItemsWithText(searchText)
         } else {
-            filteredScheduleItems = [Schedule]()
+            filteredScheduleItems = [ScheduleItem]()
         }
         
         tableView.reloadData()
     }
     
-    func filterScheduleItemsWithText(_ text: String) -> [Schedule] {
-        return DataStore.sharedInstance.scheduleItems.filter({ (item: Schedule) -> Bool in
-            let containsString = (item.artist?.localizedStandardRange(of: text) != nil)
+    func filterScheduleItemsWithText(_ text: String) -> [ScheduleItem] {
+        return DataStore.sharedInstance.scheduleItems.filter({ (item: ScheduleItem) -> Bool in
+            let containsString = (item.artistName?.localizedStandardRange(of: text) != nil)
             
             return containsString
         })
     }
     
     func sortScheduleItems(starredOnly: Bool) {
-        var thursdayShows = [Schedule](), fridayShows = [Schedule](), saturdayShows = [Schedule](), sundayShows = [Schedule]()
+        var thursdayShows = [ScheduleItem](), fridayShows = [ScheduleItem](), saturdayShows = [ScheduleItem](), sundayShows = [ScheduleItem]()
         
         for item in DataStore.sharedInstance.scheduleItems {
             if starredOnly && item.starred == false {
                 continue
             }
             
-            if let time = item.starttime, let weekday = Calendar.current.dateComponents([.weekday], from: time).weekday {
+            if let time = item.startTime, let weekday = Calendar.current.dateComponents([.weekday], from: time).weekday {
                 switch weekday {
                 case 5: // Thursday
                     thursdayShows.append(item)
@@ -445,7 +445,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
             }
         }
         
-        let timeSort: (Schedule, Schedule) -> Bool = { $0.starttime?.compare($1.starttime ?? Date.distantFuture) != .orderedDescending }
+        let timeSort: (ScheduleItem, ScheduleItem) -> Bool = { $0.startTime?.compare($1.startTime ?? Date.distantFuture) != .orderedDescending }
         
         thursdayShows.sort(by: timeSort)
         fridayShows.sort(by: timeSort)

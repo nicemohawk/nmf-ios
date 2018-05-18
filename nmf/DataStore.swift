@@ -17,12 +17,12 @@ extension Fault : Error {
 class DataStore: NSObject {
     static let archiveURL = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
     
-    lazy var scheduleItems: [Schedule] = {
-        return NSKeyedUnarchiver.unarchiveObject(withFile: archiveURL.appendingPathComponent("schedule").path) as? [Schedule] ?? [Schedule]()
+    lazy var scheduleItems: [ScheduleItem] = {
+        return NSKeyedUnarchiver.unarchiveObject(withFile: DataStore.archiveURL.appendingPathComponent("schedule").path) as? [ScheduleItem] ?? [ScheduleItem]()
     }()
     
-    lazy var artistItems: [Artists] = {
-        return NSKeyedUnarchiver.unarchiveObject(withFile: archiveURL.appendingPathComponent("artists").path) as? [Artists] ?? [Artists]()
+    lazy var artistItems: [Artist] = {
+        return NSKeyedUnarchiver.unarchiveObject(withFile: DataStore.archiveURL.appendingPathComponent("artists").path) as? [Artist] ?? [Artist]()
     }()
     
     class var sharedInstance: DataStore {
@@ -37,46 +37,49 @@ class DataStore: NSObject {
     }
     
     func updateScheduleItems(_ completion: @escaping (Error?) -> Void) -> Void {
-        let backendless = Backendless.sharedInstance()
+        guard let backendless = Backendless.sharedInstance() else {
+            return
+        }
 
-        let dataStore = backendless!.data.of(Schedule.ofClass())
-        
-        dataStore?.find({ (scheduleItemsCollection) in
-            self.removeOldItems()
-            
-            if let items = scheduleItemsCollection?.data as? [Schedule] {
-                self.mergeScheduleItems(items)
-            }
+        func pageAllData(queryBuilder: DataQueryBuilder) {
+            backendless.data.of(ScheduleItem.self).find(
+                queryBuilder,
+                response: { (scheduleItemsCollection: [Any]?) in
+                    if scheduleItemsCollection?.count != 0 {
+                        if let items = scheduleItemsCollection as? [ScheduleItem] {
+                            self.mergeScheduleItems(items)
+                        }
 
-            //FIXME: hack that only gets up to 200 schedule items
-            scheduleItemsCollection?.nextPageAsync({ (page2) in
-                if let items = page2?.getCurrentPage() as? [Schedule] {
-                    self.mergeScheduleItems(items)
-                }
-
-                completion(nil)
+                        pageAllData(queryBuilder: queryBuilder.prepareNextPage())
+                    } else {
+                        // finished paging results
+                        completion(nil)
+                    }
             }, error: { (fault) in
                 print(fault ?? "Unable to print fault")
 
                 completion(fault)
             })
-            
-            completion(nil)
-        }, error: { (fault) in
-            print(fault ?? "Unable to print fault")
-            
-            completion(fault)
-        })
+        }
+
+        self.removeOldItems()
+
+        pageAllData(queryBuilder: DataQueryBuilder())
     }
     
     func updateArtistItems(_ completion:  @escaping (Error?) -> Void) -> Void {
-        let backendless = Backendless.sharedInstance()
-        let dataStore = backendless?.data.of(Artists.ofClass())
-        
-        dataStore?.find({ (artistsItemsCollection) in
-            if let artists = artistsItemsCollection?.data as? [Artists] {
-                self.mergeArtists(artists)
+        guard let backendless = Backendless.sharedInstance() else {
+            return
+        }
+
+        backendless.data.of(Artist.self).find({ (artistsItemsCollection: [Any]?) in
+            guard let artists = artistsItemsCollection as? [Artist] else {
+                print("unable to convert artistsItemsCollection to Artist array")
+                
+                return
             }
+
+            self.mergeArtists(artists)
             
             completion(nil)
         }, error: { (fault) in
@@ -86,40 +89,41 @@ class DataStore: NSObject {
         })
     }
     
-    func getArtistByName(_ artistName: String, completion: @escaping (Artists?, Error?) -> Void) -> Void {
-        let backendless = Backendless.sharedInstance()
-        let dataStore = backendless?.data.of(Artists.ofClass())
-        
-        let artistsQuery = BackendlessDataQuery()
-        artistsQuery.whereClause = "ArtistName = '\(artistName)'"
-        
-        dataStore?.find(artistsQuery, response: { (artistsItemsCollection) in
-            let foundArtist = artistsItemsCollection?.data.first as? Artists
+    func getArtistByName(_ artistName: String, completion: @escaping (Artist?, Error?) -> Void) -> Void {
+        guard let backendless = Backendless.sharedInstance() else {
+            return
+        }
+
+        let artistsQueryBuilder = DataQueryBuilder()!
+        artistsQueryBuilder.setWhereClause("ArtistName = '\(artistName)'")
+
+        backendless.data.of(Artist.self).find(artistsQueryBuilder, response: { (artistsItemsCollection: [Any]?) in
+            let foundArtist = artistsItemsCollection?.first as? Artist
             
             completion(foundArtist, nil)
-        }) { (fault) in
+        }, error: { (fault) in
             self.artistItems = []
             print(fault ?? "Unable to print fault")
             
             completion(nil, fault)
-        }
+        })
     }
     
     func removeOldItems() {
         let currentYear = Calendar.current.component(.year, from: Date())
         
-        var itemsToRemove = [Schedule]()
+        var itemsToRemove = [ScheduleItem]()
         
         for item in scheduleItems {
-            if let date = item.starttime, Calendar.current.component(.year, from: date) < currentYear {
+            if let date = item.startTime, Calendar.current.component(.year, from: date) < currentYear {
                 itemsToRemove.append(item)
             }
         }
-        
+
         scheduleItems = scheduleItems.filter { itemsToRemove.contains($0) == false }
     }
     
-    func mergeScheduleItems(_ newItems: [Schedule]) {
+    func mergeScheduleItems(_ newItems: [ScheduleItem]) {
         for newItem in newItems {
             var foundItem = false
             
@@ -137,7 +141,7 @@ class DataStore: NSObject {
     }
     
     
-    func mergeArtists(_ newArtists: [Artists]) {
+    func mergeArtists(_ newArtists: [Artist]) {
         for newArtist in newArtists  {
             var foundItem = false
 

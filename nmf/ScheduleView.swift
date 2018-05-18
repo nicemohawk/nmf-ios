@@ -14,5 +14,5 @@ class ScheduleView: UIView {
     @IBOutlet weak var stage: UILabel!
     @IBOutlet weak var starButton: UIButton!
 
-    weak var scheduleTime: Schedule?
+    weak var scheduleTime: ScheduleItem?
 }

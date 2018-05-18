@@ -8,6 +8,7 @@
 
 import UIKit
 import Contacts
+import MapKit
 
 
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {

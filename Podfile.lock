@@ -1,38 +1,45 @@
 PODS:
-  - Backendless (3.0.46)
+  - Backendless (4.5.0)
   - BBBadgeBarButtonItem (1.2)
-  - Fabric (1.6.11)
-  - Kingfisher (3.7.1)
-  - Pushwoosh (5.1.6)
-  - ReachabilitySwift (3)
-  - SimulatorStatusMagic (1.9.4)
-  - TwitterCore (2.8.0):
-    - Fabric
-  - TwitterKit (2.8.1):
-    - TwitterCore (>= 2.8)
+  - Kingfisher (4.8.0)
+  - Pushwoosh (5.7.1)
+  - ReachabilitySwift (4.1.0)
+  - SimulatorStatusMagic (2.1)
+  - TwitterCore (3.0.3)
+  - TwitterKit (3.2.2):
+    - TwitterCore (>= 3.0.3)
 
 DEPENDENCIES:
-  - Backendless (~> 3.0)
+  - Backendless (~> 4.0)
   - BBBadgeBarButtonItem
-  - Fabric
-  - Kingfisher (~> 3.0)
+  - Kingfisher (~> 4.0)
   - Pushwoosh
-  - ReachabilitySwift (~> 3)
+  - ReachabilitySwift (~> 4.0)
   - SimulatorStatusMagic
-  - TwitterCore
-  - TwitterKit
+  - TwitterCore (= 3.0.3)
+  - TwitterKit (= 3.2.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Backendless
+    - BBBadgeBarButtonItem
+    - Kingfisher
+    - Pushwoosh
+    - ReachabilitySwift
+    - SimulatorStatusMagic
+    - TwitterCore
+    - TwitterKit
 
 SPEC CHECKSUMS:
-  Backendless: 0045a3190b8eefff3d3d25d75e206906bcc585d8
+  Backendless: ff8d4bcc2ea7ac244f308c592634511dff38df87
   BBBadgeBarButtonItem: c2fbca0bff18e21b70defc9438a8a5048008e7ca
-  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
-  Kingfisher: c09cece8e201b6abd7b6866ea26f73b2379208d2
-  Pushwoosh: 52a2237084d3c9c198638847bf5d7309510086ea
-  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
-  SimulatorStatusMagic: db93f00d164d854cd5ed7b5c75f48fba3b698c20
-  TwitterCore: e959987be23c767004d29eb7fab8d85d8585a2e5
-  TwitterKit: 3b6044a7320340326a4098f3e37aa1dbaeb94942
+  Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
+  Pushwoosh: cdf31f49f8a50d47c1b03b67ad8af1e47250022e
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  SimulatorStatusMagic: 481558caf2b9ccb2ceba2cc193728d4db3dcac07
+  TwitterCore: 549c74ed5f3d6134392dc944c6d215e233e50ad8
+  TwitterKit: b9feccfc70bef86fe389c06a63a72fed9f020b9c
 
-PODFILE CHECKSUM: fc63bf2eac07287916f838f6b3f061630ceb5c88
+PODFILE CHECKSUM: 3fed8e657dd8a09076ae5cc1da124fa99b92d9f0
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.5.2

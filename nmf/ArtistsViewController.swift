@@ -12,8 +12,8 @@ import Kingfisher
 
 
 class ArtistViewController: UIViewController {
-    var artist: Artists?
-    var scheduledTimes: [Schedule]?
+    var artist: Artist?
+    var scheduledTimes: [ScheduleItem]?
     
     @IBOutlet weak var artistName: UILabel!
     @IBOutlet weak var artistBio: UILabel!
@@ -39,14 +39,14 @@ class ArtistViewController: UIViewController {
                 self.artistImageView.kf.setImage(with: imageURL)
             }
 
-            if let urlString = foundArtist.URL,
+            if let urlString = foundArtist.url,
                 let _ = URL(string: urlString) {
                 websiteButton.isEnabled = true
             } else {
                 websiteButton.isEnabled = false
             }
             
-            if let urlString = foundArtist.YouTube,
+            if let urlString = foundArtist.youTube,
                 let _ = URL(string: urlString) {
                 youTubeButton.isEnabled = true
             } else {
@@ -75,7 +75,7 @@ class ArtistViewController: UIViewController {
         
         scheduleStackView.isHidden = false
         
-        for item in times.sorted(by: { $0.starttime?.compare($1.starttime ?? Date.distantFuture) != .orderedDescending }) {
+        for item in times.sorted(by: { $0.startTime?.compare($1.startTime ?? Date.distantFuture) != .orderedDescending }) {
             UINib(data: nibData, bundle: nil).instantiate(withOwner: self, options: nil)
             
             setupScheduleView(scheduleNIBView, scheduledTime: item)
@@ -83,7 +83,7 @@ class ArtistViewController: UIViewController {
         }
     }
     
-    func setupScheduleView(_ scheduleView: ScheduleView, scheduledTime: Schedule) {
+    func setupScheduleView(_ scheduleView: ScheduleView, scheduledTime: ScheduleItem) {
         scheduleView.scheduleTime = scheduledTime
         
         scheduleView.startTime.text = scheduledTime.dateString()
@@ -103,7 +103,7 @@ class ArtistViewController: UIViewController {
             return
         }
         
-        var scheduleItem: Schedule? = nil
+        var scheduleItem: ScheduleItem? = nil
         
         if let scheduledTimes = scheduledTimes, scheduledTimes.count > index {
             scheduleItem = scheduledTimes[index]
@@ -116,7 +116,7 @@ class ArtistViewController: UIViewController {
     }
     
     @IBAction func websiteButtonTapped(_ sender: UIButton) {
-        if let urlString = artist?.URL,
+        if let urlString = artist?.url,
             let websiteURL = URL(string: urlString) {
             let safariVC = SFSafariViewController(url: websiteURL)
             safariVC.delegate = self
@@ -125,7 +125,7 @@ class ArtistViewController: UIViewController {
     }
 
     @IBAction func youtubeButtonTapped(_ sender: UIButton) {
-        if let urlString = artist?.YouTube,
+        if let urlString = artist?.youTube,
             let youTubeURL = URL(string: urlString),
             UIApplication.shared.canOpenURL(youTubeURL) {
             UIApplication.shared.openURL(youTubeURL)

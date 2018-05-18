@@ -16,9 +16,9 @@
 		2C5B8B711C9BAB6C00C6A893 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5B8B701C9BAB6C00C6A893 /* SystemConfiguration.framework */; };
 		A52760501CB415B3003B62AD /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A527604F1CB415B3003B62AD /* ScheduleTableViewController.swift */; };
 		A52B2FED1CC18ABD00F05700 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52B2FEC1CC18ABD00F05700 /* DataStore.swift */; };
-		A53D603A1CAC5B6900B97E49 /* Artists.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53D60391CAC5B6900B97E49 /* Artists.swift */; };
+		A53D603A1CAC5B6900B97E49 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53D60391CAC5B6900B97E49 /* Artist.swift */; };
 		A53F95FD1CC678DA0041EECA /* ArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F95FC1CC678DA0041EECA /* ArtistsViewController.swift */; };
-		A5DEE7011CB553C100704688 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEE7001CB553C100704688 /* Schedule.swift */; };
+		A5DEE7011CB553C100704688 /* ScheduleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEE7001CB553C100704688 /* ScheduleItem.swift */; };
 		A5E8382E1CB84D060077D92D /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E8382D1CB84D060077D92D /* ScheduleTableViewCell.swift */; };
 		B1F8306A3FD046750ED481A7 /* Pods_NMF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86647621087015084AB050 /* Pods_NMF.framework */; };
 		B5026C961CFBB66B009F1877 /* mapdata in Resources */ = {isa = PBXBuildFile; fileRef = B5026C951CFBB66B009F1877 /* mapdata */; };
@@ -68,9 +68,9 @@
 		61C825784B8FC199B4AAEDC9 /* Pods-nmfTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nmfTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nmfTests/Pods-nmfTests.release.xcconfig"; sourceTree = "<group>"; };
 		A527604F1CB415B3003B62AD /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
 		A52B2FEC1CC18ABD00F05700 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DataStore.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		A53D60391CAC5B6900B97E49 /* Artists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Artists.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A53D60391CAC5B6900B97E49 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Artist.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A53F95FC1CC678DA0041EECA /* ArtistsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ArtistsViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		A5DEE7001CB553C100704688 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Schedule.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A5DEE7001CB553C100704688 /* ScheduleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ScheduleItem.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A5E8382D1CB84D060077D92D /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		B5026C951CFBB66B009F1877 /* mapdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mapdata; sourceTree = "<group>"; };
 		B5026C991CFC2A4C009F1877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ScheduleView.xib; sourceTree = "<group>"; };
@@ -191,8 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				A52B2FEC1CC18ABD00F05700 /* DataStore.swift */,
-				A5DEE7001CB553C100704688 /* Schedule.swift */,
-				A53D60391CAC5B6900B97E49 /* Artists.swift */,
+				A5DEE7001CB553C100704688 /* ScheduleItem.swift */,
+				A53D60391CAC5B6900B97E49 /* Artist.swift */,
 			);
 			name = "Data Model";
 			sourceTree = "<group>";
@@ -243,7 +243,6 @@
 				2C5B8B481C9A13E900C6A893 /* Frameworks */,
 				2C5B8B491C9A13E900C6A893 /* Resources */,
 				B588B0CD1CFC508F00C4C3CF /* Update Build Number */,
-				B588B0D01CFDDCC100C4C3CF /* Fabric */,
 				1EA02A8D16B6F0377C729481 /* [CP] Embed Pods Frameworks */,
 				F296660672D6AAB3E697D652 /* [CP] Copy Pods Resources */,
 				B5200C741EC1886D0034091F /* Copy Secrets */,
@@ -265,8 +264,6 @@
 				2C5B8B5D1C9A13E900C6A893 /* Sources */,
 				2C5B8B5E1C9A13E900C6A893 /* Frameworks */,
 				2C5B8B5F1C9A13E900C6A893 /* Resources */,
-				518CBEB74800B7BFC41BCAF2 /* [CP] Embed Pods Frameworks */,
-				BF6FB1D1D214DB952DA8EDA8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -285,13 +282,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Nelsonville Music Festival";
 				TargetAttributes = {
 					2C5B8B4A1C9A13E900C6A893 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = GYV9U8338K;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -304,7 +301,7 @@
 					};
 					2C5B8B601C9A13E900C6A893 = {
 						CreatedOnToolsVersion = 7.2.1;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0920;
 						TestTargetID = 2C5B8B4A1C9A13E900C6A893;
 					};
 				};
@@ -358,28 +355,22 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NMF/Pods-NMF-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BBBadgeBarButtonItem/BBBadgeBarButtonItem.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SimulatorStatusMagic/SimulatorStatusMagic.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BBBadgeBarButtonItem.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimulatorStatusMagic.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NMF/Pods-NMF-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		518CBEB74800B7BFC41BCAF2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nmfTests/Pods-nmfTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A54956588D0C922ABB095B7F /* [CP] Check Pods Manifest.lock */ = {
@@ -388,13 +379,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NMF-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B5200C741EC1886D0034091F /* Copy Secrets */ = {
@@ -425,48 +419,22 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/update_build_number.sh\" master\n";
 		};
-		B588B0D01CFDDCC100C4C3CF /* Fabric */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Fabric;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 280fcf8df6cca9651ad15f25aade9b92ff5928ef 9e9b66e2cdea110c3f1e47563b8cb8fac6fd12a0779d92f366db439d7285e4e5";
-		};
-		BF6FB1D1D214DB952DA8EDA8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nmfTests/Pods-nmfTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DB26E25AA9944C2253F37952 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nmfTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F296660672D6AAB3E697D652 /* [CP] Copy Pods Resources */ = {
@@ -475,9 +443,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NMF/Pods-NMF-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -493,13 +466,13 @@
 			files = (
 				B5937A8F1EDB70B300904988 /* LocalNotificationController.swift in Sources */,
 				A52B2FED1CC18ABD00F05700 /* DataStore.swift in Sources */,
-				A5DEE7011CB553C100704688 /* Schedule.swift in Sources */,
+				A5DEE7011CB553C100704688 /* ScheduleItem.swift in Sources */,
 				A5E8382E1CB84D060077D92D /* ScheduleTableViewCell.swift in Sources */,
 				B5A534101CFAB683005BAF8E /* MapViewController.swift in Sources */,
 				A53F95FD1CC678DA0041EECA /* ArtistsViewController.swift in Sources */,
 				2C5B8B4F1C9A13E900C6A893 /* AppDelegate.swift in Sources */,
 				B59B0DEC1CF8AD7200B38F5A /* UIColor+NMF.swift in Sources */,
-				A53D603A1CAC5B6900B97E49 /* Artists.swift in Sources */,
+				A53D603A1CAC5B6900B97E49 /* Artist.swift in Sources */,
 				B5A5340C1CF910BE005BAF8E /* StackWidthLabel.swift in Sources */,
 				B5026C9D1CFC2CFC009F1877 /* ScheduleView.swift in Sources */,
 				B5200C771EC1A1360034091F /* Secrets.swift in Sources */,
@@ -562,14 +535,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -610,14 +591,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -666,7 +655,8 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "nmf/NMF-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -693,7 +683,8 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "nmf/NMF-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -707,7 +698,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.nmfTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NMF.app/NMF";
 			};
 			name = Debug;
@@ -721,7 +713,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.nmfTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NMF.app/NMF";
 			};
 			name = Release;

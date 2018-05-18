@@ -7,11 +7,10 @@
 //
 
 import UIKit
-import Fabric
 import TwitterKit
 import BBBadgeBarButtonItem
 import Pushwoosh
-import ReachabilitySwift
+import Reachability
 import Kingfisher
 
 #if CONFIGURATION_Debug
@@ -24,7 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
     
     let APP_ID = Secrets.secrets()["APP_ID"] as? String
     let SECRET_KEY = Secrets.secrets()["SECRET_KEY"] as? String
-    let VERSION_NUM =  "v1"
+    let SERVER_URL = "https://api.backendless.com"
+//    let VERSION_NUM =  "v1"
     
     let backendless = Backendless.sharedInstance()
 
@@ -37,8 +37,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        backendless?.initApp(APP_ID, secret: SECRET_KEY, version: VERSION_NUM)
-        
+        backendless?.hostURL = SERVER_URL
+        backendless?.initApp(APP_ID, apiKey: SECRET_KEY)
+
+        backendless?.data.mapTable(toClass: "Artists", type: Artist.ofClass())
         
         // setup image cache
         ImageCache.default.maxCachePeriodInSecond = 30 * 24 * 60 * 60
@@ -47,7 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
             return
         }
         DataStore.sharedInstance.updateArtistItems { _ in
-            if self.reachability.isReachableViaWiFi {
+            if self.reachability.connection == .wifi {
                 ImagePrefetcher.init(resources: DataStore.sharedInstance.artistItems, options: nil, progressBlock: nil, completionHandler: nil).start()
             }
             
@@ -57,9 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
         // setup twitter kit
         Twitter.sharedInstance().start(withConsumerKey: Secrets.secrets()["TWITTERKIT_KEY"] as! String, consumerSecret: Secrets.secrets()["TWITTERKIT_SECRET"] as! String)
         
-        Fabric.with([Twitter.self])
-        
-        // setup push notes
+         // setup push notes
         #if CONFIGURATION_Release
             PushNotificationManager.initialize(withAppCode: Secrets.secrets()["PW_APP_CODE"] as! String, appName: "NMF")
         #endif
@@ -145,7 +145,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
         PushNotificationManager.push().handlePushReceived(userInfo)
         
         guard let tabController = window?.rootViewController as? UITabBarController,
-            let navController = tabController.viewControllers?.flatMap({ $0 as? UINavigationController }).filter({ $0.viewControllers.first is ScheduleTableViewController}).first,
+            let navController = tabController.viewControllers?.compactMap({ $0 as? UINavigationController }).filter({ $0.viewControllers.first is ScheduleTableViewController}).first,
             let scheduleController = navController.viewControllers.first as? ScheduleTableViewController else {
                 return
         }
@@ -159,7 +159,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
         print("Push notification accepted: \(pushNotification)");
         
         guard let tabController = window?.rootViewController as? UITabBarController,
-            let navController = tabController.viewControllers?.flatMap({ $0 as? UINavigationController }).filter({ $0.viewControllers.first is ScheduleTableViewController}).first,
+            let navController = tabController.viewControllers?.compactMap({ $0 as? UINavigationController }).filter({ $0.viewControllers.first is ScheduleTableViewController}).first,
             let scheduleController = navController.viewControllers.first as? ScheduleTableViewController else {
                 return
         }
