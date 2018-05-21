@@ -54,7 +54,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         let button = UIButton(type: .custom)
         let image = UIImage(named: "bell")?.withRenderingMode(.alwaysTemplate)
         button.setImage(image, for: UIControlState())
-        button.tintColor = UIColor.creamText()
+        button.tintColor = UIColor.scheduleTextColor()
         button.sizeToFit()
         
         button.addTarget(self, action: #selector(ScheduleTableViewController.notificationsAction), for: .touchUpInside)
@@ -226,7 +226,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
                 showTime < fifteenMinutesFromNow, showTime > oneHourAgo {
                 scheduleCell.startTime.text = "Now"
                 scheduleCell.startTime.font = UIFont.boldSystemFont(ofSize: UIFont.labelFontSize)
-                scheduleCell.startTime.textColor = UIColor.coral()
+                scheduleCell.startTime.textColor = UIColor.hightlightColor()
             } else {
                 scheduleCell.startTime.text = "\(finalStartTime)"
                 scheduleCell.startTime.font = UIFont.systemFont(ofSize: UIFont.labelFontSize)
@@ -377,13 +377,13 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         
         // Create done button to dismiss the view controller
         let button = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissTimeline))
-        button.tintColor = UIColor.creamText()
+        button.tintColor = UIColor.scheduleTextColor()
         
         timelineViewControlller.navigationItem.leftBarButtonItem = button
         
         // Create a navigation controller to hold the
         let navigationController = UINavigationController(rootViewController: timelineViewControlller)
-        navigationController.navigationBar.barTintColor = UIColor.coral()
+        navigationController.navigationBar.barTintColor = UIColor.hightlightColor()
         
         if let button = navigationItem.leftBarButtonItem as? BBBadgeBarButtonItem {
             button.badgeValue = nil

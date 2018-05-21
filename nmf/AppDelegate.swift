@@ -41,13 +41,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
         backendless?.initApp(APP_ID, apiKey: SECRET_KEY)
 
         backendless?.data.mapTable(toClass: "Artists", type: Artist.ofClass())
-        
+        backendless?.data.mapTable(toClass: "Schedule", type: ScheduleItem.ofClass())
+
         // setup image cache
         ImageCache.default.maxCachePeriodInSecond = 30 * 24 * 60 * 60
 
-        DataStore.sharedInstance.updateScheduleItems { _ in
-            return
-        }
+//        DataStore.sharedInstance.updateScheduleItems { _ in
+//            return
+//        }
         DataStore.sharedInstance.updateArtistItems { _ in
             if self.reachability.connection == .wifi {
                 ImagePrefetcher.init(resources: DataStore.sharedInstance.artistItems, options: nil, progressBlock: nil, completionHandler: nil).start()

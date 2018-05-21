@@ -62,7 +62,7 @@ import Kingfisher
     var downloadURL: URL {
         get {
             guard let pictureURLString = picture, let picturURL = Foundation.URL(string: pictureURLString) else {
-                return Foundation.URL(string: "https://api.backendless.com/49259415-337F-9D60-FFEE-023C6FD21C00/v1/files/artists/2017/empty.jpg")!
+                return Foundation.URL(string: "https://api.backendless.com/19C02337-07D4-7BF5-FFD0-FCC0E93A1700/832D9A9C-39B2-3993-FF36-2217A956EA00/files/images-2018/empty.jpg")!
             }
             
             return picturURL

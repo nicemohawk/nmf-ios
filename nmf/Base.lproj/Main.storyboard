@@ -51,6 +51,7 @@
                                 <constraint firstItem="mEg-Eh-VM7" firstAttribute="centerY" secondItem="8Rj-UF-IRn" secondAttribute="centerY" id="p7S-FJ-Nqz"/>
                                 <constraint firstAttribute="trailing" secondItem="o2q-lc-JBq" secondAttribute="trailing" constant="8" id="r1k-w2-yH3"/>
                                 <constraint firstItem="mEg-Eh-VM7" firstAttribute="leading" secondItem="8Rj-UF-IRn" secondAttribute="leading" constant="8" id="tPn-3m-qB1"/>
+                                <constraint firstItem="o2q-lc-JBq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mEg-Eh-VM7" secondAttribute="trailing" constant="8" symbolic="YES" id="y68-Oz-rG4"/>
                             </constraints>
                         </view>
                         <prototypes>
@@ -82,8 +83,8 @@
                                                 <action selector="starItemAction:" destination="Bs5-px-7hO" eventType="touchUpInside" id="POG-UK-afU"/>
                                             </connections>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Artist" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VB4-YY-v30">
-                                            <rect key="frame" x="48" y="18" width="51.5" height="23"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VB4-YY-v30">
+                                            <rect key="frame" x="48" y="18.5" width="49" height="22"/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
                                             <color key="textColor" red="0.1215686277" green="0.1215686277" blue="0.1215686277" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -145,6 +146,7 @@
                     <navigationItem key="navigationItem" id="J0r-KB-LRn">
                         <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" image="bell" id="JXd-k9-g74" customClass="BBBadgeBarButtonItem">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="notificationsAction:" destination="Bs5-px-7hO" id="OgZ-GX-lcL"/>
                             </connections>
@@ -333,10 +335,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="w5X-nF-pua">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.97647058819999999" green="0.96862745100000003" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.1450980392" green="0.2274509804" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.97647058963775635" green="0.9686274528503418" blue="0.7921568751335144" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -372,7 +374,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aOE-XO-PGa">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="706.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nelsonville Music Festival 2017" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEp-nM-CdO">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nelsonville Music Festival 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEp-nM-CdO">
                                                                 <rect key="frame" x="8" y="8" width="359" height="25.5"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -643,7 +645,7 @@ Thank you for your cooperation in helping keep NMF safe.</string>
                         <color key="selectedImageTintColor" red="0.57254901960000004" green="0.71372549019999998" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" red="0.84313726425170898" green="0.27058824896812439" blue="0.26274511218070984" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="value" red="0.57254901960000004" green="0.71372549019999998" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBar>
@@ -689,7 +691,7 @@ Thank you for your cooperation in helping keep NMF safe.</string>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78G-4b-QBf">
                                 <rect key="frame" x="16" y="72" width="40" height="40"/>
-                                <color key="backgroundColor" red="0.57254901960000004" green="0.71372549019999998" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="CFQ-Tb-Qm9"/>
                                     <constraint firstAttribute="height" constant="40" id="S6i-c9-XBH"/>
@@ -715,21 +717,18 @@ Thank you for your cooperation in helping keep NMF safe.</string>
                     </view>
                     <navigationItem key="navigationItem" id="5c4-H1-Os1">
                         <barButtonItem key="leftBarButtonItem" image="NMFOhio-logo-coral-barbutton" id="i3D-IM-bqE">
-                            <inset key="imageInsets" minX="4" minY="4" maxX="4" maxY="4"/>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <inset key="imageInsets" minX="4" minY="-2" maxX="4" maxY="4"/>
                             <connections>
                                 <action selector="nmfButtonAction:" destination="sbA-sI-UWW" id="4sd-SX-baA"/>
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="action" id="PgP-fG-6oQ">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="actionButtonAction:" destination="sbA-sI-UWW" id="F0z-Z2-kLG"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem image="map-marker" id="aZb-wN-GKX">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="toggleLegendAction:" destination="sbA-sI-UWW" id="0ZS-6D-VRl"/>
                                 </connections>
@@ -767,7 +766,11 @@ Thank you for your cooperation in helping keep NMF safe.</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qLL-sU-WrV">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.1450980392" green="0.2274509804" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -787,7 +790,11 @@ Thank you for your cooperation in helping keep NMF safe.</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nk3-qB-46S">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.1450980392" green="0.2274509804" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

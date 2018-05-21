@@ -65,7 +65,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             }
         }
         
-        currentLocationButton.layer.borderColor = UIColor.tanBackground().cgColor
+        currentLocationButton.layer.borderColor = UIColor.mapBackgroundColor().cgColor
         currentLocationButton.layer.borderWidth = 1
         currentLocationButton.layer.cornerRadius = 12
         

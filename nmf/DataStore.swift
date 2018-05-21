@@ -41,16 +41,25 @@ class DataStore: NSObject {
             return
         }
 
-        func pageAllData(queryBuilder: DataQueryBuilder) {
+        var queryCounter = 0
+
+        func pageAllScheduleData(queryBuilder: DataQueryBuilder) {
+            queryCounter += 1
+            print("Schedule query count: \(queryCounter)")
+
             backendless.data.of(ScheduleItem.self).find(
                 queryBuilder,
                 response: { (scheduleItemsCollection: [Any]?) in
                     if scheduleItemsCollection?.count != 0 {
-                        if let items = scheduleItemsCollection as? [ScheduleItem] {
-                            self.mergeScheduleItems(items)
-                        }
+                        guard let items = scheduleItemsCollection as? [ScheduleItem] else {
+                            print("Unable to convert scheduleItemsCollection (type: \(type(of:scheduleItemsCollection?.first))) to \(type(of:ScheduleItem.self)) array.")
 
-                        pageAllData(queryBuilder: queryBuilder.prepareNextPage())
+                            return
+                        }
+                        
+                        self.mergeScheduleItems(items)
+
+                        pageAllScheduleData(queryBuilder: queryBuilder.prepareNextPage())
                     } else {
                         // finished paging results
                         completion(nil)
@@ -64,7 +73,13 @@ class DataStore: NSObject {
 
         self.removeOldItems()
 
-        pageAllData(queryBuilder: DataQueryBuilder())
+        guard let scheduleBuilder = DataQueryBuilder() else {
+            return
+        }
+
+        scheduleBuilder.setPageSize(100)
+
+        pageAllScheduleData(queryBuilder: scheduleBuilder)
     }
     
     func updateArtistItems(_ completion:  @escaping (Error?) -> Void) -> Void {
@@ -72,21 +87,42 @@ class DataStore: NSObject {
             return
         }
 
-        backendless.data.of(Artist.self).find({ (artistsItemsCollection: [Any]?) in
-            guard let artists = artistsItemsCollection as? [Artist] else {
-                print("unable to convert artistsItemsCollection to Artist array")
-                
-                return
-            }
+        var queryCounter = 0
 
-            self.mergeArtists(artists)
-            
-            completion(nil)
-        }, error: { (fault) in
-            print(fault ?? "Unable to print fault")
-            
-            completion(fault)
-        })
+        func pageAllArtistData(queryBuilder: DataQueryBuilder) {
+            queryCounter += 1
+            print("Artist query count: \(queryCounter)")
+
+            backendless.data.of(Artist.self).find(
+                queryBuilder,
+                response: { (artistsItemsCollection: [Any]?) in
+                if artistsItemsCollection?.count != 0 {
+                    guard let artists = artistsItemsCollection as? [Artist] else {
+                        print("unable to convert artistsItemsCollection to Artist array")
+
+                        return
+                    }
+
+                    self.mergeArtists(artists)
+
+                    pageAllArtistData(queryBuilder: queryBuilder.prepareNextPage())
+                } else {
+                    completion(nil)
+                }
+            }, error: { (fault) in
+                print(fault ?? "Unable to print fault")
+
+                completion(fault)
+            })
+        }
+
+        guard let artistBuilder = DataQueryBuilder() else {
+            return
+        }
+
+        artistBuilder.setPageSize(100)
+
+        pageAllArtistData(queryBuilder: artistBuilder)
     }
     
     func getArtistByName(_ artistName: String, completion: @escaping (Artist?, Error?) -> Void) -> Void {
