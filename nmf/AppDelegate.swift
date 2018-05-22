@@ -34,8 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
     
     let reachability = Reachability()!
  
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         backendless?.hostURL = SERVER_URL
         backendless?.initApp(APP_ID, apiKey: SECRET_KEY)
@@ -104,12 +103,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-        
-        if lastActive > Date(timeIntervalSinceNow: -(10*60)) {
+
+        if DataStore.sharedInstance.scheduleItems.first?.day != nil,
+            lastActive > Date(timeIntervalSinceNow: -(10*60)) {
             // if app hasn't been used in 10 minutes, update it, otherwise return
             return
         }
-        
+
+
         guard let tabController = window?.rootViewController as? UITabBarController,
             let navController = tabController.selectedViewController as? UINavigationController,
             let scheduleViewController = navController.visibleViewController as? ScheduleTableViewController else {

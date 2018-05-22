@@ -21,8 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NMFOhio-logo-coral-large" translatesAutoresizingMaskIntoConstraints="NO" id="M5J-LT-g8G">
-                                <rect key="frame" x="54.5" y="200.5" width="266" height="266"/>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NMFOhio-logo-coral-large" translatesAutoresizingMaskIntoConstraints="NO" id="M5J-LT-g8G">
+                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1450980392" green="0.2274509804" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -38,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="NMFOhio-logo-coral-large" width="266" height="266"/>
+        <image name="NMFOhio-logo-coral-large" width="300" height="300"/>
     </resources>
 </document>

@@ -18,10 +18,14 @@ class DataStore: NSObject {
     static let archiveURL = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
     
     lazy var scheduleItems: [ScheduleItem] = {
+        NSKeyedUnarchiver.setClass(ScheduleItem.self, forClassName: "NMF.Schedule")
+
         return NSKeyedUnarchiver.unarchiveObject(withFile: DataStore.archiveURL.appendingPathComponent("schedule").path) as? [ScheduleItem] ?? [ScheduleItem]()
     }()
     
     lazy var artistItems: [Artist] = {
+        NSKeyedUnarchiver.setClass(Artist.self, forClassName: "NMF.Artists")
+
         return NSKeyedUnarchiver.unarchiveObject(withFile: DataStore.archiveURL.appendingPathComponent("artists").path) as? [Artist] ?? [Artist]()
     }()
     
@@ -42,6 +46,7 @@ class DataStore: NSObject {
         }
 
         func pageAllScheduleData(queryBuilder: DataQueryBuilder) {
+
             backendless.data.of(ScheduleItem.self).find(
                 queryBuilder,
                 response: { (scheduleItemsCollection: [Any]?) in

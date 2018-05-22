@@ -10,19 +10,20 @@ import Foundation
 
 @objcMembers class ScheduleItem: NSObject, NSCoding {
     var objectId: String?
-    
+
     var artistName: String?
     var startTime: Date?
     var stage: String?
     var day: String?
-    
+
     var starred: Bool = false
-    
+
     override init() {
         super.init()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
+
         objectId = aDecoder.decodeObject(forKey: "oid") as? String
         
         artistName = aDecoder.decodeObject(forKey: "artist") as? String
