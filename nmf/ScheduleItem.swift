@@ -13,8 +13,8 @@ import Foundation
     
     var artistName: String?
     var startTime: Date?
-    var endTime: Date?
     var stage: String?
+    var day: String?
     
     var starred: Bool = false
     
@@ -27,6 +27,7 @@ import Foundation
         
         artistName = aDecoder.decodeObject(forKey: "artist") as? String
         startTime = aDecoder.decodeObject(forKey: "start") as? Date
+        day = aDecoder.decodeObject(forKey: "day") as? String
         stage = aDecoder.decodeObject(forKey: "stage") as? String
         
         starred = aDecoder.decodeBool(forKey: "starred")
@@ -37,6 +38,7 @@ import Foundation
 
         aCoder.encode(artistName, forKey: "artist")
         aCoder.encode(startTime, forKey: "start")
+        aCoder.encode(day, forKey: "day")
         aCoder.encode(stage, forKey: "stage")
         
         aCoder.encode(starred, forKey: "starred")
@@ -51,6 +53,7 @@ import Foundation
 
         artistName = otherItem.artistName
         startTime = otherItem.startTime
+        day = otherItem.day
         stage = otherItem.stage
         
         // we don't merge starred

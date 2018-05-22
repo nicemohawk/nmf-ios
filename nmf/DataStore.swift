@@ -41,12 +41,7 @@ class DataStore: NSObject {
             return
         }
 
-        var queryCounter = 0
-
         func pageAllScheduleData(queryBuilder: DataQueryBuilder) {
-            queryCounter += 1
-            print("Schedule query count: \(queryCounter)")
-
             backendless.data.of(ScheduleItem.self).find(
                 queryBuilder,
                 response: { (scheduleItemsCollection: [Any]?) in
@@ -87,11 +82,7 @@ class DataStore: NSObject {
             return
         }
 
-        var queryCounter = 0
-
         func pageAllArtistData(queryBuilder: DataQueryBuilder) {
-            queryCounter += 1
-            print("Artist query count: \(queryCounter)")
 
             backendless.data.of(Artist.self).find(
                 queryBuilder,

@@ -264,18 +264,16 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
             scheduleItem = scheduleItems[indexPath.section][indexPath.row]
         }
         
-        if let foundScheduleItem = scheduleItem {
-            guard let stage = foundScheduleItem.stage,
-                stage != "" else {
-                return nil
-            }
+        //            guard let stage = foundScheduleItem.stage,
+        //                stage != "" else {
+        //                return nil
+        //            }
 
-            guard let artistName = scheduleItem?.artistName,
-                DataStore.sharedInstance.artistItems.filter({$0.artistName == artistName}).count > 0 else {
-                return nil
-            }
+        guard let artistName = scheduleItem?.artistName,
+            DataStore.sharedInstance.artistItems.filter({$0.artistName == artistName}).count > 0 else {
+            return nil
         }
-        
+
         return indexPath
     }
     
@@ -429,15 +427,15 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
                 continue
             }
             
-            if let time = item.startTime, let weekday = Calendar.current.dateComponents([.weekday], from: time).weekday {
+            if let weekday = item.day {
                 switch weekday {
-                case 5: // Thursday
+                case "Thursday": // Thursday
                     thursdayShows.append(item)
-                case 6: // Friday
+                case "Friday": // Friday
                     fridayShows.append(item)
-                case 7: // Saturday
+                case "Saturday": // Saturday
                     saturdayShows.append(item)
-                case 1: // Sunday
+                case "Sunday": // Sunday
                     sundayShows.append(item)
                 default:
                     print("Unable to find correct date")
