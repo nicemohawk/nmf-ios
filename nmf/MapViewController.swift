@@ -29,7 +29,10 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     @IBOutlet weak var currentLocationButton: UIButton!
     @IBOutlet weak var singleTapLegendRecognizer: UITapGestureRecognizer!
     
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+
     override func viewDidLoad() {
         // 2.17 miles = 3500 meters
         let region = MKCoordinateRegionMakeWithDistance(nmf.coordinate, 310.0, 310.0)

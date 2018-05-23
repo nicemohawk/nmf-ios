@@ -73,7 +73,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
         PushNotificationManager.push().handlePushReceived(launchOptions)
         PushNotificationManager.push().sendAppOpen()
         PushNotificationManager.push().registerForPushNotifications()
-        
+
+        UIApplication.shared.statusBarStyle = .lightContent
+        UINavigationBar.appearance().barStyle = .blackOpaque
+
         #if CONFIGURATION_Debug
             // for nice screen shots only
             SDStatusBarManager.sharedInstance().enableOverrides()

@@ -25,7 +25,11 @@ class ArtistViewController: UIViewController {
     
     @IBOutlet weak var scheduleStackView: UIStackView!
     @IBOutlet weak var scheduleNIBView: ScheduleView!
-    
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         

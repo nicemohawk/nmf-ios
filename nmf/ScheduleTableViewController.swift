@@ -21,7 +21,11 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
 
     @IBOutlet weak var localNotificationsSwitch: UISwitch!
     @IBOutlet weak var localNotificationsLabel: UILabel!
-    
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
