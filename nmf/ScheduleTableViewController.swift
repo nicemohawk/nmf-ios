@@ -36,6 +36,8 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
                 self.sortScheduleItems(starredOnly: false)
                 
                 self.scrollToNearestCell()
+
+                (UIApplication.shared.delegate as? AppDelegate)?.lastScheduleFetched = Date()
             }
         } else {
             sortScheduleItems(starredOnly: false)
