@@ -32,8 +32,8 @@ class DataStore: NSObject {
     class var sharedInstance: DataStore {
         return dataStoreSingleton
     }
-    
-    
+
+
     func saveData() {
         print( "saved schedule: \(NSKeyedArchiver.archiveRootObject(scheduleItems, toFile: DataStore.archiveURL.appendingPathComponent("schedule").path))")
         
@@ -153,6 +153,11 @@ class DataStore: NSObject {
         }
 
         scheduleItems = scheduleItems.filter { itemsToRemove.contains($0) == false }
+
+        // FIXME: remove old artists as well
+//        if scheduleItems.count > 0 {
+//            artistItems = artistItems.filter({ $0.artistName  })
+//        }
     }
     
     func mergeScheduleItems(_ newItems: [ScheduleItem]) {
