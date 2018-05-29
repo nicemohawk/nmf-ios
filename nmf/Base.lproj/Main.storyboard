@@ -359,20 +359,20 @@
                         <viewControllerLayoutGuide type="bottom" id="IfD-E4-kVT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kRg-t5-bui">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="2750"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="5000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0re-0T-JCs">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="2750"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="5000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMc-tT-lV7">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2876.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="4506"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eSr-Sy-2HS">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="2856.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="4486"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aOE-XO-PGa">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="706.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1010.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nelsonville Music Festival 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEp-nM-CdO">
                                                                 <rect key="frame" x="8" y="8" width="359" height="25.5"/>
@@ -395,7 +395,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hFW-se-ceE">
-                                                                <rect key="frame" x="8" y="108.5" width="359" height="590"/>
+                                                                <rect key="frame" x="8" y="108.5" width="359" height="894"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OUR STORY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oht-oy-c5j">
                                                                         <rect key="frame" x="8" y="8" width="343" height="20.5"/>
@@ -404,9 +404,9 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezW-cO-Cg8">
-                                                                        <rect key="frame" x="8" y="28.5" width="343" height="553.5"/>
+                                                                        <rect key="frame" x="8" y="28.5" width="343" height="857.5"/>
                                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <string key="text">Andrew Bird said of the Nelsonville Music Festival, “It’s the perfect size festival. Any bigger and you’d lose something.” The Nelsonville Music Festival continues to be an annual favorite for many music lovers, and one of the best festivals in the Midwest. Set in the beautiful, rolling hills of Southeast Ohio, NMF continues to gain fans who want a music festival with a more personal experience. Catch live music on multiple stages including a small no-fi cabin and a picturesque porch stage in addition to our main stage. Over four days, NMF offers multiple stages of music along with camping on site, kids activities, local art vendors, food, and a beer garden. The Nelsonville Music Festival takes sustainability seriously and is a zero waste event, diverting 94% of the waste created in 2015. Past performers have included Wilco, The Flaming Lips, Willie Nelson, Loretta Lynn, John Prine, The Avett Brothers, Merle Haggard, Dinosaur Jr., St. Vincent, Jason Isbell, Cat Power, Iron &amp; Wine, Andrew Bird, Neko Case, Yo La Tengo, George Jones, Gogol Bordello, and many more. The Nelsonville Music Festival is a production of Stuart’s Opera House, a historic, non-profit theater located in Nelsonville that features over 75 events a year including live music, theater, films, educational programming and more. You can find out more about Stuart’s by visiting stuartsoperahouse.org.</string>
+                                                                        <mutableString key="text">The Nelsonville Music Festival takes place May 31-June 3, 2018 in Nelsonville, Ohio featuring over 60 musical acts in four days on multiple stages along with on-site camping, artisan vendors, kids activities, food, a beer garden, and more. NMF is a presentation of Stuart’s Opera House, a non-profit historic theater and performing arts center in Nelsonville, Ohio. Billboard has called Nelsonville Music Festival “one of the best kept secrets of the U.S. music festival circuit”, and in our 14th year NMF continues to gain fans who want a music festival with a more personal experience. Set in the beautiful rolling hills of Southeast Ohio, this intimate festival offers live music from a variety of genres on multiple stages from national, regional, and local acts. Catch live music on multiple stages: NMF features a main stage of course, but also a picturesque Porch Stage, the small No-Fi Cabin featuring artists performing with no electricity, and our FREE Boxcar Stage with music from an old train car turned into a stage backdrop and mural. The Nelsonville Music Festival strives to have a positive impact on our community and environment and we are a Zero Waste event, diverting over 92% of the waste created at the festival from the landfill in 2017 with recycling and composting. All kids 12 and under are free and the festival features a huge kids area with activities all weekend. The AV Club and Ohio Magazine have named NMF as the “Best Music Festival in Ohio”, and Time Out Chicago has called it “one of the Midwest’s best festivals”. Past performers have included Wilco, The Flaming Lips, Willie Nelson, Ween, Loretta Lynn, Gillian Welch, John Prine, The Avett Brothers, They Might Be Giants, Randy Newman, Merle Haggard, Iron &amp; Wine, Yo La Tengo, George Jones, Emmylou Harris, Courtney Barnett, and many more. The Nelsonville Music Festival is a production of Stuart’s Opera House, a historic, non-profit theater located in Nelsonville that features over 75 events a year including live music, theater, films, educational programming and more. You can find out more about Stuart’s by visiting stuartsoperahouse.org.</mutableString>
                                                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
@@ -418,7 +418,7 @@
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ihK-3K-hH0">
-                                                        <rect key="frame" x="0.0" y="726.5" width="375" height="661.5"/>
+                                                        <rect key="frame" x="0.0" y="1030.5" width="375" height="804.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GETTING HERE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M44-bh-8xP">
                                                                 <rect key="frame" x="8" y="8" width="359" height="20.5"/>
@@ -435,7 +435,7 @@
                                                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                                                             </textView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hyv-tn-bEB">
-                                                                <rect key="frame" x="8" y="116.5" width="359" height="537"/>
+                                                                <rect key="frame" x="8" y="116.5" width="359" height="680"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIKE NMF" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWw-bU-7qk">
                                                                         <rect key="frame" x="8" y="8" width="343" height="20.5"/>
@@ -444,21 +444,27 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2WA-Cz-x7X">
-                                                                        <rect key="frame" x="8" y="28.5" width="343" height="249"/>
+                                                                        <rect key="frame" x="8" y="28.5" width="343" height="392"/>
                                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <string key="text">NMF partners with Athens Bicycle to offer safe and easy bike parking at the NMF Bike Corral during the festival along with offering help with minor repairs and even bike rentals. The entrance to NMF is located right on the wonderful 21-mile Hockhocking Adena Bikeway which means it’s the perfect location for car-free access. Park your bike right across from the main gate and get it whenever you want for a ride! The bike corral has set hours and then locks up for the night offering safe, overnight parking. More Info available at nelsonvillefest.org/about-nmf/bike-nmf.</string>
+                                                                        <mutableString key="text">NMF is excited to partner again with Athens Bicycle to offer safe and easy bike parking. Just roll up and rock out! Avoid the parking lot hassles, ride straight to the main gate and leave your bike with us. Think valet parking for your bike. Hand your bike off to an attendant and pick it up when you are ready. NMF is located right along the wonderful Hockhocking Adena Bikeway, which means it’s the perfect location for car-free access. Many festival-goers use the bikeway to avoid the parking lot, and NMF Bike Parking offers centralized, lock-free, safe parking near the main gate. If a bike is not picked up during advertised Bike Parking hours, it will be locked up for the night.
+
+Hours for bike parking
+Thursday, May 31  |  3:00pm – 1:00am
+Friday, June 1  |  9:00am – 1:00 am
+Saturday, June 2  |  9:00am – 1:00am
+Sunday, June 3  |  9:00am – 7:00pm</mutableString>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                                                                     </textView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOBUS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ct-Cp-3h1">
-                                                                        <rect key="frame" x="8" y="277.5" width="343" height="20.5"/>
+                                                                        <rect key="frame" x="8" y="420.5" width="343" height="20.5"/>
                                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Yn7-FU-za7">
-                                                                        <rect key="frame" x="8" y="298" width="343" height="231"/>
+                                                                        <rect key="frame" x="8" y="441" width="343" height="231"/>
                                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <string key="text">GoBus is an Ohio intercity bus program designed to provide rural communities with transportation to urban centers. There is a bus stop for GoBus right in the Hocking College campus in the main parking lot used for Nelsonville Music Festival, right across from the campground. GoBus stops at Hocking College six times per day, 365 days per year connecting with Columbus, Athens, Parkersburg, Cincinnati, Cleveland, and more. To get more information including all the stops along the routes, visit ridegobus.com or call 1.888.954.6287.</string>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -471,8 +477,28 @@
                                                         </subviews>
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                     </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RWb-bV-QFu">
+                                                        <rect key="frame" x="0.0" y="1855" width="375" height="160"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAMPING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jwt-WI-Rgq">
+                                                                <rect key="frame" x="8" y="8" width="359" height="20.5"/>
+                                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rwg-Fc-LvX">
+                                                                <rect key="frame" x="8" y="28.5" width="359" height="123.5"/>
+                                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <string key="text">Primitive camping is available on-site in the NMF Campground right across from the main parking lot. Camping is primitive (no electric) and pull-in, some walk-in spots available. Camping is $40 a person for the weekend and is available to purchase at the Main Campground Entrance.</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                    </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fYX-2D-z4O">
-                                                        <rect key="frame" x="0.0" y="1408" width="375" height="249.5"/>
+                                                        <rect key="frame" x="0.0" y="2035" width="375" height="375"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KIDS + FAMILIES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkT-Yq-vVc">
                                                                 <rect key="frame" x="8" y="8" width="359" height="20.5"/>
@@ -481,15 +507,15 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wLg-gO-6vt">
-                                                                <rect key="frame" x="8" y="28.5" width="359" height="213"/>
+                                                                <rect key="frame" x="8" y="28.5" width="359" height="338.5"/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <string key="text">// FREE ADMISSION to the Nelsonville Music Festival for all children 12 and under
+                                                                <mutableString key="text">NMF really is for all ages, and we make sure there are plenty of amazing art activities for the kids to do. Visit our Kids Area and see for yourself, see the program or the Kids Area to find out more about the activities. Thanks to Federal Hocking Art Club, and all of our supervisors, artists, and artists-in-residence for making this happen. And don’t miss the parade on Saturday and Sunday afternoons!
 
+// FREE ADMISSION to the Nelsonville Music Festival for all children 12 and under
 // Discounted Weekend Passes available for Teens (ages 13-17)
-
 // No more than 4 children in the festival or any campsite per one supervising adult, UNDER 18.
 
-More info and activities for kids available at nelsonvillefest.org/kids.</string>
+More info and activities for kids available at nelsonvillefest.org/kids</mutableString>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
@@ -498,7 +524,7 @@ More info and activities for kids available at nelsonvillefest.org/kids.</string
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="c2F-X7-jZG">
-                                                        <rect key="frame" x="0.0" y="1677.5" width="375" height="786.5"/>
+                                                        <rect key="frame" x="0.0" y="2430" width="375" height="1431"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAFETY + SECURITY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEk-FB-eT2">
                                                                 <rect key="frame" x="8" y="8" width="359" height="20.5"/>
@@ -506,34 +532,51 @@ More info and activities for kids available at nelsonvillefest.org/kids.</string
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kj0-1o-jFl">
-                                                                <rect key="frame" x="8" y="28.5" width="359" height="750"/>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kj0-1o-jFl">
+                                                                <rect key="frame" x="8" y="28.5" width="359" height="1394.5"/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <string key="text">All jackets and bags will be inspected upon entry or reentry to the festival site. Purses, diaper bags and other small personal bags are allowed but will be inspected at all gate entrances.
+                                                                <mutableString key="text">Safety and Security for everyone at The Nelsonville Music Festival is our number one priority. NMF will be instituting new safety policies, practices, and procedures in 2018, with the sole purpose of doing everything in our power to make our festival as safe as possible. As always, we are ONLY looking for weapons and/or dangerous objects. New in 2018, we are allowing only CLEAR BAGS AND CLEAR BACKPACKS and small clutch bags or fanny packs. NO LARGE PURSES, or OTHER BAGS will be allowed. Thank you for helping us make NMF safe and thank you for your patience with our new polices as we continue to improve a safe festival experience for everyone.
+As in previous years, all bags will be searched upon entry and re-entry.
 
-All jackets, purses and bags (no larger than 12”x 12”x 18”) will be inspected upon entry or reentry to the festival site.
+If you have a question about our safety and security measures or have a question about your bag, e-mail us at info@nelsonvillefest.org
 
-Attendees are PERMITTED to bring in empty aluminum, stainless steel, camelbak or plastic containers for water.  Lawn chairs are also PERMITTED.
+ALLOWED ITEMS IN FESTIVAL GROUNDS
 
-PROHIBITED ITEMS:
+// Bags made of clear plastic, clear vinyl or clear PVC, which do not exceed 13″ × 17″ in size (this includes CLEAR BACKPACKS under 13″ x 17″)
 
-// Coolers
-// Cans, glass bottles, or similar containers
-// All beverages (with the exception of up to 4 factory sealed plastic water bottles)
-// Illegal drugs
-// Guns, knives, or potential weapons
-// Umbrellas
-// Fireworks
-// Laser pens and similar devices
-// Pets (except for documented service animals)
-// Bikes, scooters, skateboards, or other motorized vehicles (except for ADA)
+// One-gallon clear zip-top bag
+// Small clutch bags, approximately the size of a hand either with or without a handle or strap
+// Small Fanny-pack(s) or similar waist-packs
+// Camelbaks and personal hydration systems are allowed, but must be empty
+// (1) Factory sealed water bottle AND/OR a non-glass, EMPTY water container
+// Skateboard (ONLY permitted on NMF skate ramp, not permitted in main festival grounds)
+
+PROHIBITED ITEMS IN FESTIVAL GROUNDS
+
+// Large Purses
+// Camera Bags
+// Cinch Bags
+// Weapons of any kind
+// Outside alcohol
+// Illegal Drugs
 // Drones
+// Glass
 // Outside food
+// Sky lanterns
+// Umbrellas
+// Laser Pens
+// Pets
+// Bikes/Scooters
+// Fireworks
+
+The Nelsonville Music Festival has implemented the following policies to ensure a safe, enjoyable event experience for all guests. All jackets and allowed bags will be inspected upon entry or reentry to the festival site. All allowed bags will be inspected at all gate entrances.
+
+Attendees are PERMITTED to bring in empty aluminum, stainless steel, or plastic containers for water. Lawn chairs are also PERMITTED.
 
 NMF Staff (or their designated security staff) reserve the right to make final determination on prohibited items. In the event that prohibited items are revealed in the inspection, guests will be asked to dispose of the items or return them to their vehicles or campsites before reentering the festival site.
 
-Thank you for your cooperation in helping keep NMF safe.</string>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+Thank you for your understanding and patience as we work to make NMF a safe place for all!</mutableString>
+                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                                                             </textView>
@@ -541,7 +584,7 @@ Thank you for your cooperation in helping keep NMF safe.</string>
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XKa-AP-oO6">
-                                                        <rect key="frame" x="0.0" y="2484" width="375" height="303.5"/>
+                                                        <rect key="frame" x="0.0" y="3881" width="375" height="536"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUSTAINABILITY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwn-0n-YgM">
                                                                 <rect key="frame" x="8" y="8" width="359" height="20.5"/>
@@ -550,9 +593,15 @@ Thank you for your cooperation in helping keep NMF safe.</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Li-wA-tW4">
-                                                                <rect key="frame" x="8" y="28.5" width="359" height="267"/>
+                                                                <rect key="frame" x="8" y="28.5" width="359" height="499.5"/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <string key="text">For the year of 2017, the Nelsonville Music Festival has again worked with Rural Action’s Zero Waste Program to provide waste diversion and materials management within the festival grounds. This is the 9th year of our continued partnership. Working hard over the years our system has been refined and improved in our effort to strive for ‘Zero Waste,’ after hitting a 94% diversion rate in 2015, we still managed to make a 92% diversion rate in 2016. Our team collected and sorted through all the materials generated within the festival grounds in order to separate both recyclable and compostable materials and prevent them from entering the landfill.</string>
+                                                                <mutableString key="text">Last year, the Nelsonville Music Festival recycled and composted over 92% of all waste discarded within the festival grounds! Because of these zero waste efforts, NMF has been recognized as one of the top 6 sustainable festivals in the country by Outdoor Nation! The Nelsonville Music Festival has partnered with Zero Waste Event Productions for the past 10 years to provide waste diversion and materials management within the festival grounds. Working hard over the years, our system has been refined and improved in our effort to strive for ‘Zero Waste,’ reaching a 94% diversion rate in 2015, a 92% diversion rate in 2016, and 92% again in 2017. Additionally, we have a recycling initiative in the campground. If you are camping out, be sure to put all of your recyclables in the bag provided to you and deliver them to our zero waste station in the campground.
+
+// There are 14 Resource Recovery Stations to collect compost and recycling
+// Vendors are all using compostable serviceware
+// FREE filtered water is available so bring a reusable water bottle
+// Solar power is used to power parts of the festival
+// Dedicated zero waste volunteers will be sorting recycled materials</mutableString>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
@@ -561,7 +610,7 @@ Thank you for your cooperation in helping keep NMF safe.</string>
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="fvE-gt-26N">
-                                                        <rect key="frame" x="0.0" y="2807.5" width="375" height="49"/>
+                                                        <rect key="frame" x="0.0" y="4437" width="375" height="49"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boQ-8c-sJJ">
                                                                 <rect key="frame" x="8" y="8" width="359" height="33"/>
@@ -625,11 +674,11 @@ Thank you for your cooperation in helping keep NMF safe.</string>
                         </view>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="2750"/>
+                    <size key="freeformSize" width="375" height="5000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pvi-Ha-Lvs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1457.5" y="1542"/>
+            <point key="canvasLocation" x="1457" y="2536"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="aCI-3v-a09">
@@ -807,7 +856,7 @@ Thank you for your cooperation in helping keep NMF safe.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Map-Legend" width="437" height="240"/>
+        <image name="Map-Legend" width="442" height="243"/>
         <image name="NMFOhio-logo-coral-barbutton" width="40" height="40"/>
         <image name="bell" width="48" height="48"/>
         <image name="direction" width="48" height="48"/>
