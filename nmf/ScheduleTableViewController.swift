@@ -28,7 +28,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         if DataStore.sharedInstance.scheduleItems.count == 0 {
             DataStore.sharedInstance.updateScheduleItems() { _ in
                 self.tableView.reloadData()
@@ -85,6 +85,8 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
+        sortScheduleItems(starredOnly: showingStarredOnly)
+
         localNotificationsSwitch.isOn = LocalNotificationController.shared.notificationsEnabled
 
         for scheduleCell in tableView.visibleCells.filter({ $0 is ScheduleTableViewCell }) as! [ScheduleTableViewCell] {
@@ -137,8 +139,12 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         }
         
         var lastPath = IndexPath(row: 0, section: 0)
-        let oneHourAgo = Date(timeIntervalSinceNow: -(1*60*60)) /*Date(timeIntervalSinceNow: (6*24-6)*60*60) */ // test by adding 4 days
-        
+
+        let oneHourAgo = Date(timeIntervalSinceNow: -(1*60*60))
+//        let oneHourAgo = Date(timeIntervalSinceNow: ((4*24-5)*60*60))
+//
+//        print("One hour ago: \(oneHourAgo.description(with: .current))")
+
         for (section, sectionArray) in scheduleItems.enumerated().reversed() {
             for (row, scheduleItem) in sectionArray.enumerated().reversed() {
                 let indexPath = IndexPath(row: row, section: section)
@@ -227,7 +233,12 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
             
             let oneHourAgo = Date(timeIntervalSinceNow: -(1*60*60))
             let fifteenMinutesFromNow = Date(timeIntervalSinceNow:15*60)
-             
+//            let oneHourAgo = Date(timeIntervalSinceNow: ((4*24-5)*60*60))
+//            let fifteenMinutesFromNow = Date(timeInterval: (60+15)*60, since: oneHourAgo)
+//
+//            print("One hour ago: \(oneHourAgo.description(with: .current))")
+//            print("15 minutes from now: \(fifteenMinutesFromNow.description(with: .current))")
+
             if let showTime = foundScheduleItem.startTime,
                 showTime < fifteenMinutesFromNow, showTime > oneHourAgo {
                 scheduleCell.startTime.text = "Now"

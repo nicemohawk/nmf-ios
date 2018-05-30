@@ -1,12 +1,12 @@
 {
-  "name": "nmf map",
+  "name": "map-tiles-15-19",
   "version": "1.1.0",
   "description": "",
   "type": "overlay",
   "format": "png",
-  "minzoom": "13",
+  "minzoom": "15",
   "maxzoom": "19",
-  "scale": "1.000000",
-  "bounds": [-82.22827884, 39.43746153, -82.21070655, 39.44916961],
+  "scale": "2.000000",
+  "bounds": [-82.22836100, 39.43752183, -82.21075520, 39.44944366],
   "profile": "mercator"
 }

@@ -17,6 +17,7 @@ import Kingfisher
 import SimulatorStatusMagic
 #endif
 
+let scheduleUpdateInterval: TimeInterval = 30//15*60 // seconds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate {
@@ -104,19 +105,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 
         if DataStore.sharedInstance.scheduleItems.first?.day != nil,
-            lastScheduleFetched > Date(timeIntervalSinceNow: -(15*60)) {
-            // if app hasn't been used in 15 minutes, update it, otherwise return
+            lastScheduleFetched > Date(timeIntervalSinceNow: -scheduleUpdateInterval) {
+            // if app hasn't been used with in the last scheduleUpdateInterval seconds, update it, otherwise return
             return
         }
 
-
-        guard let tabController = window?.rootViewController as? UITabBarController,
-            let navController = tabController.selectedViewController as? UINavigationController,
-            let scheduleViewController = navController.visibleViewController as? ScheduleTableViewController else {
-                return
-        }
-
         DataStore.sharedInstance.updateScheduleItems() { error in
+            guard let tabController = self.window?.rootViewController as? UITabBarController,
+                let navController = tabController.selectedViewController as? UINavigationController,
+                let scheduleViewController = navController.visibleViewController as? ScheduleTableViewController else {
+                    return
+            }
+
             if error == nil {
                 scheduleViewController.sortScheduleItems(starredOnly: scheduleViewController.showingStarredOnly)
                 

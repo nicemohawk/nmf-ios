@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>nmf map</title>
+  <title>map-tiles-15-19</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
   <script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
@@ -9,12 +9,12 @@
       var layer;
     function init() {
         var bounds = new L.LatLngBounds(
-            new L.LatLng(39.437462, -82.228279),
-            new L.LatLng(39.449170, -82.210707));
+            new L.LatLng(39.437522, -82.228361),
+            new L.LatLng(39.449444, -82.210755));
         var map = L.map('map').fitBounds(bounds);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
         var options = {
-            minZoom: 13,
+            minZoom: 15,
             maxZoom: 19,
             opacity: 1.0,
             tms: false

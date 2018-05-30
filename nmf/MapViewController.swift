@@ -40,6 +40,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         mapView.setRegion(region, animated: true)
         
         tileOverlay.canReplaceMapContent = false
+        tileOverlay.tileSize = CGSize(width: 512, height: 512)
         mapView.insert(tileOverlay, at: 0, level: .aboveRoads)
         
         
