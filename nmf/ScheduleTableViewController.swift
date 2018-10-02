@@ -141,7 +141,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         var lastPath = IndexPath(row: 0, section: 0)
 
         let oneHourAgo = Date(timeIntervalSinceNow: -(1*60*60))
-//        let oneHourAgo = Date(timeIntervalSinceNow: ((4*24-5)*60*60))
+//        let oneHourAgo = Date(timeIntervalSinceNow: ((4*24-5)*60*60)) // for time debugging
 //
 //        print("One hour ago: \(oneHourAgo.description(with: .current))")
 
@@ -233,8 +233,8 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
             
             let oneHourAgo = Date(timeIntervalSinceNow: -(1*60*60))
             let fifteenMinutesFromNow = Date(timeIntervalSinceNow:15*60)
-//            let oneHourAgo = Date(timeIntervalSinceNow: ((4*24-5)*60*60))
-//            let fifteenMinutesFromNow = Date(timeInterval: (60+15)*60, since: oneHourAgo)
+//            let oneHourAgo = Date(timeIntervalSinceNow: ((4*24-5)*60*60)) // for time debugging
+//            let fifteenMinutesFromNow = Date(timeInterval: (60+15)*60, since: oneHourAgo) // for time debugging
 //
 //            print("One hour ago: \(oneHourAgo.description(with: .current))")
 //            print("15 minutes from now: \(fifteenMinutesFromNow.description(with: .current))")
@@ -280,11 +280,6 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         } else if scheduleItems[indexPath.section].count > indexPath.row {
             scheduleItem = scheduleItems[indexPath.section][indexPath.row]
         }
-        
-        //            guard let stage = foundScheduleItem.stage,
-        //                stage != "" else {
-        //                return nil
-        //            }
 
         guard let artistName = scheduleItem?.artistName,
             DataStore.sharedInstance.artistItems.filter({$0.artistName == artistName}).count > 0 else {

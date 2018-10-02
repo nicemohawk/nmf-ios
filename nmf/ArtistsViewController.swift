@@ -135,27 +135,6 @@ class ArtistViewController: UIViewController {
             UIApplication.shared.openURL(youTubeURL)
         }
     }
-
-    
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        switch segue.identifier! {
-//        case "presentMapViewController":
-//            guard let navigationController = segue.destinationViewController as? UINavigationController,
-//                let mapViewController = navigationController.topViewController as? MapViewController else {
-//                    fatalError("Unexpected view hierarchy")
-//            }
-//            mapViewController.locationToShow = vacationSpot.coordinate
-//            mapViewController.title = vacationSpot.name
-//        case "presentRatingViewController":
-//            guard let navigationController = segue.destinationViewController as? UINavigationController,
-//                let ratingViewController = navigationController.topViewController as? RatingViewController else {
-//                    fatalError("Unexpected view hierarchy")
-//            }
-//            ratingViewController.vacationSpot = vacationSpot
-//        default:
-//            fatalError("Unhandled Segue: \(segue.identifier!)")
-//        }
-//    }
 }
 
 // MARK: - SFSafariViewControllerDelegate

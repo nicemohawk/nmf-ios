@@ -169,7 +169,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 }
 
 class TileOverlay : MKTileOverlay {
-    // FIXME?
     override func loadTile(at path: MKTileOverlayPath, result: @escaping (Data?, Error?) -> Void) {
         super.loadTile(at: path, result: result)
     }

@@ -33,7 +33,6 @@ class DataStore: NSObject {
         return dataStoreSingleton
     }
 
-
     func saveData() {
         print( "saved schedule: \(NSKeyedArchiver.archiveRootObject(scheduleItems, toFile: DataStore.archiveURL.appendingPathComponent("schedule").path))")
         
