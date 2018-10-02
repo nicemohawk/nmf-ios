@@ -62,11 +62,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
         
          // setup push notes
         #if CONFIGURATION_Release
-            PushNotificationManager.initialize(withAppCode: Secrets.secrets()["PW_APP_CODE"] as! String, appName: "NMF")
+            PushNotificationManager.initialize(withAppCode: (Secrets.secrets()["PW_APP_CODE"] as! String), appName: "NMF")
         #endif
         
         #if CONFIGURATION_Debug
-            PushNotificationManager.initialize(withAppCode: Secrets.secrets()["PW_DEV_APP_CODE"] as! String, appName: "NMF-dev")
+        PushNotificationManager.initialize(withAppCode: (Secrets.secrets()["PW_DEV_APP_CODE"] as! String), appName: "NMF-dev")
         #endif
         
         PushNotificationManager.push().delegate = self
@@ -75,7 +75,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
         PushNotificationManager.push().sendAppOpen()
         PushNotificationManager.push().registerForPushNotifications()
 
-        UIApplication.shared.statusBarStyle = .lightContent
         UINavigationBar.appearance().barStyle = .blackOpaque
 
         #if CONFIGURATION_Debug
@@ -106,7 +105,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
 
         if DataStore.sharedInstance.scheduleItems.first?.day != nil,
             lastScheduleFetched > Date(timeIntervalSinceNow: -scheduleUpdateInterval) {
-            // if app hasn't been used with in the last scheduleUpdateInterval seconds, update it, otherwise return
+            // if app hasn't been used within the last scheduleUpdateInterval seconds, update it, otherwise return
             return
         }
 
@@ -159,7 +158,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
     }
     
     func onPushAccepted(_ pushManager: PushNotificationManager!, withNotification pushNotification: [AnyHashable: Any]!, onStart: Bool) {
-        print("Push notification accepted: \(pushNotification)");
+        print("Push notification accepted: \(String(describing: pushNotification))");
         
         guard let tabController = window?.rootViewController as? UITabBarController,
             let navController = tabController.viewControllers?.compactMap({ $0 as? UINavigationController }).filter({ $0.viewControllers.first is ScheduleTableViewController}).first,
@@ -170,14 +169,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
         tabController.selectedViewController = navController
         navController.popToRootViewController(animated: true)
         scheduleController.notificationsAction(self)
-        
-        
-        
-//        let activeViewContoller = navController.visibleViewController as? ScheduleTableViewController else {
-//                return
-//        }
-        
-//        let alertController = UIAlertController(title: "Heads Up!", message: pushNotification["body"], preferredStyle: <#T##UIAlertControllerStyle#>)
     }
 
 }

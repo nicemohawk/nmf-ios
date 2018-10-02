@@ -153,16 +153,16 @@
 				B5026C9B1CFC2B7A009F1877 /* Views */,
 				B5026C971CFBDDE7009F1877 /* Data Model */,
 				B59B0DEA1CF8AD4200B38F5A /* Extensions */,
+				B5200C761EC1A1360034091F /* Secrets.swift */,
+				B588B0DD1CFDF62800C4C3CF /* NMF-Bridging-Header.h */,
 				2C5B8B541C9A13E900C6A893 /* Main.storyboard */,
 				2C5B8B591C9A13E900C6A893 /* LaunchScreen.storyboard */,
 				B5026C981CFC2A4C009F1877 /* ScheduleView.xib */,
 				2C5B8B571C9A13E900C6A893 /* Assets.xcassets */,
+				B5026C951CFBB66B009F1877 /* mapdata */,
 				2C5B8B5C1C9A13E900C6A893 /* Info.plist */,
-				B588B0DD1CFDF62800C4C3CF /* NMF-Bridging-Header.h */,
 				B5A5340D1CFAB39D005BAF8E /* Montserrat-Regular.otf */,
 				B5642B7F1ED2869C00F649AF /* NMF.entitlements */,
-				B5026C951CFBB66B009F1877 /* mapdata */,
-				B5200C761EC1A1360034091F /* Secrets.swift */,
 			);
 			path = nmf;
 			sourceTree = "<group>";
