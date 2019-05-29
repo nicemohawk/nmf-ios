@@ -35,13 +35,13 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 
     override func viewDidLoad() {
         // 2.17 miles = 3500 meters
-        let region = MKCoordinateRegionMakeWithDistance(nmf.coordinate, 310.0, 310.0)
+        let region = MKCoordinateRegion.init(center: nmf.coordinate, latitudinalMeters: 310.0, longitudinalMeters: 310.0)
         
         mapView.setRegion(region, animated: true)
         
         tileOverlay.canReplaceMapContent = false
         tileOverlay.tileSize = CGSize(width: 512, height: 512)
-        mapView.insert(tileOverlay, at: 0, level: .aboveRoads)
+        mapView.insertOverlay(tileOverlay, at: 0, level: .aboveRoads)
         
         
         let doubleTap = UITapGestureRecognizer(target: self, action: nil)
@@ -115,7 +115,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
     @IBAction func nmfButtonAction(_ sender: AnyObject) {
-        let region = MKCoordinateRegionMakeWithDistance(nmf.coordinate, 310.0, 310.0)
+        let region = MKCoordinateRegion.init(center: nmf.coordinate, latitudinalMeters: 310.0, longitudinalMeters: 310.0)
         
         mapView.setRegion(region, animated: true)
     }

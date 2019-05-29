@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
     
     let reachability = Reachability()!
  
-     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         backendless?.hostURL = SERVER_URL
         backendless?.initApp(APP_ID, apiKey: SECRET_KEY)
@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
         backendless?.data.mapTable(toClass: "Schedule", type: ScheduleItem.ofClass())
 
         // setup image cache
-        ImageCache.default.maxCachePeriodInSecond = 30 * 24 * 60 * 60
+        ImageCache.default.diskStorage.config.expiration = StorageExpiration.days(30)
 
 //        DataStore.sharedInstance.updateScheduleItems { _ in
 //            return

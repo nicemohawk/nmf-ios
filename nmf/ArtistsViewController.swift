@@ -103,7 +103,7 @@ class ArtistViewController: UIViewController {
     }
     
     @IBAction func starButtonAction(_ sender: UIButton) {
-        guard let index = scheduleStackView.subviews.index(where: { sender.isDescendant(of: $0) }) else {
+        guard let index = scheduleStackView.subviews.firstIndex(where: { sender.isDescendant(of: $0) }) else {
             return
         }
         

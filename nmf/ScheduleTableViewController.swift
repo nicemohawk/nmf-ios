@@ -59,7 +59,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         
         let button = UIButton(type: .custom)
         let image = UIImage(named: "bell")?.withRenderingMode(.alwaysTemplate)
-        button.setImage(image, for: UIControlState())
+        button.setImage(image, for: UIControl.State())
         button.tintColor = UIColor.scheduleTextColor()
         button.sizeToFit()
         
@@ -132,7 +132,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
     func scrollToNearestCell() {
         if searchController.isActive && searchController.searchBar.text != "" {
             if filteredScheduleItems.count > 0 {
-                self.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: UITableViewScrollPosition.top, animated: true)
+                self.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: UITableView.ScrollPosition.top, animated: true)
             }
             
             return
