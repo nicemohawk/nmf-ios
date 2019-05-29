@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rgv-Oo-AfU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rgv-Oo-AfU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -31,9 +28,9 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o2q-lc-JBq">
-                                    <rect key="frame" x="318" y="10" width="51" height="31"/>
-                                    <color key="onTintColor" red="0.57254901960000004" green="0.71372549019999998" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="thumbTintColor" red="0.23529411759999999" green="0.31372549020000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <rect key="frame" x="318" y="10.5" width="51" height="31"/>
+                                    <color key="onTintColor" cyan="0.0" magenta="0.95686274770000002" yellow="1" black="0.17000000179999999" alpha="1" colorSpace="deviceCMYK"/>
+                                    <color key="thumbTintColor" cyan="0.0" magenta="0.34999999399999998" yellow="0.85000002379999995" black="0.0" alpha="1" colorSpace="deviceCMYK"/>
                                     <connections>
                                         <action selector="localShowNotifications:" destination="Bs5-px-7hO" eventType="valueChanged" id="NYY-Yy-ll3"/>
                                     </connections>
@@ -45,7 +42,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" red="0.1529411765" green="0.1764705882" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" cyan="0.0" magenta="0.5" yellow="1" black="0.0" alpha="1" colorSpace="deviceCMYK"/>
                             <constraints>
                                 <constraint firstItem="o2q-lc-JBq" firstAttribute="centerY" secondItem="8Rj-UF-IRn" secondAttribute="centerY" id="5ZW-vo-tbS"/>
                                 <constraint firstItem="mEg-Eh-VM7" firstAttribute="centerY" secondItem="8Rj-UF-IRn" secondAttribute="centerY" id="p7S-FJ-Nqz"/>
@@ -84,7 +81,7 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VB4-YY-v30">
-                                            <rect key="frame" x="48" y="18.5" width="49" height="22"/>
+                                            <rect key="frame" x="48" y="19" width="49" height="22"/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
                                             <color key="textColor" red="0.1215686277" green="0.1215686277" blue="0.1215686277" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -123,7 +120,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Starred Shows" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MM8-KW-rmd">
-                                            <rect key="frame" x="108.5" y="21" width="159.5" height="22"/>
+                                            <rect key="frame" x="108" y="21" width="159.5" height="22"/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
                                             <color key="textColor" red="0.12156862765550613" green="0.12156862765550613" blue="0.12156862765550613" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -156,7 +153,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inverse-nmf-logo" translatesAutoresizingMaskIntoConstraints="NO" id="m4r-4r-K0e">
-                                    <rect key="frame" x="0.0" y="0.0" width="107" height="33"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="107.00000000000003" height="33"/>
                                 </imageView>
                             </subviews>
                             <constraints>
@@ -257,7 +254,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" preservesSuperviewLayoutMargins="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="k51-8G-NwD">
                                                         <rect key="frame" x="0.0" y="422.5" width="375" height="49"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaU-iz-eZU">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaU-iz-eZU">
                                                                 <rect key="frame" x="8" y="8" width="181" height="33"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                                 <state key="normal" title="Website"/>
@@ -265,7 +262,7 @@
                                                                     <action selector="websiteButtonTapped:" destination="ZEJ-OI-GpK" eventType="touchUpInside" id="7Gm-rj-OfQ"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJZ-p4-VQ2">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJZ-p4-VQ2">
                                                                 <rect key="frame" x="189" y="8" width="178" height="33"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                                 <state key="normal" title="YouTube"/>
@@ -336,7 +333,7 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.1450980392" green="0.2274509804" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" cyan="0.0" magenta="0.95686274766921997" yellow="1" black="0.17000000178813934" alpha="1" colorSpace="deviceCMYK"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -366,15 +363,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="5000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMc-tT-lV7">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="4506"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="4470"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eSr-Sy-2HS">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="4486"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="4450"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aOE-XO-PGa">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1010.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="992.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nelsonville Music Festival 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEp-nM-CdO">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nelsonville Music Festival 2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEp-nM-CdO">
                                                                 <rect key="frame" x="8" y="8" width="359" height="25.5"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -395,7 +392,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hFW-se-ceE">
-                                                                <rect key="frame" x="8" y="108.5" width="359" height="894"/>
+                                                                <rect key="frame" x="8" y="108.5" width="359" height="876"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OUR STORY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oht-oy-c5j">
                                                                         <rect key="frame" x="8" y="8" width="343" height="20.5"/>
@@ -404,9 +401,9 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezW-cO-Cg8">
-                                                                        <rect key="frame" x="8" y="28.5" width="343" height="857.5"/>
+                                                                        <rect key="frame" x="8" y="28.5" width="343" height="839.5"/>
                                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <string key="text">The Nelsonville Music Festival takes place May 31-June 3, 2018 in Nelsonville, Ohio featuring over 60 musical acts in four days on multiple stages along with on-site camping, artisan vendors, kids activities, food, a beer garden, and more. NMF is a presentation of Stuart’s Opera House, a non-profit historic theater and performing arts center in Nelsonville, Ohio. Billboard has called Nelsonville Music Festival “one of the best kept secrets of the U.S. music festival circuit”, and in our 14th year NMF continues to gain fans who want a music festival with a more personal experience. Set in the beautiful rolling hills of Southeast Ohio, this intimate festival offers live music from a variety of genres on multiple stages from national, regional, and local acts. Catch live music on multiple stages: NMF features a main stage of course, but also a picturesque Porch Stage, the small No-Fi Cabin featuring artists performing with no electricity, and our FREE Boxcar Stage with music from an old train car turned into a stage backdrop and mural. The Nelsonville Music Festival strives to have a positive impact on our community and environment and we are a Zero Waste event, diverting over 92% of the waste created at the festival from the landfill in 2017 with recycling and composting. All kids 12 and under are free and the festival features a huge kids area with activities all weekend. The AV Club and Ohio Magazine have named NMF as the “Best Music Festival in Ohio”, and Time Out Chicago has called it “one of the Midwest’s best festivals”. Past performers have included Wilco, The Flaming Lips, Willie Nelson, Ween, Loretta Lynn, Gillian Welch, John Prine, The Avett Brothers, They Might Be Giants, Randy Newman, Merle Haggard, Iron &amp; Wine, Yo La Tengo, George Jones, Emmylou Harris, Courtney Barnett, and many more. The Nelsonville Music Festival is a production of Stuart’s Opera House, a historic, non-profit theater located in Nelsonville that features over 75 events a year including live music, theater, films, educational programming and more. You can find out more about Stuart’s by visiting stuartsoperahouse.org.</string>
+                                                                        <string key="text">The Nelsonville Music Festival takes place June 6-9th, 2019 in Nelsonville, Ohio featuring over 60 musical acts in four days on multiple stages along with on-site camping, artisan vendors, kids activities, food, a beer garden, and more. NMF is a presentation of Stuart’s Opera House, a non-profit historic theater and performing arts center in Nelsonville, Ohio. Billboard has called Nelsonville Music Festival “one of the best kept secrets of the U.S. music festival circuit”, and in our 15th year NMF continues to gain fans who want a music festival with a more personal experience. Set in the beautiful rolling hills of Southeast Ohio, this intimate festival offers live music from a variety of genres on multiple stages from national, regional, and local acts. Catch live music on multiple stages: NMF features a main stage of course, but also a picturesque Porch Stage, the small No-Fi Cabin featuring artists performing with no electricity, and our FREE Boxcar Stage with music from an old train car turned into a stage backdrop and mural. The Nelsonville Music Festival strives to have a positive impact on our community and environment and we are a Zero Waste event, diverting over 92% of the waste created at the festival from the landfill in 2017 with recycling and composting. All kids 12 and under are free and the festival features a huge kids area with activities all weekend. The AV Club and Ohio Magazine have named NMF as the “Best Music Festival in Ohio”, and Time Out Chicago has called it “one of the Midwest’s best festivals”. Past performers have included Wilco, The Flaming Lips, Willie Nelson, Ween, Loretta Lynn, Gillian Welch, John Prine, The Avett Brothers, They Might Be Giants, Randy Newman, Merle Haggard, Iron &amp; Wine, Yo La Tengo, George Jones, Emmylou Harris, Courtney Barnett, and many more. The Nelsonville Music Festival is a production of Stuart’s Opera House, a historic, non-profit theater located in Nelsonville that features over 75 events a year including live music, theater, films, educational programming and more. You can find out more about Stuart’s by visiting stuartsoperahouse.org.</string>
                                                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
@@ -418,7 +415,7 @@
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ihK-3K-hH0">
-                                                        <rect key="frame" x="0.0" y="1030.5" width="375" height="804.5"/>
+                                                        <rect key="frame" x="0.0" y="1012.5" width="375" height="804.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GETTING HERE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M44-bh-8xP">
                                                                 <rect key="frame" x="8" y="8" width="359" height="20.5"/>
@@ -478,7 +475,7 @@ Sunday, June 3  |  9:00am – 7:00pm</string>
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RWb-bV-QFu">
-                                                        <rect key="frame" x="0.0" y="1855" width="375" height="160"/>
+                                                        <rect key="frame" x="0.0" y="1837" width="375" height="160"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAMPING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jwt-WI-Rgq">
                                                                 <rect key="frame" x="8" y="8" width="359" height="20.5"/>
@@ -498,7 +495,7 @@ Sunday, June 3  |  9:00am – 7:00pm</string>
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fYX-2D-z4O">
-                                                        <rect key="frame" x="0.0" y="2035" width="375" height="375"/>
+                                                        <rect key="frame" x="0.0" y="2017" width="375" height="375"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KIDS + FAMILIES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkT-Yq-vVc">
                                                                 <rect key="frame" x="8" y="8" width="359" height="20.5"/>
@@ -524,7 +521,7 @@ More info and activities for kids available at nelsonvillefest.org/kids</string>
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="c2F-X7-jZG">
-                                                        <rect key="frame" x="0.0" y="2430" width="375" height="1431"/>
+                                                        <rect key="frame" x="0.0" y="2412" width="375" height="1413"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAFETY + SECURITY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEk-FB-eT2">
                                                                 <rect key="frame" x="8" y="8" width="359" height="20.5"/>
@@ -533,9 +530,9 @@ More info and activities for kids available at nelsonvillefest.org/kids</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kj0-1o-jFl">
-                                                                <rect key="frame" x="8" y="28.5" width="359" height="1394.5"/>
+                                                                <rect key="frame" x="8" y="28.5" width="359" height="1376.5"/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <string key="text">Safety and Security for everyone at The Nelsonville Music Festival is our number one priority. NMF will be instituting new safety policies, practices, and procedures in 2018, with the sole purpose of doing everything in our power to make our festival as safe as possible. As always, we are ONLY looking for weapons and/or dangerous objects. New in 2018, we are allowing only CLEAR BAGS AND CLEAR BACKPACKS and small clutch bags or fanny packs. NO LARGE PURSES, or OTHER BAGS will be allowed. Thank you for helping us make NMF safe and thank you for your patience with our new polices as we continue to improve a safe festival experience for everyone.
+                                                                <string key="text">Safety and Security for everyone at The Nelsonville Music Festival is our number one priority. NMF's sole purpose with all proceedues is doing everything in our power to make our festival as safe as possible. As always, we are ONLY looking for weapons and/or dangerous objects. We are allowing only CLEAR BAGS AND CLEAR BACKPACKS and small clutch bags or fanny packs. NO LARGE PURSES, or OTHER BAGS will be allowed. Thank you for helping us make NMF safe and thank you for your patience with our new polices as we continue to improve a safe festival experience for everyone.
 As in previous years, all bags will be searched upon entry and re-entry.
 
 If you have a question about our safety and security measures or have a question about your bag, e-mail us at info@nelsonvillefest.org
@@ -584,7 +581,7 @@ Thank you for your understanding and patience as we work to make NMF a safe plac
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XKa-AP-oO6">
-                                                        <rect key="frame" x="0.0" y="3881" width="375" height="536"/>
+                                                        <rect key="frame" x="0.0" y="3845" width="375" height="536"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUSTAINABILITY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwn-0n-YgM">
                                                                 <rect key="frame" x="8" y="8" width="359" height="20.5"/>
@@ -595,7 +592,7 @@ Thank you for your understanding and patience as we work to make NMF a safe plac
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Li-wA-tW4">
                                                                 <rect key="frame" x="8" y="28.5" width="359" height="499.5"/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <string key="text">Last year, the Nelsonville Music Festival recycled and composted over 92% of all waste discarded within the festival grounds! Because of these zero waste efforts, NMF has been recognized as one of the top 6 sustainable festivals in the country by Outdoor Nation! The Nelsonville Music Festival has partnered with Zero Waste Event Productions for the past 10 years to provide waste diversion and materials management within the festival grounds. Working hard over the years, our system has been refined and improved in our effort to strive for ‘Zero Waste,’ reaching a 94% diversion rate in 2015, a 92% diversion rate in 2016, and 92% again in 2017. Additionally, we have a recycling initiative in the campground. If you are camping out, be sure to put all of your recyclables in the bag provided to you and deliver them to our zero waste station in the campground.
+                                                                <string key="text">In 2017, the Nelsonville Music Festival recycled and composted over 92% of all waste discarded within the festival grounds! Because of these zero waste efforts, NMF has been recognized as one of the top 6 sustainable festivals in the country by Outdoor Nation! The Nelsonville Music Festival has partnered with Zero Waste Event Productions for the past 10 years to provide waste diversion and materials management within the festival grounds. Working hard over the years, our system has been refined and improved in our effort to strive for ‘Zero Waste,’ reaching a 94% diversion rate in 2015, a 92% diversion rate in 2016, and 92% again in 2017. Additionally, we have a recycling initiative in the campground. If you are camping out, be sure to put all of your recyclables in the bag provided to you and deliver them to our zero waste station in the campground.
 
 // There are 14 Resource Recovery Stations to collect compost and recycling
 // Vendors are all using compostable serviceware
@@ -610,7 +607,7 @@ Thank you for your understanding and patience as we work to make NMF a safe plac
                                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="fvE-gt-26N">
-                                                        <rect key="frame" x="0.0" y="4437" width="375" height="49"/>
+                                                        <rect key="frame" x="0.0" y="4401" width="375" height="49"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boQ-8c-sJJ">
                                                                 <rect key="frame" x="8" y="8" width="359" height="33"/>
@@ -662,7 +659,7 @@ Thank you for your understanding and patience as we work to make NMF a safe plac
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inverse-nmf-logo" translatesAutoresizingMaskIntoConstraints="NO" id="9Yg-Dg-ZS4">
-                                    <rect key="frame" x="0.0" y="0.0" width="107" height="33"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="107.00000000000003" height="33"/>
                                 </imageView>
                             </subviews>
                             <constraints>
@@ -689,12 +686,12 @@ Thank you for your understanding and patience as we work to make NMF a safe plac
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.57254901960000004" green="0.71372549019999998" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.14120780150000001" green="0.98039215690000003" blue="0.16921678470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.10196078568696976" green="0.10196078568696976" blue="0.10196078568696976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="selectedImageTintColor" red="0.57254901960000004" green="0.71372549019999998" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.14120780145052597" green="0.98039215690000003" blue="0.16921678470953114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" red="0.57254901960000004" green="0.71372549019999998" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="value" cyan="0.88627451660000001" magenta="0.27843138579999999" yellow="0.25098040700000002" black="0.0039215688589999999" alpha="1" colorSpace="deviceCMYK"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBar>
@@ -816,7 +813,7 @@ Thank you for your understanding and patience as we work to make NMF a safe plac
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.1450980392" green="0.2274509804" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" cyan="0.0" magenta="0.95686274770000002" yellow="1" black="0.17000000179999999" alpha="1" colorSpace="deviceCMYK"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -840,7 +837,7 @@ Thank you for your understanding and patience as we work to make NMF a safe plac
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.1450980392" green="0.2274509804" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" cyan="0.0" magenta="0.95686274770000002" yellow="1" black="0.17000000179999999" alpha="1" colorSpace="deviceCMYK"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -867,5 +864,5 @@ Thank you for your understanding and patience as we work to make NMF a safe plac
         <image name="star" width="48" height="48"/>
         <image name="star-empty" width="48" height="48"/>
     </resources>
-    <color key="tintColor" red="0.1450980392" green="0.2274509804" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <color key="tintColor" cyan="0.0" magenta="0.95686274766921997" yellow="1" black="0.17000000178813934" alpha="1" colorSpace="deviceCMYK"/>
 </document>
