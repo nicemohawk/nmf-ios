@@ -40,6 +40,8 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>For finding your location at the festival.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>For finding your location at the festival.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Montserrat-Regular.otf</string>
