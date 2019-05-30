@@ -50,6 +50,7 @@ class LocalNotificationController {
     }
 
     func clearNotifications() {
+        //        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
         UIApplication.shared.cancelAllLocalNotifications()
     }
 

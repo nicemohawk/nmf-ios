@@ -133,7 +133,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 
         if (UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!)) {
             alertController.addAction(UIAlertAction(title: "Open in Google Maps", style: .default, handler: { (action) in
-                UIApplication.shared.openURL(NSURL(string:
+                UIApplication.shared.open(NSURL(string:
                     "comgooglemaps://?saddr=&daddr=\(Float(self.nmf.coordinate.latitude)),\(Float(self.nmf.coordinate.longitude))&directionsmode=driving")! as URL)
             }))
         }

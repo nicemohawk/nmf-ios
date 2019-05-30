@@ -132,7 +132,7 @@ class ArtistViewController: UIViewController {
         if let urlString = artist?.youTube,
             let youTubeURL = URL(string: urlString),
             UIApplication.shared.canOpenURL(youTubeURL) {
-            UIApplication.shared.openURL(youTubeURL)
+            UIApplication.shared.open(youTubeURL)
         }
     }
 }
