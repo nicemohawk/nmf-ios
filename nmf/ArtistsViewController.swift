@@ -92,7 +92,7 @@ class ArtistViewController: UIViewController {
         
         scheduleView.startTime.text = scheduledTime.dateString()
         scheduleView.stage.text = scheduledTime.stage
-        scheduleView.starButton.isSelected = scheduledTime.starred
+        scheduleView.starButton.isSelected = scheduledTime._starred
         
         scheduleView.widthAnchor.constraint(equalToConstant: scheduleStackView.bounds.width).isActive = true
         scheduleView.heightAnchor.constraint(equalToConstant: 48.0).isActive = true
@@ -115,7 +115,7 @@ class ArtistViewController: UIViewController {
         
         if let foundScheduleItem = scheduleItem {
             sender.isSelected = !sender.isSelected
-            foundScheduleItem.starred = sender.isSelected
+            foundScheduleItem._starred = sender.isSelected
         }
     }
     

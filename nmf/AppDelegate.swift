@@ -49,11 +49,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
 //        DataStore.sharedInstance.updateScheduleItems { _ in
 //            return
 //        }
-        DataStore.sharedInstance.updateArtistItems { _ in
-            if self.reachability.connection == .wifi {
-                ImagePrefetcher.init(resources: DataStore.sharedInstance.artistItems, options: nil, progressBlock: nil, completionHandler: nil).start()
+        DataStore.sharedInstance.updateArtistItems { error in
+            if error == nil {
+                DataStore.sharedInstance.removeOutOfDateArtists()
+
+                if self.reachability.connection == .wifi {
+                    ImagePrefetcher.init(resources: DataStore.sharedInstance.artistItems, options: nil, progressBlock: nil, completionHandler: nil).start()
+                }
             }
-            
+
             return
         }
         
@@ -117,6 +121,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
             }
 
             if error == nil {
+                DataStore.sharedInstance.removeOutOfDateScheduleItems()
+                
                 scheduleViewController.sortScheduleItems(starredOnly: scheduleViewController.showingStarredOnly)
                 
                 scheduleViewController.tableView.reloadData()

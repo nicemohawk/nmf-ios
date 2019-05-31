@@ -16,14 +16,15 @@ import Foundation
     var stage: String?
     var day: String?
 
-    var starred: Bool = false
+    // local-only
+    var _starred: Bool = false
+    var _updated: Bool = false
 
     override init() {
         super.init()
     }
 
     required init?(coder aDecoder: NSCoder) {
-
         objectId = aDecoder.decodeObject(forKey: "oid") as? String
         
         artistName = aDecoder.decodeObject(forKey: "artist") as? String
@@ -31,7 +32,8 @@ import Foundation
         day = aDecoder.decodeObject(forKey: "day") as? String
         stage = aDecoder.decodeObject(forKey: "stage") as? String
         
-        starred = aDecoder.decodeBool(forKey: "starred")
+        _starred = aDecoder.decodeBool(forKey: "starred")
+        _updated = aDecoder.decodeBool(forKey: "updated")
     }
 
     func encode(with aCoder: NSCoder) {
@@ -42,7 +44,8 @@ import Foundation
         aCoder.encode(day, forKey: "day")
         aCoder.encode(stage, forKey: "stage")
         
-        aCoder.encode(starred, forKey: "starred")
+        aCoder.encode(_starred, forKey: "starred")
+        aCoder.encode(_updated, forKey: "updated")
     }
     
     // MARK: - Custom methods
@@ -58,6 +61,8 @@ import Foundation
         stage = otherItem.stage
         
         // we don't merge starred
+
+        _updated = true
     }
     
     //MARK: - date formatting

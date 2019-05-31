@@ -41,7 +41,7 @@ class LocalNotificationController {
         var notifications = [UILocalNotification]()
 
         for item in DataStore.sharedInstance.scheduleItems {
-            if item.starred, let notification = localNotification(for: item) {
+            if item._starred, let notification = localNotification(for: item) {
                 notifications.append(notification)
             }
         }
@@ -73,7 +73,7 @@ class LocalNotificationController {
     }
 
     func localNotification(for item:ScheduleItem) -> UILocalNotification? {
-        guard item.starred else { print("\(item) is not starred! Not creating notification."); return nil }
+        guard item._starred else { print("\(item) is not starred! Not creating notification."); return nil }
 
         if let fireDate = item.startTime, fireDate > Date(), let objectId = item.objectId {
             let notification = UILocalNotification()

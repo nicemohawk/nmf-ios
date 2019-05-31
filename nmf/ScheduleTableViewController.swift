@@ -103,15 +103,13 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
             }
             
             if let foundScheduleItem = scheduleItem {
-                scheduleCell.starButton.isSelected = foundScheduleItem.starred
+                scheduleCell.starButton.isSelected = foundScheduleItem._starred
             }
         }
         
         if let indexPath = tableView.indexPathForSelectedRow {
             tableView.deselectRow(at: indexPath, animated: animated)
         }
-
-        
     }
     
     // FIXME?
@@ -250,7 +248,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
                  scheduleCell.startTime.textColor = UIColor.lightCharcoal()
             }
             
-            scheduleCell.starButton.isSelected = foundScheduleItem.starred
+            scheduleCell.starButton.isSelected = foundScheduleItem._starred
 
             if foundScheduleItem.stage == nil {
                 scheduleCell.starButton.isHidden = true
@@ -364,7 +362,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         
         if let foundScheduleItem = scheduleItem {
             sender.isSelected = !sender.isSelected
-            foundScheduleItem.starred = sender.isSelected
+            foundScheduleItem._starred = sender.isSelected
 
             if sender.isSelected {
                 LocalNotificationController.shared.scheduleNotification(for: foundScheduleItem)
@@ -435,7 +433,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         var thursdayShows = [ScheduleItem](), fridayShows = [ScheduleItem](), saturdayShows = [ScheduleItem](), sundayShows = [ScheduleItem]()
         
         for item in DataStore.sharedInstance.scheduleItems {
-            if starredOnly && item.starred == false {
+            if starredOnly && item._starred == false {
                 continue
             }
             

@@ -46,23 +46,21 @@ class DataStore: NSObject {
 
         func pageAllScheduleData(queryBuilder: DataQueryBuilder) {
 
-            backendless.data.of(ScheduleItem.self).find(
-                queryBuilder,
-                response: { (scheduleItemsCollection: [Any]?) in
-                    if scheduleItemsCollection?.count != 0 {
-                        guard let items = scheduleItemsCollection as? [ScheduleItem] else {
-                            print("Unable to convert scheduleItemsCollection (type: \(type(of:scheduleItemsCollection?.first))) to \(type(of:ScheduleItem.self)) array.")
+            backendless.data.of(ScheduleItem.self).find(queryBuilder, response: { (scheduleItemsCollection: [Any]?) in
+                if scheduleItemsCollection?.count != 0 {
+                    guard let items = scheduleItemsCollection as? [ScheduleItem] else {
+                        print("Unable to convert scheduleItemsCollection (type: \(type(of:scheduleItemsCollection?.first))) to \(type(of:ScheduleItem.self)) array.")
 
-                            return
-                        }
-                        
-                        self.mergeScheduleItems(items)
-
-                        pageAllScheduleData(queryBuilder: queryBuilder.prepareNextPage())
-                    } else {
-                        // finished paging results
-                        completion(nil)
+                        return
                     }
+
+                    self.mergeScheduleItems(items)
+
+                    pageAllScheduleData(queryBuilder: queryBuilder.prepareNextPage())
+                } else {
+                    // finished paging results
+                    completion(nil)
+                }
             }, error: { (fault) in
                 print(fault ?? "Unable to print fault")
 
@@ -97,6 +95,8 @@ class DataStore: NSObject {
 
                         return
                     }
+
+//                    artists.forEach { $0.updated = true }
 
                     self.mergeArtists(artists)
 
@@ -139,7 +139,29 @@ class DataStore: NSObject {
             completion(nil, fault)
         })
     }
-    
+
+    func removeOutOfDateScheduleItems() {
+        // remove schedule items that have not been updated
+        scheduleItems = scheduleItems.filter { item in
+            if item._updated {
+                item._updated = false
+                return true
+            }
+            return false
+        }
+    }
+
+    func removeOutOfDateArtists() {
+        // remove artists that haven't been updated
+        artistItems = artistItems.filter { item in
+            if item._updated {
+                item._updated = false
+                return true
+            }
+            return false
+        }
+    }
+
     func removeOldItems() {
         let currentYear = Calendar.current.component(.year, from: Date())
         
@@ -152,11 +174,6 @@ class DataStore: NSObject {
         }
 
         scheduleItems = scheduleItems.filter { itemsToRemove.contains($0) == false }
-
-        // FIXME: remove old artists as well
-//        if scheduleItems.count > 0 {
-//            artistItems = artistItems.filter({ $0.artistName  })
-//        }
     }
     
     func mergeScheduleItems(_ newItems: [ScheduleItem]) {
@@ -175,7 +192,6 @@ class DataStore: NSObject {
             }
         }
     }
-    
     
     func mergeArtists(_ newArtists: [Artist]) {
         for newArtist in newArtists  {

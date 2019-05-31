@@ -19,6 +19,9 @@ import Kingfisher
     
     var url: String?
     var youTube: String?
+
+    // local-only
+    var _updated: Bool = true
     
     override init() {
         super.init()
@@ -33,6 +36,8 @@ import Kingfisher
         
         url = aDecoder.decodeObject(forKey: "url") as? String
         youTube = aDecoder.decodeObject(forKey: "youtube") as? String
+
+        _updated = aDecoder.decodeBool(forKey: "updated")
     }
 
     func encode(with aCoder: NSCoder) {
@@ -44,6 +49,8 @@ import Kingfisher
         
         aCoder.encode(url, forKey: "url")
         aCoder.encode(youTube, forKey: "youtube")
+
+        aCoder.encode(_updated, forKey: "updated")
     }
     
     func update(_ otherItem: Artist) {
@@ -57,6 +64,8 @@ import Kingfisher
 
         url = otherItem.url
         youTube = otherItem.youTube
+
+        _updated = true
     }
     
     var downloadURL: URL {
