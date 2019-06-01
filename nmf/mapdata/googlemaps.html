@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>map-tiles-15-19</title>
+<title>mapdata</title>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <style type="text/css">
 html { overflow: hidden; }
@@ -32,8 +32,8 @@ body { background: #f4f4f4;}
 <script type="text/javascript">
 var map;
 var mapBounds = new google.maps.LatLngBounds(
-    new google.maps.LatLng(39.437522, -82.228361),
-    new google.maps.LatLng(39.449444, -82.210755));
+    new google.maps.LatLng(39.437465, -82.227007),
+    new google.maps.LatLng(39.449026, -82.211434));
 var mapMinZoom = 15;
 var mapMaxZoom = 19;
 var maptiler = new google.maps.ImageMapType({
@@ -46,8 +46,8 @@ var maptiler = new google.maps.ImageMapType({
             proj.fromPointToLatLng(new google.maps.Point(coord.x * tileXSize, (coord.y + 1) * tileYSize)),
             proj.fromPointToLatLng(new google.maps.Point((coord.x + 1) * tileXSize, coord.y * tileYSize))
         );
-        var y = coord.y;
         var x = coord.x >= 0 ? coord.x : z2 + coord.x
+        var y = coord.y;
         if (mapBounds.intersects(tileBounds) && (mapMinZoom <= zoom) && (zoom <= mapMaxZoom))
             return zoom + "/" + x + "/" + y + ".png";
         else
@@ -55,6 +55,8 @@ var maptiler = new google.maps.ImageMapType({
     },
     tileSize: new google.maps.Size(256, 256),
     isPng: true,
+    name: "Rendered with MapTiler Desktop",
+    alt: "Rendered with MapTiler Desktop",
 
     opacity: 1.0
 });
@@ -62,7 +64,7 @@ function init() {
     var opts = {
         tilt:0,
         streetViewControl: false,
-        center: new google.maps.LatLng(39.443483, -82.219558),
+        center: new google.maps.LatLng(39.443245, -82.219220),
         zoom: 15
     };
     map = new google.maps.Map(document.getElementById("map"), opts);
@@ -72,7 +74,7 @@ function init() {
 </script>
 </head>
 <body onload="init()">
-<div id="footer">Generated with <a href="https://www.maptiler.com/">MapTiler</a></div>
+<div id="footer">Rendered with <a href="https://www.maptiler.com/">MapTiler Desktop</a></div>
 <div id="map"></div>
 </body>
 </html>
