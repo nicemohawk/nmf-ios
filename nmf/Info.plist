@@ -15,7 +15,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.2</string>
+	<string>2.2.1</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
@@ -38,9 +38,9 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>For finding your location at the festival.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
+	<string>For finding your location at the festival.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>For finding your location at the festival.</string>
 	<key>UIAppFonts</key>
 	<array>
