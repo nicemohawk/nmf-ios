@@ -160,9 +160,9 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
             }
         }
         
-        if scheduleItems.count > 0 && scheduleItems[0].count > 0 {
-            self.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
-        }
+//        if scheduleItems.count > 0 && scheduleItems[0].count > 0 {
+//            self.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+//        }
     }
     
     // MARK: - UITableViewDatasource
