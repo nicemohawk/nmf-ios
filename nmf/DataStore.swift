@@ -188,6 +188,7 @@ class DataStore: NSObject {
             }
             
             if foundItem == false {
+                newItem._updated = true
                 scheduleItems.append(newItem)
             }
         }
@@ -205,6 +206,7 @@ class DataStore: NSObject {
             }
             
             if foundItem == false {
+                newArtist._updated = true
                 artistItems.append(newArtist)
             }
         }

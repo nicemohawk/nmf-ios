@@ -17,7 +17,7 @@ import Kingfisher
 import SimulatorStatusMagic
 #endif
 
-let scheduleUpdateInterval: TimeInterval = 30//15*60 // seconds
+let scheduleUpdateInterval: TimeInterval = 1*60 // seconds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate {
@@ -50,15 +50,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
 //            return
 //        }
         DataStore.sharedInstance.updateArtistItems { error in
-            if error == nil {
-                DataStore.sharedInstance.removeOutOfDateArtists()
-
-                if self.reachability.connection == .wifi {
-                    ImagePrefetcher.init(resources: DataStore.sharedInstance.artistItems, options: nil, progressBlock: nil, completionHandler: nil).start()
-                }
+            guard error == nil else {
+                return
             }
 
-            return
+            DataStore.sharedInstance.removeOutOfDateArtists()
+
+            if self.reachability.connection == .wifi {
+                ImagePrefetcher.init(resources: DataStore.sharedInstance.artistItems, options: nil, progressBlock: nil, completionHandler: nil).start()
+            }
         }
         
         // setup twitter kit

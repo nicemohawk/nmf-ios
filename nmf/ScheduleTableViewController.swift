@@ -318,7 +318,7 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
                 }
                 
                 return false
-            })
+            }).sorted { $0.startTime?.compare($1.startTime ?? Date.distantFuture) != .orderedDescending }
             
             for artist in DataStore.sharedInstance.artistItems {
                 if artist.artistName == artistName {
