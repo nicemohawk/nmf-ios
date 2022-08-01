@@ -401,7 +401,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "GEMPATH=`gem env GEM_PATH`\n\nfor path in ${GEMPATH//:/ }; do\n    export PATH=$PATH:$path\"/bin\"\ndone\n\necho $PATH\n\n\"${SRCROOT}/decrypt.rb\"\n";
+			shellScript = "GEMPATH=`gem env GEM_PATH`\n\nfor path in ${GEMPATH//:/ }; do\n    export PATH=$PATH:$path\"/bin\"\ndone\n\necho $PATH\n\nif [ -d \"/opt/homebrew/bin\" ]; then     \n    export PATH=/opt/homebrew/bin:$PATH \nfi\n\n\"${SRCROOT}/decrypt.rb\"\n";
 		};
 		B588B0CD1CFC508F00C4C3CF /* Update Build Number */ = {
 			isa = PBXShellScriptBuildPhase;

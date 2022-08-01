@@ -19,7 +19,7 @@ values = []
 # Decrypt secrets
 secrets_ejson_path = `find . -name secrets.ejson`.strip
 puts "Found secrets at #{secrets_ejson_path}"
-secrets = `ejson -keydir /usr/local/ejson/keys decrypt #{secrets_ejson_path}`
+secrets = `ejson decrypt #{secrets_ejson_path}`
 puts 'Successfully decrypted'
 
 # Parse secrets
