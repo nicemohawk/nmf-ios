@@ -1,0 +1,68 @@
+{
+  "pins" : [
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher.git",
+      "state" : {
+        "revision" : "be1a1acb283a702b99b630f586877ba02234b4cb",
+        "version" : "7.3.2"
+      }
+    },
+    {
+      "identity" : "pushwoosh-xcframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Pushwoosh/Pushwoosh-XCFramework",
+      "state" : {
+        "branch" : "master",
+        "revision" : "b8994c9f42a5f94395eaf14472d62281ff91b558"
+      }
+    },
+    {
+      "identity" : "reachability.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ashleymills/Reachability.swift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "a81b7367f2c46875f29577e03a60c39cdfad0c8d"
+      }
+    },
+    {
+      "identity" : "simulatorstatusmagic",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/shinydevelopment/SimulatorStatusMagic.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "1a54e20e593cbaca4d88bdaad2cffcb746912069"
+      }
+    },
+    {
+      "identity" : "socket.io-client-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/socketio/socket.io-client-swift",
+      "state" : {
+        "revision" : "af5ce97b755d964235348d96f6db5cbdcbe334a5",
+        "version" : "16.0.1"
+      }
+    },
+    {
+      "identity" : "starscream",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/daltoniam/Starscream",
+      "state" : {
+        "revision" : "df8d82047f6654d8e4b655d1b1525c64e1059d21",
+        "version" : "4.0.4"
+      }
+    },
+    {
+      "identity" : "swift-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Backendless/Swift-SDK.git",
+      "state" : {
+        "revision" : "beb69cddd29005c65d68b3a3bb7569c27244c9fd",
+        "version" : "6.6.0"
+      }
+    }
+  ],
+  "version" : 2
+}

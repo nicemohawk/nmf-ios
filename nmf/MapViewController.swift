@@ -98,10 +98,14 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
         if sender is MapViewController {
             delay = 0.33
-        } else if lengendTopConstraint.constant < 0 {
-            height = self.mapView.frame.height + height
         }
         
+        if lengendTopConstraint.constant < 0 {
+            height = self.mapView.frame.height + height
+        } else {
+            height *= 2 // off screen
+        }
+            
         self.lengendTopConstraint.constant = height
 
         UIView.animate(withDuration: 0.4, delay: delay, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.25, options: [], animations: {
