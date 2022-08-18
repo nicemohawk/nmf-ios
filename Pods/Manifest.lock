@@ -1,47 +1,25 @@
 PODS:
-  - Backendless (4.5.0)
   - BBBadgeBarButtonItem (1.2)
-  - Kingfisher (5.5.0)
-  - Pushwoosh (5.13.1):
-    - Pushwoosh/Core (= 5.13.1)
-  - Pushwoosh/Core (5.13.1)
-  - ReachabilitySwift (4.3.1)
-  - SimulatorStatusMagic (2.4.1)
   - TwitterCore (3.0.3)
   - TwitterKit (3.2.2):
     - TwitterCore (>= 3.0.3)
 
 DEPENDENCIES:
-  - Backendless (~> 4.0)
   - BBBadgeBarButtonItem
-  - Kingfisher (~> 5.5)
-  - Pushwoosh
-  - ReachabilitySwift (~> 4.0)
-  - SimulatorStatusMagic
   - TwitterCore (= 3.0.3)
   - TwitterKit (= 3.2.2)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - Backendless
+  trunk:
     - BBBadgeBarButtonItem
-    - Kingfisher
-    - Pushwoosh
-    - ReachabilitySwift
-    - SimulatorStatusMagic
     - TwitterCore
     - TwitterKit
 
 SPEC CHECKSUMS:
-  Backendless: ff8d4bcc2ea7ac244f308c592634511dff38df87
   BBBadgeBarButtonItem: c2fbca0bff18e21b70defc9438a8a5048008e7ca
-  Kingfisher: 6fe5e67a90fd335e49b0f5c075ff55ac5ebedd94
-  Pushwoosh: 544dd299c95f60f7da8307332278b8971b54b1f7
-  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
-  SimulatorStatusMagic: 28d4a9d1a500ac7cea0b2b5a43c1c6ddb40ba56c
   TwitterCore: 549c74ed5f3d6134392dc944c6d215e233e50ad8
   TwitterKit: b9feccfc70bef86fe389c06a63a72fed9f020b9c
 
-PODFILE CHECKSUM: 87485cae9850d730fa4e2b76a4059fba9dd25d94
+PODFILE CHECKSUM: af6bfc0712ffb7d7c166e033171a6094ee842ff3
 
-COCOAPODS: 1.7.0
+COCOAPODS: 1.11.3
