@@ -21,8 +21,9 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
         return manager
     }()
-    
-    let nmf = CLLocation(latitude: 39.441332, longitude: -82.218652)
+    // Old location: 39.441332° N, 82.218652° W
+    // New Location 39.45847° N, 82.173037° W
+    let nmf = CLLocation(latitude: 39.45847, longitude: -82.173037)
     let tileOverlay = TileOverlay(urlTemplate: Bundle.main.bundleURL.absoluteString + "mapdata/{z}/{x}/{y}.png")
     
     @IBOutlet var mapView: MKMapView!
@@ -35,7 +36,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 
     override func viewDidLoad() {
         // 2.17 miles = 3500 meters
-        let region = MKCoordinateRegion.init(center: nmf.coordinate, latitudinalMeters: 310.0, longitudinalMeters: 310.0)
+        let region = MKCoordinateRegion.init(center: nmf.coordinate, latitudinalMeters: 600.0, longitudinalMeters: 600.0)
         
         mapView.setRegion(region, animated: true)
         
