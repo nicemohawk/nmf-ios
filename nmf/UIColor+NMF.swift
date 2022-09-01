@@ -21,7 +21,7 @@ extension UIColor {
     }
     
     class func hightlightColor() -> UIColor {
-        return #colorLiteral(red: 0, green: 0.5166901946, blue: 0.6112198234, alpha: 1)
+        return #colorLiteral(red: 0.5086781383, green: 0.791661799, blue: 0.7145605683, alpha: 1)
         //        return UIColor(red:0.827, green:0.263, blue:0.255, alpha:1.000) // coral
         //        return UIColor(red:0.573, green:0.714, blue:0.329, alpha:1.000) // light green
     }
