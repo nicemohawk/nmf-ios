@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>mapdata</title>
+    <title>nmf-tiles-4</title>
     <meta http-equiv="imagetoolbar" content="no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -19,9 +19,9 @@
   <div id="map"></div>
   <input id="slider" type="range" min="0" max="1" step="0.1" value="1" oninput="layer.setOpacity(this.value)">
   <script type="text/javascript">
-    var mapExtent = [-82.22700715, 39.43746525, -82.21143358, 39.44902566];
-    var mapMinZoom = 15;
-    var mapMaxZoom = 19;
+    var mapExtent = [-82.17935853, 39.45338779, -82.16863624, 39.46362675];
+    var mapMinZoom = 14;
+    var mapMaxZoom = 20;
     var bounds = new L.LatLngBounds(
       new L.LatLng(mapExtent[1], mapExtent[0]),
       new L.LatLng(mapExtent[3], mapExtent[2]));
@@ -32,7 +32,7 @@
       minZoom: mapMinZoom,
       maxZoom: mapMaxZoom,
       opacity: 1.0,
-      attribution: 'Rendered with <a href="http://www.maptiler.com/">MapTiler Desktop</a>',
+      attribution: 'Rendered with <a href="https://www.maptiler.com/desktop/">MapTiler Desktop</a>',
       tms: false
     };
     layer = L.tileLayer('{z}/{x}/{y}.png', options).addTo(map);

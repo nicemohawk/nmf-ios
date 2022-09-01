@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import SwiftSDK
 
 private let dataStoreSingleton = DataStore()
 
-extension Fault : Error {
-    
-}
+//extension Fault : Error {
+//
+//}
 
 class DataStore: NSObject {
     static let archiveURL = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
@@ -40,29 +41,28 @@ class DataStore: NSObject {
     }
     
     func updateScheduleItems(_ completion: @escaping (Error?) -> Void) -> Void {
-        guard let backendless = Backendless.sharedInstance() else {
-            return
-        }
+        let backendless = Backendless.shared
 
         func pageAllScheduleData(queryBuilder: DataQueryBuilder) {
 
-            backendless.data.of(ScheduleItem.self).find(queryBuilder, response: { (scheduleItemsCollection: [Any]?) in
+            backendless.data.of(ScheduleItem.self).find(queryBuilder: queryBuilder, responseHandler: { (scheduleItemsCollection: [Any]?) in
                 if scheduleItemsCollection?.count != 0 {
                     guard let items = scheduleItemsCollection as? [ScheduleItem] else {
                         print("Unable to convert scheduleItemsCollection (type: \(type(of:scheduleItemsCollection?.first))) to \(type(of:ScheduleItem.self)) array.")
-
+                        
                         return
                     }
-
+                    
                     self.mergeScheduleItems(items)
-
-                    pageAllScheduleData(queryBuilder: queryBuilder.prepareNextPage())
+                    
+                    queryBuilder.prepareNextPage()
+                    pageAllScheduleData(queryBuilder: queryBuilder)
                 } else {
                     // finished paging results
                     completion(nil)
                 }
-            }, error: { (fault) in
-                print(fault ?? "Unable to print fault")
+            }, errorHandler: { (fault) in
+                print(fault)
 
                 completion(fault)
             })
@@ -70,71 +70,62 @@ class DataStore: NSObject {
 
         self.removeOldItems()
 
-        guard let scheduleBuilder = DataQueryBuilder() else {
-            return
-        }
-
-        scheduleBuilder.setPageSize(100)
+        let scheduleBuilder = DataQueryBuilder()
+        scheduleBuilder.pageSize = 100
 
         pageAllScheduleData(queryBuilder: scheduleBuilder)
     }
     
     func updateArtistItems(_ completion:  @escaping (Error?) -> Void) -> Void {
-        guard let backendless = Backendless.sharedInstance() else {
-            return
-        }
+        let backendless = Backendless.shared
 
         func pageAllArtistData(queryBuilder: DataQueryBuilder) {
 
             backendless.data.of(Artist.self).find(
-                queryBuilder,
-                response: { (artistsItemsCollection: [Any]?) in
-                if artistsItemsCollection?.count != 0 {
-                    guard let artists = artistsItemsCollection as? [Artist] else {
-                        print("unable to convert artistsItemsCollection to Artist array")
-
-                        return
+                queryBuilder: queryBuilder,
+                responseHandler: { (artistsItemsCollection: [Any]?) in
+                    if artistsItemsCollection?.count != 0 {
+                        guard let artists = artistsItemsCollection as? [Artist] else {
+                            print("unable to convert artistsItemsCollection to Artist array")
+                            
+                            return
+                        }
+                        
+                        //                    artists.forEach { $0.updated = true }
+                        
+                        self.mergeArtists(artists)
+                        
+                        queryBuilder.prepareNextPage()
+                        pageAllArtistData(queryBuilder: queryBuilder)
+                    } else {
+                        completion(nil)
                     }
-
-//                    artists.forEach { $0.updated = true }
-
-                    self.mergeArtists(artists)
-
-                    pageAllArtistData(queryBuilder: queryBuilder.prepareNextPage())
-                } else {
-                    completion(nil)
-                }
-            }, error: { (fault) in
-                print(fault ?? "Unable to print fault")
+                }, errorHandler: { (fault) in
+                    print(fault)
 
                 completion(fault)
             })
         }
 
-        guard let artistBuilder = DataQueryBuilder() else {
-            return
-        }
-
-        artistBuilder.setPageSize(100)
+        let artistBuilder = DataQueryBuilder()
+        artistBuilder.pageSize = 100
 
         pageAllArtistData(queryBuilder: artistBuilder)
     }
     
     func getArtistByName(_ artistName: String, completion: @escaping (Artist?, Error?) -> Void) -> Void {
-        guard let backendless = Backendless.sharedInstance() else {
-            return
-        }
+        let backendless = Backendless.shared
+        
+        let artistsQueryBuilder = DataQueryBuilder()
+        artistsQueryBuilder.whereClause = "ArtistName = '\(artistName)'"
 
-        let artistsQueryBuilder = DataQueryBuilder()!
-        artistsQueryBuilder.setWhereClause("ArtistName = '\(artistName)'")
-
-        backendless.data.of(Artist.self).find(artistsQueryBuilder, response: { (artistsItemsCollection: [Any]?) in
+        backendless.data.of(Artist.self).find(queryBuilder: artistsQueryBuilder, responseHandler: { (artistsItemsCollection: [Any]?) in
             let foundArtist = artistsItemsCollection?.first as? Artist
             
             completion(foundArtist, nil)
-        }, error: { (fault) in
+        }, errorHandler: { (fault) in
             self.artistItems = []
-            print(fault ?? "Unable to print fault")
+            print(fault)
             
             completion(nil, fault)
         })

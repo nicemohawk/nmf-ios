@@ -12,38 +12,40 @@ import BBBadgeBarButtonItem
 import Pushwoosh
 import Reachability
 import Kingfisher
+import SwiftSDK
 
-#if CONFIGURATION_Debug
-import SimulatorStatusMagic
-#endif
+//#if CONFIGURATION_Debug
+//import SimulatorStatusMagic
+//#endif
 
 let scheduleUpdateInterval: TimeInterval = 1*60 // seconds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate {
     
-    let APP_ID = Secrets.secrets()["APP_ID"] as? String
-    let SECRET_KEY = Secrets.secrets()["SECRET_KEY"] as? String
+    let APP_ID = Secrets.secrets()["APP_ID"] as! String
+    let SECRET_KEY = Secrets.secrets()["SECRET_KEY"] as! String
     let SERVER_URL = "https://api.backendless.com"
 //    let VERSION_NUM =  "v1"
     
-    let backendless = Backendless.sharedInstance()
+    let backendless = Backendless.shared
 
     var window: UIWindow?
     
     var lastScheduleFetched = Date.distantPast
     
-    let reachability = Reachability()!
+    let reachability = try! Reachability()
  
-     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        backendless?.hostURL = SERVER_URL
-        backendless?.initApp(APP_ID, apiKey: SECRET_KEY)
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch
+        backendless.hostUrl = SERVER_URL
+        backendless.initApp(applicationId: APP_ID, apiKey: SECRET_KEY)
+        
+        backendless.data.of(Artist.self).mapToTable(tableName: "Artists")
+        backendless.data.of(ScheduleItem.self).mapToTable(tableName: "Schedule")
+        
 
-        backendless?.data.mapTable(toClass: "Artists", type: Artist.ofClass())
-        backendless?.data.mapTable(toClass: "Schedule", type: ScheduleItem.ofClass())
-
-        // setup image cache
+         // setup image cache
         ImageCache.default.diskStorage.config.expiration = StorageExpiration.days(30)
 
 //        DataStore.sharedInstance.updateScheduleItems { _ in
@@ -81,10 +83,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
 
         UINavigationBar.appearance().barStyle = .blackOpaque
 
-        #if CONFIGURATION_Debug
-            // for nice screen shots only
-            SDStatusBarManager.sharedInstance().enableOverrides()
-        #endif
+//        #if CONFIGURATION_Debug
+//            // for nice screen shots only
+//            SDStatusBarManager.sharedInstance().enableOverrides()
+//        #endif
         
         return true
     }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,10 @@
 		B5026C9A1CFC2A4D009F1877 /* ScheduleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5026C981CFC2A4C009F1877 /* ScheduleView.xib */; };
 		B5026C9D1CFC2CFC009F1877 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5026C9C1CFC2CFC009F1877 /* ScheduleView.swift */; };
 		B5026C9F1CFC48EA009F1877 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5026C9E1CFC48EA009F1877 /* InfoViewController.swift */; };
+		B510128728A5B423009C23EA /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = B510128628A5B423009C23EA /* Reachability */; };
+		B510128A28A5B6BB009C23EA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B510128928A5B6BB009C23EA /* Kingfisher */; };
+		B510129028A5B9BC009C23EA /* Backendless in Frameworks */ = {isa = PBXBuildFile; productRef = B510128F28A5B9BC009C23EA /* Backendless */; };
+		B510129328A718A3009C23EA /* Pushwoosh in Frameworks */ = {isa = PBXBuildFile; productRef = B510129228A718A3009C23EA /* Pushwoosh */; };
 		B5200C771EC1A1360034091F /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5200C761EC1A1360034091F /* Secrets.swift */; };
 		B588B0D21CFDDDB300C4C3CF /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B588B0D11CFDDDB300C4C3CF /* CoreAudio.framework */; };
 		B588B0D51CFDDEE400C4C3CF /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B588B0D31CFDDEE400C4C3CF /* CoreMedia.framework */; };
@@ -101,8 +105,12 @@
 				B588B0DA1CFDDF0800C4C3CF /* AudioToolbox.framework in Frameworks */,
 				B588B0D81CFDDEF200C4C3CF /* AVFoundation.framework in Frameworks */,
 				B588B0D51CFDDEE400C4C3CF /* CoreMedia.framework in Frameworks */,
+				B510129328A718A3009C23EA /* Pushwoosh in Frameworks */,
 				B588B0D61CFDDEE400C4C3CF /* CoreVideo.framework in Frameworks */,
 				B588B0D21CFDDDB300C4C3CF /* CoreAudio.framework in Frameworks */,
+				B510129028A5B9BC009C23EA /* Backendless in Frameworks */,
+				B510128728A5B423009C23EA /* Reachability in Frameworks */,
+				B510128A28A5B6BB009C23EA /* Kingfisher in Frameworks */,
 				2C5B8B711C9BAB6C00C6A893 /* SystemConfiguration.framework in Frameworks */,
 				B1F8306A3FD046750ED481A7 /* Pods_NMF.framework in Frameworks */,
 			);
@@ -250,6 +258,12 @@
 			dependencies = (
 			);
 			name = NMF;
+			packageProductDependencies = (
+				B510128628A5B423009C23EA /* Reachability */,
+				B510128928A5B6BB009C23EA /* Kingfisher */,
+				B510128F28A5B9BC009C23EA /* Backendless */,
+				B510129228A718A3009C23EA /* Pushwoosh */,
+			);
 			productName = nmf;
 			productReference = 2C5B8B4B1C9A13E900C6A893 /* NMF.app */;
 			productType = "com.apple.product-type.application";
@@ -280,7 +294,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = "Nelsonville Music Festival";
 				TargetAttributes = {
 					2C5B8B4A1C9A13E900C6A893 = {
@@ -313,6 +327,14 @@
 				Base,
 			);
 			mainGroup = 2C5B8B421C9A13E900C6A893;
+			packageReferences = (
+				B510128228A5B35F009C23EA /* XCRemoteSwiftPackageReference "Swift-SDK" */,
+				B510128528A5B423009C23EA /* XCRemoteSwiftPackageReference "Reachability.swift" */,
+				B510128828A5B6BB009C23EA /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				B510128B28A5B77F009C23EA /* XCRemoteSwiftPackageReference "SimulatorStatusMagic" */,
+				B510128E28A5B9BC009C23EA /* XCRemoteSwiftPackageReference "Swift-SDK" */,
+				B510129128A718A3009C23EA /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */,
+			);
 			productRefGroup = 2C5B8B4C1C9A13E900C6A893 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -355,16 +377,10 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NMF/Pods-NMF-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BBBadgeBarButtonItem/BBBadgeBarButtonItem.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
-				"${BUILT_PRODUCTS_DIR}/SimulatorStatusMagic/SimulatorStatusMagic.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BBBadgeBarButtonItem.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimulatorStatusMagic.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -401,7 +417,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "GEMPATH=`gem env GEM_PATH`\n\nfor path in ${GEMPATH//:/ }; do\n    export PATH=$PATH:$path\"/bin\"\ndone\n\necho $PATH\n\n\"${SRCROOT}/decrypt.rb\"\n";
+			shellScript = "GEMPATH=`gem env GEM_PATH`\n\nfor path in ${GEMPATH//:/ }; do\n    export PATH=$PATH:$path\"/bin\"\ndone\n\necho $PATH\n\nif [ -d \"/opt/homebrew/bin\" ]; then     \n    export PATH=/opt/homebrew/bin:$PATH \nfi\n\n\"${SRCROOT}/decrypt.rb\"\n";
 		};
 		B588B0CD1CFC508F00C4C3CF /* Update Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -548,6 +564,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -572,11 +589,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "Pods/Backendless/SDK/ios/backendless/include/Backendless-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -606,6 +622,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -624,11 +641,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "Pods/Backendless/SDK/ios/backendless/include/Backendless-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -645,13 +662,12 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = GYV9U8338K;
 				INFOPLIST_FILE = nmf/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/lib/**",
+					"@executable_path/Frameworks",
 				);
-				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(inherited)";
+				MARKETING_VERSION = 2.3.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DCONFIGURATION_Debug";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicemohawk.nmf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -672,13 +688,12 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = GYV9U8338K;
 				INFOPLIST_FILE = nmf/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/lib/**",
+					"@executable_path/Frameworks",
 				);
-				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(inherited)";
+				MARKETING_VERSION = 2.3.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DCONFIGURATION_Release";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicemohawk.nmf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -695,7 +710,11 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = nmfTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.nmfTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -709,7 +728,11 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = nmfTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.nmfTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -748,6 +771,80 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B510128228A5B35F009C23EA /* XCRemoteSwiftPackageReference "Swift-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Backendless/Swift-SDK.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+		B510128528A5B423009C23EA /* XCRemoteSwiftPackageReference "Reachability.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B510128828A5B6BB009C23EA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 7.3.0;
+			};
+		};
+		B510128B28A5B77F009C23EA /* XCRemoteSwiftPackageReference "SimulatorStatusMagic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shinydevelopment/SimulatorStatusMagic.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B510128E28A5B9BC009C23EA /* XCRemoteSwiftPackageReference "Swift-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Backendless/Swift-SDK.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+		B510129128A718A3009C23EA /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Pushwoosh/Pushwoosh-XCFramework";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B510128628A5B423009C23EA /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B510128528A5B423009C23EA /* XCRemoteSwiftPackageReference "Reachability.swift" */;
+			productName = Reachability;
+		};
+		B510128928A5B6BB009C23EA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B510128828A5B6BB009C23EA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		B510128F28A5B9BC009C23EA /* Backendless */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B510128228A5B35F009C23EA /* XCRemoteSwiftPackageReference "Swift-SDK" */;
+			productName = Backendless;
+		};
+		B510129228A718A3009C23EA /* Pushwoosh */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B510129128A718A3009C23EA /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */;
+			productName = Pushwoosh;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2C5B8B431C9A13E900C6A893 /* Project object */;
 }

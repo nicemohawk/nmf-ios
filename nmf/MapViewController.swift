@@ -21,8 +21,10 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
         return manager
     }()
-    
-    let nmf = CLLocation(latitude: 39.441332, longitude: -82.218652)
+    // Old location: 39.441332° N, 82.218652° W
+    // New Location 39.45847° N, 82.173037° W
+    let nmf = CLLocation(latitude: 39.45847, longitude: -82.173037)
+    let nmfDirections = CLLocation(latitude: 39.46042, longitude: -82.17936) // for maps directions
     let tileOverlay = TileOverlay(urlTemplate: Bundle.main.bundleURL.absoluteString + "mapdata/{z}/{x}/{y}.png")
     
     @IBOutlet var mapView: MKMapView!
@@ -35,7 +37,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 
     override func viewDidLoad() {
         // 2.17 miles = 3500 meters
-        let region = MKCoordinateRegion.init(center: nmf.coordinate, latitudinalMeters: 310.0, longitudinalMeters: 310.0)
+        let region = MKCoordinateRegion.init(center: nmf.coordinate, latitudinalMeters: 600.0, longitudinalMeters: 600.0)
         
         mapView.setRegion(region, animated: true)
         
@@ -97,10 +99,14 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
         if sender is MapViewController {
             delay = 0.33
-        } else if lengendTopConstraint.constant < 0 {
-            height = self.mapView.frame.height + height
         }
         
+        if lengendTopConstraint.constant < 0 {
+            height = self.mapView.frame.height + height
+        } else {
+            height *= 2 // off screen
+        }
+            
         self.lengendTopConstraint.constant = height
 
         UIView.animate(withDuration: 0.4, delay: delay, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.25, options: [], animations: {
@@ -124,7 +130,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         let alertController = UIAlertController(title: "Need Directions to NMF?", message: nil, preferredStyle: .actionSheet)
         
          alertController.addAction(UIAlertAction(title: "Open in Maps", style: .default, handler: { (action) in
-            let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: self.nmf.coordinate, addressDictionary: [CNPostalAddressCityKey: "Nelsonville", CNPostalAddressStateKey: "Ohio"]))
+             let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: self.nmfDirections.coordinate, addressDictionary: [CNPostalAddressStreetKey: "Happy Hollow Rd", CNPostalAddressCityKey: "Nelsonville", CNPostalAddressStateKey: "Ohio"]))
             
             let launchOptions = [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving]
             

@@ -181,13 +181,13 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         }
         
         switch section {
+//        case 0:
+//            return "Thursday"
         case 0:
-            return "Thursday"
-        case 1:
             return "Friday"
-        case 2:
+        case 1:
             return "Saturday"
-        case 3:
+        case 2:
             return "Sunday"
         default:
             return "Unknown Day"
@@ -461,7 +461,8 @@ class ScheduleTableViewController: UITableViewController, UISearchControllerDele
         sundayShows.sort(by: timeSort)
         
         scheduleItems = [thursdayShows, fridayShows, saturdayShows, sundayShows]
-        
+        scheduleItems = [fridayShows, saturdayShows, sundayShows]
+
         self.tableView.reloadData()
     }
 }
