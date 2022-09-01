@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>nmf-tiles-2</title>
+<title>nmf-tiles-4</title>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <style type="text/css">
 html { overflow: hidden; }
@@ -30,10 +30,10 @@ body { background: #f4f4f4;}
 <script type="text/javascript">
 var map;
 var mapBounds = new google.maps.LatLngBounds(
-    new google.maps.LatLng(39.454269, -82.177415),
-    new google.maps.LatLng(39.462634, -82.168658));
-var mapMinZoom = 15;
-var mapMaxZoom = 19;
+    new google.maps.LatLng(39.453388, -82.179359),
+    new google.maps.LatLng(39.463627, -82.168636));
+var mapMinZoom = 14;
+var mapMaxZoom = 20;
 var maptiler = new google.maps.ImageMapType({
     getTileUrl: function(coord, zoom) { 
         var proj = map.getProjection();
@@ -62,8 +62,8 @@ function init() {
     var opts = {
         tilt:0,
         streetViewControl: false,
-        center: new google.maps.LatLng(39.458452, -82.173037),
-        zoom: 15
+        center: new google.maps.LatLng(39.458507, -82.173997),
+        zoom: 14
     };
     map = new google.maps.Map(document.getElementById("map"), opts);
     map.setMapTypeId('satellite');

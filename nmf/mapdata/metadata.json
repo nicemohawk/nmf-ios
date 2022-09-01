@@ -1,13 +1,13 @@
 {
-  "name": "nmf-tiles-2",
+  "name": "nmf-tiles-4",
   "version": "1.1.0",
   "description": "",
   "attribution": "Rendered with <a href=\"https://www.maptiler.com/desktop/\">MapTiler Desktop</a>",
   "type": "overlay",
   "format": "png",
-  "minzoom": "15",
-  "maxzoom": "19",
-  "scale": "1.000000",
-  "bounds": [-82.17741486, 39.45426914, -82.16865816, 39.46263435],
+  "minzoom": "14",
+  "maxzoom": "20",
+  "scale": "2.000000",
+  "bounds": [-82.17935853, 39.45338779, -82.16863624, 39.46362675],
   "profile": "mercator"
 }
